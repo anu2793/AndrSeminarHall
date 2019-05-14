@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/value_30dp"
+        android:layout_alignParentBottom="true" />
+
+    <vn.hanelsoft.forestpublishing.view.ButtonApp
+        android:id="@+id/btn_close"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/rl_bottom"
+        android:layout_marginBottom="@dimen/value_20dp"
+        android:background="@drawable/bg_button_white"
+        android:gravity="center"
+        android:padding="@dimen/value_15dp"
+        android:text="キャンセル"
+        android:textColor="#0f80ff"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:fontFamilyApp="hiramaruw6"
+        app:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btn_close"
+        android:layout_marginBottom="@dimen/value_10dp"
+        android:background="@drawable/bg_button_white"
+        android:orientation="vertical">
+
+        <vn.hanelsoft.forestpublishing.view.ButtonApp
+            android:id="@+id/btn_open_browser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/value_15dp"
+            android:text="Browserで開く"
+            android:textColor="#4a4a4a"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/line" />
+
+        <vn.hanelsoft.forestpublishing.view.ButtonApp
+            android:id="@+id/btn_copy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/value_15dp"
+            android:text="コピー"
+            android:textColor="#4a4a4a"
+            android:textSize="18sp" />
+    </LinearLayout>
+</RelativeLayout>

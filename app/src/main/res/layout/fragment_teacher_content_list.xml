@@ -1,0 +1,56 @@
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg_main"
+    android:fillViewport="true"
+    tools:context="vn.hanelsoft.forestpublishing.controller.fragment.TeacherContentListFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_teacher_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:nestedScrollingEnabled="false" />
+
+            <vn.hanelsoft.forestpublishing.view.TextViewApp
+                android:id="@+id/tv_copyright"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingTop="15dp"
+                android:text="@string/msg_copy_right"
+                android:textColor="#a8a8a8"
+                android:textSize="10sp"
+                android:visibility="gone"
+                app:fontFamilyApp="hiragino_gothicw3"
+                tools:visibility="visible" />
+        </LinearLayout>
+
+        <vn.hanelsoft.forestpublishing.view.TextViewApp
+            android:id="@+id/tv_copyright_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="15dp"
+            android:text="@string/msg_copy_right"
+            android:textColor="#a8a8a8"
+            android:textSize="10sp"
+            android:visibility="gone"
+            app:fontFamilyApp="hiragino_gothicw3"
+            tools:visibility="visible" />
+    </RelativeLayout>
+</android.support.v4.widget.NestedScrollView>

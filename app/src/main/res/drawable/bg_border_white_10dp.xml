@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <corners android:radius="@dimen/value_10dp" />
+    <padding
+        android:bottom="@dimen/values_1dp"
+        android:left="@dimen/values_1dp"
+        android:right="@dimen/values_1dp"
+        android:top="@dimen/values_1dp" />
+    <stroke
+        android:width="@dimen/values_1dp"
+        android:color="@color/default_circle_indicator_page_color" />
+    <solid android:color="@color/white" />
+</shape>

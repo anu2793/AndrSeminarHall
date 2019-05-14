@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/value_15dp"
+    android:orientation="vertical"
+    card_view:cardBackgroundColor="@android:color/white"
+    card_view:cardCornerRadius="@dimen/value_8dp"
+    card_view:cardElevation="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <vn.hanelsoft.forestpublishing.view.TextViewApp
+                android:id="@+id/tv_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/value_15dp"
+                android:paddingLeft="@dimen/value_10dp"
+                android:paddingRight="@dimen/value_10dp"
+                android:paddingTop="@dimen/value_15dp"
+                android:text="ユーザーID"
+                android:textColor="#292929"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <vn.hanelsoft.forestpublishing.view.TextViewApp
+                android:id="@+id/tv_user_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/tv_id"
+                android:ellipsize="end"
+                android:gravity="right"
+                android:lines="1"
+                android:paddingBottom="@dimen/value_15dp"
+                android:paddingLeft="@dimen/value_10dp"
+                android:paddingRight="@dimen/value_10dp"
+                android:paddingTop="@dimen/value_15dp"
+                android:text="1214314141"
+                android:textColor="@color/color_content" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.75dp"
+            android:background="@color/line" />
+
+        <RelativeLayout
+            android:id="@+id/rl_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <vn.hanelsoft.forestpublishing.view.TextViewApp
+                android:id="@+id/tv_title_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/value_15dp"
+                android:paddingLeft="@dimen/value_10dp"
+                android:paddingRight="@dimen/value_10dp"
+                android:paddingTop="@dimen/value_15dp"
+                android:text="登録メール"
+                android:textColor="#292929"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <vn.hanelsoft.forestpublishing.view.TextViewApp
+                android:id="@+id/tv_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/tv_title_name"
+                android:drawablePadding="@dimen/value_10dp"
+                android:drawableRight="@mipmap/imv_arrow"
+                android:ellipsize="end"
+                android:gravity="right"
+                android:lines="1"
+                android:paddingBottom="@dimen/value_15dp"
+                android:paddingLeft="@dimen/value_10dp"
+                android:paddingRight="@dimen/value_10dp"
+                android:paddingTop="@dimen/value_15dp"
+                android:text="sample@mail.co.jp"
+                android:textColor="@color/color_content" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.75dp"
+            android:background="@color/line" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/pr_rl_password">
+
+            <vn.hanelsoft.forestpublishing.view.TextViewApp
+                android:id="@+id/tv_title_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/value_15dp"
+                android:paddingLeft="@dimen/value_10dp"
+                android:paddingRight="@dimen/value_10dp"
+                android:paddingTop="@dimen/value_15dp"
+                android:text="パスワード"
+                android:textColor="#292929"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edt_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/tv_title_password"
+                android:background="@android:color/transparent"
+                android:drawablePadding="@dimen/value_15dp"
+                android:drawableRight="@mipmap/imv_arrow"
+                android:enabled="false"
+                android:gravity="right"
+                android:inputType="textPassword"
+                android:paddingBottom="@dimen/value_15dp"
+                android:paddingLeft="@dimen/value_10dp"
+                android:paddingRight="@dimen/value_10dp"
+                android:paddingTop="@dimen/value_15dp"
+                android:text="12345678"
+                android:textColor="@color/color_content" />
+
+            <RelativeLayout
+                android:id="@+id/rl_password"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/value_50dp" />
+        </RelativeLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

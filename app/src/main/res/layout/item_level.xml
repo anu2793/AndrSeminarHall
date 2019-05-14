@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+        <vn.hanelsoft.forestpublishing.view.TextViewApp
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lineSpacingExtra="3dp"
+            android:maxLines="1"
+            android:text="項"
+            android:textColor="#48494a"
+            android:textSize="15sp"
+            android:visibility="invisible"
+            app:fontFamilyApp="kozgopro6n_b" />
+
+        <ImageView
+            android:id="@+id/imv_arrow"
+            android:layout_width="@dimen/value_20dp"
+            android:layout_height="@dimen/value_18dp"
+            android:layout_marginTop="@dimen/value_8dp"
+            android:adjustViewBounds="true"
+            android:visibility="gone"
+            android:rotation="90"
+            android:src="@mipmap/ic_arrow_profile" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/value_5dp"
+        android:layout_marginRight="@dimen/value_5dp"
+        android:layout_marginTop="@dimen/value_30dp"
+        android:orientation="vertical">
+
+        <vn.hanelsoft.forestpublishing.view.TextViewApp
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lineSpacingExtra="3dp"
+            android:maxLines="1"
+            android:text="項目項目1"
+            android:textColor="#48494a"
+            android:textSize="15sp"
+            app:fontFamilyApp="kozgopro6n_b" />
+
+        <SeekBar
+            android:id="@+id/level"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/value_height_seek_bar"
+            android:layout_below="@id/tv_name"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/value_8dp"
+            android:focusable="false"
+            android:padding="0dp"
+            android:progress="100"
+            android:progressDrawable="@drawable/seekbar_style"
+            android:thumb="@null" />
+    </LinearLayout>
+</RelativeLayout>

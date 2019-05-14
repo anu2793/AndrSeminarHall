@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_button_white"
+    android:paddingBottom="@dimen/value_15dp"
+    android:paddingEnd="@dimen/value_20dp"
+    android:paddingStart="@dimen/value_10dp"
+    android:paddingTop="@dimen/value_15dp">
+
+    <ImageView
+        android:id="@+id/ic_icon"
+        android:layout_width="@dimen/value_25dp"
+        android:layout_height="@dimen/value_25dp"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/ic_point_top" />
+
+    <vn.hanelsoft.forestpublishing.view.TextViewApp
+        android:id="@+id/tv_point"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/value_10dp"
+        android:layout_toEndOf="@id/ic_icon"
+        android:text="500"
+        android:textColor="@color/color_8cc437"
+        android:textSize="@dimen/text_size_16sp"
+        tool:fontFamilyApp="hiramaruw6"
+        tool:textStyle="bold" />
+
+    <vn.hanelsoft.forestpublishing.view.TextViewApp
+        android:id="@+id/tv_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:text="500円"
+        android:textSize="@dimen/text_size_16sp"
+        tool:fontFamilyApp="hiramaruw6"
+        tool:textStyle="bold" />
+
+    <vn.hanelsoft.forestpublishing.view.TextViewApp
+        android:id="@+id/tv_bonus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/value_10dp"
+        android:layout_toStartOf="@id/tv_money"
+        android:background="@drawable/imv_bonus"
+        android:text="@string/tv_discount"
+        android:includeFontPadding="false"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="@dimen/text_size_9sp"
+        tool:fontFamilyApp="hiramaruw6"
+        tool:textStyle="bold" />
+
+
+</RelativeLayout>

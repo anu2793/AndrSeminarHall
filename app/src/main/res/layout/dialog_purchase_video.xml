@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_dialog_purchase"
+    android:orientation="vertical">
+
+    <vn.hanelsoft.forestpublishing.view.TextViewApp
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/value_40dp"
+        android:gravity="center"
+        android:lineSpacingMultiplier="1.3"
+        android:paddingEnd="@dimen/value_20dp"
+        android:paddingStart="@dimen/value_20dp"
+        android:text="@string/txt_content_point"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_16sp" />
+
+    <vn.hanelsoft.forestpublishing.view.TextViewApp
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/value_30dp"
+        android:text="所有ポイント"
+        android:textColor="@color/color_aaaaaa"
+        android:textSize="@dimen/text_size_14sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/value_10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/value_28dp"
+            android:layout_height="@dimen/value_28dp"
+            android:src="@mipmap/ic_point_black" />
+
+        <vn.hanelsoft.forestpublishing.view.TextViewApp
+            android:id="@+id/tv_point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/value_5dp"
+            android:includeFontPadding="false"
+            android:text="0"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_21sp"
+            tool:textStyle="bold" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.75dp"
+        android:layout_marginTop="@dimen/value_40dp"
+        android:background="@color/line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/value_50dp"
+        android:orientation="horizontal">
+
+        <vn.hanelsoft.forestpublishing.view.TextViewApp
+            android:id="@+id/tv_cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="キャンセル"
+            android:textColor="@color/color_007aff"
+            android:textSize="@dimen/text_size_16sp" />
+
+        <View
+            android:layout_width="0.75dp"
+            android:layout_height="match_parent"
+            android:background="@color/line" />
+
+        <vn.hanelsoft.forestpublishing.view.TextViewApp
+            android:id="@+id/tv_purchase_video"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="購入する"
+            android:textColor="@color/color_007aff"
+            android:textSize="@dimen/text_size_16sp"
+            tool:textStyle="bold" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

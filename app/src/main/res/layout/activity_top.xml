@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:visibility="gone"
+        app:elevation="0dp"
+        tools:visibility="visible">
+
+        <RelativeLayout
+            android:id="@+id/layout_search_view"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="@dimen/value_10dp"
+            android:visibility="gone"
+            app:layout_scrollFlags="scroll|enterAlways"
+            tools:visibility="visible">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/tv_cancel"
+                android:background="@drawable/bg_search"
+                android:orientation="horizontal"
+                android:paddingLeft="15dp">
+
+                <ImageView
+                    android:id="@+id/imv_search"
+                    android:layout_width="@dimen/value_20dp"
+                    android:layout_height="@dimen/value_20dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_search" />
+
+                <android.support.v7.widget.SearchView
+                    android:id="@+id/search_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+
+                    android:layout_toRightOf="@id/imv_search"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    app:closeIcon="@drawable/ic_clear_search"
+                    app:defaultQueryHint="先生・コンテンツ検索..."
+                    app:iconifiedByDefault="false"
+                    app:queryBackground="@android:color/transparent"
+                    app:queryHint="先生・コンテンツ検索..."
+                    app:searchIcon="@null" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/value_8dp"
+                android:gravity="center"
+                android:text="Cancel"
+                android:textColor="#157efb"
+                android:textSize="16sp"
+                android:visibility="gone"
+                tools:visibility="visible" />
+        </RelativeLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_bg_main"
+        android:fillViewport="true"
+        android:focusableInTouchMode="true"
+        android:overScrollMode="always"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context="vn.hanelsoft.forestpublishing.controller.activity.TopActivity">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/layout_content_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <vn.hanelsoft.forestpublishing.view.AutoScrollViewPager
+                    android:id="@+id/view_pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp" />
+
+                <vn.hanelsoft.forestpublishing.view.LoopingCirclePageIndicator
+                    android:id="@+id/view_indicator"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/value_15dp"
+                    android:paddingTop="@dimen/value_15dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusableInTouchMode="true"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/btn_diagnosis"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:src="@drawable/btn_diagnosis" />
+
+                        <ImageView
+                            android:id="@+id/btn_content_free"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:src="@drawable/btn_free_content" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/imv_profile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:src="@mipmap/imv_profile"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_seminar_suggest_top"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:clipToPadding="false"
+                        android:orientation="vertical"
+                        android:paddingBottom="@dimen/value_10dp"
+                        android:paddingLeft="@dimen/value_10dp"
+                        android:paddingTop="@dimen/value_20dp">
+
+                        <vn.hanelsoft.forestpublishing.view.TextViewApp
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/value_10dp"
+                            android:text="@string/title_seminar_top"
+                            android:textColor="@color/black"
+                            app:fontFamilyApp="hiramaruw6"
+                            app:textStyle="bold" />
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/lv_seminar_top"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/value_14dp"
+                            android:divider="@android:color/white"
+                            android:dividerHeight="5dp"
+                            android:nestedScrollingEnabled="false"
+                            tools:listitem="@layout/item_seminar_top" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_seminar_new"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/value_15dp"
+                        android:background="@color/white"
+                        android:orientation="vertical"
+                        android:paddingBottom="@dimen/value_10dp"
+                        android:paddingLeft="10dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/value_20dp"
+                            android:paddingRight="@dimen/value_10dp">
+
+                            <vn.hanelsoft.forestpublishing.view.TextViewApp
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/value_10dp"
+                                android:text="@string/title_seminar_new"
+                                android:textColor="@color/black"
+                                app:fontFamilyApp="hiramaruw6"
+                                app:textStyle="bold" />
+
+                            <vn.hanelsoft.forestpublishing.view.TextViewApp
+                                android:id="@+id/tv_go_seminar_list"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:background="@drawable/bg_title_seminar_new"
+                                android:text="@string/title_new_go_list"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="10sp"
+                                app:fontFamilyApp="hiramaruw6"
+                                app:textStyle="bold" />
+                        </RelativeLayout>
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/lv_seminar_new"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/value_14dp"
+                            android:clipToPadding="false"
+                            android:divider="@android:color/white"
+                            android:dividerHeight="5dp"
+                            android:nestedScrollingEnabled="false"
+                            tools:listitem="@layout/item_seminar_top" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_category"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/value_15dp"
+                        android:background="@color/white"
+                        android:orientation="vertical"
+                        android:paddingLeft="@dimen/value_10dp"
+                        android:paddingRight="@dimen/value_10dp"
+                        android:paddingTop="@dimen/value_20dp">
+
+                        <vn.hanelsoft.forestpublishing.view.TextViewApp
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/value_10dp"
+                            android:text="カテゴリー"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            app:fontFamilyApp="hiramaruw6"
+                            app:textStyle="bold" />
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/lv_category"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/value_14dp"
+                            android:clipToPadding="false"
+                            android:divider="@android:color/white"
+                            android:dividerHeight="5dp"
+                            android:nestedScrollingEnabled="false"
+                            tools:listitem="@layout/item_category" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_new"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/value_15dp"
+                        android:background="@color/white"
+                        android:orientation="vertical"
+                        android:paddingTop="@dimen/value_20dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/value_10dp"
+                            android:paddingRight="@dimen/value_10dp">
+
+                            <vn.hanelsoft.forestpublishing.view.TextViewApp
+                                android:id="@+id/tv_list_news"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/value_10dp"
+                                android:text="最新ニュース"
+                                android:textColor="@color/black"
+                                android:textSize="16sp"
+                                app:fontFamilyApp="hiramaruw6"
+                                app:textStyle="bold" />
+
+                            <vn.hanelsoft.forestpublishing.view.TextViewApp
+                                android:id="@+id/tv_go_new_list"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:background="@drawable/bg_title_seminar_new"
+                                android:text="@string/title_seminar_go_list"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="10sp"
+                                app:fontFamilyApp="hiramaruw6"
+                                app:textStyle="bold" />
+                        </RelativeLayout>
+
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/lv_new"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:clipToPadding="false"
+                            android:divider="@android:color/white"
+                            android:dividerHeight="@dimen/value_5dp"
+                            android:nestedScrollingEnabled="false"
+                            tools:listitem="@layout/item_news_list_top" />
+
+                    </LinearLayout>
+
+                    <vn.hanelsoft.forestpublishing.view.TextViewApp
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingBottom="@dimen/value_30dp"
+                        android:paddingTop="@dimen/value_30dp"
+                        android:text="@string/msg_copy_right"
+                        android:textColor="#a8a8a8"
+                        android:textSize="@dimen/text_size_10sp"
+                        app:fontFamilyApp="hiramaru" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/layout_search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>
+

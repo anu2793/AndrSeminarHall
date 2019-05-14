@@ -1,0 +1,1 @@
+keytool -exportcert -alias androiddebugkey -keystore "C:\Users\SONTT\Document\Workspace\Project\seminar\app\seminar.jks" | "C:\OpenSSL\bin\openssl" sha1 -binary | "C:\OpenSSL\bin\openssl" base64

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_border_white_10dp">
+
+    <vn.hanelsoft.forestpublishing.view.TextViewApp
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:padding="@dimen/value_20dp"
+        android:text="ご注意"
+        android:textSize="@dimen/text_size_21sp"
+        app:fontFamilyApp="hiramaruw6"
+        app:textStyle="bold" />
+
+    <vn.hanelsoft.forestpublishing.view.TextViewApp
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_title"
+        android:lineSpacingExtra="@dimen/value_10dp"
+        android:paddingBottom="@dimen/value_30dp"
+        android:paddingLeft="@dimen/value_20dp"
+        android:paddingRight="@dimen/value_20dp"
+        android:gravity="center"
+        android:text="ユーザー登録をせずに購入された\n場合、端末の紛失や買い替え時、\nお客様の購入履歴を復元することは\n出来ません。よろしいですか？"
+        app:fontFamilyApp="hiramaru" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="0.75dp"
+        android:layout_below="@id/tv_content"
+        android:background="@color/line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line"
+        android:orientation="horizontal">
+
+        <vn.hanelsoft.forestpublishing.view.TextViewApp
+            android:id="@+id/tv_ok"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="@dimen/value_10dp"
+            android:text="はい"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/text_size_18sp"
+            app:fontFamilyApp="hiramaruw6"
+            app:textStyle="bold" />
+
+        <View
+            android:layout_width="0.75dp"
+            android:layout_height="match_parent"
+            android:background="@color/line" />
+
+        <vn.hanelsoft.forestpublishing.view.TextViewApp
+            android:id="@+id/tv_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="@dimen/value_10dp"
+            android:text="いいえ"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/text_size_18sp"
+            app:fontFamilyApp="hiramaru" />
+    </LinearLayout>
+</RelativeLayout>

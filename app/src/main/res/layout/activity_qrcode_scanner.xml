@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <me.dm7.barcodescanner.zbar.ZBarScannerView
+        android:id="@+id/scanner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:borderAlpha="0.1"
+        app:borderColor="@android:color/transparent"
+        app:borderLength="@dimen/value_0dp"
+        app:borderWidth="@dimen/value_0dp"
+        app:laserColor="@color/green"
+        app:maskColor="@android:color/transparent" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_background_scanner" />
+
+    <ImageView
+        android:id="@+id/imv_back"
+        android:layout_width="@dimen/value_30dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/value_10dp"
+        android:adjustViewBounds="true"
+        android:padding="@dimen/value_8dp"
+        android:src="@mipmap/ic_back" />
+
+    <vn.hanelsoft.forestpublishing.view.TextViewApp
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/value_10dp"
+        android:gravity="center"
+        android:lineSpacingExtra="@dimen/value_10dp"
+        android:text="@string/title_qrcode_screen"
+        android:textColor="@color/white" />
+
+    <RelativeLayout
+        android:id="@+id/rl_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/imv_back"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <ProgressBar
+            android:id="@+id/progressBar5"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="40dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

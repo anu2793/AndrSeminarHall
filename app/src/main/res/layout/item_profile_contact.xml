@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ProgressBar
+        android:id="@+id/progressBar6"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+    <vn.hanelsoft.forestpublishing.view.CircleImageView
+        android:id="@+id/imv_avatar"
+        android:layout_width="@dimen/value_95dp"
+        android:layout_height="@dimen/value_95dp"
+        android:src="@mipmap/ic_user_default"
+        app:border_color="@color/gray"
+        app:border_width="@dimen/values_1dp" />
+
+</RelativeLayout>

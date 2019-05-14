@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:swipe="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_main_gradient">
+
+    <ImageView
+        android:id="@+id/btn_back"
+        android:layout_width="@dimen/value_45dp"
+        android:layout_height="@dimen/value_45dp"
+        android:padding="@dimen/value_12dp"
+        android:src="@drawable/ic_back_white" />
+
+    <ImageView
+        android:id="@+id/imv_animation"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/value_70dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/value_10dp" />
+
+    <vn.hanelsoft.forestpublishing.view.TextViewApp
+        android:id="@+id/tv_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/value_10dp"
+        android:lineSpacingExtra="@dimen/value_8dp"
+        android:text="@string/msg_swipe_to_share"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_12sp"
+        swipe:fontFamilyApp="hiramaru" />
+
+    <vn.hanelsoft.forestpublishing.view.flingswitch.SwipeCenterFlingAdapterView
+        android:id="@+id/swipe_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        swipe:max_visible="1"
+        swipe:min_adapter_stack="1"
+        swipe:vertical="false"
+        swipe:y_offset_step="28dp" />
+
+    <LinearLayout
+        android:id="@+id/rl_loading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <ImageView
+            android:id="@+id/imv_loading_sending"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/value_25dp"
+            android:layout_marginBottom="@dimen/value_10dp"
+            android:src="@mipmap/imv_arrow_down"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/imv_mobile"
+            android:layout_width="@dimen/value_40dp"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true" />
+
+        <vn.hanelsoft.forestpublishing.view.TextViewApp
+            android:id="@+id/tv_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/value_10dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_18sp" />
+    </LinearLayout>
+
+</RelativeLayout>

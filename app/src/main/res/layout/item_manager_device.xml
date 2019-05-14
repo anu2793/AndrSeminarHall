@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="95dp"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/value_10dp"
+    android:paddingLeft="@dimen/value_15dp"
+    android:paddingRight="@dimen/value_15dp"
+    android:paddingTop="@dimen/value_10dp">
+
+    <vn.hanelsoft.forestpublishing.view.CircleImageView
+        android:id="@+id/ic_icon"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_margin="@dimen/value_5dp"
+        app:fill_color="#e4e4e4" />
+
+    <ImageView
+        android:id="@+id/iv_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:padding="5dp"
+        android:src="@mipmap/ic_close" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@+id/iv_delete"
+        android:layout_toRightOf="@+id/ic_icon"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="15dp">
+
+        <vn.hanelsoft.forestpublishing.view.TextViewApp
+            android:id="@+id/tv_my_current"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:background="#91c527"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="@string/tv_my_device"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white"
+            android:textSize="11sp"
+            android:visibility="gone"
+            app:textStyle="bold"
+            tools:visibility="visible" />
+
+        <vn.hanelsoft.forestpublishing.view.TextViewApp
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="ビジネスツールA"
+            android:textColor="#292929"
+            android:textSize="16sp"
+            app:fontFamilyApp="hiramaruw6"
+            app:textStyle="bold" />
+
+        <vn.hanelsoft.forestpublishing.view.TextViewApp
+            android:id="@+id/tv_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#b1b1b1"
+            android:textSize="11sp"
+            app:fontFamilyApp="hiramaru" />
+
+    </LinearLayout>
+</RelativeLayout>

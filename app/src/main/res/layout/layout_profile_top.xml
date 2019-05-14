@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    card_view:cardBackgroundColor="@android:color/white"
+    card_view:cardCornerRadius="@dimen/value_8dp"
+    card_view:cardElevation="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <vn.hanelsoft.forestpublishing.view.TextViewApp
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/value_50dp"
+            android:adjustViewBounds="true"
+            android:src="@mipmap/imv_title_profile"
+            android:text="@string/title_profile"
+            android:textColor="@color/profile_title_green"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            card_view:fontFamilyApp="hiramin" />
+
+        <vn.hanelsoft.forestpublishing.view.TextViewApp
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/value_5dp"
+            android:letterSpacing="0.2"
+            android:text="@string/txt_profile_sub"
+            android:textColor="#5b5b5b"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            card_view:fontFamilyApp="baskvill" />
+
+        <View
+            android:layout_width="100dp"
+            android:layout_height="@dimen/value_3dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/value_10dp"
+            android:background="#5b5b5b"
+            android:visibility="gone" />
+
+        <vn.hanelsoft.forestpublishing.view.TextViewApp
+            android:id="@+id/tv_name_purchase"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/value_50dp"
+            android:layout_marginTop="@dimen/value_50dp"
+            android:background="@drawable/bg_title_profile"
+            android:gravity="center"
+            android:paddingLeft="@dimen/value_40dp"
+            android:paddingRight="@dimen/value_40dp"
+            android:text="@string/txt_name_purchase"
+            android:textColor="@color/title_profile_color"
+            android:textSize="25sp" />
+
+        <vn.hanelsoft.forestpublishing.view.TextViewApp
+            android:id="@+id/tv_time_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/value_50dp"
+            android:layout_marginTop="@dimen/value_20dp"
+            android:text="@string/txt_time_left"
+            android:textColor="#b1b1b1"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:id="@+id/ll_purchase_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            tools:visibility="gone">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.75dp"
+                android:background="#dfdfdf" />
+
+            <vn.hanelsoft.forestpublishing.view.TextViewApp
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="@dimen/value_15dp"
+                android:text="月額課金情報 >"
+                android:textSize="20sp"
+                card_view:fontFamilyApp="hiramaruw6" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/tv_go_purchase"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/value_60dp"
+            android:layout_marginLeft="@dimen/value_20dp"
+            android:layout_marginRight="@dimen/value_20dp"
+            android:layout_marginTop="@dimen/value_20dp"
+            android:adjustViewBounds="true"
+            android:src="@mipmap/imv_go_purchase"
+            android:text="@string/txt_go_purchase"
+            android:textColor="#b1b1b1"
+            android:textSize="20sp"
+            android:visibility="gone"
+            tools:visibility="gone" />
+
+        <vn.hanelsoft.forestpublishing.view.TextViewApp
+            android:id="@+id/tv_go_paid_guide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/value_50dp"
+            android:layout_marginTop="@dimen/value_20dp"
+            android:text="@string/txt_go_paid"
+            android:textSize="20sp"
+            android:visibility="gone"
+            card_view:fontFamilyApp="hiramaruw6"
+            tools:visibility="gone" />
+    </LinearLayout>
+</android.support.v7.widget.CardView>

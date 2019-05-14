@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="@drawable/bg_main_gradient"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true"
+    android:scrollbars="none">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/value_16dp">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/rl_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/value_26dp"
+            android:layout_marginRight="@dimen/value_26dp"
+            android:layout_marginTop="20dp">
+
+            <ImageView
+                android:id="@+id/imv_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/value_25dp"
+                android:adjustViewBounds="true"
+                android:src="@mipmap/ic_new_title_white"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:id="@+id/ll_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/value_20dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@+id/imv_logo">
+
+                <RelativeLayout
+                    android:id="@+id/rl_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_edittext_transparent_border">
+
+                    <ImageView
+                        android:id="@+id/imv_email"
+                        android:layout_width="@dimen/value_23dp"
+                        android:layout_height="@dimen/value_20dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/value_15dp"
+                        android:adjustViewBounds="true"
+                        android:src="@mipmap/ic_email" />
+
+                    <vn.hanelsoft.forestpublishing.view.EditTextApp
+                        android:id="@+id/edt_email"
+                        style="@style/EditTextForest"
+                        android:layout_toRightOf="@id/imv_email"
+                        android:background="@android:color/transparent"
+                        android:gravity="center_vertical"
+                        android:hint="@string/hint_input_your_email"
+                        android:inputType="textEmailAddress"
+                        android:textCursorDrawable="@color/white"
+                        app:fontFamilyApp="kozgopro6n_r" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_error_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/holo_red_light"
+                    android:visibility="gone"
+                    tools:visibility="gone" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/value_12dp"
+                    android:background="@drawable/bg_edittext_transparent_border">
+
+                    <ImageView
+                        android:id="@+id/imv_key_password"
+                        android:layout_width="23dp"
+                        android:layout_height="@dimen/value_20dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/value_15dp"
+                        android:adjustViewBounds="true"
+                        android:src="@mipmap/ic_key" />
+
+                    <vn.hanelsoft.forestpublishing.view.EditTextApp
+                        android:id="@+id/edt_password"
+                        style="@style/EditTextForest"
+                        android:layout_toRightOf="@id/imv_key_password"
+                        android:background="@android:color/transparent"
+                        android:hint="@string/hint_input_your_password"
+                        android:inputType="textPassword"
+                        android:textCursorDrawable="@color/white" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_error_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/holo_red_light"
+                    android:visibility="gone"
+                    tools:visibility="gone" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_re_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/value_12dp"
+                    android:background="@drawable/bg_edittext_transparent_border">
+
+                    <ImageView
+                        android:id="@+id/imv_key_re_password"
+                        android:layout_width="23dp"
+                        android:layout_height="20dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/value_15dp"
+                        android:adjustViewBounds="true"
+                        android:src="@mipmap/ic_key" />
+
+                    <vn.hanelsoft.forestpublishing.view.EditTextApp
+                        android:id="@+id/edt_re_password"
+                        style="@style/EditTextForest"
+                        android:layout_toRightOf="@id/imv_key_re_password"
+                        android:background="@android:color/transparent"
+                        android:hint="@string/hint_input_re_password"
+                        android:imeOptions="actionDone"
+                        android:inputType="textPassword"
+                        android:textCursorDrawable="@color/white" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_error_re_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/holo_red_light"
+                    android:visibility="gone"
+                    tools:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_submit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ll_input">
+
+                <vn.hanelsoft.forestpublishing.view.ButtonApp
+                    android:id="@+id/btn_submit"
+                    style="@style/ButtonForest"
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="@dimen/value_9dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/bg_edittext"
+                    android:stateListAnimator="@null"
+                    android:text="@string/btn_register"
+                    android:textColor="@color/color_6abea1"
+                    android:textSize="@dimen/text_size_16sp"
+                    app:fontFamilyApp="kozgopro6n_m"
+                    app:textStyle="bold" />
+
+                <vn.hanelsoft.forestpublishing.view.TextViewApp
+                    android:id="@+id/tv_privacy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginBottom="18dp"
+                    android:gravity="center"
+                    android:text="@string/txt_privacy"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    app:fontFamilyApp="kozgopro6n_b"
+                    app:textStyle="bold" />
+
+                <RelativeLayout
+                    android:id="@+id/btn_facebook"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/value_50dp"
+                    android:background="@drawable/bg_facebook">
+
+                    <ImageView
+                        android:layout_width="@dimen/value_47dp"
+                        android:layout_height="match_parent"
+                        android:src="@mipmap/ic_fb_left" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="@dimen/value_60dp"
+                        android:gravity="left|center_vertical"
+                        android:text="@string/facebook_btn"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_14sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/btn_google"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/value_50dp"
+                    android:layout_marginTop="13dp"
+                    android:background="@drawable/bg_google">
+
+                    <ImageView
+                        android:layout_width="@dimen/value_47dp"
+                        android:layout_height="match_parent"
+                        android:src="@mipmap/ic_google_left" />
+
+                    <vn.hanelsoft.forestpublishing.view.TextViewApp
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/value_60dp"
+                        android:gravity="left|center_vertical"
+                        android:text="@string/google_btn"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_14sp" />
+                </RelativeLayout>
+
+                <vn.hanelsoft.forestpublishing.view.ButtonApp
+                    android:id="@+id/btn_login"
+                    style="@style/ButtonForestLogin"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="25dp"
+                    android:text="@string/btn_go_login"
+                    app:fontFamilyApp="kozgopro6n_m"
+                    app:textStyle="bold" />
+
+                <vn.hanelsoft.forestpublishing.view.TextViewApp
+                    android:id="@+id/tv_skip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/value_12dp"
+                    android:text="@string/txt_skip"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp"
+                    android:visibility="gone"
+                    app:fontFamilyApp="kozgopro6n_b"
+                    app:textStyle="bold"
+                    tools:visibility="visible" />
+            </LinearLayout>
+        </android.support.constraint.ConstraintLayout>
+    </RelativeLayout>
+</ScrollView>

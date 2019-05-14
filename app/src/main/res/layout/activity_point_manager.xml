@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rcy_main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clipToPadding="false"
+    android:focusableInTouchMode="true"
+    android:padding="@dimen/value_10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_bg_main"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_button_white">
+
+            <ImageView
+                android:id="@+id/ic_top"
+                android:layout_width="@dimen/value_40dp"
+                android:layout_height="@dimen/value_40dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/value_20dp"
+                android:src="@mipmap/ic_point_top" />
+
+            <vn.hanelsoft.forestpublishing.view.TextViewApp
+                android:id="@+id/tv_point"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ic_top"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/value_25dp"
+                android:includeFontPadding="false"
+                android:text="0"
+                android:textColor="@color/color_8cc437"
+                android:textSize="80sp"
+                tool:fontFamilyApp="hiragino_gothicw3" />
+
+            <vn.hanelsoft.forestpublishing.view.TextViewApp
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_point"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/value_5dp"
+                android:layout_marginBottom="@dimen/value_30dp"
+                android:text="所有ポイント"
+                android:textColor="@color/color_292929"
+                android:textSize="@dimen/text_size_16sp"
+                tool:fontFamilyApp="hiraginosan"
+                tool:textStyle="bold" />
+        </RelativeLayout>
+
+        <vn.hanelsoft.forestpublishing.view.TextViewApp
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/value_25dp"
+            android:layout_marginTop="@dimen/value_30dp"
+            android:layout_marginBottom="@dimen/value_10dp"
+            android:text="ポイント購入"
+            android:textColor="@color/color_aaaaaa"
+            android:textSize="@dimen/text_size_16sp"
+            tool:fontFamilyApp="hiraginosan"
+            tool:textStyle="bold" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rcy_point"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false" />
+
+            <vn.hanelsoft.forestpublishing.view.TextViewApp
+                android:id="@+id/tv_go_settlement_law"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/value_20dp"
+                android:layout_marginBottom="@dimen/value_10dp"
+                android:text="資金決済法に基づく表示"
+                android:textColor="@color/color_aaaaaa"
+                android:textSize="@dimen/text_size_16sp"
+                tool:fontFamilyApp="hiramaruw6" />
+
+            <vn.hanelsoft.forestpublishing.view.TextViewApp
+                android:id="@+id/tv_go_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/value_10dp"
+                android:text="特定商取引に関する表示"
+                android:textColor="@color/color_aaaaaa"
+                android:textSize="@dimen/text_size_16sp"
+                tool:fontFamilyApp="hiramaruw6" />
+
+            <include layout="@layout/footer_copy_right" />
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

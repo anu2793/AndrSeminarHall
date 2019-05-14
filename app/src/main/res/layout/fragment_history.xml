@@ -1,0 +1,29 @@
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swiperefresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="vn.hanelsoft.forestpublishing.controller.fragment.HistoryFragment">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/lv_history"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <vn.hanelsoft.forestpublishing.view.TextViewApp
+            android:id="@+id/tv_empty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="視聴履歴がありません。"
+            android:textColor="#a9a9a9"
+            android:textSize="18sp"
+            app:fontFamilyApp="hiramaru" />
+
+    </RelativeLayout>
+</android.support.v4.widget.SwipeRefreshLayout>

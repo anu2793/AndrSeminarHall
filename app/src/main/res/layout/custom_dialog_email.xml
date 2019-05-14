@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="MissingPrefix">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="278dp"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardCornerRadius="6dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <vn.hanelsoft.forestpublishing.view.EditTextApp
+                android:id="@+id/edt_email"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="@dimen/value_20dp"
+                android:drawablePadding="16dp"
+                android:hint="Email"
+                android:maxLines="1"
+                android:textAlignment="textStart"
+                android:textColor="@color/colorPrimary"
+                android:textSize="13sp" />
+
+            <vn.hanelsoft.forestpublishing.view.ButtonApp
+                android:id="@+id/btnRegister"
+                fontPath="fonts/Roboto-Regular_3.ttf"
+                android:layout_width="257dp"
+                android:layout_height="47dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="18dp"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:text="@string/btn_register"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

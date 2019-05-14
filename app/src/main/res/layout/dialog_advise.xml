@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/values_310dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_border_white_10dp"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/value_30dp">
+
+    <ImageView
+        android:id="@+id/imv_advise"
+        android:layout_width="@dimen/value_100dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/value_50dp"
+        android:adjustViewBounds="true" />
+
+    <vn.hanelsoft.forestpublishing.view.TextViewApp
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="プロフィールを作りましょう！ "
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_14sp"
+        app:fontFamilyApp="hiramaru" />
+
+    <vn.hanelsoft.forestpublishing.view.ButtonApp
+        android:id="@+id/btn_create_profile"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/value_70dp"
+        android:layout_marginLeft="@dimen/value_30dp"
+        android:layout_marginRight="@dimen/value_30dp"
+        android:layout_marginTop="@dimen/value_50dp"
+        android:background="@drawable/bg_button_gradient"
+        android:gravity="center"
+        android:text="プロフィール作成"
+        android:textColor="@color/white"
+        android:textSize="@dimen/value_20sp"
+        app:textStyle="bold" />
+
+    <vn.hanelsoft.forestpublishing.view.TextViewApp
+        android:id="@+id/tv_skip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/value_20dp"
+        android:text="あとで"
+        android:textColor="@color/green"
+        android:textSize="@dimen/text_size_15sp"
+        app:fontFamilyApp="hiramaruw6" />
+</LinearLayout>

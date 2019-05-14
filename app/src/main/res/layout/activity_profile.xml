@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/src_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f7f7f7"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        android:id="@+id/rl_container"
+        android:layout_width="match_parent"
+        android:focusableInTouchMode="true"
+        android:descendantFocusability="blocksDescendants"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/ll_content_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/value_10dp">
+
+            <include layout="@layout/layout_profile_top"
+                android:visibility="gone"
+                />
+
+            <include layout="@layout/layout_profile_level" />
+
+            <include layout="@layout/layout_profile_information" />
+
+            <vn.hanelsoft.forestpublishing.view.ButtonApp
+                android:id="@+id/btn_logout"
+                style="@style/ButtonForest"
+                android:layout_width="match_parent"
+                android:layout_below="@id/ll_input"
+                android:layout_marginTop="@dimen/value_20dp"
+                android:text="@string/btn_logout"
+                app:fontFamilyApp="kozgopro6n_m"
+                app:textStyle="bold" />
+
+            <vn.hanelsoft.forestpublishing.view.TextViewApp
+                android:id="@+id/tv_copyright"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="@dimen/value_5dp"
+                android:paddingTop="@dimen/value_30dp"
+                android:text="@string/msg_copy_right"
+                android:textColor="#a8a8a8"
+                android:textSize="11sp"
+                app:fontFamilyApp="hiramaru" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_free_user"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#f7f7f7"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/value_10dp"
+                android:background="@drawable/bg_button_white">
+
+                <ImageView
+                    android:id="@+id/btn_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/value_60dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="@dimen/value_30dp"
+                    android:layout_marginRight="@dimen/value_30dp"
+                    android:layout_marginTop="@dimen/value_30dp"
+                    android:adjustViewBounds="true"
+                    android:src="@mipmap/btn_login_new"
+                    android:textColor="#b1b1b1"
+                    android:textSize="20sp" />
+
+                <vn.hanelsoft.forestpublishing.view.TextViewApp
+                    android:id="@+id/tv_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@id/btn_login"
+                    android:gravity="center"
+                    android:lineSpacingExtra="@dimen/value_2dp"
+                    android:text="マイプロフィールの機能をご利用できるように、\nログインしてください。" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</android.support.v4.widget.NestedScrollView>

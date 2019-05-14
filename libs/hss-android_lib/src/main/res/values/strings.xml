@@ -1,0 +1,14 @@
+<resources>
+    <string name="error">ERROR</string>
+
+    <string name="btn_ok">はい</string>
+    <string name="btn_accept">Accept</string>
+    <string name="btn_cancel">キャンセル</string>
+
+    <string name="error_internet_lost">インターネット接続が中断されました。</string>
+    <string name="error_unknown_host">サーバーに接続できません。</string>
+    <string name="error_internet_timeout">タイムアウト！サーバーに接続できません。</string>
+    <string name="error_network_general">サーバーに接続されていません。もう一度やり直してください</string>
+    <string name="error_io_exception">エラーが発生したので、もう一度お試しください。</string>
+
+</resources>

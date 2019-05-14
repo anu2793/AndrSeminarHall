@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="vn.hanelsoft.forestpublishing">
+
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="com.android.vending.BILLING" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:name=".ForestApplication"
+        android:allowBackup="false"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".controller.activity.SplashActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|adjustNothing">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+
+                <!-- Config for web open -->
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="forest.ito.vn"
+                    android:pathPrefix="/"
+                    android:scheme="http" />
+                <data
+                    android:host="forest.ito.vn"
+                    android:pathPrefix="/"
+                    android:scheme="https" />
+                <!-- End config -->
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".controller.activity.TopActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".controller.activity.RegisterActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".controller.activity.ForgotSuccessActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".controller.activity.RegisterSuccessActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".controller.activity.ForgotPasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".controller.activity.LoginActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".controller.activity.SubCategoryDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".controller.activity.SubCategoryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".controller.activity.NewsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".controller.activity.NewDetailActivity"
+            android:screenOrientation="portrait" />
+        <!-- <activity -->
+        <!-- android:name=".controller.activity.PurchaseListActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <activity
+            android:name=".controller.activity.SpecifiedCommercialTransactionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".controller.activity.PolicyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".controller.activity.ChangeEmailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".controller.activity.PaidMemberGuiderActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".controller.activity.ProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".controller.activity.ChangePasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".controller.activity.DiagnosisActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".controller.activity.BuyMonthPremiumActivity"
+            android:screenOrientation="portrait" />
+        <!-- FCM -->
+        <service
+            android:name=".util.fcm.FCMReceiveMessage"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".util.fcm.ServiceFCMInstanceID"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <!-- Authenticate create account user -->
+        <!-- <receiver -->
+        <!-- android:name="vn.hanelsoft.forestpublishing.util.fcm.CustomUniversalFCM" -->
+        <!-- android:enabled="true" -->
+        <!-- android:exported="true" -->
+        <!-- android:permission="com.google.android.c2dm.permission.SEND"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="com.google.android.c2dm.intent.RECEIVE" /> -->
+        <!-- <action android:name="com.google.android.c2dm.intent.REGISTRATION" /> -->
+
+
+        <!-- <category android:name="vn.hanelsoft.forestpublishing" /> -->
+        <!-- </intent-filter> -->
+        <!-- </receiver> -->
+
+        <service
+            android:name=".service.AuthenticationService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.accounts.AccountAuthenticator" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.accounts.AccountAuthenticator"
+                android:resource="@xml/authenticator" />
+        </service>
+
+        <activity
+            android:name=".controller.activity.ContentDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".controller.activity.RecommendFreeContentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".controller.activity.MyLibraryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".controller.activity.PlayVideoActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|screenLayout|smallestScreenSize|uiMode"
+            android:launchMode="singleTop"
+            android:theme="@style/ThemeFullScreen" />
+        <activity
+            android:name=".controller.activity.WebviewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".controller.activity.SubSubCategoryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".controller.activity.MaintainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".controller.activity.VideoSameTagActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".controller.activity.MyFavoriteActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".controller.activity.ManagerDeviceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".controller.activity.JackProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".controller.activity.CateDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".controller.activity.CateListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".controller.activity.AppWebViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".controller.activity.TermOfServiceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".controller.activity.ShopContentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".controller.activity.TeacherProfileCardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".controller.activity.TeacherContentListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".controller.activity.ReceiveScreenActivity"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="com.facebook.FacebookContentProvider"
+            android:authorities="com.facebook.app.FacebookContentProvider1337163129763031"
+            android:exported="true" />
+
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+        <activity
+            android:name=".controller.activity.EditProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".controller.activity.ContactListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".controller.activity.EditSNSActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".controller.activity.QrCodePreviewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".controller.activity.QrCodeScannerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".controller.activity.SwipeCardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".controller.activity.SingleReceiveCardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".controller.activity.PurchaseActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".controller.activity.SettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".controller.activity.CardReceiveActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".controller.activity.PointManagerActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".controller.activity.SettlementLawActivity"></activity>
+    </application>
+
+</manifest>

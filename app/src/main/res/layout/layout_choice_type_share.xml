@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_3e444c"
+        android:orientation="horizontal">
+
+        <vn.hanelsoft.forestpublishing.view.TextViewApp
+            android:id="@+id/tv_choice_type_share"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="@dimen/value_15dp"
+            android:text="@string/txt_send_screen"
+            android:textColor="@color/white" />
+
+        <View
+            android:layout_width="@dimen/values_1dp"
+            android:layout_height="@dimen/value_52dp"
+            android:background="@color/color_535a64" />
+
+        <vn.hanelsoft.forestpublishing.view.TextViewApp
+            android:id="@+id/tv_screen_receive"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="@dimen/value_15dp"
+            android:text="@string/txt_receive_screen"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/ll_footer"
+        android:layout_marginBottom="-26dp">
+
+        <LinearLayout
+            android:id="@+id/ll_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_teacher"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/rl_qr_code"
+                    android:layout_width="@dimen/value_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/tooltip_bg"
+                    android:paddingBottom="@dimen/value_25dp">
+
+                    <ImageView
+                        android:id="@+id/ic_qr_code"
+                        android:layout_width="@dimen/value_55dp"
+                        android:layout_height="@dimen/value_55dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_margin="@dimen/value_30dp"
+                        android:scaleType="centerCrop"
+                        android:src="@mipmap/ic_qr_code_scanner" />
+
+                    <vn.hanelsoft.forestpublishing.view.TextViewApp
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/ic_qr_code"
+                        android:layout_centerHorizontal="true"
+                        android:text="QRコードで送信"
+                        android:textColor="@color/green"
+                        app:fontFamilyApp="hiramaruw6"
+                        app:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_swipe_screen"
+                    android:layout_width="@dimen/value_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_choice_action_profile"
+                    android:paddingBottom="@dimen/value_25dp">
+
+                    <ImageView
+                        android:id="@+id/ic_swipe"
+                        android:layout_width="@dimen/value_55dp"
+                        android:layout_height="@dimen/value_55dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_margin="@dimen/value_30dp"
+                        android:src="@mipmap/ic_swipe_card_up" />
+
+                    <vn.hanelsoft.forestpublishing.view.TextViewApp
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/ic_swipe"
+                        android:layout_centerHorizontal="true"
+                        android:text="フリックで送信"
+                        android:textColor="@color/green"
+                        app:fontFamilyApp="hiramaruw6"
+                        app:textStyle="bold" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_scan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <RelativeLayout
+                    android:id="@+id/rl_qr_code_scan"
+                    android:layout_width="@dimen/value_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_choice_action_profile"
+                    android:paddingBottom="@dimen/value_25dp">
+
+                    <ImageView
+                        android:id="@+id/ic_qr_code_scan"
+                        android:layout_width="@dimen/value_55dp"
+                        android:layout_height="@dimen/value_55dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_margin="@dimen/value_30dp"
+                        android:src="@mipmap/ic_qr_code_scanner" />
+
+                    <vn.hanelsoft.forestpublishing.view.TextViewApp
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/ic_qr_code_scan"
+                        android:layout_centerHorizontal="true"
+                        android:text="QRコードで受信"
+                        android:textColor="@color/green"
+                        app:fontFamilyApp="hiramaruw6"
+                        app:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_receive"
+                    android:layout_width="@dimen/value_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_choice_action_profile"
+                    android:paddingBottom="@dimen/value_25dp">
+
+                    <ImageView
+                        android:id="@+id/ic_receive"
+                        android:layout_width="@dimen/value_55dp"
+                        android:layout_height="@dimen/value_55dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_margin="@dimen/value_30dp"
+                        android:src="@mipmap/ic_swipe_card_down" />
+
+                    <vn.hanelsoft.forestpublishing.view.TextViewApp
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/ic_receive"
+                        android:layout_centerHorizontal="true"
+                        android:text="フリックから受信"
+                        android:textColor="@color/green"
+                        app:fontFamilyApp="hiramaruw6"
+                        app:textStyle="bold" />
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/arrow_left"
+            android:layout_width="@dimen/value_25dp"
+            android:layout_height="@dimen/value_25dp"
+            android:layout_below="@id/ll_content"
+            android:layout_marginLeft="@dimen/value_80dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/nav_up"
+            android:rotation="180" />
+
+        <View
+            android:id="@+id/arrow_right"
+            android:layout_width="@dimen/value_25dp"
+            android:layout_height="@dimen/value_25dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/ll_content"
+            android:layout_marginRight="@dimen/value_80dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/nav_up"
+            android:rotation="180"
+            android:visibility="gone"
+            tools:visibility="visible" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rl_content" />
+</RelativeLayout>

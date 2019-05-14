@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#91c528</color>
+    <color name="colorPrimaryDark">#91c528</color>
+    <color name="colorAccent">#91c528</color>
+    <color name="gray">#DDDDDD</color>
+    <color name="green">#91c527</color>
+    <color name="hint_text">#ffffff</color>
+    <!-- Loading-->
+    <color name="bg_loading_color">#60000000</color>
+    <color name="stamp_stoke_grid_view">#b5b5b5</color>
+    <color name="text_description">#818181</color>
+
+    <!--News-->
+    <color name="text_business_news">#585858</color>
+    <color name="black">#000000</color>
+
+    <!--New Dialog-->
+    <color name="dialog_color_ok">#ec7589</color>
+    <color name="main_bg_ranking">#ac926a</color>
+
+    <!--Profile-->
+    <color name="profile_title_green">#91c527</color>
+    <color name="line">#dfdfdf</color>
+    <color name="color_content">#5b5b5b</color>
+
+    <!--Phase 2-->
+    <color name="white">#ffffff</color>
+    <color name="line_new">#d1d2d4</color>
+    <color name="blue">#0078ff</color>
+
+    <!--Loop viewpager-->
+    <color name="default_circle_indicator_page_color">#e4e4e4</color>
+    <color name="default_circle_indicator_fill_color">#404040</color>
+    <integer name="default_circle_indicator_orientation">0</integer>
+    <color name="default_circle_indicator_stroke_color">#e4e4e4</color>
+    <dimen name="default_circle_indicator_stroke_width">0dp</dimen>
+    <dimen name="default_circle_indicator_radius">3dp</dimen>
+    <bool name="default_circle_indicator_centered">true</bool>
+    <bool name="default_circle_indicator_snap">true</bool>
+
+    <color name="acacac">#acacac</color>
+
+    <color name="red">#FF0000</color>
+    <color name="color_bg_main">#f7f7f7</color>
+    <color name="color_6abea1">#6abea1</color>
+    <color name="color_3e444c">#3e444c</color>
+    <color name="color_aaaaaa">#aaaaaa</color>
+    <color name="color_292929">#292929</color>
+    <color name="color_a8a8a8">#a8a8a8</color>
+    <color name="color_92c627">#92c627</color>
+    <color name="color_3c3c3c">#3c3c3c</color>
+    <color name="color_f97e59">#f97e59</color>
+    <color name="color_a7a8aa">#a7a8aa</color>
+    <color name="color_535a64">#535a64</color>
+
+    <color name="color_2d3238">#2d3238</color>
+    <color name="color_353a41">#353a41</color>
+    <color name="color_545960">#545960</color>
+    <color name="color_8cc437">#8cc437</color>
+    <color name="color_007aff">#007aff</color>
+    <color name="color_4d4d4d">#4d4d4d</color>
+</resources>

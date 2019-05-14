@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/lv_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_bg_main"
+        android:clipToPadding="false"
+        android:divider="@android:color/white"
+        android:dividerHeight="5dp"
+        android:nestedScrollingEnabled="false"
+        android:paddingBottom="@dimen/value_10dp"
+        android:paddingLeft="@dimen/value_5dp"
+        android:paddingTop="@dimen/value_10dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:listitem="@layout/item_cate_seminar" />
+
+    <vn.hanelsoft.forestpublishing.view.TextViewApp
+        android:id="@+id/tv_copyright"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_bg_main"
+        android:gravity="center"
+        android:paddingBottom="@dimen/value_10dp"
+        android:paddingTop="@dimen/value_5dp"
+        android:text="@string/msg_copy_right"
+        android:textColor="#a8a8a8"
+        android:textSize="10sp"
+        android:visibility="gone"
+        app:fontFamilyApp="hiragino_gothicw3"
+        tools:visibility="visible" />
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabs_sub"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/value_height_action_bar"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="@dimen/value_20dp"
+        android:background="@color/white"
+        app:layout_collapseMode="none"
+        app:layout_scrollFlags="scroll|exitUntilCollapsed"
+        app:tabGravity="fill"
+        app:tabIndicatorColor="@color/white"
+        app:tabIndicatorHeight="0dp"
+        app:tabMode="fixed"
+        app:tabPadding="0dp"
+        app:tabPaddingEnd="0dp"
+        app:tabPaddingStart="0dp"
+        app:tabSelectedTextColor="@color/black"
+        app:tabTextColor="@color/gray" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager_sub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingTop="@dimen/value_20dp" />
+
+</LinearLayout>

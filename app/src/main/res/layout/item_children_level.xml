@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/imv_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/value_15dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/value_3dp"
+        android:adjustViewBounds="true"
+        android:src="@mipmap/ic_arrow_profile"
+        android:visibility="invisible"
+        tools:visibility="visible" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/value_35dp"
+        android:layout_marginRight="@dimen/value_8dp"
+        android:layout_marginTop="@dimen/value_15dp"
+        android:layout_toLeftOf="@id/imv_arrow"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <vn.hanelsoft.forestpublishing.view.TextViewApp
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:lineSpacingExtra="3dp"
+            android:maxLines="2"
+            android:text="項目項目1"
+            android:textColor="#48494a"
+            android:textSize="15sp"
+            app:fontFamilyApp="kozgopro6n_b"
+            android:textStyle="bold" />
+
+        <SeekBar
+            android:id="@+id/level"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/value_height_seek_bar"
+            android:layout_marginLeft="@dimen/value_5dp"
+            android:layout_marginTop="@dimen/value_8dp"
+            android:focusable="false"
+            android:padding="0dp"
+            android:progress="100"
+            android:progressDrawable="@drawable/seekbar_style"
+            android:thumb="@null" />
+    </LinearLayout>
+</RelativeLayout>

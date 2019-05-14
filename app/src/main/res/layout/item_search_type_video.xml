@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="95dp"
+    android:padding="10dp">
+
+    <RelativeLayout
+        android:id="@+id/layout_image"
+        android:layout_width="120dp"
+        android:layout_height="75dp"
+        android:layout_marginRight="10dp">
+
+        <ImageView
+            android:id="@+id/iv_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#e4e4e4"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:id="@+id/iv_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_play" />
+
+        <ProgressBar
+            android:id="@+id/loading"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@+id/layout_price"
+        android:layout_toRightOf="@+id/layout_image"
+        android:paddingRight="3dp">
+
+        <vn.hanelsoft.forestpublishing.view.TextViewApp
+            android:id="@+id/tv_special"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="#91c527"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="@string/type_video_premium"
+            android:textColor="@android:color/white"
+            android:textSize="11sp"
+            android:visibility="gone"
+            app:textStyle="bold"
+            tools:visibility="visible" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:paddingTop="10dp">
+
+            <vn.hanelsoft.forestpublishing.view.TextViewApp
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="ビジネスツール"
+                android:textColor="#292929"
+                app:fontFamilyApp="hiramaru"
+                app:textStyle="bold" />
+
+
+            <!--Content desciption-->
+            <LinearLayout
+                android:id="@+id/layout_content_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <vn.hanelsoft.forestpublishing.view.TextViewApp
+                    android:id="@+id/tv_category"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="3dp"
+                    android:ellipsize="end"
+                    android:includeFontPadding="false"
+                    android:maxLines="1"
+                    android:paddingBottom="3dp"
+                    android:paddingTop="3dp"
+                    android:textColor="#b1b1b1"
+                    android:textSize="11sp"
+                    app:fontFamilyApp="hiramaru"
+                    app:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/iv_cate"
+                    android:layout_width="7dp"
+                    android:layout_height="7dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:src="@drawable/ic_chevron_xxsmall_right" />
+
+                <vn.hanelsoft.forestpublishing.view.TextViewApp
+                    android:id="@+id/tv_sub_category"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:includeFontPadding="false"
+                    android:lineSpacingMultiplier="1"
+                    android:maxLines="1"
+                    android:paddingBottom="3dp"
+                    android:paddingTop="3dp"
+                    android:textColor="#b1b1b1"
+                    android:textSize="11sp"
+                    app:fontFamilyApp="hiramaru"
+                    app:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/iv_sub_cate"
+                    android:layout_width="7dp"
+                    android:layout_height="7dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:src="@drawable/ic_chevron_xxsmall_right" />
+
+                <vn.hanelsoft.forestpublishing.view.TextViewApp
+                    android:id="@+id/tv_sub_sub_category"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:includeFontPadding="false"
+                    android:maxLines="1"
+                    android:paddingBottom="3dp"
+                    android:paddingTop="3dp"
+                    android:text="サブカ"
+                    android:textColor="#b1b1b1"
+                    android:textSize="11sp"
+                    app:fontFamilyApp="hiramaru"
+                    app:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:minWidth="@dimen/value_50dp"
+        android:orientation="vertical">
+
+        <vn.hanelsoft.forestpublishing.view.TextViewApp
+            android:id="@+id/tv_status_premium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#686868"
+            android:gravity="center"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/value_5dp"
+            android:paddingRight="@dimen/value_5dp"
+            android:text="会員無料"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            android:visibility="gone"
+            app:fontFamilyApp="hiraginosan"
+            app:minTextSize="10sp"
+            tools:visibility="visible" />
+
+        <LinearLayout
+            android:id="@+id/ll_point"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_type_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingEnd="@dimen/value_8dp"
+            android:paddingStart="@dimen/value_8dp">
+
+            <ImageView
+                android:id="@+id/imv_point"
+                android:layout_width="@dimen/value_15dp"
+                android:layout_height="@dimen/value_15dp"
+                android:src="@mipmap/ic_point_view"
+                android:visibility="gone"
+                tools:visibility="visible" />
+
+            <vn.hanelsoft.forestpublishing.view.TextViewApp
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:maxLines="1"
+                android:padding="@dimen/value_3dp"
+                android:text="無料"
+                android:textColor="@color/color_type_content"
+                android:textSize="13sp"
+                app:minTextSize="6sp"
+                app:textStyle="bold" />
+        </LinearLayout>
+
+
+    </LinearLayout>r_type_content"-->
+    <!--app:textStyle="bold" />-->
+</RelativeLayout>

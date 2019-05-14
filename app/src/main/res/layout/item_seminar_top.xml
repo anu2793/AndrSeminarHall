@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imv_seminar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop" />
+
+    <ProgressBar
+        android:id="@+id/prg_loading"
+        android:layout_width="@dimen/value_35dp"
+        android:layout_height="@dimen/value_35dp"
+        android:layout_centerInParent="true" />
+
+</RelativeLayout>

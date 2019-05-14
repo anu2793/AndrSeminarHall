@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "524860456122",
+    "firebase_url": "https://foresta-caeb5.firebaseio.com",
+    "project_id": "foresta-caeb5",
+    "storage_bucket": "foresta-caeb5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:524860456122:android:63ea5ae71f53105f",
+        "android_client_info": {
+          "package_name": "jp.co.hiropro.evergreen"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "524860456122-1ueng8s8lg8ekun2mj9k6v8hgmib14vj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjBtN8YPv0ENjg5-QtcDNwV392AyDFC3Y"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

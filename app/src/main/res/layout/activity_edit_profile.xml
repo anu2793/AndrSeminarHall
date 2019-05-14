@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scroll_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_bg_main"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        tools:context="vn.hanelsoft.forestpublishing.controller.activity.EditProfileActivity">
+
+        <android.support.constraint.Guideline
+            android:id="@+id/gui_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.028" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/gui_left_sns"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.4" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/gui_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.972" />
+
+        <vn.hanelsoft.forestpublishing.view.CircleImageView
+            android:id="@+id/imv_avatar"
+            android:layout_width="@dimen/value_130dp"
+            android:layout_height="@dimen/value_130dp"
+            android:layout_marginTop="22dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_ava_default"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <vn.hanelsoft.forestpublishing.view.TextViewApp
+            android:id="@+id/tv_name"
+            style="@style/TextNormal"
+            android:layout_marginTop="@dimen/value_12dp"
+            android:text="プロフィールの写真を変更"
+            android:textColor="@color/color_3c3c3c"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            app:fontFamilyApp="hiramaruw6"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imv_avatar" />
+
+        <vn.hanelsoft.forestpublishing.view.TextViewApp
+            android:id="@+id/title_name"
+            style="@style/TextNormal"
+            android:layout_marginLeft="@dimen/value_8dp"
+            android:layout_marginTop="30dp"
+            android:text="お名前"
+            android:textColor="@color/color_aaaaaa"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            app:fontFamilyApp="hiramaruw6"
+            app:layout_constraintLeft_toLeftOf="@+id/gui_left"
+            app:layout_constraintTop_toBottomOf="@+id/tv_name" />
+
+        <vn.hanelsoft.forestpublishing.view.EditTextApp
+            android:id="@+id/edt_name"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/value_47dp"
+            android:layout_marginTop="@dimen/value_12dp"
+            android:background="@drawable/bg_border"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:inputType="text"
+            android:paddingLeft="@dimen/value_12dp"
+            android:scrollHorizontally="true"
+            android:textSize="13sp"
+            app:fontFamilyApp="hiraginosan"
+            app:layout_constraintLeft_toLeftOf="@+id/gui_left"
+            app:layout_constraintRight_toRightOf="@id/gui_right"
+            app:layout_constraintTop_toBottomOf="@+id/title_name" />
+
+        <vn.hanelsoft.forestpublishing.view.TextViewApp
+            android:id="@+id/error_name"
+            style="@style/TextNormalError"
+            android:layout_marginTop="@dimen/value_12dp"
+            android:text="を入力してください"
+            android:textColor="@color/red"
+            android:visibility="gone"
+            app:layout_constraintLeft_toLeftOf="@+id/gui_left"
+            app:layout_constraintTop_toBottomOf="@+id/edt_name" />
+
+        <vn.hanelsoft.forestpublishing.view.TextViewApp
+            android:id="@+id/title_content"
+            style="@style/TextNormal"
+            android:layout_marginTop="@dimen/value_30dp"
+            android:text="プロフィール"
+            android:textColor="@color/color_aaaaaa"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            app:fontFamilyApp="hiramaruw6"
+            app:layout_constraintLeft_toLeftOf="@+id/title_name"
+            app:layout_constraintTop_toBottomOf="@+id/error_name" />
+
+        <vn.hanelsoft.forestpublishing.view.TextViewApp
+            android:id="@+id/title_content_note"
+            style="@style/TextNormal"
+            android:text="1000文字以内"
+            android:textColor="@color/color_aaaaaa"
+            android:textSize="@dimen/text_size_12sp"
+            app:fontFamilyApp="hiragino_gothicw3"
+            app:layout_constraintRight_toRightOf="@+id/edt_content"
+            app:layout_constraintTop_toTopOf="@+id/title_content" />
+
+        <vn.hanelsoft.forestpublishing.view.EditTextApp
+            android:id="@+id/edt_content"
+            android:layout_width="0dp"
+            android:layout_height="172dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/bg_border"
+            android:gravity="top|left"
+            android:lineSpacingExtra="@dimen/value_10dp"
+            android:maxLength="1000"
+            android:overScrollMode="always"
+            android:paddingBottom="@dimen/value_5dp"
+            android:paddingLeft="@dimen/value_12dp"
+            android:paddingRight="@dimen/value_12dp"
+            android:paddingTop="@dimen/value_5dp"
+            android:scrollbarStyle="insideInset"
+            android:scrollbars="vertical"
+            android:textSize="13sp"
+            app:fontFamilyApp="hiraginosan"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="@+id/gui_left"
+            app:layout_constraintRight_toRightOf="@id/gui_right"
+            app:layout_constraintTop_toBottomOf="@+id/title_content" />
+
+        <vn.hanelsoft.forestpublishing.view.TextViewApp
+            android:id="@+id/title_link_youtube"
+            style="@style/TextNormal"
+            android:layout_marginTop="@dimen/value_30dp"
+            android:text="自己紹介動画"
+            android:textColor="@color/color_aaaaaa"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            app:fontFamilyApp="hiramaruw6"
+            app:layout_constraintLeft_toLeftOf="@+id/title_content"
+            app:layout_constraintTop_toBottomOf="@+id/edt_content" />
+
+        <vn.hanelsoft.forestpublishing.view.TextViewApp
+            android:id="@+id/title_link_youtube_note"
+            style="@style/TextNormal"
+            android:text="Youtubeのリンクを入力"
+            android:textColor="@color/color_aaaaaa"
+            android:textSize="12sp"
+            app:fontFamilyApp="hiragino_gothicw3"
+            app:layout_constraintRight_toRightOf="@+id/title_link_description_youtube"
+            app:layout_constraintTop_toTopOf="@+id/title_link_youtube" />
+
+        <vn.hanelsoft.forestpublishing.view.TextViewApp
+            android:id="@+id/title_link_description_youtube"
+            style="@style/TextNormal"
+            android:layout_marginTop="@dimen/value_20dp"
+            android:text=""
+            android:textColor="@color/color_aaaaaa"
+            app:layout_constraintRight_toRightOf="@+id/gui_right"
+            app:layout_constraintTop_toBottomOf="@+id/edt_content" />
+
+        <vn.hanelsoft.forestpublishing.view.EditTextApp
+            android:id="@+id/edt_content_link_youtube"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/value_47dp"
+            android:layout_marginTop="@dimen/value_12dp"
+            android:background="@drawable/bg_border"
+            android:paddingLeft="@dimen/value_12dp"
+            android:textSize="@dimen/value_13sp"
+            app:fontFamilyApp="hiraginosan"
+            app:layout_constraintLeft_toLeftOf="@+id/gui_left"
+            app:layout_constraintRight_toRightOf="@id/gui_right"
+            app:layout_constraintTop_toBottomOf="@+id/title_link_youtube" />
+
+        <vn.hanelsoft.forestpublishing.view.TextViewApp
+            android:id="@+id/error_link_youtube"
+            style="@style/TextNormalError"
+            android:layout_marginTop="@dimen/value_12dp"
+            android:text="Youtubeのリンクが正しくありません。もう一度やり直して ください。"
+            android:textColor="@color/red"
+            android:visibility="gone"
+            app:layout_constraintLeft_toLeftOf="@+id/edt_content_link_youtube"
+            app:layout_constraintRight_toRightOf="@id/gui_right"
+            app:layout_constraintTop_toBottomOf="@+id/edt_content_link_youtube" />
+
+        <vn.hanelsoft.forestpublishing.view.TextViewApp
+            android:id="@+id/title_SNS"
+            style="@style/TextNormal"
+            android:layout_marginTop="@dimen/value_30dp"
+            android:text="SNS追加"
+            android:textColor="@color/color_aaaaaa"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            app:fontFamilyApp="hiramaruw6"
+            app:layout_constraintLeft_toLeftOf="@+id/title_content"
+            app:layout_constraintTop_toBottomOf="@+id/error_link_youtube" />
+
+        <LinearLayout
+            android:id="@+id/layout_social"
+            android:layout_width="@dimen/value_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/value_12dp"
+            android:background="@drawable/bg_border"
+            android:orientation="vertical"
+            app:layout_constraintLeft_toLeftOf="@id/gui_left"
+            app:layout_constraintRight_toRightOf="@id/gui_right"
+            app:layout_constraintTop_toBottomOf="@+id/title_SNS">
+
+            <RelativeLayout
+                android:id="@+id/layout_youtube"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/value_15dp"
+                android:layout_marginLeft="@dimen/value_10dp"
+                android:layout_marginRight="@dimen/value_12dp"
+                android:layout_marginTop="@dimen/value_15dp">
+
+                <ImageView
+                    android:id="@+id/imv_youtube"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@mipmap/icon_edt_youtube" />
+
+                <vn.hanelsoft.forestpublishing.view.TextViewApp
+                    android:id="@+id/tv_youtube"
+                    style="@style/TextBoldBlack"
+                    android:layout_marginLeft="@dimen/value_11dp"
+                    android:layout_toRightOf="@+id/imv_youtube"
+                    android:text="@string/youtube"
+                    android:textColor="@color/color_292929"
+                    android:textSize="13sp"
+                    app:fontFamilyApp="hiraginosan" />
+
+                <ImageView
+                    android:id="@+id/imv_next_youtube"
+                    style="@style/ImageViewArrown" />
+
+                <vn.hanelsoft.forestpublishing.view.TextViewApp
+                    android:id="@+id/value_youtube"
+                    style="@style/TextNormalBlack"
+                    android:layout_marginLeft="@dimen/value_30dp"
+                    android:layout_marginRight="@dimen/value_5dp"
+                    android:layout_toLeftOf="@+id/imv_next_youtube"
+                    android:layout_toRightOf="@+id/tv_youtube"
+                    android:gravity="right"
+                    android:text=""
+                    app:fontFamilyApp="hiragino_gothicw3" />
+            </RelativeLayout>
+
+            <View style="@style/LineDefault"></View>
+
+            <RelativeLayout
+                android:id="@+id/layout_google"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/value_10dp"
+                android:layout_marginLeft="@dimen/value_10dp"
+                android:layout_marginRight="@dimen/value_12dp"
+                android:layout_marginTop="@dimen/value_10dp">
+
+                <ImageView
+                    android:id="@+id/imv_google"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@mipmap/ic_google" />
+
+                <ImageView
+                    android:id="@+id/imv_next_google"
+                    style="@style/ImageViewArrown" />
+
+                <vn.hanelsoft.forestpublishing.view.TextViewApp
+                    android:id="@+id/tv_google"
+                    style="@style/TextBoldBlack"
+                    android:layout_marginLeft="@dimen/value_11dp"
+                    android:layout_toRightOf="@+id/imv_google"
+                    android:text="@string/google"
+                    android:textColor="@color/color_292929"
+                    android:textSize="13sp"
+                    app:fontFamilyApp="hiraginosan" />
+
+                <vn.hanelsoft.forestpublishing.view.TextViewApp
+                    android:id="@+id/value_google"
+                    style="@style/TextNormalBlack"
+                    android:layout_marginLeft="@dimen/value_30dp"
+                    android:layout_marginRight="@dimen/value_5dp"
+                    android:layout_toLeftOf="@+id/imv_next_google"
+                    android:layout_toRightOf="@+id/tv_google"
+                    android:gravity="right"
+                    android:text=""
+                    app:fontFamilyApp="hiragino_gothicw3" />
+            </RelativeLayout>
+
+            <View style="@style/LineDefault"></View>
+
+            <RelativeLayout
+                android:id="@+id/layout_facebook"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/value_10dp"
+                android:layout_marginLeft="@dimen/value_10dp"
+                android:layout_marginRight="@dimen/value_12dp"
+                android:layout_marginTop="@dimen/value_10dp">
+
+                <ImageView
+                    android:id="@+id/imv_facebook"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@mipmap/icon_edt_facebook" />
+
+                <vn.hanelsoft.forestpublishing.view.TextViewApp
+                    android:id="@+id/tv_facebook"
+                    style="@style/TextBoldBlack"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/value_12dp"
+                    android:layout_toRightOf="@+id/imv_facebook"
+                    android:text="@string/facebook"
+                    android:textColor="@color/color_292929"
+                    android:textSize="13sp"
+                    app:fontFamilyApp="hiraginosan" />
+
+                <ImageView
+                    android:id="@+id/imv_next_facebook"
+                    style="@style/ImageViewArrown" />
+
+                <vn.hanelsoft.forestpublishing.view.TextViewApp
+                    android:id="@+id/value_facebook"
+                    style="@style/TextNormalBlack"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/value_20dp"
+                    android:layout_marginRight="@dimen/value_5dp"
+                    android:layout_toLeftOf="@+id/imv_next_facebook"
+                    android:layout_toRightOf="@+id/tv_facebook"
+                    android:gravity="right"
+                    app:fontFamilyApp="hiragino_gothicw3" />
+            </RelativeLayout>
+
+            <View style="@style/LineDefault"></View>
+
+            <RelativeLayout
+                android:id="@+id/layout_twitter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/value_10dp"
+                android:layout_marginLeft="@dimen/value_10dp"
+                android:layout_marginRight="@dimen/value_12dp"
+                android:layout_marginTop="@dimen/value_10dp">
+
+                <ImageView
+                    android:id="@+id/imv_twitter"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@mipmap/icon_edt_twitter" />
+
+                <vn.hanelsoft.forestpublishing.view.TextViewApp
+                    android:id="@+id/tv_twitter"
+                    style="@style/TextBoldBlack"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/value_12dp"
+                    android:layout_toRightOf="@+id/imv_twitter"
+                    android:text="@string/twitter"
+                    android:textColor="@color/color_292929"
+                    android:textSize="13sp"
+                    app:fontFamilyApp="hiraginosan" />
+
+                <ImageView
+                    android:id="@+id/imv_next_twitter"
+                    style="@style/ImageViewArrown" />
+
+                <vn.hanelsoft.forestpublishing.view.TextViewApp
+                    android:id="@+id/value_twitter"
+                    style="@style/TextNormalBlack"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="38dp"
+                    android:layout_marginRight="@dimen/value_5dp"
+                    android:layout_toLeftOf="@+id/imv_next_twitter"
+                    android:layout_toRightOf="@+id/tv_twitter"
+                    android:gravity="right"
+                    app:fontFamilyApp="hiragino_gothicw3" />
+
+            </RelativeLayout>
+
+            <View style="@style/LineDefault"></View>
+
+            <RelativeLayout
+                android:id="@+id/layout_diagram"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/value_10dp"
+                android:layout_marginLeft="@dimen/value_10dp"
+                android:layout_marginRight="@dimen/value_12dp"
+                android:layout_marginTop="@dimen/value_10dp">
+
+                <ImageView
+                    android:id="@+id/imv_instagram"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@mipmap/ic_telegram" />
+
+                <vn.hanelsoft.forestpublishing.view.TextViewApp
+                    android:id="@+id/tv_telegram"
+                    style="@style/TextBoldBlack"
+                    android:layout_marginLeft="@dimen/value_12dp"
+                    android:layout_toRightOf="@+id/imv_instagram"
+                    android:text="@string/instagram"
+                    android:textColor="@color/color_292929"
+                    android:textSize="14sp"
+                    app:fontFamilyApp="hiraginosan" />
+
+                <ImageView
+                    android:id="@+id/imv_next_instagram"
+                    style="@style/ImageViewArrown" />
+
+                <vn.hanelsoft.forestpublishing.view.TextViewApp
+                    android:id="@+id/value_instagram"
+                    style="@style/TextNormalBlack"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="@dimen/value_5dp"
+                    android:layout_toLeftOf="@+id/imv_next_instagram"
+                    android:layout_toRightOf="@+id/tv_telegram"
+                    android:gravity="right"
+                    app:fontFamilyApp="hiragino_gothicw3" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <vn.hanelsoft.forestpublishing.view.ButtonApp
+            android:id="@+id/btnSaveChange"
+            android:layout_width="@dimen/value_0dp"
+            android:layout_height="@dimen/value_50dp"
+            android:layout_marginLeft="@dimen/value_30dp"
+            android:layout_marginRight="@dimen/value_30dp"
+            android:layout_marginTop="@dimen/value_60dp"
+            android:background="@drawable/bg_gradient_status"
+            android:gravity="center"
+            android:text="変更する"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_18sp"
+            app:fontFamilyApp="hiramaruw6"
+            app:layout_constraintLeft_toLeftOf="@id/gui_left"
+            app:layout_constraintRight_toRightOf="@id/gui_right"
+            app:layout_constraintTop_toBottomOf="@+id/layout_social"
+            app:textStyle="bold" />
+
+        <include
+            android:id="@+id/tv_author"
+            layout="@layout/footer_copy_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnSaveChange" />
+    </android.support.constraint.ConstraintLayout>
+</android.support.v4.widget.NestedScrollView>
+

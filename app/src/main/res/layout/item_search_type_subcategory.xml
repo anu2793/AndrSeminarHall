@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="95dp"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <RelativeLayout
+        android:id="@+id/layout_image"
+        android:layout_width="120dp"
+        android:layout_height="75dp"
+        android:layout_marginRight="10dp">
+
+        <vn.hanelsoft.forestpublishing.view.CircleImageView
+            android:id="@+id/iv_sub_category"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/layout_image">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <vn.hanelsoft.forestpublishing.view.TextViewApp
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="ビジネスツール"
+                android:textColor="#292929"
+                app:fontFamilyApp="hiramaru"
+                app:textStyle="bold" />
+
+
+            <vn.hanelsoft.forestpublishing.view.TextViewApp
+                android:id="@+id/tv_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:layout_marginTop="10dp"
+                android:paddingBottom="3dp"
+                android:paddingTop="3dp"
+                android:text="ビジネス"
+                android:textColor="#b1b1b1"
+                android:textSize="12sp"
+                app:fontFamilyApp="hiramaru"
+                app:textStyle="bold" />
+
+
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

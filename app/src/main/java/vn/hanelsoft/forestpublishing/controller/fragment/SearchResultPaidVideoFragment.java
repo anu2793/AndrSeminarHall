@@ -1,0 +1,267 @@
+package vn.hanelsoft.forestpublishing.controller.fragment;
+
+import android.content.BroadcastReceiver;
+import android.content.Context;
+import android.content.Intent;
+import android.content.IntentFilter;
+import android.os.Bundle;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
+
+import com.android.volley.Response;
+import com.android.volley.error.VolleyError;
+import com.android.volley.request.JsonObjectRequest;
+import com.paginate.Paginate;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+
+import butterknife.BindView;
+import vn.hanelsoft.forestpublishing.ForestApplication;
+import vn.hanelsoft.forestpublishing.R;
+import vn.hanelsoft.forestpublishing.controller.activity.ContentDetailActivity;
+import vn.hanelsoft.forestpublishing.controller.activity.SubCategoryActivity;
+import vn.hanelsoft.forestpublishing.controller.activity.SubCategoryDetailActivity;
+import vn.hanelsoft.forestpublishing.controller.activity.SubSubCategoryActivity;
+import vn.hanelsoft.forestpublishing.model.Category;
+import vn.hanelsoft.forestpublishing.model.SearchResult;
+import vn.hanelsoft.forestpublishing.model.SubCategory;
+import vn.hanelsoft.forestpublishing.model.VideoDetail;
+import vn.hanelsoft.forestpublishing.util.AppConstants;
+import vn.hanelsoft.forestpublishing.util.KeyParser;
+import vn.hanelsoft.forestpublishing.view.CustomLoadingListItemCreator;
+import vn.hanelsoft.forestpublishing.view.adapter.SearchResultAdapter;
+import vn.hanelsoft.utils.NetworkUtils;
+
+public class SearchResultPaidVideoFragment extends FragmentBase implements Paginate.Callbacks {
+    @BindView(R.id.lv_search_result)
+    RecyclerView lvSearchResult;
+    private String keySearch;
+    private List<SearchResult> searchResultList = new ArrayList<>();
+    private SearchResultAdapter adapter;
+    private boolean isLoading;
+    private int page = 1;
+    private int mType = AppConstants.TYPE_SEARCH.VIDEO_BUY;
+    private BroadcastReceiver mReceive;
+
+    public SearchResultPaidVideoFragment() {
+    }
+
+    public static SearchResultPaidVideoFragment newInstance(String keySearch) {
+        SearchResultPaidVideoFragment fragment = new SearchResultPaidVideoFragment();
+        Bundle args = new Bundle();
+        args.putString("search", keySearch);
+        fragment.setArguments(args);
+        return fragment;
+    }
+
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        if (getArguments() != null) {
+            keySearch = getArguments().getString("search");
+        }
+    }
+
+    @Override
+    protected void inflateData() {
+        super.inflateData();
+        page = 1;
+        onLoadMore();
+        initSearchResult();
+    }
+
+    @Override
+    protected int getLayoutId() {
+        return R.layout.fragment_search_result_detail;
+    }
+
+    public void initSearchResult() {
+        adapter = new SearchResultAdapter(getActivity(), searchResultList);
+        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(activity);
+        linearLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);
+        lvSearchResult.setLayoutManager(linearLayoutManager);
+        lvSearchResult.setAdapter(adapter);
+        lvSearchResult.setNestedScrollingEnabled(false);
+        initAdapterEvent();
+
+        Paginate.with(lvSearchResult, this)
+                .setLoadingTriggerThreshold(2)
+                .setLoadingListItemCreator(new CustomLoadingListItemCreator(activity))
+                .addLoadingListItem(true)
+                .build();
+    }
+
+    private void initAdapterEvent() {
+        adapter.setOnItemSearchClick(new SearchResultAdapter.OnItemSearchClick() {
+            @Override
+            public void onClick(SearchResult item) {
+                if (item.getType() == 0) {//Video
+                    VideoDetail videoDetail = new VideoDetail();
+                    videoDetail.setTitle(item.getTitle());
+                    videoDetail.setId(item.getId());
+                    startActivityForResult(new Intent(activity, ContentDetailActivity.class)
+                            .putExtra(KeyParser.KEY.DATA.toString(), videoDetail), 103);
+                } else if (item.getType() == 1) { //Sub-subcategory
+                    SubCategory subCategory = new SubCategory();
+                    subCategory.setId(item.getId());
+                    subCategory.setTitle(item.getTitle());
+                    subCategory.setDescription(item.getDescription());
+                    subCategory.setImage(item.getSearchSubCategory().getImage());
+                    subCategory.setIsFavorite(item.getSearchSubCategory().getIsFavorite());
+                    startActivity(new Intent(activity, SubCategoryDetailActivity.class)
+                            .putExtra(KeyParser.KEY.DATA.toString(), subCategory));
+                } else {
+                    SubCategory subCategory = new SubCategory();
+                    subCategory.setId(item.getId());
+                    subCategory.setTitle(item.getTitle());
+                    subCategory.setDescription(item.getDescription());
+                    subCategory.setImage(item.getSearchSubCategory().getImage());
+                    startActivity(new Intent(activity, SubSubCategoryActivity.class)
+                            .putExtra(KeyParser.KEY.DATA.toString(), subCategory));
+                }
+            }
+        });
+        adapter.setOnCategoryClick(new SearchResultAdapter.OnCategoryClick() {
+            @Override
+            public void onCategoryClick(SearchResult item) {
+                Category category = new Category();
+                category.setId(item.getSearchSubCategory().getCateId());
+                category.setNameJp(item.getSearchSubCategory().getCategory());
+                startActivity(new Intent(activity, SubCategoryActivity.class)
+                        .putExtra(KeyParser.KEY.DATA.toString(), category));
+            }
+        });
+        adapter.setOnSubCategoryClick(new SearchResultAdapter.OnSubCategoryClick() {
+            @Override
+            public void onSubCategoryClick(SearchResult item) {
+                SubCategory subCategory = new SubCategory();
+                subCategory.setId(item.getSearchSubCategory().getSubCateId());
+                subCategory.setTitle(item.getSearchSubCategory().getSubCategory());
+                startActivity(new Intent(activity, SubSubCategoryActivity.class)
+                        .putExtra(KeyParser.KEY.DATA.toString(), subCategory));
+            }
+        });
+        adapter.setOnSubSubCategoryClick(new SearchResultAdapter.OnSubSubCategoryClick() {
+            @Override
+            public void onSubSubCategoryClick(SearchResult item) {
+                SubCategory subCategory = new SubCategory();
+                subCategory.setId(item.getSearchSubCategory().getBookId());
+                subCategory.setTitle(item.getSearchSubCategory().getBook());
+                startActivity(new Intent(activity, SubCategoryDetailActivity.class)
+                        .putExtra(KeyParser.KEY.DATA.toString(), subCategory));
+            }
+        });
+    }
+
+    @Override
+    public void onLoadMore() {
+        search(keySearch);
+    }
+
+    @Override
+    public boolean isLoading() {
+        return isLoading;
+    }
+
+    @Override
+    public boolean hasLoadedAllItems() {
+        return page == 0;
+    }
+
+    private void search(String querry) {
+        isLoading = true;
+        HashMap<String, Object> params = new HashMap<>();
+        params.put("str", querry);
+        params.put("page", page);
+        params.put("sorttype", mType);
+        if (page == 1)
+            searchResultList.clear();
+        JsonObjectRequest request = new JsonObjectRequest(AppConstants.SERVER_PATH.SEARCH.toString(), new JSONObject(params),
+                new Response.Listener<JSONObject>() {
+                    @Override
+                    public void onResponse(JSONObject response) {
+                        try {
+                            int status = response.getInt(KeyParser.KEY.STATUS.toString());
+                            if (status == 200) {
+                                JSONObject data = response.getJSONObject(KeyParser.KEY.DATA.toString());
+                                JSONArray listData = data.getJSONArray(KeyParser.KEY.LIST.toString());
+                                if (listData.length() > 0) {
+                                    for (int i = 0; i < listData.length(); i++) {
+                                        searchResultList.add(SearchResult.parse(listData.getJSONObject(i)));
+                                    }
+                                    adapter.notifyDataSetChanged();
+                                }
+                                isLoading = false;
+                                page = data.getInt("next_page");
+                            } else {
+                                page = 0;
+                                isLoading = false;
+                                adapter.notifyDataSetChanged();
+                            }
+                        } catch (JSONException e) {
+                            page = 0;
+                            isLoading = false;
+                            adapter.notifyDataSetChanged();
+                            e.printStackTrace();
+                        }
+                        System.out.println(response);
+                    }
+                },
+                new Response.ErrorListener() {
+                    @Override
+                    public void onErrorResponse(VolleyError error) {
+                        NetworkUtils.showDialogError(activity, error);
+                    }
+                });
+        request.setHeaders(getAuthHeader());
+        ForestApplication.getInstance().addToRequestQueue(request);
+    }
+
+    @Override
+    public void onStart() {
+        super.onStart();
+        registerBroadCast();
+    }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        unregisterBroadCast();
+    }
+
+    private void registerBroadCast() {
+        if (getActivity() == null)
+            return;
+        IntentFilter intentFilter = new IntentFilter();
+        intentFilter.addAction(AppConstants.BROAD_CAST.SEARCH);
+        intentFilter.addAction(AppConstants.BROAD_CAST.REFRESH);
+        if (mReceive == null)
+            mReceive = new BroadcastReceiver() {
+                @Override
+                public void onReceive(Context context, Intent intent) {
+                    if (intent.getAction() != null && intent.getAction() == AppConstants.BROAD_CAST.SEARCH) {
+                        keySearch = intent.getStringExtra(AppConstants.KEY_INTENT.SEARCH_VALUES.toString());
+                        page = 1;
+                        onLoadMore();
+                    }
+                    if (intent.getAction() != null && intent.getAction().equalsIgnoreCase(AppConstants.BROAD_CAST.REFRESH)) {
+                        page = 1;
+                        onLoadMore();
+                    }
+                }
+            };
+        getActivity().registerReceiver(mReceive, intentFilter);
+    }
+
+    private void unregisterBroadCast() {
+        if (getActivity() != null && mReceive != null)
+            getActivity().unregisterReceiver(mReceive);
+    }
+
+}

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_main_gradient">
+
+    <RelativeLayout
+        android:id="@+id/rl_action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/value_height_action_bar">
+
+        <ImageView
+            android:id="@+id/imv_back"
+            android:layout_width="@dimen/value_45dp"
+            android:layout_height="@dimen/value_45dp"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/value_10dp"
+            android:src="@mipmap/ic_back" />
+
+        <vn.hanelsoft.forestpublishing.view.TextViewApp
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            app:fontFamilyApp="hiramaruw6" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_footer"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/value_80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/value_10dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="invisible"
+        tools:visibility="visible">
+
+        <ImageView
+            android:id="@+id/imv_down"
+            android:layout_width="@dimen/value_50dp"
+            android:layout_height="@dimen/value_45dp"
+            android:adjustViewBounds="true"
+            android:rotation="180"
+            android:scaleType="centerCrop"
+            android:src="@drawable/arrow_up" />
+
+
+        <vn.hanelsoft.forestpublishing.view.TextViewApp
+            android:id="@+id/tv_note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="拒否のため下にスワイプ"
+            android:textColor="@color/white"
+            app:fontFamilyApp="hiragino_gothicw3" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imv_loading"
+            android:layout_width="@dimen/value_50dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:adjustViewBounds="true"
+            android:src="@drawable/gif_recieving" />
+
+        <vn.hanelsoft.forestpublishing.view.TextViewApp
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/value_20dp"
+            android:text="送信中"
+            android:textColor="@color/white"
+            app:fontFamilyApp="hiramaruw6" />
+
+    </LinearLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rcy_card"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl_action_bar"
+        android:clipToPadding="false"
+        android:orientation="horizontal"
+        android:overScrollMode="never"
+        android:paddingBottom="@dimen/value_90dp"
+        android:paddingLeft="@dimen/value_20dp"
+        android:paddingRight="@dimen/value_20dp"
+        android:paddingTop="@dimen/value_25dp" />
+</RelativeLayout>

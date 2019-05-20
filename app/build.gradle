@@ -1,0 +1,77 @@
+apply plugin: 'com.android.application'
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "jp.co.hiropro.evergreen"
+        minSdkVersion 21
+        targetSdkVersion 27
+        versionCode 15
+        versionName "1.0.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            applicationVariants.all { variant ->
+                variant.outputs.all { output ->
+                    outputFileName = "${variant.name}-${variant.versionName}.apk"
+                }
+            }
+            debuggable false
+        }
+    }
+    dexOptions {
+        preDexLibraries = false
+        maxProcessCount 2
+        javaMaxHeapSize "2g"
+    }
+    packagingOptions {
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'main/AndroidManifest.xml'
+        exclude 'META-INF/services/javax.annotation.processing.Processor'
+        exclude 'META-INF/ASL2.0'
+    }
+}
+repositories {
+    mavenCentral()
+}
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation files('libs/markdownview-1.2.jar')
+    implementation project(':libs:liboverscroll')
+    implementation project(':libs:hss-android_lib')
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support:customtabs:27.1.1'
+    implementation 'com.android.support:design:27.1.1'
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    implementation 'com.google.android.gms:play-services-auth:15.0.0'
+    implementation 'com.google.android.gms:play-services-basement:15.0.0'
+    implementation 'com.google.android.gms:play-services-location:15.0.0'
+    implementation 'com.github.bumptech.glide:glide:4.5.0'
+    implementation 'dev.dworks.libs:volleyplus:0.1.4'
+    implementation 'com.google.firebase:firebase-messaging:15.0.0'
+    implementation 'com.android.support:support-v4:27.1.1'
+    implementation 'com.android.support:cardview-v7:27.1.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.0'
+    implementation 'com.google.android.exoplayer:exoplayer-core:r2.4.4'
+    implementation 'com.google.android.exoplayer:exoplayer-ui:r2.4.4'
+    implementation 'com.google.android.exoplayer:exoplayer-dash:r2.4.4'
+    implementation 'com.theartofdev.edmodo:android-image-cropper:2.6.+'
+    implementation 'com.facebook.android:facebook-android-sdk:4.31.0'
+    implementation 'com.android.support:recyclerview-v7:27.1.1'
+    implementation 'com.android.support:recyclerview-v7:27.1.1'
+    implementation 'com.karumi:dexter:4.1.0'
+    implementation 'com.github.markomilos:paginate:0.5.1'
+    implementation 'me.leolin:ShortcutBadger:1.1.16@aar'
+    implementation 'com.anjlab.android.iab.v3:library:1.0.44'
+    implementation 'me.dm7.barcodescanner:zbar:1.9.8'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.5.0'
+    implementation 'com.squareup.okhttp3:okhttp:3.10.0'
+    implementation files('libs/YouTubeAndroidPlayerApi.jar')
+}
+
+apply plugin: 'com.google.gms.google-services'

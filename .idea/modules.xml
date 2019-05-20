@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libs/hss-android_lib/hss-android_lib.iml" filepath="$PROJECT_DIR$/libs/hss-android_lib/hss-android_lib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libs/liboverscroll/liboverscroll.iml" filepath="$PROJECT_DIR$/libs/liboverscroll/liboverscroll.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libs/libs.iml" filepath="$PROJECT_DIR$/libs/libs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/seminorhall.iml" filepath="$PROJECT_DIR$/seminorhall.iml" />
+    </modules>
+  </component>
+</project>

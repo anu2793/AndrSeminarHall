@@ -12,7 +12,7 @@ public class AppConstants {
      * If True : Using code test purchase. Server : Dev.
      * If Fail : Using real purchase. Server : UAT
      */
-    public static boolean isTestMode = true;
+    public static boolean isTestMode = false;
     public static int CLIENT_ID = 1;
     public static int REQUEST_SUCCESS = 200;
     public static final String DEVELOPER_KEY = "903965347757";

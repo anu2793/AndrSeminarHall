@@ -1,6 +1,5 @@
 package vn.hanelsoft.forestpublishing.controller.activity;
 
-import android.Manifest;
 import android.accounts.Account;
 import android.accounts.AccountManager;
 import android.app.Activity;
@@ -10,7 +9,6 @@ import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.Signature;
 import android.net.Uri;
-import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.annotation.NonNull;
@@ -30,12 +28,6 @@ import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.firebase.iid.FirebaseInstanceId;
-import com.karumi.dexter.Dexter;
-import com.karumi.dexter.PermissionToken;
-import com.karumi.dexter.listener.PermissionDeniedResponse;
-import com.karumi.dexter.listener.PermissionGrantedResponse;
-import com.karumi.dexter.listener.PermissionRequest;
-import com.karumi.dexter.listener.single.PermissionListener;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -107,32 +99,34 @@ public class SplashActivity extends FragmentActivity implements GoogleApiClient.
         Bundle bundle = getIntent().getExtras();
         if (bundle != null)
             mIdNews = bundle.getString(AppConstants.KEY_SEND.KEY_ID_NEWS, "");
-        if (Build.VERSION.SDK_INT > Build.VERSION_CODES.LOLLIPOP_MR1) {
-            Dexter.withActivity(SplashActivity.this)
-                    .withPermission(Manifest.permission.READ_PHONE_STATE)
-                    .withListener(new PermissionListener() {
-                        @Override
-                        public void onPermissionGranted(PermissionGrantedResponse response) {
-                            getAccount();
-                            sendToken();
-                        }
-
-                        @Override
-                        public void onPermissionDenied(PermissionDeniedResponse response) {
-                            finish();
-                        }
-
-                        @Override
-                        public void onPermissionRationaleShouldBeShown(PermissionRequest permission, PermissionToken token) {
-                            token.continuePermissionRequest();
-                        }
-                    })
-                    .onSameThread()
-                    .check();
-        } else {
-            getAccount();
-            sendToken();
-        }
+//        if (Build.VERSION.SDK_INT > Build.VERSION_CODES.LOLLIPOP_MR1) {
+//            Dexter.withActivity(SplashActivity.this)
+//                    .withPermission(Manifest.permission.READ_PHONE_STATE)
+//                    .withListener(new PermissionListener() {
+//                        @Override
+//                        public void onPermissionGranted(PermissionGrantedResponse response) {
+//                            getAccount();
+//                            sendToken();
+//                        }
+//
+//                        @Override
+//                        public void onPermissionDenied(PermissionDeniedResponse response) {
+//                            finish();
+//                        }
+//
+//                        @Override
+//                        public void onPermissionRationaleShouldBeShown(PermissionRequest permission, PermissionToken token) {
+//                            token.continuePermissionRequest();
+//                        }
+//                    })
+//                    .onSameThread()
+//                    .check();
+//        } else {
+//            getAccount();
+//            sendToken();
+//        }
+        getAccount();
+        sendToken();
     }
 
     private void getAccount() {

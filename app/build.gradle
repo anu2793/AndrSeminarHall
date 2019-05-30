@@ -5,7 +5,7 @@ android {
         applicationId "jp.co.hiropro.evergreen"
         minSdkVersion 21
         targetSdkVersion 27
-        versionCode 15
+        versionCode 1
         versionName "1.0.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
@@ -20,6 +20,13 @@ android {
             }
             debuggable false
         }
+    }
+    lintOptions {
+        disable 'MissingTranslation'
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
     }
     dexOptions {
         preDexLibraries = false

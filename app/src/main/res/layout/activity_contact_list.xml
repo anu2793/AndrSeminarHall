@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/color_bg_main"
     android:fillViewport="true"
-    tools:context="vn.hanelsoft.forestpublishing.controller.activity.ContactListActivity">
+    tools:context="jp.co.hiropro.seminar_hall.controller.activity.ContactListActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -30,7 +30,7 @@
                 android:nestedScrollingEnabled="false"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <vn.hanelsoft.forestpublishing.view.TextViewApp
+            <jp.co.hiropro.seminar_hall.view.TextViewApp
                 android:id="@+id/tv_copyright"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -45,7 +45,7 @@
                 app:fontFamilyApp="hiragino_gothicw3" />
         </LinearLayout>
 
-        <vn.hanelsoft.forestpublishing.view.TextViewApp
+        <jp.co.hiropro.seminar_hall.view.TextViewApp
             android:id="@+id/tv_copyright_bottom"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

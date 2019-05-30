@@ -6,7 +6,7 @@
     android:background="@drawable/bg_dialog_purchase"
     android:orientation="vertical">
 
-    <vn.hanelsoft.forestpublishing.view.TextViewApp
+    <jp.co.hiropro.seminar_hall.view.TextViewApp
         android:id="@+id/tv_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -19,7 +19,7 @@
         android:textColor="@color/black"
         android:textSize="@dimen/text_size_16sp" />
 
-    <vn.hanelsoft.forestpublishing.view.TextViewApp
+    <jp.co.hiropro.seminar_hall.view.TextViewApp
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -40,7 +40,7 @@
             android:layout_height="@dimen/value_28dp"
             android:src="@mipmap/ic_point_black" />
 
-        <vn.hanelsoft.forestpublishing.view.TextViewApp
+        <jp.co.hiropro.seminar_hall.view.TextViewApp
             android:id="@+id/tv_point"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -63,7 +63,7 @@
         android:layout_height="@dimen/value_50dp"
         android:orientation="horizontal">
 
-        <vn.hanelsoft.forestpublishing.view.TextViewApp
+        <jp.co.hiropro.seminar_hall.view.TextViewApp
             android:id="@+id/tv_cancel"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -78,7 +78,7 @@
             android:layout_height="match_parent"
             android:background="@color/line" />
 
-        <vn.hanelsoft.forestpublishing.view.TextViewApp
+        <jp.co.hiropro.seminar_hall.view.TextViewApp
             android:id="@+id/tv_purchase_video"
             android:layout_width="0dp"
             android:layout_height="match_parent"

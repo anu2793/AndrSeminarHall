@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="vn.hanelsoft.forestpublishing.controller.activity.MyFavoriteActivity">
+    tools:context="jp.co.hiropro.seminar_hall.controller.activity.MyFavoriteActivity">
 
     <View
         android:id="@+id/view_top"

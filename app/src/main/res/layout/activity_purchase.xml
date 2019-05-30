@@ -20,13 +20,13 @@
             android:background="@color/white"
             android:orientation="vertical">
 
-            <vn.hanelsoft.forestpublishing.view.ButtonApp
+            <jp.co.hiropro.seminar_hall.view.ButtonApp
                 android:id="@+id/btn_login"
                 style="@style/ButtonGradient"
                 android:layout_width="match_parent"
                 android:text="ログインしてこ購入" />
 
-            <vn.hanelsoft.forestpublishing.view.ButtonApp
+            <jp.co.hiropro.seminar_hall.view.ButtonApp
                 android:id="@+id/btn_register"
                 style="@style/ButtonGradient"
                 android:layout_width="match_parent"
@@ -34,7 +34,7 @@
                 android:text="ユーザー登録して購入" />
 
 
-            <vn.hanelsoft.forestpublishing.view.TextViewApp
+            <jp.co.hiropro.seminar_hall.view.TextViewApp
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -43,14 +43,14 @@
                 android:text="お客様の購入履歴を復元できます。"
                 android:textColor="@color/color_aaaaaa" />
 
-            <vn.hanelsoft.forestpublishing.view.ButtonApp
+            <jp.co.hiropro.seminar_hall.view.ButtonApp
                 android:id="@+id/btn_buy"
                 style="@style/ButtonGradient"
                 android:layout_width="match_parent"
                 android:layout_marginTop="@dimen/value_45dp"
                 android:text="ゲストとして購入" />
 
-            <vn.hanelsoft.forestpublishing.view.TextViewApp
+            <jp.co.hiropro.seminar_hall.view.TextViewApp
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"

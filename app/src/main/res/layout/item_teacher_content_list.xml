@@ -17,7 +17,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <vn.hanelsoft.forestpublishing.view.TextViewApp
+    <jp.co.hiropro.seminar_hall.view.TextViewApp
         android:id="@+id/tv_title"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -34,7 +34,7 @@
         app:layout_constraintRight_toLeftOf="@+id/tvStatus"
         app:layout_constraintTop_toTopOf="@+id/imv_content" />
 
-    <vn.hanelsoft.forestpublishing.view.TextViewApp
+    <jp.co.hiropro.seminar_hall.view.TextViewApp
         android:id="@+id/tv_content"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -49,7 +49,7 @@
         app:layout_constraintRight_toLeftOf="@+id/tvStatus"
         app:layout_constraintTop_toBottomOf="@+id/tv_title" />
 
-    <vn.hanelsoft.forestpublishing.view.TextViewApp
+    <jp.co.hiropro.seminar_hall.view.TextViewApp
         android:id="@+id/tvStatus"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

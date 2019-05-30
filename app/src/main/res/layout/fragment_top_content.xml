@@ -81,7 +81,7 @@
         android:fillViewport="true"
         android:overScrollMode="always"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
-        tools:context="vn.hanelsoft.forestpublishing.controller.activity.TopActivity">
+        tools:context="jp.co.hiropro.seminar_hall.controller.activity.TopActivity">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -108,7 +108,7 @@
                         android:layout_height="wrap_content"
                         android:paddingEnd="@dimen/value_10dp">
 
-                        <vn.hanelsoft.forestpublishing.view.TextViewApp
+                        <jp.co.hiropro.seminar_hall.view.TextViewApp
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_centerVertical="true"
@@ -119,7 +119,7 @@
                             app:fontFamilyApp="hiramaruw6"
                             app:textStyle="bold" />
 
-                        <vn.hanelsoft.forestpublishing.view.TextViewApp
+                        <jp.co.hiropro.seminar_hall.view.TextViewApp
                             android:id="@+id/tv_go_seminar_list"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -158,7 +158,7 @@
                         android:layout_height="wrap_content"
                         android:paddingEnd="@dimen/value_10dp">
 
-                        <vn.hanelsoft.forestpublishing.view.TextViewApp
+                        <jp.co.hiropro.seminar_hall.view.TextViewApp
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_centerVertical="true"
@@ -169,7 +169,7 @@
                             app:fontFamilyApp="hiramaruw6"
                             app:textStyle="bold" />
 
-                        <vn.hanelsoft.forestpublishing.view.TextViewApp
+                        <jp.co.hiropro.seminar_hall.view.TextViewApp
                             android:id="@+id/tv_go_seminar_list_free"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -212,7 +212,7 @@
                         android:layout_height="wrap_content"
                         android:paddingEnd="@dimen/value_10dp">
 
-                        <vn.hanelsoft.forestpublishing.view.TextViewApp
+                        <jp.co.hiropro.seminar_hall.view.TextViewApp
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_centerVertical="true"
@@ -223,7 +223,7 @@
                             app:fontFamilyApp="hiramaruw6"
                             app:textStyle="bold" />
 
-                        <vn.hanelsoft.forestpublishing.view.TextViewApp
+                        <jp.co.hiropro.seminar_hall.view.TextViewApp
                             android:id="@+id/tv_go_list_teacher"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -265,7 +265,7 @@
                         android:background="@color/white"
                         android:paddingEnd="@dimen/value_10dp">
 
-                        <vn.hanelsoft.forestpublishing.view.TextViewApp
+                        <jp.co.hiropro.seminar_hall.view.TextViewApp
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_centerVertical="true"
@@ -276,7 +276,7 @@
                             app:fontFamilyApp="hiramaruw6"
                             app:textStyle="bold" />
 
-                        <vn.hanelsoft.forestpublishing.view.TextViewApp
+                        <jp.co.hiropro.seminar_hall.view.TextViewApp
                             android:id="@+id/tv_go_seminar_list_new"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"

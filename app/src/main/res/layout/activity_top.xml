@@ -82,7 +82,7 @@
         android:focusableInTouchMode="true"
         android:overScrollMode="always"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
-        tools:context="vn.hanelsoft.forestpublishing.controller.activity.TopActivity">
+        tools:context="jp.co.hiropro.seminar_hall.controller.activity.TopActivity">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -97,12 +97,12 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-                <vn.hanelsoft.forestpublishing.view.AutoScrollViewPager
+                <jp.co.hiropro.seminar_hall.view.AutoScrollViewPager
                     android:id="@+id/view_pager"
                     android:layout_width="match_parent"
                     android:layout_height="150dp" />
 
-                <vn.hanelsoft.forestpublishing.view.LoopingCirclePageIndicator
+                <jp.co.hiropro.seminar_hall.view.LoopingCirclePageIndicator
                     android:id="@+id/view_indicator"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -157,7 +157,7 @@
                         android:paddingLeft="@dimen/value_10dp"
                         android:paddingTop="@dimen/value_20dp">
 
-                        <vn.hanelsoft.forestpublishing.view.TextViewApp
+                        <jp.co.hiropro.seminar_hall.view.TextViewApp
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="@dimen/value_10dp"
@@ -193,7 +193,7 @@
                             android:layout_marginTop="@dimen/value_20dp"
                             android:paddingRight="@dimen/value_10dp">
 
-                            <vn.hanelsoft.forestpublishing.view.TextViewApp
+                            <jp.co.hiropro.seminar_hall.view.TextViewApp
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_centerVertical="true"
@@ -203,7 +203,7 @@
                                 app:fontFamilyApp="hiramaruw6"
                                 app:textStyle="bold" />
 
-                            <vn.hanelsoft.forestpublishing.view.TextViewApp
+                            <jp.co.hiropro.seminar_hall.view.TextViewApp
                                 android:id="@+id/tv_go_seminar_list"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -240,7 +240,7 @@
                         android:paddingRight="@dimen/value_10dp"
                         android:paddingTop="@dimen/value_20dp">
 
-                        <vn.hanelsoft.forestpublishing.view.TextViewApp
+                        <jp.co.hiropro.seminar_hall.view.TextViewApp
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_centerVertical="true"
@@ -278,7 +278,7 @@
                             android:paddingLeft="@dimen/value_10dp"
                             android:paddingRight="@dimen/value_10dp">
 
-                            <vn.hanelsoft.forestpublishing.view.TextViewApp
+                            <jp.co.hiropro.seminar_hall.view.TextViewApp
                                 android:id="@+id/tv_list_news"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -290,7 +290,7 @@
                                 app:fontFamilyApp="hiramaruw6"
                                 app:textStyle="bold" />
 
-                            <vn.hanelsoft.forestpublishing.view.TextViewApp
+                            <jp.co.hiropro.seminar_hall.view.TextViewApp
                                 android:id="@+id/tv_go_new_list"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -317,7 +317,7 @@
 
                     </LinearLayout>
 
-                    <vn.hanelsoft.forestpublishing.view.TextViewApp
+                    <jp.co.hiropro.seminar_hall.view.TextViewApp
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center"

@@ -5,7 +5,7 @@
     android:id="@+id/drawer"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="vn.hanelsoft.forestpublishing.controller.activity.TopActivity"
+    tools:context="jp.co.hiropro.seminar_hall.controller.activity.TopActivity"
     tools:openDrawer="right">
 
     <include layout="@layout/layout_base_content" />
@@ -35,7 +35,7 @@
                     android:orientation="vertical"
                     android:paddingBottom="@dimen/value_20dp">
 
-                    <vn.hanelsoft.forestpublishing.view.TextViewApp
+                    <jp.co.hiropro.seminar_hall.view.TextViewApp
                         android:id="@+id/tv_home"
                         style="@style/TextMenu"
                         android:drawableLeft="@drawable/ic_home"
@@ -47,7 +47,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
 
-                        <vn.hanelsoft.forestpublishing.view.TextViewApp
+                        <jp.co.hiropro.seminar_hall.view.TextViewApp
                             android:id="@+id/tv_library"
                             style="@style/TextMenu"
                             android:drawableLeft="@drawable/ic_my_library"
@@ -71,21 +71,21 @@
                         android:visibility="gone"
                         tools:visibility="visible">
 
-                        <vn.hanelsoft.forestpublishing.view.TextViewApp
+                        <jp.co.hiropro.seminar_hall.view.TextViewApp
                             android:id="@+id/tv_purchase_list"
                             style="@style/TextMenu"
                             android:background="#353a41"
                             android:paddingLeft="@dimen/value_68dp"
                             android:text="購入済み" />
 
-                        <vn.hanelsoft.forestpublishing.view.TextViewApp
+                        <jp.co.hiropro.seminar_hall.view.TextViewApp
                             android:id="@+id/tv_purchase_history"
                             style="@style/TextMenu"
                             android:background="#353a41"
                             android:paddingLeft="@dimen/value_68dp"
                             android:text="視聴履歴" />
 
-                        <vn.hanelsoft.forestpublishing.view.TextViewApp
+                        <jp.co.hiropro.seminar_hall.view.TextViewApp
                             android:id="@+id/tv_favorite_list"
                             style="@style/TextMenu"
                             android:background="#353a41"
@@ -93,13 +93,13 @@
                             android:text="お気に入り" />
                     </LinearLayout>
 
-                    <vn.hanelsoft.forestpublishing.view.TextViewApp
+                    <jp.co.hiropro.seminar_hall.view.TextViewApp
                         android:id="@+id/tv_profile"
                         style="@style/TextMenu"
                         android:drawableLeft="@drawable/ic_profile"
                         android:text="マイプロフィール" />
 
-                    <vn.hanelsoft.forestpublishing.view.TextViewApp
+                    <jp.co.hiropro.seminar_hall.view.TextViewApp
                         android:id="@+id/tv_menu_point"
                         style="@style/TextMenu"
                         android:drawableLeft="@drawable/ic_point"
@@ -113,33 +113,33 @@
                         android:background="@color/color_545960" />
 
 
-                    <vn.hanelsoft.forestpublishing.view.TextViewApp
+                    <jp.co.hiropro.seminar_hall.view.TextViewApp
                         android:id="@+id/tv_help"
                         style="@style/TextMenu"
                         android:drawableLeft="@drawable/ic_help"
                         android:text="有料会員のガイド"
                         android:visibility="gone" />
 
-                    <vn.hanelsoft.forestpublishing.view.TextViewApp
+                    <jp.co.hiropro.seminar_hall.view.TextViewApp
                         android:id="@+id/tv_term"
                         style="@style/TextMenu"
                         android:drawableLeft="@drawable/ic_term"
                         android:text="@string/name_menu_service" />
 
-                    <vn.hanelsoft.forestpublishing.view.TextViewApp
+                    <jp.co.hiropro.seminar_hall.view.TextViewApp
                         android:id="@+id/tv_specified_transaction"
                         style="@style/TextMenu"
                         android:drawableLeft="@drawable/ic_purchase"
                         android:text="@string/name_menu_business" />
 
-                    <vn.hanelsoft.forestpublishing.view.TextViewApp
+                    <jp.co.hiropro.seminar_hall.view.TextViewApp
                         android:id="@+id/tv_privacy"
                         style="@style/TextMenu"
                         android:drawableLeft="@drawable/ic_purchase"
                         android:text="@string/txt_privacy"
                         android:visibility="gone" />
 
-                    <vn.hanelsoft.forestpublishing.view.TextViewApp
+                    <jp.co.hiropro.seminar_hall.view.TextViewApp
                         android:id="@+id/tv_device_manager"
                         style="@style/TextMenu"
                         android:drawableLeft="@drawable/ic_device_manager"
@@ -147,7 +147,7 @@
                         android:visibility="gone"
                         tools:visibility="gone" />
 
-                    <vn.hanelsoft.forestpublishing.view.TextViewApp
+                    <jp.co.hiropro.seminar_hall.view.TextViewApp
                         android:id="@+id/tv_setting"
                         style="@style/TextMenu"
                         android:drawableLeft="@drawable/ic_setting"
@@ -155,7 +155,7 @@
                         android:visibility="visible"
                         tools:visibility="visible" />
 
-                    <vn.hanelsoft.forestpublishing.view.TextViewApp
+                    <jp.co.hiropro.seminar_hall.view.TextViewApp
                         android:id="@+id/tv_login"
                         style="@style/TextMenu"
                         android:drawableLeft="@drawable/ic_profile"
@@ -163,7 +163,7 @@
                         android:visibility="gone"
                         tools:visibility="gone" />
 
-                    <vn.hanelsoft.forestpublishing.view.TextViewApp
+                    <jp.co.hiropro.seminar_hall.view.TextViewApp
                         android:id="@+id/tv_logout_social"
                         style="@style/TextMenu"
                         android:drawableLeft="@drawable/ic_profile"
@@ -175,7 +175,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
 
-                        <vn.hanelsoft.forestpublishing.view.TextViewApp
+                        <jp.co.hiropro.seminar_hall.view.TextViewApp
                             android:id="@+id/tv_version"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"

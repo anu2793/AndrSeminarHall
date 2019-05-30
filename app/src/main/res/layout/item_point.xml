@@ -16,7 +16,7 @@
         android:layout_centerVertical="true"
         android:src="@mipmap/ic_point_top" />
 
-    <vn.hanelsoft.forestpublishing.view.TextViewApp
+    <jp.co.hiropro.seminar_hall.view.TextViewApp
         android:id="@+id/tv_point"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -29,7 +29,7 @@
         tool:fontFamilyApp="hiramaruw6"
         tool:textStyle="bold" />
 
-    <vn.hanelsoft.forestpublishing.view.TextViewApp
+    <jp.co.hiropro.seminar_hall.view.TextViewApp
         android:id="@+id/tv_money"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -40,7 +40,7 @@
         tool:fontFamilyApp="hiramaruw6"
         tool:textStyle="bold" />
 
-    <vn.hanelsoft.forestpublishing.view.TextViewApp
+    <jp.co.hiropro.seminar_hall.view.TextViewApp
         android:id="@+id/tv_bonus"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

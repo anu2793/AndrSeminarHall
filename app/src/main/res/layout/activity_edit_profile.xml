@@ -13,7 +13,7 @@
         android:background="@color/color_bg_main"
         android:focusable="true"
         android:focusableInTouchMode="true"
-        tools:context="vn.hanelsoft.forestpublishing.controller.activity.EditProfileActivity">
+        tools:context="jp.co.hiropro.seminar_hall.controller.activity.EditProfileActivity">
 
         <android.support.constraint.Guideline
             android:id="@+id/gui_left"
@@ -36,7 +36,7 @@
             android:orientation="vertical"
             app:layout_constraintGuide_percent="0.972" />
 
-        <vn.hanelsoft.forestpublishing.view.CircleImageView
+        <jp.co.hiropro.seminar_hall.view.CircleImageView
             android:id="@+id/imv_avatar"
             android:layout_width="@dimen/value_130dp"
             android:layout_height="@dimen/value_130dp"
@@ -47,7 +47,7 @@
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <vn.hanelsoft.forestpublishing.view.TextViewApp
+        <jp.co.hiropro.seminar_hall.view.TextViewApp
             android:id="@+id/tv_name"
             style="@style/TextNormal"
             android:layout_marginTop="@dimen/value_12dp"
@@ -60,7 +60,7 @@
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imv_avatar" />
 
-        <vn.hanelsoft.forestpublishing.view.TextViewApp
+        <jp.co.hiropro.seminar_hall.view.TextViewApp
             android:id="@+id/title_name"
             style="@style/TextNormal"
             android:layout_marginLeft="@dimen/value_8dp"
@@ -73,7 +73,7 @@
             app:layout_constraintLeft_toLeftOf="@+id/gui_left"
             app:layout_constraintTop_toBottomOf="@+id/tv_name" />
 
-        <vn.hanelsoft.forestpublishing.view.EditTextApp
+        <jp.co.hiropro.seminar_hall.view.EditTextApp
             android:id="@+id/edt_name"
             android:layout_width="0dp"
             android:layout_height="@dimen/value_47dp"
@@ -90,7 +90,7 @@
             app:layout_constraintRight_toRightOf="@id/gui_right"
             app:layout_constraintTop_toBottomOf="@+id/title_name" />
 
-        <vn.hanelsoft.forestpublishing.view.TextViewApp
+        <jp.co.hiropro.seminar_hall.view.TextViewApp
             android:id="@+id/error_name"
             style="@style/TextNormalError"
             android:layout_marginTop="@dimen/value_12dp"
@@ -100,7 +100,7 @@
             app:layout_constraintLeft_toLeftOf="@+id/gui_left"
             app:layout_constraintTop_toBottomOf="@+id/edt_name" />
 
-        <vn.hanelsoft.forestpublishing.view.TextViewApp
+        <jp.co.hiropro.seminar_hall.view.TextViewApp
             android:id="@+id/title_content"
             style="@style/TextNormal"
             android:layout_marginTop="@dimen/value_30dp"
@@ -112,7 +112,7 @@
             app:layout_constraintLeft_toLeftOf="@+id/title_name"
             app:layout_constraintTop_toBottomOf="@+id/error_name" />
 
-        <vn.hanelsoft.forestpublishing.view.TextViewApp
+        <jp.co.hiropro.seminar_hall.view.TextViewApp
             android:id="@+id/title_content_note"
             style="@style/TextNormal"
             android:text="1000文字以内"
@@ -122,7 +122,7 @@
             app:layout_constraintRight_toRightOf="@+id/edt_content"
             app:layout_constraintTop_toTopOf="@+id/title_content" />
 
-        <vn.hanelsoft.forestpublishing.view.EditTextApp
+        <jp.co.hiropro.seminar_hall.view.EditTextApp
             android:id="@+id/edt_content"
             android:layout_width="0dp"
             android:layout_height="172dp"
@@ -145,7 +145,7 @@
             app:layout_constraintRight_toRightOf="@id/gui_right"
             app:layout_constraintTop_toBottomOf="@+id/title_content" />
 
-        <vn.hanelsoft.forestpublishing.view.TextViewApp
+        <jp.co.hiropro.seminar_hall.view.TextViewApp
             android:id="@+id/title_link_youtube"
             style="@style/TextNormal"
             android:layout_marginTop="@dimen/value_30dp"
@@ -157,7 +157,7 @@
             app:layout_constraintLeft_toLeftOf="@+id/title_content"
             app:layout_constraintTop_toBottomOf="@+id/edt_content" />
 
-        <vn.hanelsoft.forestpublishing.view.TextViewApp
+        <jp.co.hiropro.seminar_hall.view.TextViewApp
             android:id="@+id/title_link_youtube_note"
             style="@style/TextNormal"
             android:text="Youtubeのリンクを入力"
@@ -167,7 +167,7 @@
             app:layout_constraintRight_toRightOf="@+id/title_link_description_youtube"
             app:layout_constraintTop_toTopOf="@+id/title_link_youtube" />
 
-        <vn.hanelsoft.forestpublishing.view.TextViewApp
+        <jp.co.hiropro.seminar_hall.view.TextViewApp
             android:id="@+id/title_link_description_youtube"
             style="@style/TextNormal"
             android:layout_marginTop="@dimen/value_20dp"
@@ -176,7 +176,7 @@
             app:layout_constraintRight_toRightOf="@+id/gui_right"
             app:layout_constraintTop_toBottomOf="@+id/edt_content" />
 
-        <vn.hanelsoft.forestpublishing.view.EditTextApp
+        <jp.co.hiropro.seminar_hall.view.EditTextApp
             android:id="@+id/edt_content_link_youtube"
             android:layout_width="0dp"
             android:layout_height="@dimen/value_47dp"
@@ -189,7 +189,7 @@
             app:layout_constraintRight_toRightOf="@id/gui_right"
             app:layout_constraintTop_toBottomOf="@+id/title_link_youtube" />
 
-        <vn.hanelsoft.forestpublishing.view.TextViewApp
+        <jp.co.hiropro.seminar_hall.view.TextViewApp
             android:id="@+id/error_link_youtube"
             style="@style/TextNormalError"
             android:layout_marginTop="@dimen/value_12dp"
@@ -200,7 +200,7 @@
             app:layout_constraintRight_toRightOf="@id/gui_right"
             app:layout_constraintTop_toBottomOf="@+id/edt_content_link_youtube" />
 
-        <vn.hanelsoft.forestpublishing.view.TextViewApp
+        <jp.co.hiropro.seminar_hall.view.TextViewApp
             android:id="@+id/title_SNS"
             style="@style/TextNormal"
             android:layout_marginTop="@dimen/value_30dp"
@@ -238,7 +238,7 @@
                     android:layout_height="25dp"
                     android:src="@mipmap/icon_edt_youtube" />
 
-                <vn.hanelsoft.forestpublishing.view.TextViewApp
+                <jp.co.hiropro.seminar_hall.view.TextViewApp
                     android:id="@+id/tv_youtube"
                     style="@style/TextBoldBlack"
                     android:layout_marginLeft="@dimen/value_11dp"
@@ -252,7 +252,7 @@
                     android:id="@+id/imv_next_youtube"
                     style="@style/ImageViewArrown" />
 
-                <vn.hanelsoft.forestpublishing.view.TextViewApp
+                <jp.co.hiropro.seminar_hall.view.TextViewApp
                     android:id="@+id/value_youtube"
                     style="@style/TextNormalBlack"
                     android:layout_marginLeft="@dimen/value_30dp"
@@ -285,7 +285,7 @@
                     android:id="@+id/imv_next_google"
                     style="@style/ImageViewArrown" />
 
-                <vn.hanelsoft.forestpublishing.view.TextViewApp
+                <jp.co.hiropro.seminar_hall.view.TextViewApp
                     android:id="@+id/tv_google"
                     style="@style/TextBoldBlack"
                     android:layout_marginLeft="@dimen/value_11dp"
@@ -295,7 +295,7 @@
                     android:textSize="13sp"
                     app:fontFamilyApp="hiraginosan" />
 
-                <vn.hanelsoft.forestpublishing.view.TextViewApp
+                <jp.co.hiropro.seminar_hall.view.TextViewApp
                     android:id="@+id/value_google"
                     style="@style/TextNormalBlack"
                     android:layout_marginLeft="@dimen/value_30dp"
@@ -324,7 +324,7 @@
                     android:layout_height="25dp"
                     android:src="@mipmap/icon_edt_facebook" />
 
-                <vn.hanelsoft.forestpublishing.view.TextViewApp
+                <jp.co.hiropro.seminar_hall.view.TextViewApp
                     android:id="@+id/tv_facebook"
                     style="@style/TextBoldBlack"
                     android:layout_centerVertical="true"
@@ -339,7 +339,7 @@
                     android:id="@+id/imv_next_facebook"
                     style="@style/ImageViewArrown" />
 
-                <vn.hanelsoft.forestpublishing.view.TextViewApp
+                <jp.co.hiropro.seminar_hall.view.TextViewApp
                     android:id="@+id/value_facebook"
                     style="@style/TextNormalBlack"
                     android:layout_centerVertical="true"
@@ -369,7 +369,7 @@
                     android:layout_height="25dp"
                     android:src="@mipmap/icon_edt_twitter" />
 
-                <vn.hanelsoft.forestpublishing.view.TextViewApp
+                <jp.co.hiropro.seminar_hall.view.TextViewApp
                     android:id="@+id/tv_twitter"
                     style="@style/TextBoldBlack"
                     android:layout_centerVertical="true"
@@ -384,7 +384,7 @@
                     android:id="@+id/imv_next_twitter"
                     style="@style/ImageViewArrown" />
 
-                <vn.hanelsoft.forestpublishing.view.TextViewApp
+                <jp.co.hiropro.seminar_hall.view.TextViewApp
                     android:id="@+id/value_twitter"
                     style="@style/TextNormalBlack"
                     android:layout_centerVertical="true"
@@ -415,7 +415,7 @@
                     android:layout_height="25dp"
                     android:src="@mipmap/ic_telegram" />
 
-                <vn.hanelsoft.forestpublishing.view.TextViewApp
+                <jp.co.hiropro.seminar_hall.view.TextViewApp
                     android:id="@+id/tv_telegram"
                     style="@style/TextBoldBlack"
                     android:layout_marginLeft="@dimen/value_12dp"
@@ -429,7 +429,7 @@
                     android:id="@+id/imv_next_instagram"
                     style="@style/ImageViewArrown" />
 
-                <vn.hanelsoft.forestpublishing.view.TextViewApp
+                <jp.co.hiropro.seminar_hall.view.TextViewApp
                     android:id="@+id/value_instagram"
                     style="@style/TextNormalBlack"
                     android:layout_centerVertical="true"
@@ -443,7 +443,7 @@
             </RelativeLayout>
         </LinearLayout>
 
-        <vn.hanelsoft.forestpublishing.view.ButtonApp
+        <jp.co.hiropro.seminar_hall.view.ButtonApp
             android:id="@+id/btnSaveChange"
             android:layout_width="@dimen/value_0dp"
             android:layout_height="@dimen/value_50dp"

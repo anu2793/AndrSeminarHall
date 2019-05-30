@@ -15,7 +15,7 @@
         android:layout_centerHorizontal="true"
         android:orientation="vertical">
 
-        <vn.hanelsoft.forestpublishing.view.TextViewApp
+        <jp.co.hiropro.seminar_hall.view.TextViewApp
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/value_20dp"
@@ -25,7 +25,7 @@
             android:textSize="@dimen/text_size_16sp"
             app:fontFamilyApp="hiramaruw6" />
 
-        <vn.hanelsoft.forestpublishing.view.EditTextApp
+        <jp.co.hiropro.seminar_hall.view.EditTextApp
             android:id="@+id/edt_old_email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -43,7 +43,7 @@
             android:textColor="#b7b7b7"
             app:fontFamilyApp="hiramaruw6" />
 
-        <vn.hanelsoft.forestpublishing.view.TextViewApp
+        <jp.co.hiropro.seminar_hall.view.TextViewApp
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/value_20dp"
@@ -53,7 +53,7 @@
             android:textSize="@dimen/text_size_16sp"
             app:fontFamilyApp="hiramaruw6" />
 
-        <vn.hanelsoft.forestpublishing.view.EditTextApp
+        <jp.co.hiropro.seminar_hall.view.EditTextApp
             android:id="@+id/edt_email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

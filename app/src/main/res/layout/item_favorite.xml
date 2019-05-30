@@ -9,7 +9,7 @@
     android:paddingRight="@dimen/value_15dp"
     android:paddingTop="@dimen/value_10dp">
 
-    <vn.hanelsoft.forestpublishing.view.CircleImageView
+    <jp.co.hiropro.seminar_hall.view.CircleImageView
         android:id="@+id/iv_sub_category"
         android:layout_width="75dp"
         android:layout_height="75dp"
@@ -24,7 +24,7 @@
         android:orientation="vertical"
         android:paddingLeft="15dp">
 
-        <vn.hanelsoft.forestpublishing.view.TextViewApp
+        <jp.co.hiropro.seminar_hall.view.TextViewApp
             android:id="@+id/tv_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -43,7 +43,7 @@
             android:orientation="horizontal">
 
 
-            <vn.hanelsoft.forestpublishing.view.TextViewApp
+            <jp.co.hiropro.seminar_hall.view.TextViewApp
                 android:id="@+id/tv_category"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -66,7 +66,7 @@
                 android:adjustViewBounds="true"
                 android:src="@mipmap/imv_arrow" />
 
-            <vn.hanelsoft.forestpublishing.view.TextViewApp
+            <jp.co.hiropro.seminar_hall.view.TextViewApp
                 android:id="@+id/tv_name_sub"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

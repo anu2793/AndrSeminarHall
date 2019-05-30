@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:layout_centerInParent="true" />
 
-    <vn.hanelsoft.forestpublishing.view.CircleImageView
+    <jp.co.hiropro.seminar_hall.view.CircleImageView
         android:id="@+id/imv_avatar"
         android:layout_width="@dimen/value_95dp"
         android:layout_height="@dimen/value_95dp"

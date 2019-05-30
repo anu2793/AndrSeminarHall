@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/color_bg_main"
     android:orientation="vertical"
-    tools:context="vn.hanelsoft.forestpublishing.controller.activity.SubCategoryDetailActivity">
+    tools:context="jp.co.hiropro.seminar_hall.controller.activity.SubCategoryDetailActivity">
 
     <android.support.design.widget.TabLayout
         android:id="@+id/tabs"

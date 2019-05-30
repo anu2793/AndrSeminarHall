@@ -9,7 +9,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context="vn.hanelsoft.forestpublishing.controller.fragment.FavoriteFragment">
+        tools:context="jp.co.hiropro.seminar_hall.controller.fragment.FavoriteFragment">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -27,7 +27,7 @@
                 android:visibility="gone" />
         </LinearLayout>
 
-        <vn.hanelsoft.forestpublishing.view.TextViewApp
+        <jp.co.hiropro.seminar_hall.view.TextViewApp
             android:id="@+id/tv_empty"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -55,7 +55,7 @@
                 android:layout_margin="@dimen/value_20dp"
                 android:orientation="vertical">
 
-                <vn.hanelsoft.forestpublishing.view.TextViewApp
+                <jp.co.hiropro.seminar_hall.view.TextViewApp
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -66,14 +66,14 @@
                     android:textColor="@color/color_content"
                     app:fontFamilyApp="hiramaru" />
 
-                <vn.hanelsoft.forestpublishing.view.ButtonApp
+                <jp.co.hiropro.seminar_hall.view.ButtonApp
                     android:id="@+id/btn_login"
                     style="@style/ButtonGradient"
                     android:layout_width="match_parent"
                     android:layout_marginTop="@dimen/value_20dp"
                     android:text="ログイン" />
 
-                <vn.hanelsoft.forestpublishing.view.ButtonApp
+                <jp.co.hiropro.seminar_hall.view.ButtonApp
                     android:id="@+id/btn_register"
                     style="@style/ButtonGradient"
                     android:layout_width="match_parent"

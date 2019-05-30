@@ -14,7 +14,7 @@
         android:layout_height="@dimen/value_height_action_bar"
         android:background="@android:color/white">
 
-        <vn.hanelsoft.forestpublishing.view.TextViewApp
+        <jp.co.hiropro.seminar_hall.view.TextViewApp
             android:id="@+id/tv_title_screen"
             android:layout_width="match_parent"
             android:layout_height="match_parent"

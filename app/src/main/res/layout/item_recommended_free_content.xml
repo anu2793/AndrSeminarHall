@@ -23,7 +23,7 @@
             android:gravity="center"
             android:orientation="horizontal">
 
-            <vn.hanelsoft.forestpublishing.view.TextViewApp
+            <jp.co.hiropro.seminar_hall.view.TextViewApp
                 android:id="@+id/tv_special"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -38,7 +38,7 @@
                 android:textSize="13sp"
                 app:textStyle="bold" />
 
-            <vn.hanelsoft.forestpublishing.view.TextViewApp
+            <jp.co.hiropro.seminar_hall.view.TextViewApp
                 android:id="@+id/tv_type_of_subcategory"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -62,7 +62,7 @@
             android:progressDrawable="@drawable/prg_loading" />
     </RelativeLayout>
 
-    <vn.hanelsoft.forestpublishing.view.TextViewApp
+    <jp.co.hiropro.seminar_hall.view.TextViewApp
         android:id="@+id/tv_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -75,7 +75,7 @@
         app:fontFamilyApp="hiramin"
         app:textStyle="bold" />
 
-    <vn.hanelsoft.forestpublishing.view.TextViewApp
+    <jp.co.hiropro.seminar_hall.view.TextViewApp
         android:id="@+id/tv_description"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

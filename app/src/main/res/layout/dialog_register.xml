@@ -6,7 +6,7 @@
     android:background="@drawable/bg_border"
     android:orientation="vertical">
 
-    <vn.hanelsoft.forestpublishing.view.TextViewApp
+    <jp.co.hiropro.seminar_hall.view.TextViewApp
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
@@ -32,7 +32,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1">
 
-            <vn.hanelsoft.forestpublishing.view.TextViewApp
+            <jp.co.hiropro.seminar_hall.view.TextViewApp
                 android:id="@+id/tv_cancel"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -55,7 +55,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1">
 
-            <vn.hanelsoft.forestpublishing.view.TextViewApp
+            <jp.co.hiropro.seminar_hall.view.TextViewApp
                 android:id="@+id/tv_register"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

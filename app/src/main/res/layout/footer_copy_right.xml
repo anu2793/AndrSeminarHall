@@ -6,7 +6,7 @@
     android:background="@color/color_bg_main"
     android:orientation="vertical">
 
-    <vn.hanelsoft.forestpublishing.view.TextViewApp
+    <jp.co.hiropro.seminar_hall.view.TextViewApp
         android:id="@+id/tv_copyright"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

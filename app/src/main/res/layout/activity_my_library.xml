@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/color_bg_main"
     android:orientation="vertical"
-    tools:context="vn.hanelsoft.forestpublishing.controller.activity.MyLibraryActivity">
+    tools:context="jp.co.hiropro.seminar_hall.controller.activity.MyLibraryActivity">
 
     <View
         android:id="@+id/view_top"

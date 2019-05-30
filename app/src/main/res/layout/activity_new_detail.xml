@@ -50,7 +50,7 @@
                     android:paddingRight="@dimen/value_20dp"
                     android:paddingTop="@dimen/value_10dp">
 
-                    <vn.hanelsoft.forestpublishing.view.AutoResizeTextView
+                    <jp.co.hiropro.seminar_hall.view.AutoResizeTextView
                         android:id="@+id/tv_title"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -112,7 +112,7 @@
                     android:layout_marginRight="@dimen/value_15dp"
                     android:layout_marginTop="@dimen/value_10dp" />
 
-                <vn.hanelsoft.forestpublishing.view.TextViewApp
+                <jp.co.hiropro.seminar_hall.view.TextViewApp
                     android:id="@+id/tv_description"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"

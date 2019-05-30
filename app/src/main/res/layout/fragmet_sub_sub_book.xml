@@ -24,7 +24,7 @@
                 android:nestedScrollingEnabled="false"
                 android:paddingTop="@dimen/value_10dp" />
 
-            <vn.hanelsoft.forestpublishing.view.TextViewApp
+            <jp.co.hiropro.seminar_hall.view.TextViewApp
                 android:id="@+id/tv_copyright"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -41,7 +41,7 @@
                 tools:visibility="visible" />
         </LinearLayout>
 
-        <vn.hanelsoft.forestpublishing.view.TextViewApp
+        <jp.co.hiropro.seminar_hall.view.TextViewApp
             android:id="@+id/tv_copyright_bottom"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

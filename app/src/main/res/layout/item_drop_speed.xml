@@ -18,7 +18,7 @@
         android:padding="@dimen/value_5dp"
         android:src="@mipmap/ic_check" />
 
-    <vn.hanelsoft.forestpublishing.view.TextViewApp
+    <jp.co.hiropro.seminar_hall.view.TextViewApp
         android:id="@+id/tv_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

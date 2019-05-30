@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="vn.hanelsoft.mylibrary.test" >
+    package="jp.co.hiropro.mylibrary.test" >
 
     <uses-sdk
         android:minSdkVersion="14"
@@ -10,8 +10,8 @@
         android:name="android.test.InstrumentationTestRunner"
         android:functionalTest="false"
         android:handleProfiling="false"
-        android:label="Tests for vn.hanelsoft.mylibrary.test"
-        android:targetPackage="vn.hanelsoft.mylibrary.test" />
+        android:label="Tests for jp.co.hiropro.mylibrary.test"
+        android:targetPackage="jp.co.hiropro.mylibrary.test" />
     <!-- for android -->
     <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
     <uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS" /> <!-- for Samsung -->

@@ -8,7 +8,7 @@ INJECTED from D:\ANDROI\Project\SeminorHall\seminorhall\libs\hss-android_lib\src
 INJECTED from D:\ANDROI\Project\SeminorHall\seminorhall\libs\hss-android_lib\src\main\AndroidManifest.xml:1:1-25:12
 INJECTED from D:\ANDROI\Project\SeminorHall\seminorhall\libs\hss-android_lib\src\main\AndroidManifest.xml:1:1-25:12
 	package
-		ADDED from D:\ANDROI\Project\SeminorHall\seminorhall\libs\hss-android_lib\src\main\AndroidManifest.xml:2:5-37
+		ADDED from D:\ANDROI\Project\SeminorHall\seminorhall\libs\hss-android_lib\src\main\AndroidManifest.xml:2:5-38
 		INJECTED from D:\ANDROI\Project\SeminorHall\seminorhall\libs\hss-android_lib\src\main\AndroidManifest.xml
 		INJECTED from D:\ANDROI\Project\SeminorHall\seminorhall\libs\hss-android_lib\src\main\AndroidManifest.xml
 	android:versionName

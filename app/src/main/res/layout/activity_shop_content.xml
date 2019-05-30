@@ -22,7 +22,7 @@
         app:tabGravity="fill"
         app:tabPaddingStart="0dp" />
 
-    <vn.hanelsoft.forestpublishing.view.NonSwipeableViewPager
+    <jp.co.hiropro.seminar_hall.view.NonSwipeableViewPager
         android:id="@+id/pager"
         android:layout_width="wrap_content"
         android:background="@color/color_bg_main"

@@ -12,18 +12,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0ef766a3-cecb-49a8-80e7-8bcc54bc4eb3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_measurement_base_16_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_analytics_16_0_1_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_analytics_impl_16_1_1_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_common_16_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_core_16_0_1_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_iid_16_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_iid_interop_16_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_measurement_connector_16_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_measurement_connector_impl_16_0_1_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/doc/keyinfog.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/doc/seminorhall.jks" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/xml/network_security_config.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/fileHashes/fileHashes.bin" afterDir="false" />
@@ -40,11 +28,438 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/doc/seminorhall.jks" beforeDir="false" afterPath="$PROJECT_DIR$/app/doc/seminorhall.jks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/google-services.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/google-services.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/androidTest/java/vn/hanelsoft/forestpublishing/ExampleInstrumentedTest.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/controller/activity/SplashActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/controller/activity/SplashActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/util/AppConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/util/AppConstants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/hss-android_lib.iml" beforeDir="false" afterPath="$PROJECT_DIR$/libs/hss-android_lib/hss-android_lib.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/liboverscroll/liboverscroll.iml" beforeDir="false" afterPath="$PROJECT_DIR$/libs/liboverscroll/liboverscroll.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/ForestApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/MyAppGlideModule.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/controller/activity/AppWebViewActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/controller/activity/BaseActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/controller/activity/BaseSkipShowDialogActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/controller/activity/BaseYoutubeActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/controller/activity/BuyMonthPremiumActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/controller/activity/CardReceiveActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/controller/activity/CateDetailActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/controller/activity/CateListActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/controller/activity/ChangeEmailActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/controller/activity/ChangePasswordActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/controller/activity/ContactListActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/controller/activity/ContentDetailActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/controller/activity/DiagnosisActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/controller/activity/EditProfileActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/controller/activity/EditSNSActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/controller/activity/ForgotPasswordActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/controller/activity/ForgotSuccessActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/controller/activity/JackProfileActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/controller/activity/LoginActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/controller/activity/MaintainActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/controller/activity/ManagerDeviceActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/controller/activity/MyFavoriteActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/controller/activity/MyLibraryActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/controller/activity/NewDetailActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/controller/activity/NewsActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/controller/activity/PaidMemberGuiderActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/controller/activity/PlayVideoActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/controller/activity/PointManagerActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/controller/activity/PolicyActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/controller/activity/ProfileActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/controller/activity/PurchaseActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/controller/activity/PurchaseListActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/controller/activity/QrCodePreviewActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/controller/activity/QrCodeScannerActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/controller/activity/ReceiveScreenActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/controller/activity/RecommendFreeContentActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/controller/activity/RegisterActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/controller/activity/RegisterSuccessActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/controller/activity/SettingActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/controller/activity/SettlementLawActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/controller/activity/ShopContentActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/controller/activity/SingleReceiveCardActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/controller/activity/SpecifiedCommercialTransactionActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/controller/activity/SplashActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/controller/activity/SubCategoryActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/controller/activity/SubCategoryDetailActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/controller/activity/SubSubCategoryActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/controller/activity/SwipeCardActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/controller/activity/TeacherContentListActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/controller/activity/TeacherProfileCardActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/controller/activity/TermOfServiceActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/controller/activity/TopActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/controller/activity/VideoSameTagActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/controller/activity/WebviewActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/controller/fragment/BookFragment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/controller/fragment/FavoriteFragment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/controller/fragment/FragmentBase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/controller/fragment/HistoryFragment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/controller/fragment/PurchaseFragment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/controller/fragment/RecommendFreeContentFragment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/controller/fragment/SearchContentResultFragment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/controller/fragment/SearchResultBookFragment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/controller/fragment/SearchResultDefaultFragment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/controller/fragment/SearchResultFragment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/controller/fragment/SearchResultFreeVideoFragment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/controller/fragment/SearchResultPaidVideoFragment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/controller/fragment/SeminarListFragment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/controller/fragment/ShopSearchResultFragment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/controller/fragment/SubSubCategoryBookFragment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/controller/fragment/SubSubCategoryFragment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/controller/fragment/TagDefaultFragment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/controller/fragment/TagFragment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/controller/fragment/TeacherContentListFragment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/controller/fragment/TeacherListFragment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/controller/fragment/TopContentFragment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/controller/fragment/TopSeminarFragment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/controller/fragment/TopTeacherListFragment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/controller/fragment/VideoFreeFragment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/controller/fragment/VideoPaidFragment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/model/Campaign.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/model/CardObject.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/model/CateSeminarObject.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/model/Category.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/model/Contact.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/model/DeviceObject.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/model/Favorite.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/model/JackImageObject.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/model/LevelItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/model/Menu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/model/NewsItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/model/PackageItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/model/Point.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/model/PurchaseItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/model/SearchResult.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/model/SearchSubCategory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/model/SearchVideo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/model/SeminarObject.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/model/SpeedObject.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/model/SubCategory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/model/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/model/VideoDetail.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/service/AuthenticationService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/service/ForestAuthentication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/service/socket/EchoWebSocketListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/service/socket/SocketListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/util/AccountUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/util/AppConstants.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/util/AppUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/util/CenterRecycleViewSnapHelper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/util/ExoPlayerVideoHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/util/FieldSocial.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/util/FontUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/util/HSSPreference.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/util/ItemTouchHelperAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/util/KeyParser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/util/OnSingleClickListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/util/RecyclerItemClickListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/util/RecyclerItemTouchHelper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/util/RequestDataUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/util/Utils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/util/fcm/CustomUniversalFCM.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/util/fcm/FCMReceiveMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/util/fcm/ServiceFCMInstanceID.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/util/span/TopAlignSuperscriptSpan.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/view/AutoResizeTextView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/view/AutoScrollViewPager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/view/ButtonApp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/view/CenteredImageSpan.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/view/CircleImageView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/view/CircleViewIndicator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/view/CustomLoadingListItemCreator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/view/DialogEmail.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/view/EditTextApp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/view/EqualSpacingItemDecoration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/view/ExpandableHeightListView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/view/ExpandableTextView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/view/HeaderFreeView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/view/HeaderSubSubView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/view/InterceptingRecyclerView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/view/KienInterface.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/view/LockableScrollView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/view/LoopingCirclePageIndicator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/view/NonScrollListView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/view/NonSwipeableViewPager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/view/PageIndicator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/view/SimpleDividerItemDecoration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/view/SwipeController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/view/TextViewApp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/view/ViewUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/view/adapter/BookAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/view/adapter/CardAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/view/adapter/CardContactAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/view/adapter/CateSeminarAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/view/adapter/CategoryAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/view/adapter/ContactAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/view/adapter/ContentDetailHorizontalAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/view/adapter/FavoriteAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/view/adapter/HFRecyclerView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/view/adapter/HistoryAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/view/adapter/JackImageAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/view/adapter/LevelAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/view/adapter/LevelExpandAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/view/adapter/LoopingPagerAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/view/adapter/ManagerDeviceAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/view/adapter/MenuAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/view/adapter/NewCategoryAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/view/adapter/NewsAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/view/adapter/NewsTopAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/view/adapter/PointAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/view/adapter/ProfileContactAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/view/adapter/PurchaseAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/view/adapter/PurchaseHistoryAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/view/adapter/ReceivedItemAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/view/adapter/ReceiverTeacherAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/view/adapter/RecommendedContentAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/view/adapter/RecyclerSubCategoryAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/view/adapter/RecyclerSubCategoryNoDescriptionAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/view/adapter/SearchResultAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/view/adapter/SeminarAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/view/adapter/SpeedAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/view/adapter/SubCategoryAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/view/adapter/SubCategoryDetailAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/view/adapter/SubSubCategoryAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/view/adapter/TeacherAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/view/adapter/TeacherContentAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/view/adapter/TeacherGridAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/view/adapter/ViewPagerAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/view/adapter/ViewSubPagerAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/view/autofittextview/AutofitHelper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/view/autofittextview/AutofitTextView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/view/dialog/AdviseDialog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/view/dialog/DialogBase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/view/dialog/DialogNotification.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/view/dialog/DialogOpenBrowser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/view/dialog/DialogPurchaseVideo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/view/dialog/DialogRetryConnection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/view/dialog/RegisterDialog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/view/dialog/WaringPurchaseDialog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/view/flingswitch/BaseFlingAdapterView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/view/flingswitch/FlingCardListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/view/flingswitch/HorizontalFlingCardListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/view/flingswitch/LinearRegression.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/view/flingswitch/SwipeCenterFlingAdapterView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/view/flingswitch/SwipeFlingAdapterView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/view/popupview/TooltipWindow.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/view/tagsview/Constants.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/view/tagsview/Tag.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/view/tagsview/TagView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/view/tagsview/Utils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_base.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_base.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_buy_month_premium.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_buy_month_premium.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_card_receive.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_card_receive.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_cate_detail.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_cate_detail.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_cate_list.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_cate_list.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_change_email.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_change_email.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_change_password.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_change_password.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_contact_list.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_contact_list.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_content_detail.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_content_detail.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_edit_profile.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_edit_profile.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_edit_sns.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_edit_sns.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_forgot_password.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_forgot_password.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_forgot_password_result.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_forgot_password_result.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_full_screen.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_full_screen.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_jack_profile.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_jack_profile.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_maintain.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_maintain.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_my_favorite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_my_favorite.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_my_library.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_my_library.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_new_detail.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_new_detail.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_point_manager.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_point_manager.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_profile.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_profile.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_purchase.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_purchase.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_qr_code_preview.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_qr_code_preview.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_qrcode_scanner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_qrcode_scanner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_receive_screen.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_receive_screen.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_register.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_register.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_register_user.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_register_user.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_regsiter_success.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_regsiter_success.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_settlement_law.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_settlement_law.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_shop_content.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_shop_content.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_single_receive_card.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_single_receive_card.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_sub_category.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_sub_category.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_sub_category_detail.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_sub_category_detail.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_swipe_card.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_swipe_card.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_teacher_profile_card.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_teacher_profile_card.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_top.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_top.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_video_same_tag.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_video_same_tag.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_webview.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_webview.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/custom_dialog_email.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/custom_dialog_email.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/custom_tabs_item.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/custom_tabs_item.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/custom_tabs_item_focus.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/custom_tabs_item_focus.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/dialog_advise.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/dialog_advise.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/dialog_open_browser.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/dialog_open_browser.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/dialog_purchase_video.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/dialog_purchase_video.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/dialog_register.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/dialog_register.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/dialog_warning_purchase.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/dialog_warning_purchase.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/exo_playback_control_view.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/exo_playback_control_view.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/footer_copy_right.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/footer_copy_right.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_favorite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_favorite.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_history.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_history.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_purchase.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_purchase.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_seminar_content.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_seminar_content.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_teacher_content_list.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_teacher_content_list.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_top_content.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_top_content.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragmet_sub_sub_book.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragmet_sub_sub_book.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/header_sub_category_screen.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/header_sub_category_screen.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/header_subcategory_detail.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/header_subcategory_detail.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_card.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_card.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_card_contact.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_card_contact.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_cate_seminar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_cate_seminar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_category.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_category.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_children_level.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_children_level.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_contact.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_contact.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_drop_speed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_drop_speed.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_favorite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_favorite.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_history.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_history.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_jack_image.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_jack_image.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_level.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_level.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_manager_device.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_manager_device.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_news_list_top.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_news_list_top.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_point.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_point.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_profile_contact.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_profile_contact.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_recommended_free_content.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_recommended_free_content.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_search_type_sub_subcategory.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_search_type_sub_subcategory.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_search_type_subcategory.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_search_type_subcategory.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_search_type_video.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_search_type_video.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_subcategory.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_subcategory.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_subcategory_detail.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_subcategory_detail.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_subcategory_detail_horizontal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_subcategory_detail_horizontal.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_subcategory_no_description.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_subcategory_no_description.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_teacher.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_teacher.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_teacher_card.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_teacher_card.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_teacher_content_list.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_teacher_content_list.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_teacher_grid.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_teacher_grid.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/layout_base_content.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/layout_base_content.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/layout_choice_type_share.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/layout_choice_type_share.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/layout_footer_copy_right.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/layout_footer_copy_right.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/layout_guide_content.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/layout_guide_content.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/layout_guide_top.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/layout_guide_top.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/layout_profile_information.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/layout_profile_information.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/layout_profile_level.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/layout_profile_level.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/layout_profile_top.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/layout_profile_top.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/list_item_received.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/list_item_received.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/tagview_item.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/tagview_item.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/view_free_header.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/view_free_header.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/view_sub_sub_header.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/view_sub_sub_header.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/vn/hanelsoft/forestpublishing/ExampleUnitTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/generated/source/buildConfig/androidTest/debug/vn/hanelsoft/mylibrary/test/BuildConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/libs/hss-android_lib/build/generated/source/buildConfig/androidTest/debug/jp/co/hiropro/mylibrary/test/BuildConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/generated/source/buildConfig/debug/vn/hanelsoft/mylibrary/BuildConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/libs/hss-android_lib/build/generated/source/buildConfig/debug/jp/co/hiropro/mylibrary/BuildConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/generated/source/buildConfig/release/vn/hanelsoft/mylibrary/BuildConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/aapt_friendly_merged_manifests/debug/aapt/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/aapt_friendly_merged_manifests/debug/aapt/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/aapt_friendly_merged_manifests/debug/aapt/output.json" beforeDir="false" afterPath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/aapt_friendly_merged_manifests/debug/aapt/output.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/aapt_friendly_merged_manifests/release/aapt/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/aapt_friendly_merged_manifests/release/aapt/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/aapt_friendly_merged_manifests/release/aapt/output.json" beforeDir="false" afterPath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/aapt_friendly_merged_manifests/release/aapt/output.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/compile_library_classes/debug/classes.jar" beforeDir="false" afterPath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/compile_library_classes/debug/classes.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/compile_library_classes/release/classes.jar" beforeDir="false" afterPath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/compile_library_classes/release/classes.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/compile_only_not_namespaced_r_class_jar/debug/generateDebugRFile/R.jar" beforeDir="false" afterPath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/compile_only_not_namespaced_r_class_jar/debug/generateDebugRFile/R.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/compile_only_not_namespaced_r_class_jar/release/generateReleaseRFile/R.jar" beforeDir="false" afterPath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/compile_only_not_namespaced_r_class_jar/release/generateReleaseRFile/R.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/full_jar/debug/createFullJarDebug/full.jar" beforeDir="false" afterPath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/full_jar/debug/createFullJarDebug/full.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/vn/hanelsoft/control/FragmentBase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/vn/hanelsoft/dao/DAOHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/vn/hanelsoft/dao/SQLiteHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/vn/hanelsoft/dao/SQLiteHelper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/vn/hanelsoft/dao/annotation/Column.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/vn/hanelsoft/dao/annotation/Ignore.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/vn/hanelsoft/dao/annotation/NotNull.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/vn/hanelsoft/dao/annotation/PrimaryKey.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/vn/hanelsoft/dao/annotation/Table.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/vn/hanelsoft/dao/annotation/Unique.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/vn/hanelsoft/dialog/AlertDialogManager$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/vn/hanelsoft/dialog/AlertDialogManager$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/vn/hanelsoft/dialog/AlertDialogManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/vn/hanelsoft/dialog/HSSDialog$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/vn/hanelsoft/dialog/HSSDialog.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/vn/hanelsoft/dialog/LoadingDialog.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/vn/hanelsoft/mylibrary/BuildConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/vn/hanelsoft/utils/CommonUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/vn/hanelsoft/utils/DateTimeUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/vn/hanelsoft/utils/HSSLog.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/vn/hanelsoft/utils/IntentUtils$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/vn/hanelsoft/utils/IntentUtils$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/vn/hanelsoft/utils/IntentUtils$FILE_TYPE.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/vn/hanelsoft/utils/IntentUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/vn/hanelsoft/utils/NetworkUtils$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/vn/hanelsoft/utils/NetworkUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/vn/hanelsoft/utils/RandomUtils$StringType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/vn/hanelsoft/utils/RandomUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/vn/hanelsoft/utils/URLEncodeUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/vn/hanelsoft/utils/ValidateUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/vn/hanelsoft/view/LoadingView.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/vn/hanelsoft/view/StickerView$OnStickerDeleteListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/vn/hanelsoft/view/StickerView.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/vn/hanelsoft/view/ViewHolder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/javac/release/compileReleaseJavaWithJavac/classes/vn/hanelsoft/control/FragmentBase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/javac/release/compileReleaseJavaWithJavac/classes/vn/hanelsoft/dao/DAOHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/javac/release/compileReleaseJavaWithJavac/classes/vn/hanelsoft/dao/SQLiteHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/javac/release/compileReleaseJavaWithJavac/classes/vn/hanelsoft/dao/SQLiteHelper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/javac/release/compileReleaseJavaWithJavac/classes/vn/hanelsoft/dao/annotation/Column.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/javac/release/compileReleaseJavaWithJavac/classes/vn/hanelsoft/dao/annotation/Ignore.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/javac/release/compileReleaseJavaWithJavac/classes/vn/hanelsoft/dao/annotation/NotNull.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/javac/release/compileReleaseJavaWithJavac/classes/vn/hanelsoft/dao/annotation/PrimaryKey.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/javac/release/compileReleaseJavaWithJavac/classes/vn/hanelsoft/dao/annotation/Table.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/javac/release/compileReleaseJavaWithJavac/classes/vn/hanelsoft/dao/annotation/Unique.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/javac/release/compileReleaseJavaWithJavac/classes/vn/hanelsoft/dialog/AlertDialogManager$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/javac/release/compileReleaseJavaWithJavac/classes/vn/hanelsoft/dialog/AlertDialogManager$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/javac/release/compileReleaseJavaWithJavac/classes/vn/hanelsoft/dialog/AlertDialogManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/javac/release/compileReleaseJavaWithJavac/classes/vn/hanelsoft/dialog/HSSDialog$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/javac/release/compileReleaseJavaWithJavac/classes/vn/hanelsoft/dialog/HSSDialog.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/javac/release/compileReleaseJavaWithJavac/classes/vn/hanelsoft/dialog/LoadingDialog.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/javac/release/compileReleaseJavaWithJavac/classes/vn/hanelsoft/mylibrary/BuildConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/javac/release/compileReleaseJavaWithJavac/classes/vn/hanelsoft/utils/CommonUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/javac/release/compileReleaseJavaWithJavac/classes/vn/hanelsoft/utils/DateTimeUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/javac/release/compileReleaseJavaWithJavac/classes/vn/hanelsoft/utils/HSSLog.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/javac/release/compileReleaseJavaWithJavac/classes/vn/hanelsoft/utils/IntentUtils$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/javac/release/compileReleaseJavaWithJavac/classes/vn/hanelsoft/utils/IntentUtils$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/javac/release/compileReleaseJavaWithJavac/classes/vn/hanelsoft/utils/IntentUtils$FILE_TYPE.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/javac/release/compileReleaseJavaWithJavac/classes/vn/hanelsoft/utils/IntentUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/javac/release/compileReleaseJavaWithJavac/classes/vn/hanelsoft/utils/NetworkUtils$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/javac/release/compileReleaseJavaWithJavac/classes/vn/hanelsoft/utils/NetworkUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/javac/release/compileReleaseJavaWithJavac/classes/vn/hanelsoft/utils/RandomUtils$StringType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/javac/release/compileReleaseJavaWithJavac/classes/vn/hanelsoft/utils/RandomUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/javac/release/compileReleaseJavaWithJavac/classes/vn/hanelsoft/utils/URLEncodeUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/javac/release/compileReleaseJavaWithJavac/classes/vn/hanelsoft/utils/ValidateUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/javac/release/compileReleaseJavaWithJavac/classes/vn/hanelsoft/view/LoadingView.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/javac/release/compileReleaseJavaWithJavac/classes/vn/hanelsoft/view/StickerView$OnStickerDeleteListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/javac/release/compileReleaseJavaWithJavac/classes/vn/hanelsoft/view/StickerView.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/javac/release/compileReleaseJavaWithJavac/classes/vn/hanelsoft/view/ViewHolder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/library_manifest/debug/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/library_manifest/debug/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/library_manifest/release/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/library_manifest/release/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/merged_manifests/debug/output.json" beforeDir="false" afterPath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/merged_manifests/debug/output.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/merged_manifests/debugAndroidTest/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/merged_manifests/debugAndroidTest/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/merged_manifests/release/output.json" beforeDir="false" afterPath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/merged_manifests/release/output.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/res/symbol-table-with-package/debug/package-aware-r.txt" beforeDir="false" afterPath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/res/symbol-table-with-package/debug/package-aware-r.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/res/symbol-table-with-package/release/package-aware-r.txt" beforeDir="false" afterPath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/res/symbol-table-with-package/release/package-aware-r.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/runtime_library_classes/debug/classes.jar" beforeDir="false" afterPath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/runtime_library_classes/debug/classes.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/runtime_library_classes/release/classes.jar" beforeDir="false" afterPath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/runtime_library_classes/release/classes.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/outputs/logs/manifest-merger-debug-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/libs/hss-android_lib/build/outputs/logs/manifest-merger-debug-report.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/outputs/logs/manifest-merger-release-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/libs/hss-android_lib/build/outputs/logs/manifest-merger-release-report.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/libs/hss-android_lib/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/src/main/gen/vn/hanelsoft/mylibrary/Manifest.java" beforeDir="false" afterPath="$PROJECT_DIR$/libs/hss-android_lib/src/main/gen/vn/hanelsoft/mylibrary/Manifest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/src/main/gen/vn/hanelsoft/mylibrary/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/libs/hss-android_lib/src/main/gen/vn/hanelsoft/mylibrary/R.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/src/main/java/vn/hanelsoft/control/FragmentBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/libs/hss-android_lib/src/main/java/jp/co/hiropro/control/FragmentBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/src/main/java/vn/hanelsoft/dao/DAOHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/libs/hss-android_lib/src/main/java/jp/co/hiropro/dao/DAOHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/src/main/java/vn/hanelsoft/dao/SQLiteHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/libs/hss-android_lib/src/main/java/jp/co/hiropro/dao/SQLiteHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/src/main/java/vn/hanelsoft/dao/SQLiteHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/libs/hss-android_lib/src/main/java/jp/co/hiropro/dao/SQLiteHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/src/main/java/vn/hanelsoft/dao/annotation/Column.java" beforeDir="false" afterPath="$PROJECT_DIR$/libs/hss-android_lib/src/main/java/jp/co/hiropro/dao/annotation/Column.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/src/main/java/vn/hanelsoft/dao/annotation/Ignore.java" beforeDir="false" afterPath="$PROJECT_DIR$/libs/hss-android_lib/src/main/java/jp/co/hiropro/dao/annotation/Ignore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/src/main/java/vn/hanelsoft/dao/annotation/NotNull.java" beforeDir="false" afterPath="$PROJECT_DIR$/libs/hss-android_lib/src/main/java/jp/co/hiropro/dao/annotation/NotNull.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/src/main/java/vn/hanelsoft/dao/annotation/PrimaryKey.java" beforeDir="false" afterPath="$PROJECT_DIR$/libs/hss-android_lib/src/main/java/jp/co/hiropro/dao/annotation/PrimaryKey.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/src/main/java/vn/hanelsoft/dao/annotation/Table.java" beforeDir="false" afterPath="$PROJECT_DIR$/libs/hss-android_lib/src/main/java/jp/co/hiropro/dao/annotation/Table.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/src/main/java/vn/hanelsoft/dao/annotation/Unique.java" beforeDir="false" afterPath="$PROJECT_DIR$/libs/hss-android_lib/src/main/java/jp/co/hiropro/dao/annotation/Unique.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/src/main/java/vn/hanelsoft/dialog/AlertDialogManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/libs/hss-android_lib/src/main/java/jp/co/hiropro/dialog/AlertDialogManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/src/main/java/vn/hanelsoft/dialog/HSSDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/libs/hss-android_lib/src/main/java/jp/co/hiropro/dialog/HSSDialog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/src/main/java/vn/hanelsoft/dialog/LoadingDialog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/src/main/java/vn/hanelsoft/utils/CommonUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/libs/hss-android_lib/src/main/java/jp/co/hiropro/utils/CommonUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/src/main/java/vn/hanelsoft/utils/DateTimeUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/libs/hss-android_lib/src/main/java/jp/co/hiropro/utils/DateTimeUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/src/main/java/vn/hanelsoft/utils/HSSLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/libs/hss-android_lib/src/main/java/jp/co/hiropro/utils/HSSLog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/src/main/java/vn/hanelsoft/utils/HSSPreference.java" beforeDir="false" afterPath="$PROJECT_DIR$/libs/hss-android_lib/src/main/java/jp/co/hiropro/utils/HSSPreference.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/src/main/java/vn/hanelsoft/utils/IntentUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/libs/hss-android_lib/src/main/java/jp/co/hiropro/utils/IntentUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/src/main/java/vn/hanelsoft/utils/NetworkUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/libs/hss-android_lib/src/main/java/jp/co/hiropro/utils/NetworkUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/src/main/java/vn/hanelsoft/utils/RandomUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/libs/hss-android_lib/src/main/java/jp/co/hiropro/utils/RandomUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/src/main/java/vn/hanelsoft/utils/URLEncodeUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/libs/hss-android_lib/src/main/java/jp/co/hiropro/utils/URLEncodeUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/src/main/java/vn/hanelsoft/utils/ValidateUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/libs/hss-android_lib/src/main/java/jp/co/hiropro/utils/ValidateUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/src/main/java/vn/hanelsoft/view/LoadingView.java" beforeDir="false" afterPath="$PROJECT_DIR$/libs/hss-android_lib/src/main/java/jp/co/hiropro/view/LoadingView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/src/main/java/vn/hanelsoft/view/StickerView.java" beforeDir="false" afterPath="$PROJECT_DIR$/libs/hss-android_lib/src/main/java/jp/co/hiropro/view/StickerView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/src/main/java/vn/hanelsoft/view/ViewHolder.java" beforeDir="false" afterPath="$PROJECT_DIR$/libs/hss-android_lib/src/main/java/jp/co/hiropro/view/ViewHolder.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -105,12 +520,21 @@
     </system>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="546">
-              <caret line="26" column="49" selection-start-line="26" selection-start-column="47" selection-end-line="26" selection-end-column="49" />
+            <state relative-caret-position="189">
+              <caret line="9" column="33" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/google-services.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="252">
+              <caret line="12" column="53" selection-start-line="12" selection-start-column="53" selection-end-line="12" selection-end-column="53" />
             </state>
           </provider>
         </entry>
@@ -118,20 +542,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="15" column="53" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="53" />
+            <state relative-caret-position="42">
+              <caret line="2" column="29" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="39" />
             </state>
           </provider>
           <provider editor-type-id="android-manifest" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/doc/keyinfog.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="21">
-              <caret line="1" column="18" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="18" />
-            </state>
-          </provider>
         </entry>
       </file>
     </leaf>
@@ -150,10 +565,11 @@
       <find>btn_google</find>
       <find>onActivityResult</find>
       <find>lintOptions</find>
+      <find>alias</find>
     </findStrings>
   </component>
   <component name="GenerateSignedApkSettings">
-    <option name="KEY_STORE_PATH" value="D:\ANDROI\Project\SeminorHall\seminorhall\app\doc\seminorhall.jks" />
+    <option name="KEY_STORE_PATH" value="D:\ANDROI\Project\SeminorHall\doc\seminorhall.jks" />
     <option name="KEY_ALIAS" value="seminorhall" />
     <option name="REMEMBER_PASSWORDS" value="true" />
     <option name="BUILD_TARGET_KEY" value="apk" />
@@ -167,9 +583,10 @@
         <option value="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/util/AppConstants.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/controller/activity/SplashActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/xml/network_security_config.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/controller/activity/RegisterActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/controller/activity/LoginActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/app/google-services.json" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
       </list>
     </option>
@@ -185,10 +602,10 @@
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
+      <hideEmptyPackages AndroidView="false" ProjectPane="false" />
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -207,12 +624,64 @@
               <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="doc" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="seminorhall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="seminorhall" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="seminorhall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="seminorhall" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="seminorhall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="seminorhall" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="seminorhall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="seminorhall" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="jp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="seminorhall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="seminorhall" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="jp" type="462c0819:PsiDirectoryNode" />
+              <item name="co" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="seminorhall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="seminorhall" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="jp" type="462c0819:PsiDirectoryNode" />
+              <item name="co" type="462c0819:PsiDirectoryNode" />
+              <item name="hiropro" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -226,12 +695,16 @@
     <property name="SHOW_ALL_PROCESSES" value="false" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="device.picker.selection" value="BH905BN24L" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/doc/seminorhall.jks" />
+    <property name="last_opened_file_path" value="G:/ANDROI/Project/Viettel/viettel" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="sync.plugin.last.upgrade.timestamp" value="1559183927724" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="jp.co" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\ANDROI\Project\SeminorHall\seminorhall\app\doc" />
       <recent name="D:\ANDROI\Project\SeminorHall\seminorhall\app" />
       <recent name="D:\ANDROI\Project\SeminorHall\seminorhall\app\src\main\res\xml" />
       <recent name="D:\ANDROI\Project\SeminorHall\seminorhall\libs\hss-android_lib" />
@@ -431,10 +904,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1358" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.13486141" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.21801706" />
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info id="Build Variants" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
@@ -447,12 +919,12 @@
       <window_info anchor="bottom" id="Logcat" order="1" weight="0.25785482" />
       <window_info anchor="bottom" id="DB Execution Console" order="2" />
       <window_info anchor="bottom" id="TODO" order="3" />
-      <window_info anchor="bottom" id="Android Profiler" order="4" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Android Profiler" order="4" />
       <window_info anchor="bottom" id="Debug" order="5" weight="0.26218852" />
-      <window_info anchor="bottom" id="Event Log" order="6" side_tool="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="Event Log" order="6" sideWeight="0.50053304" side_tool="true" weight="0.23293608" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Build" order="8" weight="0.23293608" />
-      <window_info anchor="bottom" id="Find" order="9" weight="0.3289689" />
+      <window_info anchor="bottom" id="Build" order="8" sideWeight="0.49946696" weight="0.23293608" />
+      <window_info anchor="bottom" id="Find" order="9" weight="0.32827735" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
@@ -467,7 +939,7 @@
     <entry file="file://$PROJECT_DIR$/libs/liboverscroll/build.gradle">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/libs/hss-android_lib/src/main/java/vn/hanelsoft/view/ViewHolder.java">
+    <entry file="file://$PROJECT_DIR$/libs/hss-android_lib/src/main/java/jp/co/hiropro/view/ViewHolder.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
           <caret line="9" column="25" lean-forward="true" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
@@ -481,9 +953,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/note.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.support/support-fragment/27.1.1/94732bda44fba11302c58e459b7c1f47e7521bf9/support-fragment-27.1.1-sources.jar!/android/support/v4/app/FragmentActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="298">
@@ -491,7 +960,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/controller/activity/PlayVideoActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/jp/co/hiropro/seminar_hall/controller/activity/PlayVideoActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
           <caret line="202" column="32" selection-start-line="202" selection-start-column="19" selection-end-line="202" selection-end-column="32" />
@@ -501,7 +970,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/controller/activity/TopActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/jp/co/hiropro/seminar_hall/controller/activity/TopActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-3276">
           <caret line="79" column="13" selection-start-line="79" selection-start-column="13" selection-end-line="79" selection-end-column="13" />
@@ -526,14 +995,14 @@
     <entry file="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7e47d76a11894a4bb3b69fa900d879b2/jars/classes.jar!/com/google/android/gms/auth/api/signin/GoogleSignInResult.class" />
     <entry file="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7e47d76a11894a4bb3b69fa900d879b2/jars/classes.jar!/com/google/android/gms/auth/api/Auth.class" />
     <entry file="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/bccaa82089b12efd00443ee246d597de/jars/classes.jar!/com/google/android/gms/auth/api/signin/GoogleSignInOptions.class" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/controller/activity/ContentDetailActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/jp/co/hiropro/seminar_hall/controller/activity/ContentDetailActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2205">
           <caret line="174" column="9" selection-start-line="174" selection-start-column="9" selection-end-line="174" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/controller/activity/LoginActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/jp/co/hiropro/seminar_hall/controller/activity/LoginActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="924">
           <caret line="113" column="57" selection-start-line="113" selection-start-column="38" selection-end-line="113" selection-end-column="57" />
@@ -548,14 +1017,14 @@
       </provider>
       <provider editor-type-id="android-designer2" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/controller/activity/SplashActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/jp/co/hiropro/seminar_hall/controller/activity/SplashActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-210">
           <caret line="65" column="24" selection-start-line="65" selection-start-column="24" selection-end-line="65" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/util/AppConstants.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/jp/co/hiropro/seminar_hall/util/AppConstants.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="294">
           <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
@@ -565,7 +1034,7 @@
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/controller/activity/RegisterActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/jp/co/hiropro/seminar_hall/controller/activity/RegisterActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="518">
           <caret line="163" column="39" selection-start-line="163" selection-start-column="39" selection-end-line="163" selection-end-column="39" />
@@ -575,32 +1044,70 @@
     <entry file="file://$PROJECT_DIR$/app/build/outputs/apk/debug/debug-1.0.0.apk">
       <provider selected="true" editor-type-id="apk-viewer" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/vn/hanelsoft/forestpublishing/ForestApplication.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/note.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/getKeyHashed.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="52" column="28" selection-start-line="52" selection-start-column="28" selection-end-line="52" selection-end-column="28" />
+        <state>
+          <caret column="42" selection-start-column="27" selection-end-column="42" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+    <entry file="file://$PROJECT_DIR$/app/proguard-rules.pro">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="26" column="49" selection-start-line="26" selection-start-column="47" selection-end-line="26" selection-end-column="49" />
+        <state relative-caret-position="-302" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/seminorhall.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="18" column="9" lean-forward="true" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/local.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hssito-evergreen-android-4f337058e30c.zip">
+      <provider selected="true" editor-type-id="apk-viewer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/settings.gradle">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/jp/co/hiropro/seminar_hall/ForestApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="37" selection-start-column="21" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/google-services.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="12" column="53" selection-start-line="12" selection-start-column="53" selection-end-line="12" selection-end-column="53" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="15" column="53" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="53" />
+        <state relative-caret-position="42">
+          <caret line="2" column="29" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="39" />
         </state>
       </provider>
       <provider editor-type-id="android-manifest" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/doc/keyinfog.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="1" column="18" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="18" />
+        <state relative-caret-position="42">
+          <caret line="2" column="23" lean-forward="true" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="33" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="33" />
         </state>
       </provider>
     </entry>

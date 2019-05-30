@@ -30,7 +30,7 @@
 
             <include layout="@layout/layout_profile_information" />
 
-            <vn.hanelsoft.forestpublishing.view.ButtonApp
+            <jp.co.hiropro.seminar_hall.view.ButtonApp
                 android:id="@+id/btn_logout"
                 style="@style/ButtonForest"
                 android:layout_width="match_parent"
@@ -40,7 +40,7 @@
                 app:fontFamilyApp="kozgopro6n_m"
                 app:textStyle="bold" />
 
-            <vn.hanelsoft.forestpublishing.view.TextViewApp
+            <jp.co.hiropro.seminar_hall.view.TextViewApp
                 android:id="@+id/tv_copyright"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -80,7 +80,7 @@
                     android:textColor="#b1b1b1"
                     android:textSize="20sp" />
 
-                <vn.hanelsoft.forestpublishing.view.TextViewApp
+                <jp.co.hiropro.seminar_hall.view.TextViewApp
                     android:id="@+id/tv_title"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"

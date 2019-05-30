@@ -19,7 +19,7 @@
             android:layout_gravity="center"
             android:orientation="vertical">
 
-            <vn.hanelsoft.forestpublishing.view.EditTextApp
+            <jp.co.hiropro.seminar_hall.view.EditTextApp
                 android:id="@+id/edt_email"
                 android:layout_width="match_parent"
                 android:layout_height="52dp"
@@ -33,7 +33,7 @@
                 android:textColor="@color/colorPrimary"
                 android:textSize="13sp" />
 
-            <vn.hanelsoft.forestpublishing.view.ButtonApp
+            <jp.co.hiropro.seminar_hall.view.ButtonApp
                 android:id="@+id/btnRegister"
                 fontPath="fonts/Roboto-Regular_3.ttf"
                 android:layout_width="257dp"

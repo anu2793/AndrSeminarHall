@@ -15,7 +15,7 @@
         android:layout_margin="@dimen/value_50dp"
         android:adjustViewBounds="true" />
 
-    <vn.hanelsoft.forestpublishing.view.TextViewApp
+    <jp.co.hiropro.seminar_hall.view.TextViewApp
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="プロフィールを作りましょう！ "
@@ -23,7 +23,7 @@
         android:textSize="@dimen/text_size_14sp"
         app:fontFamilyApp="hiramaru" />
 
-    <vn.hanelsoft.forestpublishing.view.ButtonApp
+    <jp.co.hiropro.seminar_hall.view.ButtonApp
         android:id="@+id/btn_create_profile"
         android:layout_width="match_parent"
         android:layout_height="@dimen/value_70dp"
@@ -37,7 +37,7 @@
         android:textSize="@dimen/value_20sp"
         app:textStyle="bold" />
 
-    <vn.hanelsoft.forestpublishing.view.TextViewApp
+    <jp.co.hiropro.seminar_hall.view.TextViewApp
         android:id="@+id/tv_skip"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

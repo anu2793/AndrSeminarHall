@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="vn.hanelsoft.forestpublishing.controller.activity.WebviewActivity">
+    tools:context="jp.co.hiropro.seminar_hall.controller.activity.WebviewActivity">
 
     <RelativeLayout
         android:id="@+id/rl_action_bar"
@@ -51,7 +51,7 @@
             android:padding="@dimen/value_5dp"
             android:src="@mipmap/ic_open_browser" />
 
-        <vn.hanelsoft.forestpublishing.view.TextViewApp
+        <jp.co.hiropro.seminar_hall.view.TextViewApp
             android:id="@+id/tv_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

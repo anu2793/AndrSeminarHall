@@ -23,7 +23,7 @@
                 card_view:layout_constraintLeft_toLeftOf="parent"
                 card_view:layout_constraintRight_toRightOf="parent" />
 
-            <vn.hanelsoft.forestpublishing.view.CircleImageView
+            <jp.co.hiropro.seminar_hall.view.CircleImageView
                 android:id="@+id/imv_avatar"
                 android:layout_width="@dimen/value_120dp"
                 android:layout_height="@dimen/value_120dp"
@@ -36,7 +36,7 @@
                 card_view:layout_constraintRight_toRightOf="parent"
                 card_view:layout_constraintTop_toTopOf="parent" />
 
-            <vn.hanelsoft.forestpublishing.view.TextViewApp
+            <jp.co.hiropro.seminar_hall.view.TextViewApp
                 android:id="@+id/tv_title"
                 android:layout_width="@dimen/value_0dp"
                 android:layout_height="wrap_content"
@@ -73,7 +73,7 @@
                     android:textSize="10sp" />
             </RelativeLayout>
 
-            <vn.hanelsoft.forestpublishing.view.TextViewApp
+            <jp.co.hiropro.seminar_hall.view.TextViewApp
                 android:id="@+id/tvContent"
                 android:layout_width="0dp"
                 android:layout_height="@dimen/value_55dp"
@@ -92,7 +92,7 @@
                 card_view:layout_constraintRight_toRightOf="parent"
                 card_view:layout_constraintTop_toBottomOf="@+id/rl_type" />
 
-            <vn.hanelsoft.forestpublishing.view.ButtonApp
+            <jp.co.hiropro.seminar_hall.view.ButtonApp
                 android:id="@+id/btnAccept"
                 android:layout_width="250dp"
                 android:layout_height="@dimen/value_55dp"

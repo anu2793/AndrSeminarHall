@@ -14,7 +14,7 @@
         android:background="@color/color_3e444c"
         android:orientation="horizontal">
 
-        <vn.hanelsoft.forestpublishing.view.TextViewApp
+        <jp.co.hiropro.seminar_hall.view.TextViewApp
             android:id="@+id/tv_choice_type_share"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -30,7 +30,7 @@
             android:layout_height="@dimen/value_52dp"
             android:background="@color/color_535a64" />
 
-        <vn.hanelsoft.forestpublishing.view.TextViewApp
+        <jp.co.hiropro.seminar_hall.view.TextViewApp
             android:id="@+id/tv_screen_receive"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -78,7 +78,7 @@
                         android:scaleType="centerCrop"
                         android:src="@mipmap/ic_qr_code_scanner" />
 
-                    <vn.hanelsoft.forestpublishing.view.TextViewApp
+                    <jp.co.hiropro.seminar_hall.view.TextViewApp
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_below="@id/ic_qr_code"
@@ -105,7 +105,7 @@
                         android:layout_margin="@dimen/value_30dp"
                         android:src="@mipmap/ic_swipe_card_up" />
 
-                    <vn.hanelsoft.forestpublishing.view.TextViewApp
+                    <jp.co.hiropro.seminar_hall.view.TextViewApp
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_below="@id/ic_swipe"
@@ -140,7 +140,7 @@
                         android:layout_margin="@dimen/value_30dp"
                         android:src="@mipmap/ic_qr_code_scanner" />
 
-                    <vn.hanelsoft.forestpublishing.view.TextViewApp
+                    <jp.co.hiropro.seminar_hall.view.TextViewApp
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_below="@id/ic_qr_code_scan"
@@ -168,7 +168,7 @@
                         android:layout_margin="@dimen/value_30dp"
                         android:src="@mipmap/ic_swipe_card_down" />
 
-                    <vn.hanelsoft.forestpublishing.view.TextViewApp
+                    <jp.co.hiropro.seminar_hall.view.TextViewApp
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_below="@id/ic_receive"

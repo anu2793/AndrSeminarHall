@@ -23,7 +23,7 @@
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
         tools:listitem="@layout/item_cate_seminar" />
 
-    <vn.hanelsoft.forestpublishing.view.TextViewApp
+    <jp.co.hiropro.seminar_hall.view.TextViewApp
         android:id="@+id/tv_copyright"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

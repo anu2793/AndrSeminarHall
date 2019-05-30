@@ -15,7 +15,7 @@
         android:gravity="center_horizontal"
         android:orientation="vertical">
 
-        <vn.hanelsoft.forestpublishing.view.TextViewApp
+        <jp.co.hiropro.seminar_hall.view.TextViewApp
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/value_50dp"
@@ -27,7 +27,7 @@
             android:textStyle="bold"
             card_view:fontFamilyApp="hiramin" />
 
-        <vn.hanelsoft.forestpublishing.view.TextViewApp
+        <jp.co.hiropro.seminar_hall.view.TextViewApp
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/value_5dp"
@@ -46,7 +46,7 @@
             android:background="#5b5b5b"
             android:visibility="gone" />
 
-        <vn.hanelsoft.forestpublishing.view.TextViewApp
+        <jp.co.hiropro.seminar_hall.view.TextViewApp
             android:id="@+id/tv_name_purchase"
             android:layout_width="wrap_content"
             android:layout_height="@dimen/value_50dp"
@@ -59,7 +59,7 @@
             android:textColor="@color/title_profile_color"
             android:textSize="25sp" />
 
-        <vn.hanelsoft.forestpublishing.view.TextViewApp
+        <jp.co.hiropro.seminar_hall.view.TextViewApp
             android:id="@+id/tv_time_left"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -82,7 +82,7 @@
                 android:layout_height="0.75dp"
                 android:background="#dfdfdf" />
 
-            <vn.hanelsoft.forestpublishing.view.TextViewApp
+            <jp.co.hiropro.seminar_hall.view.TextViewApp
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -107,7 +107,7 @@
             android:visibility="gone"
             tools:visibility="gone" />
 
-        <vn.hanelsoft.forestpublishing.view.TextViewApp
+        <jp.co.hiropro.seminar_hall.view.TextViewApp
             android:id="@+id/tv_go_paid_guide"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

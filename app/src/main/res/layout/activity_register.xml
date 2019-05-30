@@ -58,7 +58,7 @@
                         android:adjustViewBounds="true"
                         android:src="@mipmap/ic_email" />
 
-                    <vn.hanelsoft.forestpublishing.view.EditTextApp
+                    <jp.co.hiropro.seminar_hall.view.EditTextApp
                         android:id="@+id/edt_email"
                         style="@style/EditTextForest"
                         android:layout_toRightOf="@id/imv_email"
@@ -94,7 +94,7 @@
                         android:adjustViewBounds="true"
                         android:src="@mipmap/ic_key" />
 
-                    <vn.hanelsoft.forestpublishing.view.EditTextApp
+                    <jp.co.hiropro.seminar_hall.view.EditTextApp
                         android:id="@+id/edt_password"
                         style="@style/EditTextForest"
                         android:layout_toRightOf="@id/imv_key_password"
@@ -128,7 +128,7 @@
                         android:adjustViewBounds="true"
                         android:src="@mipmap/ic_key" />
 
-                    <vn.hanelsoft.forestpublishing.view.EditTextApp
+                    <jp.co.hiropro.seminar_hall.view.EditTextApp
                         android:id="@+id/edt_re_password"
                         style="@style/EditTextForest"
                         android:layout_toRightOf="@id/imv_key_re_password"
@@ -157,7 +157,7 @@
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/ll_input">
 
-                <vn.hanelsoft.forestpublishing.view.ButtonApp
+                <jp.co.hiropro.seminar_hall.view.ButtonApp
                     android:id="@+id/btn_submit"
                     style="@style/ButtonForest"
                     android:layout_width="match_parent"
@@ -171,7 +171,7 @@
                     app:fontFamilyApp="kozgopro6n_m"
                     app:textStyle="bold" />
 
-                <vn.hanelsoft.forestpublishing.view.TextViewApp
+                <jp.co.hiropro.seminar_hall.view.TextViewApp
                     android:id="@+id/tv_privacy"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -220,7 +220,7 @@
                         android:layout_height="match_parent"
                         android:src="@mipmap/ic_google_left" />
 
-                    <vn.hanelsoft.forestpublishing.view.TextViewApp
+                    <jp.co.hiropro.seminar_hall.view.TextViewApp
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_marginLeft="@dimen/value_60dp"
@@ -230,7 +230,7 @@
                         android:textSize="@dimen/text_size_14sp" />
                 </RelativeLayout>
 
-                <vn.hanelsoft.forestpublishing.view.ButtonApp
+                <jp.co.hiropro.seminar_hall.view.ButtonApp
                     android:id="@+id/btn_login"
                     style="@style/ButtonForestLogin"
                     android:layout_width="match_parent"
@@ -239,7 +239,7 @@
                     app:fontFamilyApp="kozgopro6n_m"
                     app:textStyle="bold" />
 
-                <vn.hanelsoft.forestpublishing.view.TextViewApp
+                <jp.co.hiropro.seminar_hall.view.TextViewApp
                     android:id="@+id/tv_skip"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"

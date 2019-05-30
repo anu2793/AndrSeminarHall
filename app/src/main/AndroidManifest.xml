@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="vn.hanelsoft.forestpublishing">
+    package="jp.co.hiropro.seminar_hall">
 
     <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
@@ -17,7 +17,7 @@
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
     <application
-        android:name=".ForestApplication"
+        android:name="jp.co.hiropro.seminar_hall.ForestApplication"
         android:allowBackup="false"
         android:hardwareAccelerated="true"
         android:icon="@mipmap/ic_launcher"
@@ -29,7 +29,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".controller.activity.SplashActivity"
+            android:name="jp.co.hiropro.seminar_hall.controller.activity.SplashActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan|adjustNothing">
             <intent-filter>
@@ -57,68 +57,68 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".controller.activity.TopActivity"
+            android:name="jp.co.hiropro.seminar_hall.controller.activity.TopActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
-            android:name=".controller.activity.RegisterActivity"
+            android:name="jp.co.hiropro.seminar_hall.controller.activity.RegisterActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name=".controller.activity.ForgotSuccessActivity"
+            android:name="jp.co.hiropro.seminar_hall.controller.activity.ForgotSuccessActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".controller.activity.RegisterSuccessActivity"
+            android:name="jp.co.hiropro.seminar_hall.controller.activity.RegisterSuccessActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".controller.activity.ForgotPasswordActivity"
+            android:name="jp.co.hiropro.seminar_hall.controller.activity.ForgotPasswordActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".controller.activity.LoginActivity"
+            android:name="jp.co.hiropro.seminar_hall.controller.activity.LoginActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name=".controller.activity.SubCategoryDetailActivity"
+            android:name="jp.co.hiropro.seminar_hall.controller.activity.SubCategoryDetailActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".controller.activity.SubCategoryActivity"
+            android:name="jp.co.hiropro.seminar_hall.controller.activity.SubCategoryActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".controller.activity.NewsActivity"
+            android:name="jp.co.hiropro.seminar_hall.controller.activity.NewsActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".controller.activity.NewDetailActivity"
+            android:name="jp.co.hiropro.seminar_hall.controller.activity.NewDetailActivity"
             android:screenOrientation="portrait" />
         <!-- <activity -->
         <!-- android:name=".controller.activity.PurchaseListActivity" -->
         <!-- android:screenOrientation="portrait" /> -->
         <activity
-            android:name=".controller.activity.SpecifiedCommercialTransactionActivity"
+            android:name="jp.co.hiropro.seminar_hall.controller.activity.SpecifiedCommercialTransactionActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".controller.activity.PolicyActivity"
+            android:name="jp.co.hiropro.seminar_hall.controller.activity.PolicyActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".controller.activity.ChangeEmailActivity"
+            android:name="jp.co.hiropro.seminar_hall.controller.activity.ChangeEmailActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".controller.activity.PaidMemberGuiderActivity"
+            android:name="jp.co.hiropro.seminar_hall.controller.activity.PaidMemberGuiderActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".controller.activity.ProfileActivity"
+            android:name="jp.co.hiropro.seminar_hall.controller.activity.ProfileActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".controller.activity.ChangePasswordActivity"
+            android:name="jp.co.hiropro.seminar_hall.controller.activity.ChangePasswordActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".controller.activity.DiagnosisActivity"
+            android:name="jp.co.hiropro.seminar_hall.controller.activity.DiagnosisActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".controller.activity.BuyMonthPremiumActivity"
+            android:name="jp.co.hiropro.seminar_hall.controller.activity.BuyMonthPremiumActivity"
             android:screenOrientation="portrait" />
         <!-- FCM -->
         <service
-            android:name=".util.fcm.FCMReceiveMessage"
+            android:name="jp.co.hiropro.seminar_hall.util.fcm.FCMReceiveMessage"
             android:enabled="true"
             android:exported="true">
             <intent-filter>
@@ -126,7 +126,7 @@
             </intent-filter>
         </service>
         <service
-            android:name=".util.fcm.ServiceFCMInstanceID"
+            android:name="jp.co.hiropro.seminar_hall.util.fcm.ServiceFCMInstanceID"
             android:enabled="true"
             android:exported="true">
             <intent-filter>
@@ -149,7 +149,7 @@
         <!-- </receiver> -->
 
         <service
-            android:name=".service.AuthenticationService"
+            android:name="jp.co.hiropro.seminar_hall.service.AuthenticationService"
             android:exported="false">
             <intent-filter>
                 <action android:name="android.accounts.AccountAuthenticator" />
@@ -161,63 +161,63 @@
         </service>
 
         <activity
-            android:name=".controller.activity.ContentDetailActivity"
+            android:name="jp.co.hiropro.seminar_hall.controller.activity.ContentDetailActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".controller.activity.RecommendFreeContentActivity"
+            android:name="jp.co.hiropro.seminar_hall.controller.activity.RecommendFreeContentActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".controller.activity.MyLibraryActivity"
+            android:name="jp.co.hiropro.seminar_hall.controller.activity.MyLibraryActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".controller.activity.PlayVideoActivity"
+            android:name="jp.co.hiropro.seminar_hall.controller.activity.PlayVideoActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenSize|screenLayout|smallestScreenSize|uiMode"
             android:launchMode="singleTop"
             android:theme="@style/ThemeFullScreen" />
         <activity
-            android:name=".controller.activity.WebviewActivity"
+            android:name="jp.co.hiropro.seminar_hall.controller.activity.WebviewActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".controller.activity.SubSubCategoryActivity"
+            android:name="jp.co.hiropro.seminar_hall.controller.activity.SubSubCategoryActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".controller.activity.MaintainActivity"
+            android:name="jp.co.hiropro.seminar_hall.controller.activity.MaintainActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".controller.activity.VideoSameTagActivity"
+            android:name="jp.co.hiropro.seminar_hall.controller.activity.VideoSameTagActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".controller.activity.MyFavoriteActivity"
+            android:name="jp.co.hiropro.seminar_hall.controller.activity.MyFavoriteActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".controller.activity.ManagerDeviceActivity"
+            android:name="jp.co.hiropro.seminar_hall.controller.activity.ManagerDeviceActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".controller.activity.JackProfileActivity"
+            android:name="jp.co.hiropro.seminar_hall.controller.activity.JackProfileActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".controller.activity.CateDetailActivity"
+            android:name="jp.co.hiropro.seminar_hall.controller.activity.CateDetailActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".controller.activity.CateListActivity"
+            android:name="jp.co.hiropro.seminar_hall.controller.activity.CateListActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".controller.activity.AppWebViewActivity"
+            android:name="jp.co.hiropro.seminar_hall.controller.activity.AppWebViewActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".controller.activity.TermOfServiceActivity"
+            android:name="jp.co.hiropro.seminar_hall.controller.activity.TermOfServiceActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".controller.activity.ShopContentActivity"
+            android:name="jp.co.hiropro.seminar_hall.controller.activity.ShopContentActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".controller.activity.TeacherProfileCardActivity"
+            android:name="jp.co.hiropro.seminar_hall.controller.activity.TeacherProfileCardActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".controller.activity.TeacherContentListActivity"
+            android:name="jp.co.hiropro.seminar_hall.controller.activity.TeacherContentListActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".controller.activity.ReceiveScreenActivity"
+            android:name="jp.co.hiropro.seminar_hall.controller.activity.ReceiveScreenActivity"
             android:screenOrientation="portrait" />
 
         <meta-data
@@ -250,40 +250,40 @@
             android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
             android:theme="@style/Base.Theme.AppCompat" />
         <activity
-            android:name=".controller.activity.EditProfileActivity"
+            android:name="jp.co.hiropro.seminar_hall.controller.activity.EditProfileActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".controller.activity.ContactListActivity"
+            android:name="jp.co.hiropro.seminar_hall.controller.activity.ContactListActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".controller.activity.EditSNSActivity"
+            android:name="jp.co.hiropro.seminar_hall.controller.activity.EditSNSActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name=".controller.activity.QrCodePreviewActivity"
+            android:name="jp.co.hiropro.seminar_hall.controller.activity.QrCodePreviewActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".controller.activity.QrCodeScannerActivity"
+            android:name="jp.co.hiropro.seminar_hall.controller.activity.QrCodeScannerActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".controller.activity.SwipeCardActivity"
+            android:name="jp.co.hiropro.seminar_hall.controller.activity.SwipeCardActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".controller.activity.SingleReceiveCardActivity"
+            android:name="jp.co.hiropro.seminar_hall.controller.activity.SingleReceiveCardActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".controller.activity.PurchaseActivity"
+            android:name="jp.co.hiropro.seminar_hall.controller.activity.PurchaseActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".controller.activity.SettingActivity"
+            android:name="jp.co.hiropro.seminar_hall.controller.activity.SettingActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".controller.activity.CardReceiveActivity"
+            android:name="jp.co.hiropro.seminar_hall.controller.activity.CardReceiveActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".controller.activity.PointManagerActivity"
+            android:name="jp.co.hiropro.seminar_hall.controller.activity.PointManagerActivity"
             android:screenOrientation="portrait" />
-        <activity android:name=".controller.activity.SettlementLawActivity"></activity>
+        <activity android:name="jp.co.hiropro.seminar_hall.controller.activity.SettlementLawActivity"></activity>
     </application>
 
 </manifest>

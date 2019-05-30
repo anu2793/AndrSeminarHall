@@ -11,7 +11,7 @@
         android:layout_height="@dimen/value_30dp"
         android:layout_alignParentBottom="true" />
 
-    <vn.hanelsoft.forestpublishing.view.ButtonApp
+    <jp.co.hiropro.seminar_hall.view.ButtonApp
         android:id="@+id/btn_close"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -35,7 +35,7 @@
         android:background="@drawable/bg_button_white"
         android:orientation="vertical">
 
-        <vn.hanelsoft.forestpublishing.view.ButtonApp
+        <jp.co.hiropro.seminar_hall.view.ButtonApp
             android:id="@+id/btn_open_browser"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -50,7 +50,7 @@
             android:layout_height="0.5dp"
             android:background="@color/line" />
 
-        <vn.hanelsoft.forestpublishing.view.ButtonApp
+        <jp.co.hiropro.seminar_hall.view.ButtonApp
             android:id="@+id/btn_copy"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

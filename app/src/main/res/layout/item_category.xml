@@ -22,7 +22,7 @@
         android:layout_centerInParent="true"
         android:orientation="vertical">
 
-        <vn.hanelsoft.forestpublishing.view.TextViewApp
+        <jp.co.hiropro.seminar_hall.view.TextViewApp
             android:id="@+id/tv_name_jp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -43,7 +43,7 @@
             android:background="@android:color/white"
             android:visibility="gone" />
 
-        <vn.hanelsoft.forestpublishing.view.TextViewApp
+        <jp.co.hiropro.seminar_hall.view.TextViewApp
             android:id="@+id/tv_name_eng"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

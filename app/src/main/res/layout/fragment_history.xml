@@ -8,14 +8,14 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context="vn.hanelsoft.forestpublishing.controller.fragment.HistoryFragment">
+        tools:context="jp.co.hiropro.seminar_hall.controller.fragment.HistoryFragment">
 
         <android.support.v7.widget.RecyclerView
             android:id="@+id/lv_history"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
 
-        <vn.hanelsoft.forestpublishing.view.TextViewApp
+        <jp.co.hiropro.seminar_hall.view.TextViewApp
             android:id="@+id/tv_empty"
             android:layout_width="match_parent"
             android:layout_height="match_parent"

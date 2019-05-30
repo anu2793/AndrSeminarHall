@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="vn.hanelsoft.forestpublishing.controller.activity.SettlementLawActivity">
+    tools:context="jp.co.hiropro.seminar_hall.controller.activity.SettlementLawActivity">
 
     <WebView
         android:id="@+id/webview"

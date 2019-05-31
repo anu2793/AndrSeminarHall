@@ -1,4 +1,4 @@
-//package vn.hanelsoft.forestpublishing;
+//package jp.co.hiropro.seminar_hall;
 //
 //
 //import org.junit.Test;

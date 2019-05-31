@@ -109,7 +109,7 @@ public class BuyMonthPremiumActivity extends BaseActivity {
                 break;
             case R.id.swipeReNew:
                 Intent intent = new Intent(Intent.ACTION_VIEW);
-                intent.setData(Uri.parse("market://details?id=vn.hanelsoft.forestpublishing"));
+                intent.setData(Uri.parse("market://details?id=jp.co.hiropro.seminar_hall"));
                 startActivity(intent);
 //                mGoGooglePlay = true;
 //                mWipeReNewal.setImageResource(R.mipmap.ic_switch_purchase_enable : R.mipmap.ic_switch_purchase_disable);

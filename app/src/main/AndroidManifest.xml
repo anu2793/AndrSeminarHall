@@ -135,7 +135,7 @@
         </service>
         <!-- Authenticate create account user -->
         <!-- <receiver -->
-        <!-- android:name="vn.hanelsoft.forestpublishing.util.fcm.CustomUniversalFCM" -->
+        <!-- android:name="jp.co.hiropro.seminar_hall.util.fcm.CustomUniversalFCM" -->
         <!-- android:enabled="true" -->
         <!-- android:exported="true" -->
         <!-- android:permission="com.google.android.c2dm.permission.SEND"> -->
@@ -144,7 +144,7 @@
         <!-- <action android:name="com.google.android.c2dm.intent.REGISTRATION" /> -->
 
 
-        <!-- <category android:name="vn.hanelsoft.forestpublishing" /> -->
+        <!-- <category android:name="jp.co.hiropro.seminar_hall" /> -->
         <!-- </intent-filter> -->
         <!-- </receiver> -->
 

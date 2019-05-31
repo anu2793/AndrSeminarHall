@@ -195,5 +195,11 @@
     <orderEntry type="library" name="Gradle: com.github.bumptech.glide:disklrucache:4.5.0@jar" level="project" />
     <orderEntry type="module" module-name="hss-android_lib" />
     <orderEntry type="module" module-name="liboverscroll" />
+    <orderEntry type="module" module-name="hss-android_lib" />
+    <orderEntry type="module" module-name="liboverscroll" />
+    <orderEntry type="module" module-name="hss-android_lib" />
+    <orderEntry type="module" module-name="liboverscroll" />
+    <orderEntry type="module" module-name="hss-android_lib" />
+    <orderEntry type="module" module-name="liboverscroll" />
   </component>
 </module>

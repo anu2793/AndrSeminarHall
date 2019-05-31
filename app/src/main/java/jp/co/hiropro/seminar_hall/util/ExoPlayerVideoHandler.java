@@ -57,7 +57,7 @@ public class ExoPlayerVideoHandler {
                 player = ExoPlayerFactory.newSimpleInstance(context, trackSelector);
                 DefaultBandwidthMeter defaultBandwidthMeter = new DefaultBandwidthMeter();
                 DataSource.Factory dataSourceFactory = new DefaultDataSourceFactory(context,
-                        Util.getUserAgent(context, "vn.hanelsoft.forestpublishing"), defaultBandwidthMeter);
+                        Util.getUserAgent(context, "jp.co.hiropro.seminar_hall"), defaultBandwidthMeter);
                 MediaSource videoSource = new ExtractorMediaSource(uri, dataSourceFactory, new DefaultExtractorsFactory(),
                         null, null);
                 // Prepare the player with the source.

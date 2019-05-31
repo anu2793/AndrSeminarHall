@@ -1,4 +1,4 @@
-//package vn.hanelsoft.forestpublishing;
+//package jp.co.hiropro.seminar_hall;
 //
 //import android.content.Context;
 //import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@
 //        // Context of the app under test.
 //        Context appContext = InstrumentationRegistry.getTargetContext();
 //
-//        assertEquals("vn.hanelsoft.forestpublishing", appContext.getPackageName());
+//        assertEquals("jp.co.hiropro.seminar_hall", appContext.getPackageName());
 //    }
 //}

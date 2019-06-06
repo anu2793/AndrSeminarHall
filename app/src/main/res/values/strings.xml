@@ -59,7 +59,8 @@
     <string name="title_diagnosis_result">スキル診断結果</string>
     <!-- TODO: Remove or change this placeholder text -->
     <!--<string name="base64_key"></string>-->
-    <string name="base64_key">MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAg0RVXD/RfbD8JG4O1M6DjkG6o5SDqpnDP1NAKlr0U4JMpiC0uMVwScJyeZLqQ4kbWaVIcOrG2cX+u9PgDIkpO9Iu9h+QrBSUzdeM4ZD88jJ8R/B4sATtgo94/d2Cdnf2B+782NE9+KDcriOtDHQhmGqRVvQOm0uSH5ZJs6rFeiRTbj69UCSgX+SyN2HkmgyRhIz0VfFMW4HBMpj/xiSGDjUM+AyYc1y9cEzpZirAbwb2pfYLF6HjIZZVUCnytGMYf/q4zehUkDV8HS5w+FtKpsPsvhnCamKPJ0cKyVBJcDBQKwbawh5qt0+EYIzRug3Xkpo5Y4iSmC2AhvVBGw9/pwIDAQAB</string>
+    <!--<string name="base64_key">MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAg0RVXD/RfbD8JG4O1M6DjkG6o5SDqpnDP1NAKlr0U4JMpiC0uMVwScJyeZLqQ4kbWaVIcOrG2cX+u9PgDIkpO9Iu9h+QrBSUzdeM4ZD88jJ8R/B4sATtgo94/d2Cdnf2B+782NE9+KDcriOtDHQhmGqRVvQOm0uSH5ZJs6rFeiRTbj69UCSgX+SyN2HkmgyRhIz0VfFMW4HBMpj/xiSGDjUM+AyYc1y9cEzpZirAbwb2pfYLF6HjIZZVUCnytGMYf/q4zehUkDV8HS5w+FtKpsPsvhnCamKPJ0cKyVBJcDBQKwbawh5qt0+EYIzRug3Xkpo5Y4iSmC2AhvVBGw9/pwIDAQAB</string>-->
+    <string name="base64_key">MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAo9p1nKCVKvIgCmPJOvw0weK0h/ykNRNaNb3dgGLzI+H4XyucYO3WVfeqg3tU1b/el9GVy+e8gQrqFMJgxkmceFu5qF0RD2kSHeb0iV+XPl9xDNX30ZgLlsdnNSE7aOOO3gryiLQyk5h4ZNyoy1W1HtiR03slV7CtD9DaTnZOtqPYUoYQtqBzeESgeAnCd05i2bzbNJ16XYxCFvlrdlPW+5z9RS2rQQYkBJklQCs/+oYM0uqZyw2MGWezJ/Hi2jBdIct3Vn9gU5x7nI6VPPb+E3pDX2yGzQGZLfPJ0Rtd0BLtkhd+HM2prqOn2/tF9ButvOzNoKI4kL/cv9FedS9nzwIDAQAB</string>
     <string name="txt_buy_monthly_package_success">当月パッケージを購入するのは成功しました。</string>
     <string name="msg_has_bought_this_monthly_package">当月パッケージを購入しまた。</string>
     <string name="msg_has_bought_update_package">Ban dang mua goi update</string>

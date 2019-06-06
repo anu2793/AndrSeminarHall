@@ -1,45 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <ImageView
-        android:id="@id/exo_play"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:src="@drawable/ic_play" />
-
-    <ImageView
-        android:id="@id/exo_pause"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:src="@drawable/ic_pause" />
 
     <RelativeLayout
+        android:id="@+id/rl_controls"
         android:layout_width="match_parent"
-        android:layout_height="45dp"
+        android:layout_height="@dimen/value_45dp"
         android:layout_alignParentBottom="true"
-        android:background="#60FFFFFF">
+        android:background="@color/color_4d4d4d">
+
+        <ImageView
+            android:id="@+id/imv_volume"
+            android:layout_width="@dimen/value_45dp"
+            android:layout_height="@dimen/value_45dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/value_12dp"
+            android:src="@drawable/sound_on" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:layout_marginTop="4dp"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@id/imv_volume"
             android:gravity="center_vertical"
             android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="10dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/value_45dp"
+                    android:layout_height="@dimen/value_45dp"
+                    android:padding="@dimen/value_12dp">
+
+                    <ImageView
+                        android:id="@id/exo_play"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/playicon" />
+
+                    <ImageView
+                        android:id="@id/exo_pause"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@+id/exo_play"
+                        android:layout_marginStart="0dp"
+                        android:src="@drawable/pauseicon" />
+                </RelativeLayout>
+
+            </LinearLayout>
 
             <jp.co.hiropro.seminar_hall.view.TextViewApp
                 android:id="@id/exo_position"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:includeFontPadding="false"
-                android:paddingLeft="4dp"
-                android:paddingRight="4dp"
+                android:text="00:00"
                 android:textColor="#f27389"
                 android:textSize="14sp"
                 android:textStyle="bold" />
@@ -47,27 +74,66 @@
             <com.google.android.exoplayer2.ui.DefaultTimeBar
                 android:id="@id/exo_progress"
                 android:layout_width="0dp"
-                android:layout_height="26dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/value_8dp"
+                android:layout_marginEnd="@dimen/value_8dp"
                 android:layout_weight="1"
-                app:bar_height="10dp"
-                app:buffered_color="@android:color/white"
-                app:played_color="#f27389"
-                app:scrubber_color="#f27389"
-                app:scrubber_enabled_size="0dp"
-                app:unplayed_color="@android:color/white" />
+                app:bar_height="@dimen/value_2dp"
+                app:buffered_color="#b7b7b7"
+                app:played_color="@color/white"
+                app:scrubber_color="@color/white"
+                app:scrubber_enabled_size="@dimen/value_25dp"
+                app:unplayed_color="#b7b7b7" />
 
             <jp.co.hiropro.seminar_hall.view.TextViewApp
                 android:id="@id/exo_duration"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:includeFontPadding="false"
-                android:paddingLeft="4dp"
-                android:paddingRight="4dp"
+                android:text="00:00"
                 android:textColor="#f27389"
                 android:textSize="14sp"
                 android:textStyle="bold" />
 
         </LinearLayout>
     </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_control"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/rl_controls">
+
+        <ImageView
+            android:id="@+id/imv_control"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/pauseicon"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+    </RelativeLayout>
+    <com.h6ah4i.android.widget.verticalseekbar.VerticalSeekBarWrapper
+        android:id="@+id/volume"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_above="@id/rl_controls"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="@dimen/value_10dp"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <com.h6ah4i.android.widget.verticalseekbar.VerticalSeekBar
+            android:id="@+id/seek_volume"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@null"
+            android:progressDrawable="@drawable/seekbar"
+            android:splitTrack="false"
+            android:thumb="@drawable/seekbar_thumb"
+            app:seekBarRotation="CW270" />
+    </com.h6ah4i.android.widget.verticalseekbar.VerticalSeekBarWrapper>
 
 </RelativeLayout>

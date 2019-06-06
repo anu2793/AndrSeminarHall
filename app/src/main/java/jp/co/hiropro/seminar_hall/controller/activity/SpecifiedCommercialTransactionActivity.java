@@ -1,5 +1,6 @@
 package jp.co.hiropro.seminar_hall.controller.activity;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.webkit.WebView;
@@ -30,5 +31,6 @@ public class    SpecifiedCommercialTransactionActivity extends BaseActivity {
         btnShop.setVisibility(View.VISIBLE);
         WebView webView = findViewById(R.id.webview);
         webView.loadUrl("file:///android_asset/html/specified_commercial_transaction.html");
+        webView.setBackgroundColor(Color.TRANSPARENT);
     }
 }

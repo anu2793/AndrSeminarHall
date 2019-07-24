@@ -1,0 +1,3 @@
+key store pw: seminorhall123
+alias: seminorhall
+key pwd: seminorhall123

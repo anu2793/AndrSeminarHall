@@ -198,5 +198,7 @@
     <orderEntry type="module" module-name="liboverscroll" />
     <orderEntry type="module" module-name="hss-android_lib" />
     <orderEntry type="module" module-name="liboverscroll" />
+    <orderEntry type="module" module-name="hss-android_lib" />
+    <orderEntry type="module" module-name="liboverscroll" />
   </component>
 </module>

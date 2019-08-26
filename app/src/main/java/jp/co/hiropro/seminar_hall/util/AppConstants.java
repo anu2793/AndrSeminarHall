@@ -1,6 +1,10 @@
 package jp.co.hiropro.seminar_hall.util;
 
+import android.util.Log;
+
 import com.google.android.gms.common.api.GoogleApiClient;
+
+import jp.co.hiropro.seminar_hall.BuildConfig;
 
 /**
  * Created by Hss on 8/19/2015.
@@ -12,7 +16,7 @@ public class AppConstants {
      * If True : Using code test purchase. Server : Dev.
      * If Fail : Using real purchase. Server : UAT
      */
-    public static boolean isTestMode = false;
+    public static boolean isTestMode = BuildConfig.TEST_MODE;
     public static int CLIENT_ID = 1;
     public static int REQUEST_SUCCESS = 200;
     public static final String DEVELOPER_KEY = "903965347757";
@@ -34,9 +38,10 @@ public class AppConstants {
 
     public static String getLinkAdmin() {
         //DEV
-        return "http://hiro-evergreen.video/service/";
+        return BuildConfig.BASE_URL;
+
 //         Release
-//        return "http://alexapp.uat.ito.vn/service/";
+//        return "http://hiro-evergreen.video/service/";
     }
 
     public static class WebSocketLink {
@@ -44,7 +49,7 @@ public class AppConstants {
 //        public static String LINK_SEND = "ws://alexapp.ito.vn:9696/";
         // Release
 //        public static String LINK_SEND = "ws://alexapp.uat.ito.vn:9595/";
-        public static String LINK_SEND = "ws://hiro-evergreen.video:9595/";
+        public static String LINK_SEND = BuildConfig.LINK_SEND;
     }
 
 

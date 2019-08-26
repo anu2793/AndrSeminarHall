@@ -41,6 +41,20 @@ android {
         exclude 'META-INF/services/javax.annotation.processing.Processor'
         exclude 'META-INF/ASL2.0'
     }
+
+    flavorDimensions "default"
+    productFlavors {
+        development {
+            buildConfigField("String", "BASE_URL", "\"http://test.hiro-evergreen.video/service/\"")
+            buildConfigField("String", "LINK_SEND", "\"ws://test.hiro-evergreen.video:9595/\"")
+            buildConfigField "boolean", "TEST_MODE", "true"
+        }
+        production {
+            buildConfigField("String", "BASE_URL", "\"http://hiro-evergreen.video/service/\"")
+            buildConfigField("String", "LINK_SEND", "\"ws://hiro-evergreen.video:9595/\"")
+            buildConfigField "boolean", "TEST_MODE", "false"
+        }
+    }
 }
 repositories {
     mavenCentral()

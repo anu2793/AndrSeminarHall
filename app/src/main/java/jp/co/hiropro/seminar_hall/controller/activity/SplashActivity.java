@@ -37,8 +37,8 @@ import java.security.NoSuchAlgorithmException;
 import java.util.HashMap;
 import java.util.Map;
 
-import me.leolin.shortcutbadger.ShortcutBadger;
 import jp.co.hiropro.dialog.HSSDialog;
+import jp.co.hiropro.seminar_hall.BuildConfig;
 import jp.co.hiropro.seminar_hall.ForestApplication;
 import jp.co.hiropro.seminar_hall.R;
 import jp.co.hiropro.seminar_hall.model.NewsItem;
@@ -49,6 +49,7 @@ import jp.co.hiropro.seminar_hall.util.AppUtils;
 import jp.co.hiropro.seminar_hall.util.HSSPreference;
 import jp.co.hiropro.seminar_hall.util.RequestDataUtils;
 import jp.co.hiropro.utils.NetworkUtils;
+import me.leolin.shortcutbadger.ShortcutBadger;
 
 import static android.R.attr.name;
 
@@ -66,6 +67,7 @@ public class SplashActivity extends FragmentActivity implements GoogleApiClient.
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
+        Log.d("AAAA", BuildConfig.BASE_URL);
         try {
             PackageManager pm = getPackageManager();
             PackageInfo info = pm.getPackageInfo(
@@ -99,32 +101,6 @@ public class SplashActivity extends FragmentActivity implements GoogleApiClient.
         Bundle bundle = getIntent().getExtras();
         if (bundle != null)
             mIdNews = bundle.getString(AppConstants.KEY_SEND.KEY_ID_NEWS, "");
-//        if (Build.VERSION.SDK_INT > Build.VERSION_CODES.LOLLIPOP_MR1) {
-//            Dexter.withActivity(SplashActivity.this)
-//                    .withPermission(Manifest.permission.READ_PHONE_STATE)
-//                    .withListener(new PermissionListener() {
-//                        @Override
-//                        public void onPermissionGranted(PermissionGrantedResponse response) {
-//                            getAccount();
-//                            sendToken();
-//                        }
-//
-//                        @Override
-//                        public void onPermissionDenied(PermissionDeniedResponse response) {
-//                            finish();
-//                        }
-//
-//                        @Override
-//                        public void onPermissionRationaleShouldBeShown(PermissionRequest permission, PermissionToken token) {
-//                            token.continuePermissionRequest();
-//                        }
-//                    })
-//                    .onSameThread()
-//                    .check();
-//        } else {
-//            getAccount();
-//            sendToken();
-//        }
         getAccount();
         sendToken();
     }

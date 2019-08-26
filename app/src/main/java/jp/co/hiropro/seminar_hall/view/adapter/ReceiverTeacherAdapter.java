@@ -130,7 +130,7 @@ public class ReceiverTeacherAdapter extends ArrayAdapter<User> {
         });
 
         holder.mTvName.setText(user.getEmail());
-        holder.mTvDescription.setText("先生の紹介テキスト３行まで。先生の紹介テキスト３行まで先生の紹介テキスト３行まで先生の紹介テキスト３行まで先生の紹介テキスト３行まで先生の紹介テキスト３行まで長いテキストの場合最後にを付けまししょう。先生の...");
+        holder.mTvDescription.setText("講師の紹介テキスト３行まで。講師の紹介テキスト３行まで講師の紹介テキスト３行まで講師の紹介テキスト３行まで講師の紹介テキスト３行まで講師の紹介テキスト３行まで長いテキストの場合最後にを付けまししょう。講師の...");
         if (user.getStatus() == AppConstants.STATUS_USER.NORMAL) {
             holder.mBtnSend.setText("受信");
         } else if (user.getStatus() == AppConstants.STATUS_USER.REQUESTING) {

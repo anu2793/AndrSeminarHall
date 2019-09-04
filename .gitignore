@@ -21,6 +21,7 @@ out/
 # Gradle files
 .gradle/*
 build/
+libs/hss-android_lib/build/
 
 # Local configuration file (sdk path, etc)
 local.properties

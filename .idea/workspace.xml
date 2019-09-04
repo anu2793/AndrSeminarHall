@@ -6,26 +6,142 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="jp.co.hiropro.seminar_hall.controller.activity.SwipeCardActivity" />
+    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="AAAA" />
     <option name="TOOL_WINDOW_LOG_LEVEL" value="verbose" />
-    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="No Filters" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0ef766a3-cecb-49a8-80e7-8bcc54bc4eb3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/jarAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_livedata_core_1_1_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_livedata_core_1_1_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_annotation_annotation_1_0_0_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_appcompat_appcompat_1_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_arch_core_core_common_2_0_0_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_arch_core_core_runtime_2_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_asynclayoutinflater_asynclayoutinflater_1_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_collection_collection_1_0_0_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_coordinatorlayout_coordinatorlayout_1_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_core_core_1_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_cursoradapter_cursoradapter_1_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_customview_customview_1_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_documentfile_documentfile_1_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_drawerlayout_drawerlayout_1_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_fragment_fragment_1_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_interpolator_interpolator_1_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_legacy_legacy_support_core_ui_1_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_legacy_legacy_support_core_utils_1_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_common_2_0_0_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_livedata_2_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_livedata_core_2_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_runtime_2_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_viewmodel_2_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_loader_loader_1_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_localbroadcastmanager_localbroadcastmanager_1_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_print_print_1_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_slidingpanelayout_slidingpanelayout_1_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_swiperefreshlayout_swiperefreshlayout_1_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_vectordrawable_vectordrawable_1_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_vectordrawable_vectordrawable_animated_1_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_versionedparcelable_versionedparcelable_1_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_viewpager_viewpager_1_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_animated_vector_drawable_25_3_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_animated_vector_drawable_25_3_1_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_customtabs_27_1_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_customtabs_27_1_1_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_recyclerview_v7_25_3_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_recyclerview_v7_25_3_1_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_recyclerview_v7_27_1_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_recyclerview_v7_27_1_1_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_compat_27_1_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_compat_27_1_1_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_core_ui_27_1_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_core_ui_27_1_1_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_core_utils_27_1_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_core_utils_27_1_1_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_media_compat_25_3_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_media_compat_25_3_1_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_v4_25_3_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_v4_25_3_1_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_v4_27_1_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_v4_27_1_1_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_vector_drawable_25_3_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_vector_drawable_25_3_1_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_facebook_android_facebook_android_sdk_4_31_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_facebook_android_facebook_android_sdk_4_31_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_facebook_android_facebook_common_4_31_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_facebook_android_facebook_common_4_31_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_facebook_android_facebook_core_4_31_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_facebook_android_facebook_core_4_31_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_facebook_android_facebook_messenger_4_31_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_facebook_android_facebook_messenger_4_31_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_facebook_android_facebook_share_4_31_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_facebook_android_facebook_share_4_31_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_ads_identifier_15_0_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_ads_identifier_15_0_1_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_auth_base_15_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_auth_base_15_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_location_15_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_location_15_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_measurement_base_16_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_analytics_16_0_1_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_analytics_impl_15_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_analytics_impl_15_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_analytics_impl_16_1_1_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_common_16_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_core_16_0_1_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_iid_15_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_iid_15_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_iid_16_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_iid_interop_16_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_measurement_connector_16_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_measurement_connector_impl_16_0_1_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_h6ah4i_android_widget_verticalseekbar_verticalseekbar_1_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_theartofdev_edmodo_android_image_cropper_2_6_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_theartofdev_edmodo_android_image_cropper_2_6_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__junit_junit_4_12_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__junit_junit_4_12_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__me_dm7_barcodescanner_core_1_9_8_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__me_dm7_barcodescanner_core_1_9_8_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__me_dm7_barcodescanner_zbar_1_9_8_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__me_dm7_barcodescanner_zbar_1_9_8_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_3_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_3_jar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/google-services.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/google-services.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/release/output.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/release/output.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/generated/source/buildConfig/androidTest/debug/jp/co/hiropro/mylibrary/test/BuildConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/libs/hss-android_lib/build/generated/source/buildConfig/androidTest/debug/jp/co/hiropro/mylibrary/test/BuildConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/generated/source/buildConfig/debug/jp/co/hiropro/mylibrary/BuildConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/libs/hss-android_lib/build/generated/source/buildConfig/debug/jp/co/hiropro/mylibrary/BuildConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/generated/source/buildConfig/release/jp/co/hiropro/mylibrary/BuildConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/libs/hss-android_lib/build/generated/source/buildConfig/release/jp/co/hiropro/mylibrary/BuildConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/aapt_friendly_merged_manifests/debug/aapt/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/aapt_friendly_merged_manifests/debug/aapt/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/aapt_friendly_merged_manifests/release/aapt/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/aapt_friendly_merged_manifests/release/aapt/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/compile_library_classes/release/classes.jar" beforeDir="false" afterPath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/compile_library_classes/release/classes.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/compile_only_not_namespaced_r_class_jar/debug/generateDebugRFile/R.jar" beforeDir="false" afterPath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/compile_only_not_namespaced_r_class_jar/debug/generateDebugRFile/R.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/compile_only_not_namespaced_r_class_jar/release/generateReleaseRFile/R.jar" beforeDir="false" afterPath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/compile_only_not_namespaced_r_class_jar/release/generateReleaseRFile/R.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/incremental/mergeDebugJniLibFolders/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/incremental/mergeDebugJniLibFolders/merger.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/incremental/mergeDebugShaders/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/incremental/mergeDebugShaders/merger.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/incremental/mergeReleaseJniLibFolders/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/incremental/mergeReleaseJniLibFolders/merger.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/incremental/mergeReleaseShaders/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/incremental/mergeReleaseShaders/merger.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/incremental/packageDebugAssets/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/incremental/packageDebugAssets/merger.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" beforeDir="false" afterPath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/incremental/packageDebugResources/merged.dir/values-v11/values-v11.xml" beforeDir="false" afterPath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/incremental/packageDebugResources/merged.dir/values-v11/values-v11.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/incremental/packageDebugResources/merged.dir/values-v14/values-v14.xml" beforeDir="false" afterPath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/incremental/packageDebugResources/merged.dir/values-v14/values-v14.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/incremental/packageDebugResources/merged.dir/values/values.xml" beforeDir="false" afterPath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/incremental/packageDebugResources/merged.dir/values/values.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/incremental/packageDebugResources/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/incremental/packageDebugResources/merger.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/incremental/packageReleaseAssets/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/incremental/packageReleaseAssets/merger.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/incremental/packageReleaseResources/compile-file-map.properties" beforeDir="false" afterPath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/incremental/packageReleaseResources/compile-file-map.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/incremental/packageReleaseResources/merged.dir/values-v11/values-v11.xml" beforeDir="false" afterPath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/incremental/packageReleaseResources/merged.dir/values-v11/values-v11.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/incremental/packageReleaseResources/merged.dir/values-v14/values-v14.xml" beforeDir="false" afterPath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/incremental/packageReleaseResources/merged.dir/values-v14/values-v14.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/incremental/packageReleaseResources/merged.dir/values/values.xml" beforeDir="false" afterPath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/incremental/packageReleaseResources/merged.dir/values/values.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/incremental/packageReleaseResources/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/incremental/packageReleaseResources/merger.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/javac/release/compileReleaseJavaWithJavac/classes/jp/co/hiropro/dao/DAOHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/javac/release/compileReleaseJavaWithJavac/classes/jp/co/hiropro/dao/DAOHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/javac/release/compileReleaseJavaWithJavac/classes/jp/co/hiropro/dao/SQLiteHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/javac/release/compileReleaseJavaWithJavac/classes/jp/co/hiropro/dao/SQLiteHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/javac/release/compileReleaseJavaWithJavac/classes/jp/co/hiropro/utils/IntentUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/javac/release/compileReleaseJavaWithJavac/classes/jp/co/hiropro/utils/IntentUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/javac/release/compileReleaseJavaWithJavac/classes/jp/co/hiropro/utils/NetworkUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/javac/release/compileReleaseJavaWithJavac/classes/jp/co/hiropro/utils/NetworkUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/library_manifest/debug/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/library_manifest/debug/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/library_manifest/release/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/library_manifest/release/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/merged_manifests/debugAndroidTest/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/merged_manifests/debugAndroidTest/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/packaged_res/debug/values-v11/values-v11.xml" beforeDir="false" afterPath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/packaged_res/debug/values-v11/values-v11.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/packaged_res/debug/values-v14/values-v14.xml" beforeDir="false" afterPath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/packaged_res/debug/values-v14/values-v14.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/packaged_res/debug/values/values.xml" beforeDir="false" afterPath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/packaged_res/debug/values/values.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/packaged_res/release/values-v11/values-v11.xml" beforeDir="false" afterPath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/packaged_res/release/values-v11/values-v11.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/packaged_res/release/values-v14/values-v14.xml" beforeDir="false" afterPath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/packaged_res/release/values-v14/values-v14.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/packaged_res/release/values/values.xml" beforeDir="false" afterPath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/packaged_res/release/values/values.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/res/symbol-table-with-package/debug/package-aware-r.txt" beforeDir="false" afterPath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/res/symbol-table-with-package/debug/package-aware-r.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/res/symbol-table-with-package/release/package-aware-r.txt" beforeDir="false" afterPath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/res/symbol-table-with-package/release/package-aware-r.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/runtime_library_classes/release/classes.jar" beforeDir="false" afterPath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/runtime_library_classes/release/classes.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/symbols/debug/R.txt" beforeDir="false" afterPath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/symbols/debug/R.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/symbols/release/R.txt" beforeDir="false" afterPath="$PROJECT_DIR$/libs/hss-android_lib/build/intermediates/symbols/release/R.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/outputs/logs/manifest-merger-debug-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/libs/hss-android_lib/build/outputs/logs/manifest-merger-debug-report.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/build/outputs/logs/manifest-merger-release-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/libs/hss-android_lib/build/outputs/logs/manifest-merger-release-report.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hss-android_lib/hss-android_lib.iml" beforeDir="false" afterPath="$PROJECT_DIR$/libs/hss-android_lib/hss-android_lib.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/liboverscroll/liboverscroll.iml" beforeDir="false" afterPath="$PROJECT_DIR$/libs/liboverscroll/liboverscroll.iml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,6 +149,10 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="BH905BN24L" />
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
@@ -52,29 +172,18 @@
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="seminorhall" type="f1a62948:ProjectNode" />
-                <item name="seminorhall" type="2d1252cf:ModuleNode" />
+                <item name="app" type="2d1252cf:ModuleNode" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="seminorhall" type="f1a62948:ProjectNode" />
-                <item name="seminorhall" type="2d1252cf:ModuleNode" />
-                <item name="Run Configurations" type="7b0102dc:RunConfigurationsNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="seminorhall" type="f1a62948:ProjectNode" />
-                <item name=":app" type="2d1252cf:ModuleNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="seminorhall" type="f1a62948:ProjectNode" />
-                <item name=":app" type="2d1252cf:ModuleNode" />
+                <item name="app" type="2d1252cf:ModuleNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="seminorhall" type="f1a62948:ProjectNode" />
-                <item name=":app" type="2d1252cf:ModuleNode" />
+                <item name="app" type="2d1252cf:ModuleNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="android" type="c8890929:TasksNode$1" />
               </path>
@@ -85,83 +194,43 @@
       </state>
     </system>
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="seminorhall" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/jp/co/hiropro/seminar_hall/util/AccountUtils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-546">
+              <caret line="4" column="49" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/jp/co/hiropro/seminar_hall/controller/activity/SplashActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3525">
+              <caret line="284" column="24" selection-start-line="284" selection-start-column="19" selection-end-line="284" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/jp/co/hiropro/seminar_hall/controller/activity/TeacherProfileCardActivity.java">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="142">
-              <caret line="338" column="14" selection-start-line="338" selection-start-column="14" selection-end-line="338" selection-end-column="14" />
-              <folding>
-                <element signature="e#9382#9419#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/jp/co/hiropro/seminar_hall/controller/activity/QrCodeScannerActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="56" column="12" selection-start-line="56" selection-start-column="12" selection-end-line="56" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/jp/co/hiropro/seminar_hall/controller/activity/EditProfileActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5723">
-              <caret line="411" column="35" selection-start-line="411" selection-start-column="23" selection-end-line="411" selection-end-column="35" />
-              <folding>
-                <element signature="e#9363#9364#0" expanded="true" />
-                <element signature="e#9416#9417#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_qrcode_scanner.xml">
-          <provider editor-type-id="android-designer2" />
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="22" column="36" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/jp/co/hiropro/seminar_hall/controller/activity/QrCodePreviewActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="50" column="26" selection-start-line="50" selection-start-column="17" selection-end-line="50" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/jp/co/hiropro/seminar_hall/controller/activity/SwipeCardActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="171" column="62" lean-forward="true" selection-start-line="171" selection-start-column="62" selection-end-line="171" selection-end-column="62" />
-              <folding>
-                <element signature="e#6818#7611#0" expanded="true" />
-                <element signature="e#7610#7611#0" expanded="true" />
-                <element signature="e#8397#8398#0" expanded="true" />
-                <element signature="e#8459#8460#0" expanded="true" />
-                <element signature="e#8517#8518#0" expanded="true" />
-                <element signature="e#8567#8568#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/jp/co/hiropro/seminar_hall/service/socket/EchoWebSocketListener.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="33" column="22" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="22" />
+            <state relative-caret-position="273">
+              <caret line="28" column="38" lean-forward="true" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -169,22 +238,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/jp/co/hiropro/seminar_hall/util/AppConstants.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="298">
-              <caret line="46" column="61" selection-start-line="46" selection-start-column="52" selection-end-line="46" selection-end-column="61" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_teacher_profile_card.xml">
-          <provider editor-type-id="android-designer2" />
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="20" column="49" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="49" />
+            <state relative-caret-position="585">
+              <caret line="40" column="32" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="32" />
               <folding>
-                <element signature="e#1126#1151#0" expanded="true" />
-                <element signature="e#17352#17371#0" expanded="true" />
-                <element signature="e#23257#23287#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -194,41 +251,44 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>getSubscriptionTransactionDetails</find>
-      <find>tv_specified_transaction</find>
-      <find>specified_commercial_transaction</find>
-      <find>activity_fu</find>
-      <find>mediaplayer</find>
-      <find>ivPlay</find>
-      <find>activity_conte</find>
-      <find>vn.hanelsoft.forestpublishing</find>
-      <find>exo_play</find>
-      <find>values-v28</find>
-      <find>value_28dp</find>
-      <find>onPlayerStateChanged</find>
-      <find>isEndVideo</find>
-      <find>onDestroy</find>
-      <find>mBilling</find>
-      <find>LICENSE_KEY</find>
-      <find>statusVideo</find>
-      <find>mImvVolume</find>
-      <find>imv_control</find>
-      <find>gso</find>
-      <find>com.google.android.gms:play</find>
-      <find>facebook_app_id</find>
-      <find>ApplicationId</find>
-      <find>facebook</find>
-      <find>mRcyContacts</find>
-      <find>rl_swipe_screen</find>
-      <find>tv_profile</find>
+      <find>MY_REQUEST_LOCATION_CODE</find>
+      <find>mRcyNews</find>
+      <find>getNewDetail</find>
+      <find>new</find>
+      <find>news</find>
+      <find>setActionClick</find>
+      <find>onNewToken</find>
+      <find>FirebaseInstanceId</find>
+      <find>mIdNews</find>
+      <find>FCMReceiveMessage</find>
+      <find>onItemDismiss</find>
+      <find>tabLayout</find>
+      <find>sendBroadcast</find>
+      <find>AppConstants.BROAD_CAST.CHANGE_TAB</find>
+      <find>From</find>
+      <find>CategoryAdapter</find>
+      <find>viewPager</find>
+      <find>Paginate</find>
+      <find>btnShop</find>
+      <find>btn_create_profile</find>
+      <find>ll_footer</find>
+      <find>mLlFooter</find>
+      <find>btn_shop</find>
+      <find>mRcyTeacher</find>
+      <find>pager</find>
       <find>tv_choice_type_share</find>
-      <find>activity_edit_profile</find>
-      <find>imv_avatar</find>
+      <find>loadDataToView</find>
+      <find>getData</find>
+      <find>getLocationCurrentRealTime</find>
+      <find>onDeleteCard</find>
     </findStrings>
     <replaceStrings>
       <replace />
       <replace>jp.co.hiropro.seminar_hall</replace>
     </replaceStrings>
+    <dirStrings>
+      <dir>D:\ANDROI\Project\SeminorHall\seminorhall\app</dir>
+    </dirStrings>
   </component>
   <component name="GenerateSignedApkSettings">
     <option name="KEY_STORE_PATH" value="D:\ANDROI\Project\SeminorHall\seminorhall\app\doc\seminorhall.jks" />
@@ -250,7 +310,6 @@
         <option value="$PROJECT_DIR$/app/google-services.json" />
         <option value="$PROJECT_DIR$/app/src/main/java/jp/co/hiropro/seminar_hall/util/ExoPlayerVideoHandler.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_qrcode_scanner.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_terms.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/jp/co/hiropro/seminar_hall/view/adapter/NewCategoryAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/assets/html/specified_commercial_transaction.html" />
@@ -262,12 +321,25 @@
         <option value="$PROJECT_DIR$/app/src/main/res/drawable/seekbar_progress_background.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/jp/co/hiropro/seminar_hall/controller/activity/PlayVideoActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/exo_playback_control_view.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/jp/co/hiropro/seminar_hall/controller/activity/PointManagerActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/jp/co/hiropro/seminar_hall/controller/activity/LoginActivity.java" />
-        <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/java/jp/co/hiropro/seminar_hall/controller/activity/BaseActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/jp/co/hiropro/seminar_hall/controller/activity/SwipeCardActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_top.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/jp/co/hiropro/seminar_hall/controller/activity/LoginActivity.java" />
+        <option value="$PROJECT_DIR$/app/build.gradle" />
+        <option value="$PROJECT_DIR$/app/src/main/java/jp/co/hiropro/seminar_hall/ForestApplication.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/jp/co/hiropro/seminar_hall/controller/activity/TopActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/jp/co/hiropro/seminar_hall/util/AppConstants.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/jp/co/hiropro/seminar_hall/controller/activity/SplashActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/jp/co/hiropro/seminar_hall/controller/activity/TeacherProfileCardActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/jp/co/hiropro/seminar_hall/controller/activity/NewsActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/jp/co/hiropro/seminar_hall/view/adapter/NewsAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/jp/co/hiropro/seminar_hall/controller/activity/BaseSkipShowDialogActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/jp/co/hiropro/seminar_hall/util/fcm/FCMReceiveMessage.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/jp/co/hiropro/seminar_hall/view/adapter/CategoryAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -281,12 +353,12 @@
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
-    <navigator proportions="" version="1">
+    <navigator currentView="ProjectPane" proportions="" version="1">
       <hideEmptyPackages AndroidView="false" ProjectPane="false" />
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -294,87 +366,12 @@
               <item name="seminorhall" type="b2602c69:ProjectViewProjectNode" />
               <item name="seminorhall" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
-            <path>
-              <item name="seminorhall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="seminorhall" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="AndroidView">
-        <subPane>
-          <expand>
-            <path>
-              <item name="seminorhall" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-            </path>
-            <path>
-              <item name="seminorhall" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-            </path>
-            <path>
-              <item name="seminorhall" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="jp" type="cbb59c9e:AndroidPsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="seminorhall" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="jp" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="co" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="seminorhall" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="jp" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="co" type="462c0819:PsiDirectoryNode" />
-              <item name="hiropro" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="seminorhall" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="jp" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="co" type="462c0819:PsiDirectoryNode" />
-              <item name="hiropro" type="462c0819:PsiDirectoryNode" />
-              <item name="seminar_hall" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="seminorhall" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="jp" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="co" type="462c0819:PsiDirectoryNode" />
-              <item name="hiropro" type="462c0819:PsiDirectoryNode" />
-              <item name="seminar_hall" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="seminorhall" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="jp" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="co" type="462c0819:PsiDirectoryNode" />
-              <item name="hiropro" type="462c0819:PsiDirectoryNode" />
-              <item name="seminar_hall" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-              <item name="activity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="seminorhall" type="1abcf292:AndroidViewProjectNode" />
-              <item name="Gradle Scripts" type="ae0cef3a:AndroidBuildScriptsGroupNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="AndroidView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -385,23 +382,25 @@
     <property name="ExportApk.BuildVariants" value="release" />
     <property name="ExportApk.SignV1" value="true" />
     <property name="ExportApk.SignV2" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SHOW_ALL_PROCESSES" value="false" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="device.picker.selection" value="BH905BN24L" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../PhotoEditor" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
-    <property name="sync.plugin.last.upgrade.timestamp" value="1565158197428" />
+    <property name="ignore.virus.scanning.warn.message" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../OnDiary/ondiary" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.file-colors" />
+    <property name="sync.plugin.last.upgrade.timestamp" value="1567095926776" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="jp.co" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\ANDROI\Project\SeminorHall\seminorhall\app\src\main\java\jp\co\hiropro\seminar_hall\doc" />
+      <recent name="D:\ANDROI\Project\SeminorHall\seminorhall" />
       <recent name="D:\ANDROI\Project\SeminorHall\seminorhall\app" />
+      <recent name="D:\ANDROI\Project\SeminorHall\seminorhall\app\src\main\java\jp\co\hiropro\seminar_hall\doc" />
       <recent name="D:\ANDROI\Project\SeminorHall\seminorhall\app\src\main\res\drawable" />
       <recent name="D:\ANDROI\Project\SeminorHall\seminorhall\app\src\main\res\drawable-xxhdpi" />
-      <recent name="D:\ANDROI\Project\SeminorHall\seminorhall\app\src\main\res\drawable-xhdpi" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -599,34 +598,34 @@
     <frame x="1358" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.49945828" visible="true" weight="0.18763326" />
-      <window_info id="Structure" order="2" side_tool="true" />
-      <window_info id="Build Variants" order="3" sideWeight="0.5005417" side_tool="true" weight="0.18763326" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49187434" visible="true" weight="0.18283582" />
+      <window_info id="DB Browser" order="1" sideWeight="0.5016251" side_tool="true" weight="0.18763326" />
+      <window_info id="Build Variants" order="2" sideWeight="0.50812566" side_tool="true" weight="0.18283582" />
+      <window_info id="Structure" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
       <window_info id="Designer" order="5" />
-      <window_info id="Resources Explorer" order="6" weight="0.4067164" />
-      <window_info id="DB Browser" order="7" />
-      <window_info id="Capture Tool" order="8" />
-      <window_info id="Favorites" order="9" side_tool="true" />
+      <window_info id="Resources Explorer" order="6" sideWeight="0.49729145" weight="0.40245202" />
+      <window_info id="Capture Tool" order="7" />
+      <window_info id="Favorites" order="8" sideWeight="0.50595886" side_tool="true" weight="0.17004265" />
+      <window_info id="Captures" order="9" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Run" order="0" weight="0.32936078" />
-      <window_info anchor="bottom" id="Logcat" order="1" weight="0.45287108" />
+      <window_info anchor="bottom" id="Logcat" order="1" weight="0.3900325" />
       <window_info anchor="bottom" id="DB Execution Console" order="2" />
       <window_info anchor="bottom" id="TODO" order="3" />
       <window_info anchor="bottom" id="Android Profiler" order="4" />
-      <window_info anchor="bottom" id="Debug" order="5" weight="0.49945828" />
+      <window_info anchor="bottom" id="Debug" order="5" weight="0.4312026" />
       <window_info anchor="bottom" id="Event Log" order="6" sideWeight="0.50053304" side_tool="true" weight="0.23293608" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Build" order="8" sideWeight="0.49946696" weight="0.22968581" />
-      <window_info anchor="bottom" id="Find" order="9" weight="0.32827735" />
+      <window_info anchor="bottom" id="Build" order="8" sideWeight="0.49946696" weight="0.15059589" />
+      <window_info anchor="bottom" id="Find" order="9" weight="0.32502708" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.32936078" />
-      <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
+      <window_info anchor="right" id="Device File Explorer" order="0" sideWeight="0.5008183" side_tool="true" weight="0.32980332" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
       <window_info anchor="right" id="Gradle" order="2" weight="0.32995737" />
       <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info anchor="right" id="Android WiFi ADB" order="4" />
+      <window_info anchor="right" id="Android WiFi ADB" order="4" sideWeight="0.49918166" weight="0.32980332" />
       <window_info anchor="right" id="Palette&#9;" order="5" />
-      <window_info anchor="right" id="Preview" order="6" weight="0.32995737" />
+      <window_info anchor="right" id="Preview" order="6" weight="0.32942432" />
     </layout>
   </component>
   <component name="XDebuggerManager">
@@ -642,396 +641,406 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/seekbar.xml" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/dimens.xml">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/jp/co/hiropro/seminar_hall/controller/fragment/SearchResultDefaultFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="433">
-          <caret line="54" column="22" selection-start-line="54" selection-start-column="22" selection-end-line="54" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/jp/co/hiropro/seminar_hall/controller/activity/CateDetailActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="21" column="33" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/seekbar_progress_volume.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/seekbar_progress_background.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" column="27" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/seekbar_thumb.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" column="50" selection-start-line="7" selection-start-column="50" selection-end-line="7" selection-end-column="50" />
+        <state relative-caret-position="21">
+          <caret line="55" column="29" selection-start-line="55" selection-start-column="12" selection-end-line="55" selection-end-column="29" />
           <folding>
-            <element signature="e#258#277#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#8354#8355#0" expanded="true" />
+            <element signature="e#8386#8387#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_content_detail.xml">
-      <provider editor-type-id="android-designer2" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/jp/co/hiropro/seminar_hall/view/adapter/BookAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="18" column="38" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/jp/co/hiropro/seminar_hall/view/adapter/PointAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="28" column="37" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="37" />
+        <state relative-caret-position="518">
+          <caret line="94" column="28" selection-start-line="94" selection-start-column="12" selection-end-line="94" selection-end-column="28" />
           <folding>
-            <element signature="e#2283#2365#0" expanded="true" />
+            <element signature="e#1471#1472#0" expanded="true" />
+            <element signature="e#1512#1513#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/jp/co/hiropro/seminar_hall/controller/activity/PurchaseActivity.java">
+    <entry file="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/92b5bc847fc548901e1e4a0b51ba4d64/res/values/values.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1593">
-          <caret line="132" column="30" selection-start-line="132" selection-start-column="17" selection-end-line="132" selection-end-column="30" />
+        <state relative-caret-position="42">
+          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/jp/co/hiropro/seminar_hall/controller/activity/ContentDetailActivity.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="74" column="39" selection-start-line="74" selection-start-column="39" selection-end-line="74" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_category.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="14" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/jp/co/hiropro/seminar_hall/view/adapter/ContactAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="462">
-          <caret line="262" column="98" selection-start-line="262" selection-start-column="98" selection-end-line="262" selection-end-column="98" />
-          <folding>
-            <element signature="e#6527#6528#0" expanded="true" />
-            <element signature="e#6582#6583#0" expanded="true" />
-          </folding>
+          <caret line="38" column="59" selection-start-line="38" selection-start-column="47" selection-end-line="38" selection-end-column="59" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.anjlab.android.iab.v3/library/1.0.44/4f82c0a4c635870b34cbe49e7edb6a0742d144ef/library-1.0.44-sources.jar!/com/anjlab/android/iab/v3/BillingProcessor.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/jp/co/hiropro/seminar_hall/model/Campaign.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="165" column="11" selection-start-line="165" selection-start-column="11" selection-end-line="165" selection-end-column="11" />
+        <state relative-caret-position="63">
+          <caret line="10" column="21" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/jp/co/hiropro/seminar_hall/ForestApplication.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider editor-type-id="android-manifest" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="53" column="23" selection-start-line="53" selection-start-column="12" selection-end-line="53" selection-end-column="23" />
-          <folding>
-            <element signature="e#1909#1939#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="513">
+          <caret line="246" column="39" selection-start-line="246" selection-start-column="39" selection-end-line="246" selection-end-column="39" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/jp/co/hiropro/seminar_hall/controller/activity/PlayVideoActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/jp/co/hiropro/seminar_hall/view/adapter/CategoryAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1152">
-          <caret line="244" column="28" selection-start-line="244" selection-start-column="28" selection-end-line="244" selection-end-column="28" />
+        <state relative-caret-position="294">
+          <caret line="42" column="24" selection-start-line="42" selection-start-column="24" selection-end-line="42" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_full_screen.xml">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/jp/co/hiropro/seminar_hall/view/adapter/NewCategoryAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="42" column="14" selection-start-line="42" selection-start-column="14" selection-end-line="42" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/jp/co/hiropro/seminar_hall/util/fcm/ServiceFCMInstanceID.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="16" column="15" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/google-services.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="12" column="40" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/jp/co/hiropro/seminar_hall/controller/activity/TopActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5712">
+          <caret line="349" column="36" selection-start-line="349" selection-start-column="36" selection-end-line="349" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/jp/co/hiropro/seminar_hall/view/adapter/ViewPagerAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1113">
+          <caret line="79" column="74" selection-start-line="79" selection-start-column="74" selection-end-line="79" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/jp/co/hiropro/seminar_hall/controller/activity/WebviewActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="798">
+          <caret line="67" column="42" selection-start-line="67" selection-start-column="42" selection-end-line="67" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_top.xml">
       <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="52" column="8" selection-start-line="52" selection-start-column="8" selection-end-line="52" selection-end-column="8" />
+        <state relative-caret-position="2100">
+          <caret line="100" column="47" selection-start-line="100" selection-start-column="37" selection-end-line="100" selection-end-column="47" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/jp/co/hiropro/seminar_hall/controller/activity/BuyMonthPremiumActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/jp/co/hiropro/seminar_hall/util/fcm/FCMReceiveMessage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="359" column="22" selection-start-line="359" selection-start-column="8" selection-end-line="359" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/exo_playback_control_view.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="91">
-          <caret line="103" column="43" lean-forward="true" selection-start-line="103" selection-start-column="43" selection-end-line="103" selection-end-column="43" />
-          <folding>
-            <element signature="e#472#491#0" expanded="true" />
-            <element signature="e#684#703#0" expanded="true" />
-            <element signature="e#738#757#0" expanded="true" />
-            <element signature="e#884#903#0" expanded="true" />
-            <element signature="e#1620#1639#0" expanded="true" />
-            <element signature="e#1682#1701#0" expanded="true" />
-            <element signature="e#1738#1757#0" expanded="true" />
-            <element signature="e#3206#3224#0" expanded="true" />
-            <element signature="e#3266#3284#0" expanded="true" />
-            <element signature="e#3358#3376#0" expanded="true" />
-            <element signature="e#3562#3581#0" expanded="true" />
-            <element signature="e#4970#4989#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/assets/html/specified_commercial_transaction.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" column="15" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
-          <folding>
-            <element signature="e#406#448#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7e47d76a11894a4bb3b69fa900d879b2/jars/classes.jar!/com/google/android/gms/auth/api/Auth.class" />
-    <entry file="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7e47d76a11894a4bb3b69fa900d879b2/jars/classes.jar!/com/google/android/gms/auth/api/signin/GoogleSignInClient.class" />
-    <entry file="file://$PROJECT_DIR$/app/build/generated/res/google-services/debug/values/values.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="69" lean-forward="true" selection-start-line="2" selection-start-column="69" selection-end-line="2" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/jp/co/hiropro/seminar_hall/controller/activity/PointManagerActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="106" selection-start-line="106" selection-end-line="106" />
+        <state relative-caret-position="95">
+          <caret line="42" column="15" selection-start-line="42" selection-start-column="15" selection-end-line="42" selection-end-column="15" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/google-services.json">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/jp/co/hiropro/seminar_hall/controller/activity/ContactListActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="37" lean-forward="true" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
+        <state>
+          <caret line="60" column="32" selection-start-line="60" selection-start-column="16" selection-end-line="60" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/jp/co/hiropro/seminar_hall/MyAppGlideModule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="15" column="28" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/jp/co/hiropro/seminar_hall/view/adapter/SubCategoryDetailAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-567">
+          <caret line="41" column="37" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_loading.xml">
+      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/jp/co/hiropro/seminar_hall/view/CustomLoadingListItemCreator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="491">
-          <caret line="98" column="18" selection-start-line="98" selection-start-column="18" selection-end-line="98" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="224" column="26" lean-forward="true" selection-start-line="224" selection-start-column="26" selection-end-line="224" selection-end-column="26" />
+        <state relative-caret-position="504">
+          <caret line="33" column="32" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="32" />
           <folding>
-            <element signature="e#11257#11282#0" expanded="true" />
+            <element signature="e#544#545#0" expanded="true" />
+            <element signature="e#578#579#0" expanded="true" />
           </folding>
         </state>
       </provider>
-      <provider editor-type-id="android-manifest" />
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.facebook.android/facebook-core/4.31.0/c9b2eda14c274f4745182dc9d290e61fcb0dd1f9/facebook-core-4.31.0-sources.jar!/com/facebook/GraphRequest.java" />
-    <entry file="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7e47d76a11894a4bb3b69fa900d879b2/jars/classes.jar!/com/google/android/gms/auth/api/signin/GoogleSignInResult.class" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/jp/co/hiropro/seminar_hall/doc/keyinfog.txt">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.markomilos/paginate/0.5.1/dd9381fc81126552196752c9529b67abee425d5a/paginate-0.5.1-sources.jar!/com/paginate/Paginate.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
+        <state relative-caret-position="735">
+          <caret line="39" column="45" selection-start-line="39" selection-start-column="25" selection-end-line="39" selection-end-column="45" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/jp/co/hiropro/seminar_hall/controller/activity/CateListActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/jp/co/hiropro/seminar_hall/controller/activity/BaseSkipShowDialogActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="63" column="22" selection-start-line="63" selection-start-column="22" selection-end-line="63" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_jack_profile.xml">
-      <provider selected="true" editor-type-id="android-designer2" />
-      <provider editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/jp/co/hiropro/seminar_hall/controller/activity/JackProfileActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="51" column="36" selection-start-line="51" selection-start-column="36" selection-end-line="51" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/jp/co/hiropro/seminar_hall/controller/activity/LoginActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="78" column="57" selection-start-line="78" selection-start-column="49" selection-end-line="78" selection-end-column="57" />
+        <state relative-caret-position="546">
+          <caret line="114" column="33" lean-forward="true" selection-start-line="114" selection-start-column="33" selection-end-line="114" selection-end-column="33" />
           <folding>
-            <element signature="e#5875#5876#0" expanded="true" />
-            <element signature="e#5948#5949#0" expanded="true" />
+            <element signature="e#3661#3662#0" expanded="true" />
+            <element signature="e#3699#3700#0" expanded="true" />
+            <element signature="e#3747#3748#0" expanded="true" />
+            <element signature="e#3779#3780#0" expanded="true" />
+            <element signature="e#3835#3836#0" expanded="true" />
+            <element signature="e#3867#3868#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/jp/co/hiropro/seminar_hall/view/CircleImageView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1050">
+          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_teacher.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="27" column="11" selection-start-line="27" selection-start-column="11" selection-end-line="27" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_base.xml">
       <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="38" lean-forward="true" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/layout_base_content.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="303">
-          <caret line="96" column="51" selection-start-line="96" selection-start-column="41" selection-end-line="96" selection-end-column="51" />
+          <caret line="58" column="37" selection-start-line="58" selection-start-column="29" selection-end-line="58" selection-end-column="37" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/jp/co/hiropro/seminar_hall/controller/activity/BaseActivity.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="281" column="63" selection-start-line="281" selection-start-column="63" selection-end-line="281" selection-end-column="63" />
+          <folding>
+            <element signature="e#4023#4054#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_shop_content.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="25" column="30" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_top_content.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="239" column="51" selection-start-line="239" selection-start-column="41" selection-end-line="239" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/jp/co/hiropro/seminar_hall/controller/fragment/TopContentFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="385">
-          <caret line="324" column="70" selection-start-line="324" selection-start-column="70" selection-end-line="324" selection-end-column="70" />
+          <caret line="433" column="75" selection-start-line="433" selection-start-column="75" selection-end-line="433" selection-end-column="75" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_subcategory_detail_horizontal.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/jp/co/hiropro/seminar_hall/view/adapter/ContentDetailHorizontalAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="61" column="62" selection-start-line="61" selection-start-column="62" selection-end-line="61" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-27/java/lang/String.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="1375" column="25" selection-start-line="1375" selection-start-column="15" selection-end-line="1375" selection-end-column="25" />
-          <folding>
-            <element signature="e#55356#55357#0" expanded="true" />
-            <element signature="e#55400#55401#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/layout_choice_type_share.xml">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_qr_code_preview.xml">
       <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="92" column="52" selection-start-line="92" selection-start-column="37" selection-end-line="92" selection-end-column="52" />
+        <state relative-caret-position="322">
+          <caret line="49" column="26" lean-forward="true" selection-start-line="49" selection-start-column="26" selection-end-line="49" selection-end-column="26" />
           <folding>
-            <element signature="e#5188#8240#0" />
+            <element signature="e#1068#1088#0" expanded="true" />
+            <element signature="e#1127#1146#0" expanded="true" />
+            <element signature="e#1186#1205#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_teacher_profile_card.xml">
-      <provider editor-type-id="android-designer2" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/jp/co/hiropro/seminar_hall/util/RequestDataUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="20" column="49" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="49" />
-          <folding>
-            <element signature="e#1126#1151#0" expanded="true" />
-            <element signature="e#17352#17371#0" expanded="true" />
-            <element signature="e#23257#23287#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/jp/co/hiropro/seminar_hall/view/popupview/TooltipWindow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="798">
-          <caret line="91" column="36" lean-forward="true" selection-start-line="91" selection-start-column="36" selection-end-line="91" selection-end-column="36" />
-          <folding>
-            <element signature="e#4010#4914#0" expanded="true" />
-            <element signature="e#4913#4914#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/jp/co/hiropro/seminar_hall/util/AppConstants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="46" column="61" selection-start-line="46" selection-start-column="52" selection-end-line="46" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/jp/co/hiropro/seminar_hall/service/socket/EchoWebSocketListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="33" column="22" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/jp/co/hiropro/seminar_hall/controller/activity/SwipeCardActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="171" column="62" lean-forward="true" selection-start-line="171" selection-start-column="62" selection-end-line="171" selection-end-column="62" />
-          <folding>
-            <element signature="e#6818#7611#0" expanded="true" />
-            <element signature="e#7610#7611#0" expanded="true" />
-            <element signature="e#8397#8398#0" expanded="true" />
-            <element signature="e#8459#8460#0" expanded="true" />
-            <element signature="e#8517#8518#0" expanded="true" />
-            <element signature="e#8567#8568#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="4431">
+          <caret line="242" column="26" lean-forward="true" selection-start-line="242" selection-start-column="26" selection-end-line="242" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/jp/co/hiropro/seminar_hall/controller/activity/QrCodePreviewActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="50" column="26" selection-start-line="50" selection-start-column="17" selection-end-line="50" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_background_scanner.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_qrcode_scanner.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="22" column="36" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/jp/co/hiropro/seminar_hall/controller/activity/EditProfileActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5723">
-          <caret line="411" column="35" selection-start-line="411" selection-start-column="23" selection-end-line="411" selection-end-column="35" />
+        <state relative-caret-position="375">
+          <caret line="53" column="38" lean-forward="true" selection-start-line="53" selection-start-column="25" selection-end-line="53" selection-end-column="46" />
           <folding>
-            <element signature="e#9363#9364#0" expanded="true" />
-            <element signature="e#9416#9417#0" expanded="true" />
+            <element signature="e#1222#1253#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_edit_profile.xml">
-      <provider editor-type-id="android-designer2" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/jp/co/hiropro/seminar_hall/controller/activity/ShopContentActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="39" column="39" selection-start-line="39" selection-start-column="29" selection-end-line="39" selection-end-column="39" />
+        <state relative-caret-position="168">
+          <caret line="59" column="38" lean-forward="true" selection-start-line="59" selection-start-column="38" selection-end-line="59" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/jp/co/hiropro/seminar_hall/controller/activity/QrCodeScannerActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/jp/co/hiropro/seminar_hall/model/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="56" column="12" selection-start-line="56" selection-start-column="12" selection-end-line="56" selection-end-column="12" />
+        <state relative-caret-position="-672">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/jp/co/hiropro/seminar_hall/view/flingswitch/SwipeCenterFlingAdapterView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="830">
+          <caret line="450" column="36" selection-start-line="450" selection-start-column="21" selection-end-line="450" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2058">
+          <caret line="98" column="50" selection-start-line="98" selection-start-column="35" selection-end-line="98" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/jp/co/hiropro/seminar_hall/controller/activity/LoginActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="77" column="26" selection-start-line="77" selection-start-column="13" selection-end-line="77" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/jp/co/hiropro/seminar_hall/controller/activity/TeacherProfileCardActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="338" column="14" selection-start-line="338" selection-start-column="14" selection-end-line="338" selection-end-column="14" />
+        <state relative-caret-position="2898">
+          <caret line="209" selection-start-line="208" selection-end-line="209" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/jp/co/hiropro/seminar_hall/controller/activity/SwipeCardActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="67" column="77" selection-start-line="67" selection-start-column="77" selection-end-line="67" selection-end-column="77" />
           <folding>
-            <element signature="e#9382#9419#0" expanded="true" />
+            <element signature="e#8397#8398#0" expanded="true" />
+            <element signature="e#8459#8460#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_swipe_card.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_teacher_profile_card.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="20" column="49" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/jp/co/hiropro/seminar_hall/view/adapter/ProfileContactAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="57" column="27" selection-start-line="57" selection-start-column="17" selection-end-line="57" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/jp/co/hiropro/seminar_hall/util/AccountUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build/generated/source/buildConfig/development/debug/jp/co/hiropro/seminar_hall/BuildConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="13" column="52" selection-start-line="13" selection-start-column="48" selection-end-line="13" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/jp/co/hiropro/seminar_hall/util/AppConstants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="40" column="32" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-546">
+          <caret line="4" column="49" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/jp/co/hiropro/seminar_hall/controller/activity/SplashActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3525">
+          <caret line="284" column="24" selection-start-line="284" selection-start-column="19" selection-end-line="284" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="28" column="38" lean-forward="true" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="38" />
         </state>
       </provider>
     </entry>

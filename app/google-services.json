@@ -1,82 +1,38 @@
 {
   "project_info": {
-    "project_number": "165713043717",
-    "firebase_url": "https://seminar-f37bc.firebaseio.com",
-    "project_id": "seminar-f37bc",
-    "storage_bucket": "seminar-f37bc.appspot.com"
+    "project_number": "395325471251",
+    "firebase_url": "https://seminar-hall-41816.firebaseio.com",
+    "project_id": "seminar-hall-41816",
+    "storage_bucket": "seminar-hall-41816.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:165713043717:android:dbccb9994dfd9051",
+        "mobilesdk_app_id": "1:395325471251:android:dbccb9994dfd9051",
         "android_client_info": {
           "package_name": "jp.co.hiropro.seminar_hall"
         }
       },
       "oauth_client": [
         {
-          "client_id": "165713043717-qoptte5sq2t3ccrmnitq4uk9fc9oddrj.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "jp.co.hiropro.seminar_hall",
-            "certificate_hash": "aced905d62f53ebf4507f2b8f8aa5a2307b5a787"
-          }
-        },
-        {
-          "client_id": "165713043717-t267ih9rcvtdnr69iuliaslsfp5n2f8h.apps.googleusercontent.com",
+          "client_id": "395325471251-ur2b10id9oda2g94nn1abba990ab5t4b.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCYsxx2uCcPbbNb4rz5JI7Xbgy6dr1cNKE"
+          "current_key": "AIzaSyCMfvhcrQgqd2h-V0xzVH70DL4cyOrk-rM"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "165713043717-qdkqj3sj81jkhip8nismoffl4bms798n.apps.googleusercontent.com",
+              "client_id": "395325471251-ur2b10id9oda2g94nn1abba990ab5t4b.apps.googleusercontent.com",
               "client_type": 3
             },
             {
-              "client_id": "165713043717-ctrchou4bsieq3834q0ffn1lcjaqnoq3.apps.googleusercontent.com",
-              "client_type": 2,
-              "ios_info": {
-                "bundle_id": "jp.co.hiropro.seminarhall"
-              }
-            }
-          ]
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:165713043717:android:782f77f47f4eaa3d",
-        "android_client_info": {
-          "package_name": "jp.co.hiropro.seminarhall"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "165713043717-t267ih9rcvtdnr69iuliaslsfp5n2f8h.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyCYsxx2uCcPbbNb4rz5JI7Xbgy6dr1cNKE"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "165713043717-qdkqj3sj81jkhip8nismoffl4bms798n.apps.googleusercontent.com",
-              "client_type": 3
-            },
-            {
-              "client_id": "165713043717-ctrchou4bsieq3834q0ffn1lcjaqnoq3.apps.googleusercontent.com",
+              "client_id": "395325471251-47n4f3qil946loqrkvr3pt3um3k4seoa.apps.googleusercontent.com",
               "client_type": 2,
               "ios_info": {
                 "bundle_id": "jp.co.hiropro.seminarhall"

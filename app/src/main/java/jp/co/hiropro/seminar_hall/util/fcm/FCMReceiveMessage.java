@@ -1,6 +1,7 @@
 package jp.co.hiropro.seminar_hall.util.fcm;
 
 import android.app.Notification;
+import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Context;
@@ -8,6 +9,7 @@ import android.content.Intent;
 import android.graphics.BitmapFactory;
 import android.media.RingtoneManager;
 import android.net.Uri;
+import android.os.Build;
 import android.support.v4.app.NotificationCompat;
 import android.util.Log;
 
@@ -16,6 +18,8 @@ import com.google.firebase.messaging.RemoteMessage;
 
 import org.json.JSONException;
 import org.json.JSONObject;
+
+import java.util.Map;
 
 import me.leolin.shortcutbadger.ShortcutBadger;
 import jp.co.hiropro.seminar_hall.R;
@@ -41,7 +45,7 @@ public class FCMReceiveMessage extends FirebaseMessagingService {
     public void onMessageReceived(RemoteMessage remoteMessage) {
         // TODO(developer): Handle FCM messages here.
         // Not getting messages here? See why this may be: https://goo.gl/39bRNJ
-        Log.d(TAG, "From: " + remoteMessage.getFrom());
+        Log.d(TAG, "From999: " + remoteMessage.getFrom());
 
         // Check if message contains a data payload.
         if (remoteMessage.getData().size() > 0) {
@@ -101,7 +105,17 @@ public class FCMReceiveMessage extends FirebaseMessagingService {
                     .setDefaults(Notification.DEFAULT_ALL)
                     .setPriority(NotificationManager.IMPORTANCE_HIGH);
             NotificationManager notificationManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
-            notificationManager.notify((int) System.currentTimeMillis() /* ID of notification */, builder.build());
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                NotificationChannel channel = new NotificationChannel(getApplicationContext().getString(R.string.app_name),
+                        "Channel human readable title",
+                        NotificationManager.IMPORTANCE_DEFAULT);
+                if (notificationManager != null) {
+                    notificationManager.createNotificationChannel(channel);
+                }
+            }
+            if (notificationManager != null) {
+                notificationManager.notify((int) System.currentTimeMillis() /* ID of notification */, builder.build());
+            }
         } else {
 //        Intent intent = new Intent(this, ActivityNewsDetail.class);
             Intent intent = new Intent(this, SplashActivity.class);
@@ -119,7 +133,17 @@ public class FCMReceiveMessage extends FirebaseMessagingService {
                     .setContentIntent(pendingIntent);
             NotificationManager notificationManager =
                     (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
-            notificationManager.notify((int) System.currentTimeMillis() /* ID of notification */, notificationBuilder.build());
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                NotificationChannel channel = new NotificationChannel(getApplicationContext().getString(R.string.app_name),
+                        "Channel human readable title",
+                        NotificationManager.IMPORTANCE_DEFAULT);
+                if (notificationManager != null) {
+                    notificationManager.createNotificationChannel(channel);
+                }
+            }
+            if (notificationManager != null) {
+                notificationManager.notify((int) System.currentTimeMillis() /* ID of notification */, notificationBuilder.build());
+            }
         }
     }
 }

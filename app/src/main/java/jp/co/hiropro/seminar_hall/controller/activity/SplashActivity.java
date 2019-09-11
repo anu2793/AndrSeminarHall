@@ -102,7 +102,7 @@ public class SplashActivity extends FragmentActivity implements GoogleApiClient.
         if (bundle != null)
             mIdNews = bundle.getString(AppConstants.KEY_SEND.KEY_ID_NEWS, "");
         getAccount();
-        sendToken();
+//        sendToken();
     }
 
     private void getAccount() {
@@ -195,6 +195,7 @@ public class SplashActivity extends FragmentActivity implements GoogleApiClient.
             HSSPreference.getInstance().putString(AppConstants.KEY_PREFERENCE.IS_FIRST_RUN.toString(), "has_run");
         params.put(AppConstants.KEY_PARAMS.NEW_APP.toString(), isFirstRun.length() == 0 ? "1" : "2");
         JSONObject parameters = new JSONObject(params);
+        Log.d("AAA",parameters.toString());
         JsonObjectRequest request = new JsonObjectRequest(Request.Method.POST, AppConstants.SERVER_PATH.SPLASH.toString(), parameters,
                 new Response.Listener<JSONObject>() {
                     @Override

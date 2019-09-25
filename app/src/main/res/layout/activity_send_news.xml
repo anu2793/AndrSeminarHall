@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".controller.activity.SendNewsActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/lnThumb"
+                android:paddingTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imvThumb"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/noimage" />
+
+                <jp.co.hiropro.seminar_hall.view.TextViewApp
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="サムネイル画像" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lnImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imvMain"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/noimage" />
+
+                <jp.co.hiropro.seminar_hall.view.TextViewApp
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="画像" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lnTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/bg_edittext_gray_border">
+
+                <jp.co.hiropro.seminar_hall.view.EditTextApp
+                    android:id="@+id/edt_news_title"
+                    style="@style/EditTextnews"
+                    android:layout_toRightOf="@id/imv_email"
+                    android:background="@android:color/transparent"
+                    android:hint="タイトル"
+                    android:inputType="text"
+                    app:fontFamilyApp="kozgopro6n_r" />
+            </LinearLayout>
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tv_title_error"
+                android:textSize="12sp"
+                android:text="タイトルが必要です"
+                android:textColor="@color/red"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:id="@+id/lnContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/bg_edittext_gray_border">
+
+                <jp.co.hiropro.seminar_hall.view.EditTextApp
+                    android:id="@+id/edtContent"
+                    style="@style/EditTextMultiple"
+                    android:layout_toRightOf="@id/imv_email"
+                    android:background="@android:color/transparent"
+                    android:gravity="top|left"
+                    android:hint="本文"
+                    android:inputType="textMultiLine"
+                    android:lines="20"
+                    android:minLines="5"
+                    android:scrollbars="vertical"
+                    android:scrollHorizontally="false"
+                    app:fontFamilyApp="kozgopro6n_r" />
+            </LinearLayout>
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tv_content_error"
+                android:textSize="12sp"
+                android:text="コンテンツが必要です"
+                android:textColor="@color/red"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:layout_marginBottom="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:layout_gravity="center"
+                    android:id="@+id/btnSendnews"
+                    style="@style/ButtonGradientNews"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:text="新規登録" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

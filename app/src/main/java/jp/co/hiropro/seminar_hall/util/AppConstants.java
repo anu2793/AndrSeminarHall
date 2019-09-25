@@ -82,6 +82,7 @@ public class AppConstants {
         public static String KEY_POSITION_TAB = "KEY_POSITION_TAB";
         public static String KEY_VIDEO = "KEY_VIDEO";
         public static String KEY_SHOW_ADVISE = "KEY_SHOW_ADVISE";
+        public static String KEY_TEACH_NEWS = "KEY_TEACH_NEWS";
     }
 
     public static class TYPE_SEARCH {
@@ -213,6 +214,11 @@ public class AppConstants {
         LIST_VIDEO_CATEGORY_TOP("video/categoryTop"),
         GET_CONTENT_LIST("teacher/getContentList"),
         GET_POINT("purchase/listpackage"),
+        SEND_NEWS("teacher/createNews"),
+        DELETE_NEWS("teacher/deleteNews"),
+        LIST_TEACH_NEWS("teacher/getListNews"),
+        NEW_DETAIL_TEACH("teacher/getNewsDetail"),
+        UPDATE_NEWS("teacher/updateNews"),
         BUY_MONTHLY_SUCCESS("purchase/setPaidPremium");
 
         String link;

@@ -46,11 +46,6 @@ import java.util.TimerTask;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
-import me.everything.android.ui.overscroll.IOverScrollDecor;
-import me.everything.android.ui.overscroll.IOverScrollState;
-import me.everything.android.ui.overscroll.IOverScrollUpdateListener;
-import me.everything.android.ui.overscroll.OverScrollDecoratorHelper;
-import me.leolin.shortcutbadger.ShortcutBadger;
 import jp.co.hiropro.dialog.HSSDialog;
 import jp.co.hiropro.dialog.LoadingDialog;
 import jp.co.hiropro.seminar_hall.ForestApplication;
@@ -74,6 +69,11 @@ import jp.co.hiropro.seminar_hall.view.adapter.NewCategoryAdapter;
 import jp.co.hiropro.seminar_hall.view.adapter.NewsTopAdapter;
 import jp.co.hiropro.seminar_hall.view.adapter.SeminarAdapter;
 import jp.co.hiropro.seminar_hall.view.adapter.ViewPagerAdapter;
+import me.everything.android.ui.overscroll.IOverScrollDecor;
+import me.everything.android.ui.overscroll.IOverScrollState;
+import me.everything.android.ui.overscroll.IOverScrollUpdateListener;
+import me.everything.android.ui.overscroll.OverScrollDecoratorHelper;
+import me.leolin.shortcutbadger.ShortcutBadger;
 
 import static jp.co.hiropro.seminar_hall.ForestApplication.LICENSE_KEY;
 
@@ -118,6 +118,10 @@ public class TopActivity extends BaseActivity {
     LinearLayout mLlSeminarSuggest;
     @BindView(R.id.ll_category)
     LinearLayout mLlCategory;
+    @BindView(R.id.tv_news)
+    TextViewApp tvNews;
+    @BindView(R.id.lnWrapnews)
+    LinearLayout lnWrapnews;
 
     private IOverScrollDecor decor;
     private List<Campaign> campaignList = new ArrayList<>();
@@ -139,6 +143,7 @@ public class TopActivity extends BaseActivity {
 
     SearchResultFragment searchResultFragment;
     ImageView closeIcon;
+    NewsItem newsItem;
 
 
     @Override
@@ -277,7 +282,7 @@ public class TopActivity extends BaseActivity {
             super.onBackPressed();
     }
 
-    @OnClick({R.id.tv_cancel, R.id.btn_content_free, R.id.tv_list_news, R.id.btn_diagnosis, R.id.imv_profile, R.id.tv_go_seminar_list, R.id.tv_go_new_list})
+    @OnClick({R.id.tv_cancel, R.id.btn_content_free, R.id.tv_list_news, R.id.btn_diagnosis, R.id.imv_profile, R.id.tv_go_seminar_list, R.id.tv_go_new_list,R.id.tv_list_new,R.id.layout_top_news})
     public void click(View view) {
         switch (view.getId()) {
             case R.id.tv_cancel:
@@ -298,10 +303,13 @@ public class TopActivity extends BaseActivity {
             case R.id.tv_go_new_list:
                 startActivity(new Intent(TopActivity.this, NewsActivity.class));
                 break;
-//            case R.id.layout_top_news:
-//                startActivityForResult(new Intent(TopActivity.this, NewDetailActivity.class)
-//                        .putExtra(AppConstants.KEY_SEND.KEY_SEND_NEW_OBJECT, newsItem), 103);
-//                break;
+            case R.id.tv_list_new:
+                startActivity(new Intent(TopActivity.this, NewsActivity.class));
+                break;
+            case R.id.layout_top_news:
+                startActivityForResult(new Intent(TopActivity.this, NewDetailActivity.class)
+                        .putExtra(AppConstants.KEY_SEND.KEY_SEND_NEW_OBJECT, newsItem), 103);
+                break;
             case R.id.btn_diagnosis:
                 String urlSend = "";
                 /**
@@ -646,30 +654,41 @@ public class TopActivity extends BaseActivity {
                         viewPager.setVisibility(View.GONE);
                         viewIndicator.setVisibility(View.GONE);
                     }
+                    //News
+                    JSONObject news = data.getJSONObject("news");
+                    if (news.length() > 0) {
+                        newsItem = NewsItem.parser(news);
+                        tvNews.setText(news.optString(KeyParser.KEY.TITLE.toString()));
+                    } else {
+                        lnWrapnews.setVisibility(View.GONE);
+                    }
                 } catch (JSONException e) {
                     e.printStackTrace();
                 }
+
+
                 // NEW block.
-                int isShowNew = data.optInt(AppConstants.KEY_PARAMS.HIDE_NEWS.toString(), 0);
-                mLlNew.setVisibility(isShowNew > 0 ? View.VISIBLE : View.GONE);
-                if (isShowNew > 0) {
-                    listNew.clear();
-                    //News
-                    try {
-                        JSONArray news = data.getJSONArray(AppConstants.KEY_PARAMS.LIST_NEWS.toString());
-                        mRcyNews.setVisibility(news.length() > 0 ? View.VISIBLE : View.GONE);
-                        if (news.length() > 0) {
-                            for (int i = 0; i < news.length(); i++) {
-                                NewsItem item = NewsItem.parser(news.getJSONObject(i));
-                                listNew.add(item);
-                            }
-                        }
-                        mAdapterNew.notifyDataSetChanged();
-                        mLlNew.setVisibility(listNew.size() > 0 ? View.VISIBLE : View.GONE);
-                    } catch (Exception ex) {
-                        ex.printStackTrace();
-                    }
-                }
+//                int isShowNew = data.optInt(AppConstants.KEY_PARAMS.HIDE_NEWS.toString(), 0);
+//                mLlNew.setVisibility(isShowNew > 0 ? View.VISIBLE : View.GONE);
+//                if (isShowNew > 0) {
+//                    listNew.clear();
+//                    //News
+//                    try {
+//                        JSONArray news = data.getJSONArray(AppConstants.KEY_PARAMS.LIST_NEWS.toString());
+//                        mRcyNews.setVisibility(news.length() > 0 ? View.VISIBLE : View.GONE);
+//                        if (news.length() > 0) {
+//                            for (int i = 0; i < news.length(); i++) {
+//                                NewsItem item = NewsItem.parser(news.getJSONObject(i));
+//                                listNew.add(item);
+//                            }
+//                        }
+//                        mAdapterNew.notifyDataSetChanged();
+//                        mLlNew.setVisibility(listNew.size() > 0 ? View.VISIBLE : View.GONE);
+//                    } catch (Exception ex) {
+//                        ex.printStackTrace();
+//                    }
+//                }
+
                 //Category
                 try {
                     JSONArray category = data.getJSONArray(AppConstants.KEY_PARAMS.LIST_CATEGORY.toString());

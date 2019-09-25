@@ -32,6 +32,11 @@
     <string name="account_type">jp.co.hiropro.evergreen.provider.ACCOUNT</string>
     <string name="name_menu_business">特定商取引に関する表示</string>
     <string name="name_menu_service">ご利用規約</string>
+    <string name="name_menu_send_news">ニュース配信</string>
+    <string name="txt_function_name">Function name</string>
+    <string name="txt_news_title">News title</string>
+    <string name="txt_text">Text</string>
+    <string name="sw_push_notification">Push notification ON / OFF</string>
     <string name="txt_profile_screen">マイプロフィール</string>
     <string name="title_profile">あなたのプラン</string>
     <string name="txt_profile_sub">YOUR PLAN</string>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/news_list_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:lines="1"
+        android:padding="10dp"
+        android:text="Time"
+        android:textColor="@android:color/black"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
+    <RelativeLayout
+        android:id="@+id/rl_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/news_image_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/iv_no_image" />
+
+        <RelativeLayout
+            android:id="@+id/rl_mark"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_title_new" />
+
+        <LinearLayout
+            android:id="@+id/rl_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/news_image_view"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/value_8dp"
+            android:paddingLeft="@dimen/value_15dp"
+            android:paddingRight="@dimen/value_15dp">
+
+            <TextView
+                android:id="@+id/news_list_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:lineSpacingExtra="@dimen/value_8dp"
+                android:maxLines="2"
+                android:text="Title"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/layout_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:ellipsize="end"
+                android:lineSpacingExtra="@dimen/value_8dp"
+                android:maxLines="2"
+                android:orientation="vertical"
+                android:text="@string/app_name"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/lnHeader"
+            android:padding="10dp"
+            android:orientation="horizontal"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:paddingLeft="@dimen/value_10dp"
+                android:paddingRight="@dimen/value_10dp"
+                android:paddingTop="@dimen/value_3dp"
+                android:paddingBottom="@dimen/value_3dp"
+                android:id="@+id/tv_read"
+                android:background="@drawable/bg_read"
+                android:layout_centerVertical="true"
+                android:textColor="@color/white"
+                android:text="配信済"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <ImageView
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/value_20dp"
+                android:layout_toLeftOf="@+id/imv_delete"
+                android:id="@+id/imv_edit"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/ic_edit" />
+            <ImageView
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:id="@+id/imv_delete"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/ic_delete" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>
+

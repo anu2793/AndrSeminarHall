@@ -47,7 +47,6 @@ import org.json.JSONObject;
 import java.util.HashMap;
 import java.util.Map;
 
-import me.leolin.shortcutbadger.ShortcutBadger;
 import jp.co.hiropro.dialog.HSSDialog;
 import jp.co.hiropro.seminar_hall.ForestApplication;
 import jp.co.hiropro.seminar_hall.R;
@@ -62,6 +61,7 @@ import jp.co.hiropro.seminar_hall.util.RequestDataUtils;
 import jp.co.hiropro.seminar_hall.view.TextViewApp;
 import jp.co.hiropro.seminar_hall.view.dialog.AdviseDialog;
 import jp.co.hiropro.utils.NetworkUtils;
+import me.leolin.shortcutbadger.ShortcutBadger;
 
 public abstract class BaseActivity extends AppCompatActivity implements View.OnClickListener {
     DrawerLayout drawerLayout;
@@ -72,7 +72,7 @@ public abstract class BaseActivity extends AppCompatActivity implements View.OnC
     protected TextView tvTitle;
     protected ImageView ivLogo;
     TextViewApp menuHome, menuMyLibrary, menuProfile, menuHelp, menuTerm, menuSpcifiedTransaction, mTvDeviceManager, mTvLogin, mTvLogoutSocial;
-    TextViewApp mTvPurchaseList, mTvHistory, mTvFavoriteList, mTvVersion, mTvPrivacy, mTvSetting, menuPoint;
+    TextViewApp mTvPurchaseList, mTvHistory, mTvFavoriteList, mTvVersion, mTvPrivacy, mTvSetting, menuPoint, tvSendnews,tvListNews;
     protected ActionBarDrawerToggle mDrawerToggle;
     Activity activity;
     public static Point screenSize = null;
@@ -105,6 +105,10 @@ public abstract class BaseActivity extends AppCompatActivity implements View.OnC
         mPrg.setCancelable(false);
         mPrg.setMax(100);
         mManagerAccount = AccountManager.get(this);
+        if (user.getRoleUser() == 2) {
+            tvSendnews.setVisibility(View.VISIBLE);
+            tvListNews.setVisibility(View.VISIBLE);
+        }
     }
 
     protected int getLayoutId() {
@@ -148,6 +152,8 @@ public abstract class BaseActivity extends AppCompatActivity implements View.OnC
         mTvSetting = findViewById(R.id.tv_setting);
         mTvLogoutSocial = findViewById(R.id.tv_logout_social);
         menuPoint = findViewById(R.id.tv_menu_point);
+        tvSendnews = findViewById(R.id.tv_menu_send_news);
+        tvListNews = findViewById(R.id.tv_menu_listnews);
         try {
             PackageInfo pInfo = this.getPackageManager().getPackageInfo(getPackageName(), 0);
             String version = pInfo.versionName;
@@ -244,6 +250,8 @@ public abstract class BaseActivity extends AppCompatActivity implements View.OnC
         mTvSetting.setOnClickListener(menu);
         mTvLogoutSocial.setOnClickListener(menu);
         menuPoint.setOnClickListener(menu);
+        tvSendnews.setOnClickListener(menu);
+        tvListNews.setOnClickListener(menu);
         mDrawerToggle = new ActionBarDrawerToggle(this, drawerLayout, null, R.string.app_name, R.string.app_name) {
             @Override
             public void onDrawerSlide(View drawerView, float slideOffset) {
@@ -400,6 +408,18 @@ public abstract class BaseActivity extends AppCompatActivity implements View.OnC
                     if (activity.getClass().getName().equals(PointManagerActivity.class.getName()))
                         return;
                     startActivity(new Intent(activity, PointManagerActivity.class).addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
+                    break;
+                case R.id.tv_menu_send_news:
+                    closeRightMenu();
+                    if (activity.getClass().getName().equals(SendNewsActivity.class.getName()))
+                        return;
+                    startActivity(new Intent(activity, SendNewsActivity.class).addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
+                    break;
+                case R.id.tv_menu_listnews:
+                    closeRightMenu();
+                    if (activity.getClass().getName().equals(ListnewsTeachActivity.class.getName()))
+                        return;
+                    startActivity(new Intent(activity, ListnewsTeachActivity.class).addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
                     break;
                 case R.id.tv_logout_social:
                     HSSDialog.show(BaseActivity.this, getString(R.string.msg_confirm_logout), getString(R.string.txt_ok), new View.OnClickListener() {

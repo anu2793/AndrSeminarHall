@@ -105,6 +105,20 @@
                         android:drawableLeft="@drawable/ic_point"
                         android:text="ポイント" />
 
+                    <jp.co.hiropro.seminar_hall.view.TextViewApp
+                        android:visibility="gone"
+                        android:id="@+id/tv_menu_send_news"
+                        style="@style/TextMenu"
+                        android:drawableLeft="@drawable/ic_email"
+                        android:text="ニュース配信" />
+
+                    <jp.co.hiropro.seminar_hall.view.TextViewApp
+                        android:visibility="gone"
+                        android:id="@+id/tv_menu_listnews"
+                        style="@style/TextMenu"
+                        android:drawableLeft="@drawable/ic_email"
+                        android:text="ニュース一覧" />
+
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="0.5dp"

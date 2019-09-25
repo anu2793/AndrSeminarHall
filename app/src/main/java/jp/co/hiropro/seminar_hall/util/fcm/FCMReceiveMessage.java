@@ -6,6 +6,7 @@ import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.BitmapFactory;
 import android.media.RingtoneManager;
 import android.net.Uri;
@@ -21,6 +22,7 @@ import org.json.JSONObject;
 
 import java.util.Map;
 
+import jp.co.hiropro.seminar_hall.util.HSSPreference;
 import me.leolin.shortcutbadger.ShortcutBadger;
 import jp.co.hiropro.seminar_hall.R;
 import jp.co.hiropro.seminar_hall.controller.activity.LoginActivity;
@@ -58,8 +60,10 @@ public class FCMReceiveMessage extends FirebaseMessagingService {
 //                        JSONObject objectData = object.getJSONObject("data");
                         if (object != null) {
                             int badge = object.optInt("remain", 0);
-                            if (getApplicationContext() != null)
+                            if (getApplicationContext() != null){
                                 ShortcutBadger.applyCount(getApplicationContext(), badge);
+                                HSSPreference.getInstance().putInt("number_remain",badge);
+                            }
                             String msg = object.optString("title", "");
                             String newId = object.optString("news_id", "");
                             int type = 0;
@@ -119,6 +123,9 @@ public class FCMReceiveMessage extends FirebaseMessagingService {
         } else {
 //        Intent intent = new Intent(this, ActivityNewsDetail.class);
             Intent intent = new Intent(this, SplashActivity.class);
+            if (type == 2){
+                intent.putExtra(AppConstants.KEY_SEND.KEY_TEACH_NEWS, true);
+            }
             intent.putExtra(AppConstants.KEY_SEND.KEY_ID_NEWS, newId);
             PendingIntent pendingIntent = PendingIntent.getActivity(this, (int) System.currentTimeMillis() /* Request code */, intent,
                     PendingIntent.FLAG_ONE_SHOT);

@@ -59,6 +59,7 @@ import static android.R.attr.name;
 
 public class SplashActivity extends FragmentActivity implements GoogleApiClient.OnConnectionFailedListener {
     private String mIdNews = "";
+    private Boolean teachNews = false;
     private String mIdCampaign = "";
     private ProgressDialog mPrg;
     private AccountManager mManagerAccount;
@@ -101,6 +102,7 @@ public class SplashActivity extends FragmentActivity implements GoogleApiClient.
         Bundle bundle = getIntent().getExtras();
         if (bundle != null)
             mIdNews = bundle.getString(AppConstants.KEY_SEND.KEY_ID_NEWS, "");
+            teachNews = bundle.getBoolean(AppConstants.KEY_SEND.KEY_TEACH_NEWS, false);
         getAccount();
 //        sendToken();
     }
@@ -195,7 +197,7 @@ public class SplashActivity extends FragmentActivity implements GoogleApiClient.
             HSSPreference.getInstance().putString(AppConstants.KEY_PREFERENCE.IS_FIRST_RUN.toString(), "has_run");
         params.put(AppConstants.KEY_PARAMS.NEW_APP.toString(), isFirstRun.length() == 0 ? "1" : "2");
         JSONObject parameters = new JSONObject(params);
-        Log.d("AAA",parameters.toString());
+        Log.d("AAA", parameters.toString());
         JsonObjectRequest request = new JsonObjectRequest(Request.Method.POST, AppConstants.SERVER_PATH.SPLASH.toString(), parameters,
                 new Response.Listener<JSONObject>() {
                     @Override
@@ -242,7 +244,7 @@ public class SplashActivity extends FragmentActivity implements GoogleApiClient.
                                 NewsItem item = new NewsItem();
                                 item.setId(Integer.valueOf(mIdNews));
                                 item.setmIsFromNotification(true);
-                                startActivity(new Intent(SplashActivity.this, NewDetailActivity.class).putExtra(AppConstants.KEY_SEND.KEY_SEND_NEW_OBJECT, item));
+                                startActivity(new Intent(SplashActivity.this, NewDetailActivity.class).putExtra(AppConstants.KEY_SEND.KEY_SEND_NEW_OBJECT, item).putExtra(AppConstants.KEY_SEND.KEY_TEACH_NEWS, teachNews));
                                 finish();
                             } else {
                                 startActivity(new Intent(SplashActivity.this, TopActivity.class).addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK));
@@ -319,7 +321,7 @@ public class SplashActivity extends FragmentActivity implements GoogleApiClient.
                                         NewsItem item = new NewsItem();
                                         item.setId(Integer.valueOf(mIdNews));
                                         item.setmIsFromNotification(true);
-                                        startActivity(new Intent(SplashActivity.this, NewDetailActivity.class).putExtra(AppConstants.KEY_SEND.KEY_SEND_NEW_OBJECT, item));
+                                        startActivity(new Intent(SplashActivity.this, NewDetailActivity.class).putExtra(AppConstants.KEY_SEND.KEY_SEND_NEW_OBJECT, item).putExtra(AppConstants.KEY_SEND.KEY_TEACH_NEWS, teachNews));
                                         finish();
                                     } else if (mIdCampaign.length() > 0) {
                                         startActivity(new Intent(SplashActivity.this, TopActivity.class)

@@ -207,5 +207,17 @@
     <orderEntry type="library" name="Gradle: me.leolin:ShortcutBadger:1.1.16@aar" level="project" />
     <orderEntry type="module" module-name="liboverscroll" />
     <orderEntry type="module" module-name="hss-android_lib" />
+    <orderEntry type="module" module-name="liboverscroll" />
+    <orderEntry type="module" module-name="hss-android_lib" />
+    <orderEntry type="module" module-name="liboverscroll" />
+    <orderEntry type="module" module-name="hss-android_lib" />
+    <orderEntry type="module" module-name="liboverscroll" />
+    <orderEntry type="module" module-name="hss-android_lib" />
+    <orderEntry type="module" module-name="liboverscroll" />
+    <orderEntry type="module" module-name="hss-android_lib" />
+    <orderEntry type="module" module-name="liboverscroll" />
+    <orderEntry type="module" module-name="hss-android_lib" />
+    <orderEntry type="module" module-name="liboverscroll" />
+    <orderEntry type="module" module-name="hss-android_lib" />
   </component>
 </module>

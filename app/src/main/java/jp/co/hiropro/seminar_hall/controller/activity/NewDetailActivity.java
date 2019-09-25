@@ -5,6 +5,7 @@ import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -21,13 +22,18 @@ import com.bumptech.glide.Glide;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.util.HashMap;
+import java.util.Map;
+
 import jp.co.hiropro.dialog.HSSDialog;
 import jp.co.hiropro.seminar_hall.ForestApplication;
 import jp.co.hiropro.seminar_hall.R;
 import jp.co.hiropro.seminar_hall.model.NewsItem;
 import jp.co.hiropro.seminar_hall.util.AppConstants;
 import jp.co.hiropro.seminar_hall.util.AppUtils;
+import jp.co.hiropro.seminar_hall.util.HSSPreference;
 import jp.co.hiropro.seminar_hall.util.KeyParser;
+import jp.co.hiropro.seminar_hall.util.RequestDataUtils;
 import jp.co.hiropro.seminar_hall.view.AutoResizeTextView;
 import jp.co.hiropro.seminar_hall.view.TextViewApp;
 import jp.co.hiropro.seminar_hall.view.dialog.DialogRetryConnection;
@@ -47,6 +53,7 @@ public class NewDetailActivity extends BaseActivity {
     private ProgressDialog mPrg;
     private LinearLayout mLlContent;
     private ProgressBar mPrgLoading;
+    private Boolean teachNews = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,8 +67,14 @@ public class NewDetailActivity extends BaseActivity {
         mPrg.setCancelable(false);
         mPrg.setMax(100);
         mNewsObject = getIntent().getParcelableExtra(AppConstants.KEY_SEND.KEY_SEND_NEW_OBJECT);
+        teachNews = getIntent().getBooleanExtra(AppConstants.KEY_SEND.KEY_TEACH_NEWS, false);
+        Log.d("AAAAAAA",String.valueOf(teachNews));
         if (mNewsObject != null) {
-            getNewDetail(String.valueOf(mNewsObject.getId()));
+            if (teachNews) {
+                getNewDetailTeach(String.valueOf(mNewsObject.getId()));
+            } else {
+                getNewDetail(String.valueOf(mNewsObject.getId()));
+            }
         }
 
 
@@ -121,6 +134,43 @@ public class NewDetailActivity extends BaseActivity {
 
     }
 
+    private void getNewDetailTeach(String idnews) {
+        showLoading();
+        Map<String, String> params = new HashMap<>();
+        params.put(AppConstants.KEY_PARAMS.CLIENT_ID.toString(), String.valueOf(AppConstants.CLIENT_ID));
+        params.put(AppConstants.KEY_PARAMS.MEMBER_ID.toString(), user.getUserId());
+        params.put(AppConstants.KEY_PARAMS.ID.toString(), idnews);
+        params.put("memtype", "0");
+        params.put(AppConstants.KEY_PARAMS.DEVICE_ID.toString(), AppUtils.getDeviceID(NewDetailActivity.this));
+        RequestDataUtils.requestData(Request.Method.GET, NewDetailActivity.this, AppConstants.SERVER_PATH.NEW_DETAIL_TEACH.toString(),
+                params, new RequestDataUtils.onResult() {
+                    @Override
+                    public void onSuccess(JSONObject response, String msg) {
+                        if (response.length() > 0) {
+                            try {
+                                JSONObject objectNew = response.getJSONObject(AppConstants.KEY_PARAMS.DETAIL.toString());
+                                if (user.getRoleUser() != 2) {
+                                    int numberNotifi = objectNew.optInt(AppConstants.KEY_PARAMS.REMAIN.toString());
+                                    HSSPreference.getInstance().putInt("number_remain",numberNotifi);
+                                    AppUtils.setNumberNotification(NewDetailActivity.this, numberNotifi);
+                                }
+                                NewsItem item = NewsItem.parser(objectNew);
+                                loadDataToView(item);
+
+                            } catch (JSONException e) {
+                                e.printStackTrace();
+                            }
+                        }
+                        dismissLoading();
+                    }
+
+                    @Override
+                    public void onFail(int error) {
+                        dismissLoading();
+                    }
+                });
+    }
+
     private void getNewDetail(final String idNew) {
         showLoading();
         JsonObjectRequest request = new JsonObjectRequest(Request.Method.GET, AppConstants.SERVER_PATH.NEW_DETAIL.toString() + "?id=" + idNew, null,
@@ -134,6 +184,7 @@ public class NewDetailActivity extends BaseActivity {
                                 try {
                                     JSONObject objectData = response.getJSONObject(AppConstants.KEY_PARAMS.DATA.toString());
                                     int numberNotifi = objectData.optInt(AppConstants.KEY_PARAMS.REMAIN.toString());
+                                    HSSPreference.getInstance().putInt("number_remain",numberNotifi);
                                     AppUtils.setNumberNotification(NewDetailActivity.this, numberNotifi);
                                     JSONObject objectNew = objectData.getJSONObject(AppConstants.KEY_PARAMS.DETAIL.toString());
                                     NewsItem item = NewsItem.parser(objectNew);

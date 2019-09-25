@@ -151,4 +151,5 @@
     <string name="msg_video_has_buy">この動画が購入されました。</string>
     <string name="txt_link_sns_error">URLリンクが正しくありません。</string>
     <string name="spn_speed_normal">標準</string>
+    <string name="remain_text">未読メッセージが %1 件あります！」</string>
 </resources>

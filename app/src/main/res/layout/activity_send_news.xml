@@ -69,6 +69,7 @@
                 android:background="@drawable/bg_edittext_gray_border">
 
                 <jp.co.hiropro.seminar_hall.view.EditTextApp
+                    android:maxLength="255"
                     android:id="@+id/edt_news_title"
                     style="@style/EditTextnews"
                     android:layout_toRightOf="@id/imv_email"
@@ -95,6 +96,7 @@
                 android:background="@drawable/bg_edittext_gray_border">
 
                 <jp.co.hiropro.seminar_hall.view.EditTextApp
+                    android:maxLength="13000"
                     android:id="@+id/edtContent"
                     style="@style/EditTextMultiple"
                     android:layout_toRightOf="@id/imv_email"

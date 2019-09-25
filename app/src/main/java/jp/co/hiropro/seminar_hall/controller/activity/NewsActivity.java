@@ -151,8 +151,14 @@ public class NewsActivity extends BaseActivity implements Paginate.Callbacks {
             public void onItemClick(NewsItem newsItem, int pos) {
                 if (AppUtils.isInternetAvailable(NewsActivity.this)) {
                     mPosRead = pos;
-                    startActivityForResult(new Intent(NewsActivity.this, NewDetailActivity.class)
-                            .putExtra(AppConstants.KEY_SEND.KEY_SEND_NEW_OBJECT, newsItem), NewsActivity.KEY_READ_NEW);
+                    if (newsItem.getNewtype() == 1) {
+                        startActivityForResult(new Intent(NewsActivity.this, NewDetailActivity.class)
+                                .putExtra(AppConstants.KEY_SEND.KEY_TEACH_NEWS, true)
+                                .putExtra(AppConstants.KEY_SEND.KEY_SEND_NEW_OBJECT, newsItem), NewsActivity.KEY_READ_NEW);
+                    } else {
+                        startActivityForResult(new Intent(NewsActivity.this, NewDetailActivity.class)
+                                .putExtra(AppConstants.KEY_SEND.KEY_SEND_NEW_OBJECT, newsItem), NewsActivity.KEY_READ_NEW);
+                    }
                 } else {
                     Toast.makeText(NewsActivity.this, getResources().getString(R.string.txt_lost_connect), Toast.LENGTH_SHORT).show();
                 }
@@ -239,7 +245,7 @@ public class NewsActivity extends BaseActivity implements Paginate.Callbacks {
                                 String mess = response.optString(KeyParser.KEY.MESSAGE.toString());
                                 goMaintainScreen(activity, mess);
                             } else if (status == AppConstants.STATUS_REQUEST.TOKEN_EXPIRED) {
-                               sessionExpire();
+                                sessionExpire();
                             } else {
                                 HSSDialog.show(activity, getString(R.string.error_io_exception));
                             }

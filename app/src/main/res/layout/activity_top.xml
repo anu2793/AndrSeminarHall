@@ -110,6 +110,16 @@
                     android:layout_height="wrap_content"
                     android:paddingBottom="@dimen/value_15dp"
                     android:paddingTop="@dimen/value_15dp" />
+                <TextView
+                    android:gravity="center"
+                    android:id="@+id/tvRemian"
+                    android:text="@string/remain_text"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
                 <LinearLayout
                     android:id="@+id/lnWrapnews"
                     android:orientation="vertical"
@@ -151,6 +161,7 @@
                             android:background="@drawable/iv_dotted" />
 
                         <jp.co.hiropro.seminar_hall.view.TextViewApp
+                            android:visibility="gone"
                             android:id="@+id/tv_news"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
@@ -158,10 +169,21 @@
                             android:layout_toRightOf="@+id/view_dotted"
                             android:ellipsize="end"
                             android:lineSpacingMultiplier="1.25"
-                            android:maxLines="2"
+                            android:maxLines="1"
                             android:text=""
                             android:textColor="#5b5b5b"
                             android:textSize="13sp" />
+
+                        <android.support.v7.widget.RecyclerView
+                            android:layout_toRightOf="@+id/view_dotted"
+                            android:id="@+id/lv_new"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:clipToPadding="false"
+                            android:divider="@android:color/white"
+                            android:dividerHeight="@dimen/value_5dp"
+                            android:nestedScrollingEnabled="false"
+                            tools:listitem="@layout/item_news_list_top" />
                     </RelativeLayout>
                     <LinearLayout
                         android:layout_marginLeft="10dp"
@@ -389,16 +411,6 @@
                                 app:textStyle="bold" />
                         </RelativeLayout>
 
-
-                        <android.support.v7.widget.RecyclerView
-                            android:id="@+id/lv_new"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:clipToPadding="false"
-                            android:divider="@android:color/white"
-                            android:dividerHeight="@dimen/value_5dp"
-                            android:nestedScrollingEnabled="false"
-                            tools:listitem="@layout/item_news_list_top" />
 
                     </LinearLayout>
 

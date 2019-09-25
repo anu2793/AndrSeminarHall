@@ -122,6 +122,8 @@ public class TopActivity extends BaseActivity {
     TextViewApp tvNews;
     @BindView(R.id.lnWrapnews)
     LinearLayout lnWrapnews;
+    @BindView(R.id.tvRemian)
+    TextView tvRemian;
 
     private IOverScrollDecor decor;
     private List<Campaign> campaignList = new ArrayList<>();
@@ -282,7 +284,7 @@ public class TopActivity extends BaseActivity {
             super.onBackPressed();
     }
 
-    @OnClick({R.id.tv_cancel, R.id.btn_content_free, R.id.tv_list_news, R.id.btn_diagnosis, R.id.imv_profile, R.id.tv_go_seminar_list, R.id.tv_go_new_list,R.id.tv_list_new,R.id.layout_top_news})
+    @OnClick({R.id.tv_cancel, R.id.btn_content_free, R.id.tv_list_news, R.id.btn_diagnosis, R.id.imv_profile, R.id.tv_go_seminar_list, R.id.tv_go_new_list, R.id.tv_list_new, R.id.layout_top_news})
     public void click(View view) {
         switch (view.getId()) {
             case R.id.tv_cancel:
@@ -636,6 +638,7 @@ public class TopActivity extends BaseActivity {
                 // Update number remain.
                 int numberRemain = data.optInt(AppConstants.KEY_PARAMS.REMAIN.toString(), 0);
                 ShortcutBadger.applyCount(getApplicationContext(), numberRemain);
+                tvRemian.setText("未読メッセージが" + numberRemain + "件あります！」");
                 if (data.length() > 0) {
                     mUrlDiagnosis = data.optString("diagnosis_link");
                     if (mUrlDiagnosis.length() > 0)
@@ -655,10 +658,25 @@ public class TopActivity extends BaseActivity {
                         viewIndicator.setVisibility(View.GONE);
                     }
                     //News
-                    JSONObject news = data.getJSONObject("news");
+//                    JSONObject news = data.getJSONObject("news");
+//                    if (news.length() > 0) {
+//                        newsItem = NewsItem.parser(news);
+//                        tvNews.setText(news.optString(KeyParser.KEY.TITLE.toString()));
+//                    } else {
+//                        lnWrapnews.setVisibility(View.GONE);
+//                    }
+                    //news  top
+                    JSONArray news = data.getJSONArray(AppConstants.KEY_PARAMS.LIST_NEWS.toString());
                     if (news.length() > 0) {
-                        newsItem = NewsItem.parser(news);
-                        tvNews.setText(news.optString(KeyParser.KEY.TITLE.toString()));
+                        listNew.clear();
+                        lnWrapnews.setVisibility(View.VISIBLE);
+                        for (int i = 0; i < news.length(); i++) {
+                            if (i < 2) {
+                                NewsItem item = NewsItem.parser(news.getJSONObject(i));
+                                listNew.add(item);
+                            }
+                        }
+                        mAdapterNew.notifyDataSetChanged();
                     } else {
                         lnWrapnews.setVisibility(View.GONE);
                     }

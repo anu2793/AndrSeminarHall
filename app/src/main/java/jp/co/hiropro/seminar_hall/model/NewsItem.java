@@ -20,7 +20,9 @@ import jp.co.hiropro.seminar_hall.util.KeyParser;
  */
 public class NewsItem implements Parcelable {
     private int mId;
+    private int mnewtype;
     private String mTitle;
+
     private String mBody;
     private String mFileName;
     private String mNotice;
@@ -99,6 +101,14 @@ public class NewsItem implements Parcelable {
 
     public String getSendAt() {
         return mSendAt;
+    }
+
+    public int getNewtype() {
+        return mnewtype;
+    }
+
+    public void setNewtype(int mnewtype) {
+        this.mnewtype = mnewtype;
     }
 
     public String getDescription() {
@@ -221,6 +231,7 @@ public class NewsItem implements Parcelable {
         item.setCreatededAt(object.optString(KeyParser.KEY.SEND_AT.toString(), ""));
         item.setDate(object.optString(KeyParser.KEY.SEND_AT.toString(), ""));
         item.setRead(object.optInt(KeyParser.KEY.READ.toString()));
+        item.setNewtype(object.optInt("news_type"));
         return item;
     }
 
@@ -248,6 +259,7 @@ public class NewsItem implements Parcelable {
         dest.writeString(this.mSummary);
         dest.writeString(this.mThumbNail);
         dest.writeInt(this.read);
+        dest.writeInt(this.mnewtype);
         dest.writeByte((byte) (mIsFromNotification ? 1 : 0));
     }
 
@@ -272,6 +284,7 @@ public class NewsItem implements Parcelable {
         this.mSummary = in.readString();
         this.mThumbNail = in.readString();
         this.read = in.readInt();
+        this.mnewtype = in.readInt();
         this.mIsFromNotification = in.readByte() != 0;
     }
 

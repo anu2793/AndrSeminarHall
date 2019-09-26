@@ -315,8 +315,8 @@ public class TopActivity extends BaseActivity {
                 startActivity(new Intent(TopActivity.this, NewsActivity.class));
                 break;
             case R.id.layout_top_news:
-                startActivityForResult(new Intent(TopActivity.this, NewDetailActivity.class)
-                        .putExtra(AppConstants.KEY_SEND.KEY_SEND_NEW_OBJECT, newsItem), 103);
+//                startActivityForResult(new Intent(TopActivity.this, NewDetailActivity.class)
+//                        .putExtra(AppConstants.KEY_SEND.KEY_SEND_NEW_OBJECT, newsItem), 103);
                 break;
             case R.id.btn_diagnosis:
                 String urlSend = "";

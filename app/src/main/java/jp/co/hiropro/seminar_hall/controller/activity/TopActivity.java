@@ -644,7 +644,7 @@ public class TopActivity extends BaseActivity {
                 // Update number remain.
                 int numberRemain = data.optInt(AppConstants.KEY_PARAMS.REMAIN.toString(), 0);
                 ShortcutBadger.applyCount(getApplicationContext(), numberRemain);
-                tvRemian.setText("未読メッセージが" + numberRemain + "件あります！」");
+                tvRemian.setText("未読メッセージが" + numberRemain + "件あります！");
                 if (data.length() > 0) {
                     mUrlDiagnosis = data.optString("diagnosis_link");
                     if (mUrlDiagnosis.length() > 0)

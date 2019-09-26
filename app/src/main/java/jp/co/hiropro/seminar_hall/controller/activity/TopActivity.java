@@ -186,7 +186,13 @@ public class TopActivity extends BaseActivity {
             @Override
             public void onItemClick(View view, int position) {
                 NewsItem item = listNew.get(position);
-                startActivity(new Intent(TopActivity.this, NewDetailActivity.class).putExtra(AppConstants.KEY_SEND.KEY_SEND_NEW_OBJECT, item));
+                if (item.getNewtype() == 1){
+                    startActivity(new Intent(TopActivity.this, NewDetailActivity.class)
+                            .putExtra(AppConstants.KEY_SEND.KEY_TEACH_NEWS, true)
+                            .putExtra(AppConstants.KEY_SEND.KEY_SEND_NEW_OBJECT, item));
+                }else{
+                    startActivity(new Intent(TopActivity.this, NewDetailActivity.class).putExtra(AppConstants.KEY_SEND.KEY_SEND_NEW_OBJECT, item));
+                }
             }
 
             @Override

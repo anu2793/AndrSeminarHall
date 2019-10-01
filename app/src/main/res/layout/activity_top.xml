@@ -111,6 +111,7 @@
                     android:paddingBottom="@dimen/value_15dp"
                     android:paddingTop="@dimen/value_15dp" />
                 <TextView
+                    android:visibility="gone"
                     android:gravity="center"
                     android:id="@+id/tvRemian"
                     android:text="@string/remain_text"

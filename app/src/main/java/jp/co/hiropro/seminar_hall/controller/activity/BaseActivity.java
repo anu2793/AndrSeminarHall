@@ -72,7 +72,7 @@ public abstract class BaseActivity extends AppCompatActivity implements View.OnC
     protected TextView tvTitle;
     protected ImageView ivLogo;
     TextViewApp menuHome, menuMyLibrary, menuProfile, menuHelp, menuTerm, menuSpcifiedTransaction, mTvDeviceManager, mTvLogin, mTvLogoutSocial;
-    TextViewApp mTvPurchaseList, mTvHistory, mTvFavoriteList, mTvVersion, mTvPrivacy, mTvSetting, menuPoint, tvSendnews,tvListNews;
+    TextViewApp mTvPurchaseList, mTvHistory, mTvFavoriteList, mTvVersion, mTvPrivacy, mTvSetting, menuPoint, tvSendnews, tvListNews, tvListnewsExtra;
     protected ActionBarDrawerToggle mDrawerToggle;
     Activity activity;
     public static Point screenSize = null;
@@ -154,6 +154,7 @@ public abstract class BaseActivity extends AppCompatActivity implements View.OnC
         menuPoint = findViewById(R.id.tv_menu_point);
         tvSendnews = findViewById(R.id.tv_menu_send_news);
         tvListNews = findViewById(R.id.tv_menu_listnews);
+        tvListnewsExtra = findViewById(R.id.tv_menu_list_news_extra);
         try {
             PackageInfo pInfo = this.getPackageManager().getPackageInfo(getPackageName(), 0);
             String version = pInfo.versionName;
@@ -252,6 +253,7 @@ public abstract class BaseActivity extends AppCompatActivity implements View.OnC
         menuPoint.setOnClickListener(menu);
         tvSendnews.setOnClickListener(menu);
         tvListNews.setOnClickListener(menu);
+        tvListnewsExtra.setOnClickListener(menu);
         mDrawerToggle = new ActionBarDrawerToggle(this, drawerLayout, null, R.string.app_name, R.string.app_name) {
             @Override
             public void onDrawerSlide(View drawerView, float slideOffset) {
@@ -408,6 +410,12 @@ public abstract class BaseActivity extends AppCompatActivity implements View.OnC
                     if (activity.getClass().getName().equals(PointManagerActivity.class.getName()))
                         return;
                     startActivity(new Intent(activity, PointManagerActivity.class).addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
+                    break;
+                case R.id.tv_menu_list_news_extra:
+                    closeRightMenu();
+                    if (activity.getClass().getName().equals(SendNewsActivity.class.getName()))
+                        return;
+                    startActivity(new Intent(activity, NewsActivity.class).addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
                     break;
                 case R.id.tv_menu_send_news:
                     closeRightMenu();

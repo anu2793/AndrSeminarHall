@@ -106,6 +106,12 @@
                         android:text="ポイント" />
 
                     <jp.co.hiropro.seminar_hall.view.TextViewApp
+                        android:id="@+id/tv_menu_list_news_extra"
+                        style="@style/TextMenu"
+                        android:drawableLeft="@drawable/ic_email"
+                        android:text="ニュース受信" />
+
+                    <jp.co.hiropro.seminar_hall.view.TextViewApp
                         android:visibility="gone"
                         android:id="@+id/tv_menu_send_news"
                         style="@style/TextMenu"

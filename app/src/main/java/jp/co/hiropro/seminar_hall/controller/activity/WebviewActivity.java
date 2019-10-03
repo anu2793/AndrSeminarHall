@@ -58,7 +58,7 @@ public class WebviewActivity extends FragmentActivity {
             urlCampain = getIntent().getStringExtra(AppConstants.KEY_SEND.KEY_URL_CAMPAIN);
             urlHyperLink = getIntent().getStringExtra(AppConstants.KEY_SEND.KEY_URL_HYPERLINK);
             if (urlHyperLink != null && !urlHyperLink.isEmpty()) {
-                tvTitle.setText(urlHyperLink);
+                tvTitle.setText(urlHyperLink.replace("\n", ""));
                 initWebview(urlHyperLink);
             } else {
                 if (Patterns.WEB_URL.matcher(urlCampain).matches()) {

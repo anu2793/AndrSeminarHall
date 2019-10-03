@@ -52,6 +52,8 @@
             android:src="@mipmap/ic_open_browser" />
 
         <jp.co.hiropro.seminar_hall.view.TextViewApp
+            android:paddingLeft="@dimen/value_10dp"
+            android:paddingRight="@dimen/value_10dp"
             android:id="@+id/tv_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

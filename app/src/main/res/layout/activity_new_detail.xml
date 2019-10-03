@@ -112,7 +112,8 @@
                     android:layout_marginRight="@dimen/value_15dp"
                     android:layout_marginTop="@dimen/value_10dp" />
 
-                <jp.co.hiropro.seminar_hall.view.TextViewApp
+
+                <com.luseen.autolinklibrary.AutoLinkTextView
                     android:id="@+id/tv_description"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"

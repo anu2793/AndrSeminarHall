@@ -29,6 +29,7 @@ import jp.co.hiropro.seminar_hall.model.VideoDetail;
 import jp.co.hiropro.seminar_hall.util.AppConstants;
 import jp.co.hiropro.seminar_hall.util.AppUtils;
 import jp.co.hiropro.seminar_hall.util.KeyParser;
+import jp.co.hiropro.seminar_hall.view.TextViewApp;
 import jp.co.hiropro.seminar_hall.view.dialog.DialogOpenBrowser;
 
 public class WebviewActivity extends FragmentActivity {
@@ -40,9 +41,12 @@ public class WebviewActivity extends FragmentActivity {
     ImageView mImvBack;
     @BindView(R.id.imv_next)
     ImageView mImvNext;
+    @BindView(R.id.tv_title)
+    TextViewApp tvTitle;
     String urlCampain;
     private String mUrlPageLoad = "";
     private boolean isRedirected = true;
+    private String urlHyperLink;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,15 +56,22 @@ public class WebviewActivity extends FragmentActivity {
         Bundle bundle = getIntent().getExtras();
         if (bundle != null) {
             urlCampain = getIntent().getStringExtra(AppConstants.KEY_SEND.KEY_URL_CAMPAIN);
-            if (Patterns.WEB_URL.matcher(urlCampain).matches()) {
-                if (!urlCampain.startsWith("http://") && !urlCampain.startsWith("https://"))
-                    urlCampain = "http://" + urlCampain;
-                initWebview(urlCampain);
+            urlHyperLink = getIntent().getStringExtra(AppConstants.KEY_SEND.KEY_URL_HYPERLINK);
+            if (urlHyperLink != null && !urlHyperLink.isEmpty()) {
+                tvTitle.setText(urlHyperLink);
+                initWebview(urlHyperLink);
             } else {
-                if (!urlCampain.startsWith("http://") && !urlCampain.startsWith("https://"))
-                    urlCampain = "http://" + urlCampain;
-                initWebview(urlCampain);
+                if (Patterns.WEB_URL.matcher(urlCampain).matches()) {
+                    if (!urlCampain.startsWith("http://") && !urlCampain.startsWith("https://"))
+                        urlCampain = "http://" + urlCampain;
+                    initWebview(urlCampain);
+                } else {
+                    if (!urlCampain.startsWith("http://") && !urlCampain.startsWith("https://"))
+                        urlCampain = "http://" + urlCampain;
+                    initWebview(urlCampain);
+                }
             }
+
 
         }
     }

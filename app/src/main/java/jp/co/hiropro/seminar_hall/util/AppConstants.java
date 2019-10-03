@@ -73,6 +73,7 @@ public class AppConstants {
         public static String KEY_SEND_NEW_OBJECT = "KEY_SEND_NEW_OBJECT";
         public static String KEY_SEND_EMAIL = "KEY_SEND_EMAIL";
         public static String KEY_URL_CAMPAIN = "KEY_URL_CAMPAIN";
+        public static String KEY_URL_HYPERLINK = "KEY_URL_HYPERLINK";
         public static String KEY_CHECK_OPEN_NEW_FROM_NOTIFICATION = "KEY_CHECK_OPEN_NEW_FROM_NOTIFICATION";
         public static String KEY_SEND_ID_PURCHASE = "KEY_SEND_ID_PURCHASE";
         public static String KEY_MSG_MAINTAIN = "KEY_MSG_MAINTAIN";

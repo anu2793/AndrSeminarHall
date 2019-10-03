@@ -94,6 +94,8 @@ dependencies {
     annotationProcessor 'com.github.bumptech.glide:compiler:4.5.0'
     implementation 'com.squareup.okhttp3:okhttp:3.10.0'
     implementation files('libs/YouTubeAndroidPlayerApi.jar')
+    //autotext link
+    implementation 'com.github.armcha:AutoLinkTextView:0.3.0'
 }
 
 apply plugin: 'com.google.gms.google-services'

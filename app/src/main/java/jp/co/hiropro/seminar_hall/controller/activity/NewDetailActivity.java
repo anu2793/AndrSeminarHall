@@ -3,9 +3,9 @@ package jp.co.hiropro.seminar_hall.controller.activity;
 import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
-import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -18,6 +18,9 @@ import com.android.volley.Response;
 import com.android.volley.error.VolleyError;
 import com.android.volley.request.JsonObjectRequest;
 import com.bumptech.glide.Glide;
+import com.luseen.autolinklibrary.AutoLinkMode;
+import com.luseen.autolinklibrary.AutoLinkOnClickListener;
+import com.luseen.autolinklibrary.AutoLinkTextView;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -35,7 +38,6 @@ import jp.co.hiropro.seminar_hall.util.HSSPreference;
 import jp.co.hiropro.seminar_hall.util.KeyParser;
 import jp.co.hiropro.seminar_hall.util.RequestDataUtils;
 import jp.co.hiropro.seminar_hall.view.AutoResizeTextView;
-import jp.co.hiropro.seminar_hall.view.TextViewApp;
 import jp.co.hiropro.seminar_hall.view.dialog.DialogRetryConnection;
 import jp.co.hiropro.utils.NetworkUtils;
 
@@ -47,7 +49,7 @@ public class NewDetailActivity extends BaseActivity {
     private NewsItem mNewsObject;
     private TextView mTvShortTitle, mTvTitleNormal, mTvTime;
     private AutoResizeTextView mTvTitle;
-    private TextViewApp mTvDescription;
+    private AutoLinkTextView mTvDescription;
     private ImageView mImvThumb;
     private RelativeLayout mRlImage;
     private ProgressDialog mPrg;
@@ -68,7 +70,6 @@ public class NewDetailActivity extends BaseActivity {
         mPrg.setMax(100);
         mNewsObject = getIntent().getParcelableExtra(AppConstants.KEY_SEND.KEY_SEND_NEW_OBJECT);
         teachNews = getIntent().getBooleanExtra(AppConstants.KEY_SEND.KEY_TEACH_NEWS, false);
-        Log.d("AAAAAAA",String.valueOf(teachNews));
         if (mNewsObject != null) {
             if (teachNews) {
                 getNewDetailTeach(String.valueOf(mNewsObject.getId()));
@@ -88,7 +89,7 @@ public class NewDetailActivity extends BaseActivity {
     private void initViewControl() {
         mTvTitle = (AutoResizeTextView) findViewById(R.id.tv_title);
         mTvTime = (TextView) findViewById(R.id.tv_time);
-        mTvDescription = (TextViewApp) findViewById(R.id.tv_description);
+        mTvDescription = (AutoLinkTextView) findViewById(R.id.tv_description);
         mTvShortTitle = (TextView) findViewById(R.id.tv_short_content);
         mImvThumb = (ImageView) findViewById(R.id.imv_image);
         mRlImage = (RelativeLayout) findViewById(R.id.rl_img);
@@ -100,7 +101,28 @@ public class NewDetailActivity extends BaseActivity {
 
     private void loadDataToView(NewsItem object) {
         mTvTime.setText(object.getDateWithFomatJP());
-        mTvDescription.setText(object.getBody());
+        mTvDescription.addAutoLinkMode(AutoLinkMode.MODE_EMAIL, AutoLinkMode.MODE_URL, AutoLinkMode.MODE_PHONE);
+        mTvDescription.setUrlModeColor(Color.BLUE);
+        mTvDescription.setEmailModeColor(Color.BLUE);
+        mTvDescription.setPhoneModeColor(Color.BLUE);
+        mTvDescription.setAutoLinkText(object.getBody());
+        mTvDescription.setAutoLinkOnClickListener(new AutoLinkOnClickListener() {
+            @Override
+            public void onAutoLinkTextClick(AutoLinkMode autoLinkMode, String matchedText) {
+                if (autoLinkMode == AutoLinkMode.MODE_URL) {
+                    startActivity(new Intent(NewDetailActivity.this, WebviewActivity.class)
+                            .putExtra(AppConstants.KEY_SEND.KEY_URL_HYPERLINK, matchedText));
+                } else if (autoLinkMode == AutoLinkMode.MODE_EMAIL) {
+                    Intent intent = new Intent(Intent.ACTION_SEND);
+                    intent.setType("plain/text");
+                    intent.putExtra(Intent.EXTRA_EMAIL, new String[]{matchedText});
+                    intent.putExtra(Intent.EXTRA_SUBJECT, "subject");
+                    intent.putExtra(Intent.EXTRA_TEXT, "mail body");
+                    startActivity(Intent.createChooser(intent, ""));
+                }
+            }
+        });
+
         mTvShortTitle.setText(object.getDescription());
         mTvTitleNormal.setText(object.getTitle());
         mTvTitle.setText(object.getTitle());
@@ -151,7 +173,7 @@ public class NewDetailActivity extends BaseActivity {
                                 JSONObject objectNew = response.getJSONObject(AppConstants.KEY_PARAMS.DETAIL.toString());
                                 if (user.getRoleUser() != 2) {
                                     int numberNotifi = objectNew.optInt(AppConstants.KEY_PARAMS.REMAIN.toString());
-                                    HSSPreference.getInstance().putInt("number_remain",numberNotifi);
+                                    HSSPreference.getInstance().putInt("number_remain", numberNotifi);
                                     AppUtils.setNumberNotification(NewDetailActivity.this, numberNotifi);
                                 }
                                 NewsItem item = NewsItem.parser(objectNew);
@@ -184,7 +206,7 @@ public class NewDetailActivity extends BaseActivity {
                                 try {
                                     JSONObject objectData = response.getJSONObject(AppConstants.KEY_PARAMS.DATA.toString());
                                     int numberNotifi = objectData.optInt(AppConstants.KEY_PARAMS.REMAIN.toString());
-                                    HSSPreference.getInstance().putInt("number_remain",numberNotifi);
+                                    HSSPreference.getInstance().putInt("number_remain", numberNotifi);
                                     AppUtils.setNumberNotification(NewDetailActivity.this, numberNotifi);
                                     JSONObject objectNew = objectData.getJSONObject(AppConstants.KEY_PARAMS.DETAIL.toString());
                                     NewsItem item = NewsItem.parser(objectNew);

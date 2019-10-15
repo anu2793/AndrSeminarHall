@@ -65,7 +65,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="@dimen/value_10dp"
-        android:text="拒否のため下にスワイプ"
+        android:text="@string/deny_acces_mesage"
         android:textColor="@color/white"
         android:visibility="gone"
         app:fontFamilyApp="hiragino_gothicw3"

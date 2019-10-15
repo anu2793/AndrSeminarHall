@@ -152,4 +152,5 @@
     <string name="txt_link_sns_error">URLリンクが正しくありません。</string>
     <string name="spn_speed_normal">標準</string>
     <string name="remain_text">未読メッセージが %1 件あります！」</string>
+    <string name="deny_acces_mesage">拒否をする場合は下にスワイプしてください</string>
 </resources>

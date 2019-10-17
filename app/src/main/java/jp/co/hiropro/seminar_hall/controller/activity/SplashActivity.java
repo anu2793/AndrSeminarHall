@@ -27,6 +27,10 @@ import com.google.android.gms.auth.api.Auth;
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.dynamiclinks.FirebaseDynamicLinks;
+import com.google.firebase.dynamiclinks.PendingDynamicLinkData;
 import com.google.firebase.iid.FirebaseInstanceId;
 
 import org.json.JSONException;
@@ -63,6 +67,8 @@ public class SplashActivity extends FragmentActivity implements GoogleApiClient.
     private String mIdCampaign = "";
     private ProgressDialog mPrg;
     private AccountManager mManagerAccount;
+    private Uri dynamicLink;
+    private String link = "";
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -93,7 +99,7 @@ public class SplashActivity extends FragmentActivity implements GoogleApiClient.
         mManagerAccount = AccountManager.get(this);
         // Deep LINK.
         Uri data = this.getIntent().getData();
-        if (data != null && data.isHierarchical()) {
+        if (data != null && data.isHierarchical() && dynamicLink != null) {
             String uri = this.getIntent().getDataString();
             int index = uri.indexOf("?id=");
             mIdCampaign = uri.substring(index + 4, uri.length()).replace("/", "");
@@ -102,9 +108,36 @@ public class SplashActivity extends FragmentActivity implements GoogleApiClient.
         Bundle bundle = getIntent().getExtras();
         if (bundle != null)
             mIdNews = bundle.getString(AppConstants.KEY_SEND.KEY_ID_NEWS, "");
-            teachNews = bundle.getBoolean(AppConstants.KEY_SEND.KEY_TEACH_NEWS, false);
-        getAccount();
+        teachNews = bundle.getBoolean(AppConstants.KEY_SEND.KEY_TEACH_NEWS, false);
+        getDynamicLink();
+//        getAccount();
 //        sendToken();
+    }
+
+    private void getDynamicLink() {
+        FirebaseDynamicLinks.getInstance()
+                .getDynamicLink(getIntent())
+                .addOnSuccessListener(this, new OnSuccessListener<PendingDynamicLinkData>() {
+                    @Override
+                    public void onSuccess(PendingDynamicLinkData pendingDynamicLinkData) {
+                        // Get deep link from result (may be null if no link is found)
+                        if (pendingDynamicLinkData != null) {
+                            dynamicLink = pendingDynamicLinkData.getLink();
+                            link = dynamicLink.toString();
+                            Log.d("DynamicLink", dynamicLink.toString());
+                        } else {
+                            Log.d("DynamicLink", "getDynamicLink: no link found");
+                        }
+                        getAccount();
+                    }
+                })
+                .addOnFailureListener(this, new OnFailureListener() {
+                    @Override
+                    public void onFailure(@NonNull Exception e) {
+                        getAccount();
+                        Log.w("DynamicLink", "getDynamicLink:onFailure", e);
+                    }
+                });
     }
 
     private void getAccount() {
@@ -316,24 +349,24 @@ public class SplashActivity extends FragmentActivity implements GoogleApiClient.
                                     if (objectPremiumInfo.length() > 0) {
                                         mCurrentCodePurchase = objectPremiumInfo.optString(AppConstants.KEY_PARAMS.PRICE_CODE.toString(), "");
                                     }
-                                    if (mIdNews.length() > 0) {
-                                        // Go from new notification.
-                                        NewsItem item = new NewsItem();
-                                        item.setId(Integer.valueOf(mIdNews));
-                                        item.setmIsFromNotification(true);
-                                        startActivity(new Intent(SplashActivity.this, NewDetailActivity.class).putExtra(AppConstants.KEY_SEND.KEY_SEND_NEW_OBJECT, item).putExtra(AppConstants.KEY_SEND.KEY_TEACH_NEWS, teachNews));
-                                        finish();
-                                    } else if (mIdCampaign.length() > 0) {
-                                        startActivity(new Intent(SplashActivity.this, TopActivity.class)
-                                                .putExtra(AppConstants.KEY_SEND.KEY_ID_CAMPAIGN, mIdCampaign)
-                                                .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK));
+                                    if (dynamicLink != null) {
+                                        String stringUri = dynamicLink.toString();
+                                        if (stringUri.contains("hiro-evergreen.video/links/receiveCard")) {
+                                            String splits[] = stringUri.split("/");
+                                            String last = splits[splits.length - 1];
+                                            int id = Integer.parseInt(last.split("&")[0]);
+                                            User userObject = new User();
+                                            userObject.setId(id);
+                                            if (userObject != null) {
+                                                Log.d("DynamicLink", "1");
+                                                startActivity(new Intent(SplashActivity.this, TeacherProfileCardActivity.class).putExtra(AppConstants.KEY_SEND.KEY_DATA, userObject));
+                                                finish();
+                                            } else {
+                                                redirectLink(mCurrentCodePurchase);
+                                            }
+                                        }
                                     } else {
-                                        // Test send id purchase to  top. Need remove params when done.
-                                        startActivity(mCurrentCodePurchase.length() > 0 ? new Intent(SplashActivity.this, TopActivity.class)
-                                                .putExtra(AppConstants.KEY_SEND.KEY_SEND_ID_PURCHASE, mCurrentCodePurchase).
-                                                        addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK)
-                                                : new Intent(SplashActivity.this, TopActivity.class)
-                                                .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK));
+                                        redirectLink(mCurrentCodePurchase);
                                     }
                                 } catch (JSONException e) {
                                     e.printStackTrace();
@@ -394,6 +427,28 @@ public class SplashActivity extends FragmentActivity implements GoogleApiClient.
             }
         });
         ForestApplication.getInstance().addToRequestQueue(request);
+    }
+
+    private void redirectLink(String mCurrentCodePurchase) {
+        if (mIdNews.length() > 0) {
+            // Go from new notification.
+            NewsItem item = new NewsItem();
+            item.setId(Integer.valueOf(mIdNews));
+            item.setmIsFromNotification(true);
+            startActivity(new Intent(SplashActivity.this, NewDetailActivity.class).putExtra(AppConstants.KEY_SEND.KEY_SEND_NEW_OBJECT, item).putExtra(AppConstants.KEY_SEND.KEY_TEACH_NEWS, teachNews));
+            finish();
+        } else if (mIdCampaign.length() > 0) {
+            startActivity(new Intent(SplashActivity.this, TopActivity.class)
+                    .putExtra(AppConstants.KEY_SEND.KEY_ID_CAMPAIGN, mIdCampaign)
+                    .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK));
+        } else {
+            // Test send id purchase to  top. Need remove params when done.
+            startActivity(mCurrentCodePurchase.length() > 0 ? new Intent(SplashActivity.this, TopActivity.class)
+                    .putExtra(AppConstants.KEY_SEND.KEY_SEND_ID_PURCHASE, mCurrentCodePurchase).
+                            addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK)
+                    : new Intent(SplashActivity.this, TopActivity.class)
+                    .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK));
+        }
     }
 
     private void clearAllGoLogin() {

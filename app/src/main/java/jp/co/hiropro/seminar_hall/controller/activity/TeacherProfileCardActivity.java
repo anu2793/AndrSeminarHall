@@ -24,6 +24,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.ScrollView;
+import android.widget.Toast;
 
 import com.android.volley.Request;
 import com.bumptech.glide.Glide;
@@ -48,6 +49,7 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Map;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -120,6 +122,8 @@ public class TeacherProfileCardActivity extends BaseYoutubeActivity {
     TextViewApp mTvPoint;
     @BindView(R.id.player_view)
     YouTubePlayerView mYoutubePlay;
+    @BindView(R.id.btn_get_card)
+    ButtonApp mBtngetCard;
 //    @BindView(R.id.ll_point)
 //    LinearLayout mLlPoint;
 
@@ -133,6 +137,7 @@ public class TeacherProfileCardActivity extends BaseYoutubeActivity {
     private String mIdVideo = "";
     private YouTubePlayer mYouTubePlayer = null;
     private FusedLocationProviderClient mFusedLocationClient;
+    private Boolean isAddedFlow = false;
 
     @Override
     protected int getLayoutId() {
@@ -242,7 +247,7 @@ public class TeacherProfileCardActivity extends BaseYoutubeActivity {
 
     @OnClick({R.id.tv_teacher_list, R.id.tv_screen_receive, R.id.imv_group_contact, R.id.imv_edit, R.id.tv_choice_type_share,
             R.id.imv_youtube, R.id.imv_google_plus, R.id.imv_facebook, R.id.imv_twitter, R.id.imv_instagram, R.id.btn_login, R.id.btn_register, R.id.btn_create_profile
-            , R.id.tv_contact_list
+            , R.id.tv_contact_list, R.id.btn_get_card
     })
     public void OnClick(View view) {
         switch (view.getId()) {
@@ -287,10 +292,34 @@ public class TeacherProfileCardActivity extends BaseYoutubeActivity {
             case R.id.btn_create_profile:
                 goEditCreateProfile();
                 break;
+            case R.id.btn_get_card:
+                addCard();
+                break;
             case R.id.tv_contact_list:
                 startActivity(new Intent(TeacherProfileCardActivity.this, ContactListActivity.class));
                 break;
         }
+    }
+
+    private void addCard() {
+        showLoading();
+        Map<String, String> params = new HashMap<>();
+        params.put(AppConstants.KEY_PARAMS.CONTACT_ID.toString(), String.valueOf(mUser.getId()));//TEST
+        RequestDataUtils.requestData(Request.Method.POST, TeacherProfileCardActivity.this,
+                AppConstants.SERVER_PATH.ADD_CARD_CONTACT.toString(),
+                params, new RequestDataUtils.onResult() {
+                    @Override
+                    public void onSuccess(JSONObject object, String msg) {
+                        dismissLoading();
+                        mBtngetCard.setVisibility(View.GONE);
+                        Toast.makeText(TeacherProfileCardActivity.this, "受信完了", Toast.LENGTH_LONG).show();
+                    }
+
+                    @Override
+                    public void onFail(int error) {
+
+                    }
+                });
     }
 
     private void goEditCreateProfile() {
@@ -500,6 +529,12 @@ public class TeacherProfileCardActivity extends BaseYoutubeActivity {
                 } catch (JSONException e) {
                     e.printStackTrace();
                 }
+
+                if (object.has("isAddedFlow")) {
+                    isAddedFlow = object.optBoolean("isAddedFlow");
+                    mBtngetCard.setVisibility((!isAddedFlow && otherUser) ? View.VISIBLE : View.GONE);
+                }
+
                 if (otherUser) {
                     if (mUser.getId() != User.getInstance().getCurrentUser().getId())
                         mLlContact.setVisibility(View.GONE);

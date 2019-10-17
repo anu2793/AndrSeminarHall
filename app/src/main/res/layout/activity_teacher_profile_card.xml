@@ -228,6 +228,20 @@
                     app:textStyle="bold"
                     tools:visibility="visible" />
 
+                <jp.co.hiropro.seminar_hall.view.ButtonApp
+                    android:id="@+id/btn_get_card"
+                    style="@style/ButtonGradient"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/value_15dp"
+                    android:layout_marginRight="@dimen/value_15dp"
+                    android:layout_marginTop="@dimen/value_30dp"
+                    android:text="パーソナルカードを取得"
+                    android:visibility="gone"
+                    app:fontFamily="kozgopro6n_m"
+                    app:textStyle="bold"
+                    tools:visibility="visible" />
+
                 <WebView
                     android:id="@+id/youtube_preview"
                     android:layout_width="match_parent"

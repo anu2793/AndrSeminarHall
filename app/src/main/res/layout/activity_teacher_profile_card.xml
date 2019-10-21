@@ -62,8 +62,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/value_10dp"
-                android:layout_marginRight="@dimen/value_10dp"
                 android:layout_marginTop="@dimen/value_10dp"
+                android:layout_marginRight="@dimen/value_10dp"
                 android:background="@drawable/bg_round"
                 android:orientation="vertical"
                 android:paddingBottom="@dimen/value_30dp"
@@ -132,10 +132,10 @@
                         android:id="@+id/tv_name"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/value_3dp"
                         android:ellipsize="end"
                         android:lines="1"
                         android:textSize="@dimen/text_size_18sp"
-                        android:layout_marginStart="@dimen/value_3dp"
                         app:fontFamilyApp="kozgopro6n_b"
                         app:textStyle="bold" />
 
@@ -145,10 +145,10 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/value_5dp"
                         android:background="@color/green"
-                        android:paddingBottom="@dimen/value_2dp"
                         android:paddingLeft="@dimen/value_10dp"
-                        android:paddingRight="@dimen/value_10dp"
                         android:paddingTop="@dimen/value_2dp"
+                        android:paddingRight="@dimen/value_10dp"
+                        android:paddingBottom="@dimen/value_2dp"
                         android:text="@string/txt_teacher_tag"
                         android:textColor="@color/white"
                         app:fontFamilyApp="hiraginosan" />
@@ -158,10 +158,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/value_10dp"
-                        android:visibility="gone"
-                        tools:visibility="visible"
                         android:gravity="center"
-                        android:orientation="horizontal">
+                        android:orientation="horizontal"
+                        android:visibility="gone"
+                        tools:visibility="visible">
 
                         <ImageView
                             android:layout_width="@dimen/value_28dp"
@@ -186,8 +186,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/value_15dp"
-                    android:layout_marginRight="@dimen/value_15dp"
                     android:layout_marginTop="@dimen/value_30dp"
+                    android:layout_marginRight="@dimen/value_15dp"
                     android:autoLink="all"
                     android:gravity="left"
                     android:lineSpacingExtra="@dimen/value_10dp"
@@ -203,8 +203,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/value_15dp"
-                    android:layout_marginRight="@dimen/value_15dp"
                     android:layout_marginTop="@dimen/value_30dp"
+                    android:layout_marginRight="@dimen/value_15dp"
                     android:gravity="left"
                     android:lineSpacingExtra="@dimen/value_10dp"
                     android:text="自己紹介・最新ニュース・セミナー情報を書きましょう！"
@@ -220,8 +220,8 @@
                     android:layout_width="match_parent"
                     android:layout_gravity="center"
                     android:layout_marginLeft="@dimen/value_15dp"
-                    android:layout_marginRight="@dimen/value_15dp"
                     android:layout_marginTop="@dimen/value_30dp"
+                    android:layout_marginRight="@dimen/value_15dp"
                     android:text="@string/btn_create_profile"
                     android:visibility="gone"
                     app:fontFamily="kozgopro6n_m"
@@ -230,12 +230,12 @@
 
                 <jp.co.hiropro.seminar_hall.view.ButtonApp
                     android:id="@+id/btn_get_card"
-                    style="@style/ButtonGradient"
+                    style="@style/ButtonGreen"
                     android:layout_width="match_parent"
                     android:layout_gravity="center"
                     android:layout_marginLeft="@dimen/value_15dp"
-                    android:layout_marginRight="@dimen/value_15dp"
                     android:layout_marginTop="@dimen/value_30dp"
+                    android:layout_marginRight="@dimen/value_15dp"
                     android:text="パーソナルカードを取得"
                     android:visibility="gone"
                     app:fontFamily="kozgopro6n_m"
@@ -247,8 +247,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/value_15dp"
-                    android:layout_marginRight="@dimen/value_15dp"
                     android:layout_marginTop="@dimen/value_35dp"
+                    android:layout_marginRight="@dimen/value_15dp"
                     android:visibility="gone" />
 
                 <com.google.android.youtube.player.YouTubePlayerView
@@ -256,8 +256,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/value_15dp"
-                    android:layout_marginRight="@dimen/value_15dp"
                     android:layout_marginTop="@dimen/value_35dp"
+                    android:layout_marginRight="@dimen/value_15dp"
                     android:visibility="gone"
                     tools:visibility="visible" />
 
@@ -295,8 +295,8 @@
                     <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_toEndOf="@id/imv_youtube"
-                        android:layout_toStartOf="@id/imv_facebook">
+                        android:layout_toStartOf="@id/imv_facebook"
+                        android:layout_toEndOf="@id/imv_youtube">
 
                         <ImageView
                             android:id="@+id/imv_google_plus"
@@ -310,8 +310,8 @@
                     <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_toEndOf="@id/imv_facebook"
-                        android:layout_toStartOf="@id/imv_instagram">
+                        android:layout_toStartOf="@id/imv_instagram"
+                        android:layout_toEndOf="@id/imv_facebook">
 
                         <ImageView
                             android:id="@+id/imv_twitter"
@@ -332,8 +332,8 @@
                 android:layout_margin="@dimen/value_10dp"
                 android:background="@drawable/bg_round"
                 android:orientation="vertical"
-                android:paddingBottom="@dimen/value_20dp"
-                android:paddingTop="@dimen/value_20dp">
+                android:paddingTop="@dimen/value_20dp"
+                android:paddingBottom="@dimen/value_20dp">
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -395,8 +395,8 @@
                 android:layout_margin="@dimen/value_10dp"
                 android:background="@drawable/bg_round"
                 android:orientation="vertical"
-                android:paddingBottom="@dimen/value_10dp"
-                android:paddingTop="@dimen/value_30dp">
+                android:paddingTop="@dimen/value_30dp"
+                android:paddingBottom="@dimen/value_10dp">
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -485,8 +485,8 @@
                     style="@style/ButtonGradient"
                     android:layout_width="match_parent"
                     android:layout_marginLeft="@dimen/value_20dp"
-                    android:layout_marginRight="@dimen/value_20dp"
                     android:layout_marginTop="@dimen/value_20dp"
+                    android:layout_marginRight="@dimen/value_20dp"
                     android:text="@string/btn_login"
                     app:fontFamily="kozgopro6n_m"
                     app:textStyle="bold" />
@@ -496,8 +496,8 @@
                     style="@style/ButtonGradient"
                     android:layout_width="match_parent"
                     android:layout_marginLeft="@dimen/value_20dp"
-                    android:layout_marginRight="@dimen/value_20dp"
                     android:layout_marginTop="@dimen/value_20dp"
+                    android:layout_marginRight="@dimen/value_20dp"
                     android:text="@string/btn_register_profile"
                     app:fontFamily="kozgopro6n_m"
                     app:textStyle="bold" />

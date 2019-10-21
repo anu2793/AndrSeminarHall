@@ -1,6 +1,7 @@
 package jp.co.hiropro.seminar_hall.view.adapter;
 
 import android.content.Context;
+import android.content.res.Resources;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
@@ -12,7 +13,6 @@ import java.util.List;
 
 import jp.co.hiropro.seminar_hall.GlideApp;
 import jp.co.hiropro.seminar_hall.R;
-import jp.co.hiropro.seminar_hall.controller.activity.BaseActivity;
 import jp.co.hiropro.seminar_hall.model.User;
 import jp.co.hiropro.seminar_hall.view.CircleImageView;
 
@@ -33,7 +33,7 @@ public class ProfileContactAdapter extends RecyclerView.Adapter<ProfileContactAd
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = View.inflate(mContext, R.layout.item_profile_contact, null);
-        int widthOfView = (BaseActivity.screenSize.x / 9 * 2);
+        int widthOfView = (Resources.getSystem().getDisplayMetrics().widthPixels / 9 * 2);
         ViewGroup.LayoutParams params = view.getLayoutParams();
         if (params != null) {
             params.width = widthOfView;
@@ -64,7 +64,7 @@ public class ProfileContactAdapter extends RecyclerView.Adapter<ProfileContactAd
         }
 
         public void bindData(User contact) {
-            int widthOfView = (BaseActivity.screenSize.x / 9 * 2);
+            int widthOfView = (Resources.getSystem().getDisplayMetrics().widthPixels / 9 * 2);
             imageView.setLayoutParams(new RelativeLayout.LayoutParams(widthOfView, widthOfView));
             if (contact.getAvatar().length() > 0)
                 GlideApp.with(mContext).load(contact.getAvatar()).error(R.mipmap.ic_user_default).into(imageView);

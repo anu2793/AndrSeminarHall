@@ -391,7 +391,7 @@ public class EditProfileActivity extends BaseActivity {
                 params, new RequestDataUtils.onResult() {
                     @Override
                     public void onSuccess(JSONObject object, String msg) {
-                        Toast.makeText(EditProfileActivity.this, "成功した", Toast.LENGTH_LONG).show();
+                        //Toast.makeText(EditProfileActivity.this, "成功した", Toast.LENGTH_LONG).show();
                         finish();
                     }
 

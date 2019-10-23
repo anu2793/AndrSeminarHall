@@ -19,6 +19,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.text.TextUtils;
 import android.util.Log;
+import android.util.Patterns;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -293,7 +294,9 @@ public class TeacherProfileCardActivity extends BaseYoutubeActivity {
                 goEditCreateProfile();
                 break;
             case R.id.btn_get_card:
-                addCard();
+                if (!isAddedFlow) {
+                    addCard();
+                }
                 break;
             case R.id.tv_contact_list:
                 startActivity(new Intent(TeacherProfileCardActivity.this, ContactListActivity.class));
@@ -311,7 +314,8 @@ public class TeacherProfileCardActivity extends BaseYoutubeActivity {
                     @Override
                     public void onSuccess(JSONObject object, String msg) {
                         dismissLoading();
-                        mBtngetCard.setVisibility(View.GONE);
+                        isAddedFlow = true;
+                        mBtngetCard.setText("パーソナルカード取得済み");
                         Toast.makeText(TeacherProfileCardActivity.this, "受信完了", Toast.LENGTH_LONG).show();
                     }
 
@@ -532,7 +536,8 @@ public class TeacherProfileCardActivity extends BaseYoutubeActivity {
 
                 if (object.has("isAddedFlow")) {
                     isAddedFlow = object.optBoolean("isAddedFlow");
-                    mBtngetCard.setVisibility((!isAddedFlow && otherUser) ? View.VISIBLE : View.GONE);
+                    mBtngetCard.setVisibility(otherUser ? View.VISIBLE : View.GONE);
+                    mBtngetCard.setText(!isAddedFlow ? "パーソナルカードを取得" : "パーソナルカード取得済み");
                 }
 
                 if (otherUser) {
@@ -565,7 +570,7 @@ public class TeacherProfileCardActivity extends BaseYoutubeActivity {
         mTvName.setText(info.getFullname().length() > 0 ? info.getFullname() : getString(R.string.title_screen_teacher_profile));
         mTvTagTeacher.setVisibility(info.getRoleUser() == AppConstants.TYPE_UER.TEACHER ? View.VISIBLE : View.GONE);
 
-        setEnableSocial(!TextUtils.isEmpty(info.getFacebookLink()), !TextUtils.isEmpty(info.getTwitterLink()), !TextUtils.isEmpty(info.getInstagramLink()), !TextUtils.isEmpty(info.getYoutubeLink()), !TextUtils.isEmpty(info.getGoogleLink()));
+        setEnableSocial(checkCanOpenUrl(info.getFacebookLink()), checkCanOpenUrl(info.getTwitterLink()), checkCanOpenUrl(info.getInstagramLink()), checkCanOpenUrl(info.getYoutubeLink()), checkCanOpenUrl(info.getGoogleLink()));
         if (otherUser) {
             mBtnCreateProfile.setVisibility(View.GONE);
             mTvFirstAccess.setVisibility(View.GONE);
@@ -589,6 +594,21 @@ public class TeacherProfileCardActivity extends BaseYoutubeActivity {
         if (info.getIntroductionVideoUrl().length() > 0)
             configYouTube(info.getIntroductionVideoUrl());
 
+    }
+
+    private Boolean checkCanOpenUrl(String url) {
+        Uri webpage = Uri.parse(url.trim());
+        Intent intent = new Intent(Intent.ACTION_VIEW, webpage);
+        if (TextUtils.isEmpty(url.trim())) {
+            return false;
+        }
+        if (!Patterns.WEB_URL.matcher(url.trim().toLowerCase()).matches()) {
+            return false;
+        }
+        if (intent.resolveActivity(getPackageManager()) == null) {
+            return false;
+        }
+        return true;
     }
 
     private void initListSeminar() {

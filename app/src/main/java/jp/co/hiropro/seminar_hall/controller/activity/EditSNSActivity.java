@@ -2,6 +2,7 @@ package jp.co.hiropro.seminar_hall.controller.activity;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextUtils;
@@ -135,6 +136,14 @@ public class EditSNSActivity extends BaseActivity {
     }
 
     private boolean checkValidate(String link) {
-        return Patterns.WEB_URL.matcher(link.toLowerCase()).matches();
+        Uri webpage = Uri.parse(link.trim());
+        Intent intent = new Intent(Intent.ACTION_VIEW, webpage);
+        if (intent.resolveActivity(getPackageManager()) == null) {
+            return false;
+        }
+        if (!Patterns.WEB_URL.matcher(link.trim().toLowerCase()).matches()) {
+            return false;
+        }
+        return true;
     }
 }

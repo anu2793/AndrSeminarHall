@@ -1,12 +1,20 @@
 apply plugin: 'com.android.application'
 android {
+    signingConfigs {
+        release {
+            storeFile file('D:\\ANDROI\\Project\\SeminorHall\\doc\\seminorhall.jks')
+            storePassword 'seminorhall123'
+            keyPassword 'seminorhall123'
+            keyAlias = 'seminorhall'
+        }
+    }
     compileSdkVersion 27
     defaultConfig {
         applicationId "jp.co.hiropro.seminar_hall"
         minSdkVersion 21
         targetSdkVersion 27
-        versionCode 5
-        versionName "1.1.0"
+        versionCode 6
+        versionName "1.2.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
@@ -53,6 +61,7 @@ android {
             buildConfigField("String", "BASE_URL", "\"http://hiro-evergreen.video/service/\"")
             buildConfigField("String", "LINK_SEND", "\"ws://hiro-evergreen.video:9595/\"")
             buildConfigField "boolean", "TEST_MODE", "false"
+            signingConfig signingConfigs.release
         }
     }
 }

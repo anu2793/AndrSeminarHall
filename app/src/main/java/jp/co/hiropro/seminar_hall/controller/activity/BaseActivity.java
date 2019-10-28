@@ -105,7 +105,7 @@ public abstract class BaseActivity extends AppCompatActivity implements View.OnC
         mPrg.setCancelable(false);
         mPrg.setMax(100);
         mManagerAccount = AccountManager.get(this);
-        if (user.getRoleUser() == 2) {
+        if (user != null && user.getRoleUser() == 2) {
             tvSendnews.setVisibility(View.VISIBLE);
             tvListNews.setVisibility(View.VISIBLE);
         }

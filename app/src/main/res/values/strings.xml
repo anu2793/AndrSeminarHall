@@ -1,5 +1,5 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <string name="app_name">SeminarlHall</string>
+    <string name="app_name">seminar hall</string>
     <string name="back_again_to_exit">戻るをもう一度押すことで、終了します。</string>
     <string name="hint_input_your_email">メールアドレス</string>
     <string name="hint_input_your_password">パスワード入力</string>

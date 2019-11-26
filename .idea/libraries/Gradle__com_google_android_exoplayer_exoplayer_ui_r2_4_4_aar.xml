@@ -1,15 +1,15 @@
 <component name="libraryTable">
   <library name="Gradle: com.google.android.exoplayer:exoplayer-ui:r2.4.4@aar">
     <ANNOTATIONS>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/2989aa79f96dee5804ecd80970502c7e/annotations.zip!/" />
+      <root url="jar://G:/gradle-4.4/caches/transforms-2/files-2.1/74c4584b506d63c00980e4c9a8033600/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/2989aa79f96dee5804ecd80970502c7e/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/2989aa79f96dee5804ecd80970502c7e/res" />
+      <root url="jar://G:/gradle-4.4/caches/transforms-2/files-2.1/74c4584b506d63c00980e4c9a8033600/jars/classes.jar!/" />
+      <root url="file://G:/gradle-4.4/caches/transforms-2/files-2.1/74c4584b506d63c00980e4c9a8033600/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.android.exoplayer/exoplayer-ui/r2.4.4/3ed5e7cdeeaef186ec24d2fcda23e43cefb4f482/exoplayer-ui-r2.4.4-sources.jar!/" />
+      <root url="jar://G:/gradle-4.4/caches/modules-2/files-2.1/com.google.android.exoplayer/exoplayer-ui/r2.4.4/3ed5e7cdeeaef186ec24d2fcda23e43cefb4f482/exoplayer-ui-r2.4.4-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

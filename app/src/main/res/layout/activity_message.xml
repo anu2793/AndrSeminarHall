@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg_main"
+    tools:context=".controller.activity.MessageActivity">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_above="@+id/linear_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/ll_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/list_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="vertical" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <RelativeLayout
+        android:id="@+id/linear_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/value_10dp">
+        <ImageView
+            android:id="@+id/imvPhoto"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_not_fav_tag"
+            android:layout_width="@dimen/value_40dp"
+            android:layout_height="@dimen/value_40dp"/>
+
+        <EditText
+            android:layout_marginLeft="@dimen/value_10dp"
+            android:layout_toRightOf="@+id/imvPhoto"
+            android:layout_marginRight="@dimen/value_10dp"
+            android:id="@+id/edt_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/btn_send"
+            android:background="@drawable/bg_border_gray"
+            android:padding="@dimen/value_10dp" />
+
+        <Button
+            android:id="@+id/btn_send"
+            android:layout_width="@dimen/values_60dp"
+            android:layout_height="@dimen/value_40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bg_message_blue"
+            android:text="SEND"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+</RelativeLayout>

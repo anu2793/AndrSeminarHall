@@ -107,6 +107,11 @@ dependencies {
     implementation 'com.github.armcha:AutoLinkTextView:0.3.0'
     //dynamic link
     implementation 'com.google.firebase:firebase-dynamic-links:16.0.1'
+    //socket
+    implementation ('io.github.sac:SocketclusterClientJava:1.7.5'){
+        exclude group :'org.json', module: 'json'
+    }
+    implementation 'com.neovisionaries:nv-websocket-client:2.9'
 }
 
 apply plugin: 'com.google.gms.google-services'

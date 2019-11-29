@@ -28,7 +28,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".controller.activity.ListFriendActivity"></activity>
+        <activity android:name=".controller.activity.RecentlyMessageActivity"></activity>
+        <activity android:name=".controller.activity.ListFriendActivity" />
         <activity android:name=".controller.activity.MessageActivity" />
         <activity android:name=".controller.activity.ListnewsTeachActivity" />
         <activity android:name=".controller.activity.SendNewsActivity" />

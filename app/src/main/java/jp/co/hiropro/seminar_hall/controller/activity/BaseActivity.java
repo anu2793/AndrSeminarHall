@@ -72,7 +72,7 @@ public abstract class BaseActivity extends AppCompatActivity implements View.OnC
     protected TextView tvTitle;
     protected ImageView ivLogo;
     TextViewApp menuHome, menuMyLibrary, menuProfile, menuHelp, menuTerm, menuSpcifiedTransaction, mTvDeviceManager, mTvLogin, mTvLogoutSocial;
-    TextViewApp mTvPurchaseList, mTvHistory, mTvFavoriteList, mTvVersion, mTvPrivacy, mTvSetting, menuPoint, tvSendnews, tvListNews, tvListnewsExtra;
+    TextViewApp mTvPurchaseList, mTvHistory, mTvFavoriteList, mTvVersion, mTvPrivacy, mTvSetting, menuPoint, tvSendnews, tvListNews, tvListnewsExtra, tvChat;
     protected ActionBarDrawerToggle mDrawerToggle;
     Activity activity;
     public static Point screenSize = null;
@@ -154,6 +154,7 @@ public abstract class BaseActivity extends AppCompatActivity implements View.OnC
         menuPoint = findViewById(R.id.tv_menu_point);
         tvSendnews = findViewById(R.id.tv_menu_send_news);
         tvListNews = findViewById(R.id.tv_menu_listnews);
+        tvChat = findViewById(R.id.tv_menu_chat);
         tvListnewsExtra = findViewById(R.id.tv_menu_list_news_extra);
         try {
             PackageInfo pInfo = this.getPackageManager().getPackageInfo(getPackageName(), 0);
@@ -254,6 +255,7 @@ public abstract class BaseActivity extends AppCompatActivity implements View.OnC
         tvSendnews.setOnClickListener(menu);
         tvListNews.setOnClickListener(menu);
         tvListnewsExtra.setOnClickListener(menu);
+        tvChat.setOnClickListener(menu);
         mDrawerToggle = new ActionBarDrawerToggle(this, drawerLayout, null, R.string.app_name, R.string.app_name) {
             @Override
             public void onDrawerSlide(View drawerView, float slideOffset) {
@@ -422,6 +424,12 @@ public abstract class BaseActivity extends AppCompatActivity implements View.OnC
                     if (activity.getClass().getName().equals(SendNewsActivity.class.getName()))
                         return;
                     startActivity(new Intent(activity, SendNewsActivity.class).addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
+                    break;
+                case R.id.tv_menu_chat:
+                    closeRightMenu();
+                    if (activity.getClass().getName().equals(SendNewsActivity.class.getName()))
+                        return;
+                    startActivity(new Intent(activity, RecentlyMessageActivity.class).addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
                     break;
                 case R.id.tv_menu_listnews:
                     closeRightMenu();

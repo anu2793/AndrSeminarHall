@@ -1,10 +1,12 @@
 package jp.co.hiropro.seminar_hall.model;
 
+import java.io.Serializable;
+
 /**
  * Created by dinhdv on 1/31/2018.
  */
 
-public class Friend {
+public class Friend implements Serializable {
     private int friendId;
     private String mName;
     private String mAvatar;

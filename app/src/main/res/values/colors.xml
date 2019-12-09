@@ -4,6 +4,7 @@
     <color name="colorPrimaryDark">#91c528</color>
     <color name="colorAccent">#91c528</color>
     <color name="gray">#DDDDDD</color>
+    <color name="grayBorder">#F2F2F2</color>
     <color name="green">#91c527</color>
     <color name="hint_text">#ffffff</color>
     <!-- Loading-->

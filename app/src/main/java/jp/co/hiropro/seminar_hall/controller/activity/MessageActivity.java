@@ -1,31 +1,23 @@
 package jp.co.hiropro.seminar_hall.controller.activity;
 
-import android.Manifest;
-import android.app.AlertDialog;
-import android.content.DialogInterface;
 import android.content.Intent;
-import android.database.Cursor;
-import android.net.Uri;
-import android.os.Build;
 import android.os.Bundle;
-import android.provider.MediaStore;
-import android.provider.Settings;
+import android.os.Environment;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.text.Editable;
+import android.text.TextWatcher;
+import android.util.Log;
 import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 
-import com.karumi.dexter.Dexter;
-import com.karumi.dexter.MultiplePermissionsReport;
-import com.karumi.dexter.PermissionToken;
-import com.karumi.dexter.listener.PermissionRequest;
-import com.karumi.dexter.listener.multi.MultiplePermissionsListener;
-
+import java.io.File;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
 import java.util.Locale;
@@ -33,7 +25,9 @@ import java.util.Locale;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import jp.co.hiropro.seminar_hall.R;
+import jp.co.hiropro.seminar_hall.model.Friend;
 import jp.co.hiropro.seminar_hall.model.Message;
+import jp.co.hiropro.seminar_hall.util.AppConstants;
 import jp.co.hiropro.seminar_hall.util.SocketService;
 import jp.co.hiropro.seminar_hall.view.adapter.MessageAdapter;
 
@@ -41,7 +35,7 @@ public class MessageActivity extends BaseActivity {
     @BindView(R.id.list_message)
     RecyclerView recyclerView;
     @BindView(R.id.btn_send)
-    Button btnSend;
+    ImageView btnSend;
     @BindView(R.id.edt_message)
     EditText edtMessage;
     @BindView(R.id.imvPhoto)
@@ -51,6 +45,10 @@ public class MessageActivity extends BaseActivity {
     private String message;
     private String currentTime;
     private int GALLERY = 1, CAMERA = 2;
+    private Friend friend;
+    private File dir;
+    List<File> files;
+    private List<String> extensions = Arrays.asList(new String[]{"mp3", "mp4", "wav", "png", "jpg", "jpeg"});
 
     @Override
     protected int getLayoutId() {
@@ -61,6 +59,15 @@ public class MessageActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         ButterKnife.bind(this);
+        btnShop.setVisibility(View.INVISIBLE);
+        btnMenu.setVisibility(View.INVISIBLE);
+
+        Intent intent = this.getIntent();
+        Bundle bundle = intent.getExtras();
+        if (bundle != null) {
+            friend = (Friend) bundle.getSerializable(AppConstants.KEY_SEND.KEY_DATA);
+        }
+        setupTitleScreen(friend.getmName());
         currentTime = new SimpleDateFormat("dd-MM-yyyy HH:mm:ss", Locale.getDefault()).format(new Date());
         loadData();
         mAdapter = new MessageAdapter(messageList);
@@ -69,13 +76,13 @@ public class MessageActivity extends BaseActivity {
         recyclerView.setItemAnimator(new DefaultItemAnimator());
         recyclerView.setAdapter(mAdapter);
 
-        message = edtMessage.getText().toString().trim();
-
         btnSend.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                message = edtMessage.getText().toString().trim();
                 if (message.length() > 0) {
                     addMessage(Message.TYPE_MESSAGE_SENT, message, currentTime);
+                    edtMessage.setText("");
                 }
             }
         });
@@ -83,7 +90,28 @@ public class MessageActivity extends BaseActivity {
         imvPhoto.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                selectImage();
+
+            }
+        });
+
+        edtMessage.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable editable) {
+                if (edtMessage.getText().toString().trim().length() > 0) {
+                    btnSend.setColorFilter(ContextCompat.getColor(MessageActivity.this, R.color.blue), android.graphics.PorterDuff.Mode.MULTIPLY);
+                } else {
+                    btnSend.setColorFilter(ContextCompat.getColor(MessageActivity.this, R.color.gray), android.graphics.PorterDuff.Mode.MULTIPLY);
+                }
             }
         });
     }
@@ -94,14 +122,49 @@ public class MessageActivity extends BaseActivity {
         messageList.add(new Message(0, "What your name", currentTime));
         messageList.add(new Message(1, "My Name Sang", currentTime));
         messageList.add(new Message(0, "Where are you from", currentTime));
+
+        loadFiles();
+    }
+
+    private void loadFiles() {
+        File parent = Environment.getExternalStorageDirectory();
+        files = getListFiles(parent);
+        int j = 0;
+        for (int i = 0; i < files.size(); i++) {
+            if (getFileExtension(files.get(i).getName()) != "" && extensions.contains(getFileExtension(files.get(i).getName()))) {
+                Log.d("Files", "FileName:" + getFileExtension(files.get(i).getName()));
+                j++;
+            }
+        }
+        Log.d("Files", "FileName:" + j);
+
+    }
+
+    private static String getFileExtension(String fileName) {
+        if (fileName.lastIndexOf(".") != -1 && fileName.lastIndexOf(".") != 0)
+            return fileName.substring(fileName.lastIndexOf(".") + 1).toLowerCase();
+        else return "";
+    }
+
+    private List<File> getListFiles(File parentDir) {
+        ArrayList<File> inFiles = new ArrayList<File>();
+        File[] files = parentDir.listFiles();
+        for (File file : files) {
+            if (file.isDirectory()) {
+                inFiles.addAll(getListFiles(file));
+            } else {
+                inFiles.add(file);
+            }
+        }
+        return inFiles;
     }
 
     private void scrollUp() {
-        recyclerView.scrollToPosition(mAdapter.getItemCount() - 1);
+        recyclerView.smoothScrollToPosition(mAdapter.getItemCount() - 1);
     }
 
     private void addMessage(int mType, String mMessage, String mCreateTime) {
-        SocketService.getInstance().sendMessage(mMessage);
+        //SocketService.getInstance().sendMessage(mMessage);
         messageList.add(new Message(mType, mMessage, mCreateTime));
         mAdapter.notifyItemInserted(messageList.size() - 1);
         scrollUp();
@@ -111,127 +174,5 @@ public class MessageActivity extends BaseActivity {
     public void onDestroy() {
         super.onDestroy();
         SocketService.getInstance().disconnect();
-    }
-
-
-    private void selectImage() {
-
-        if (Build.VERSION.SDK_INT > Build.VERSION_CODES.LOLLIPOP_MR1) {
-            Dexter.withActivity(this)
-                    .withPermissions(
-                            Manifest.permission.READ_EXTERNAL_STORAGE,
-                            Manifest.permission.WRITE_EXTERNAL_STORAGE,
-                            Manifest.permission.CAMERA)
-                    .withListener(new MultiplePermissionsListener() {
-                        @Override
-                        public void onPermissionsChecked(MultiplePermissionsReport report) {
-                            // check if all permissions are granted
-                            if (report.areAllPermissionsGranted()) {
-                                showPictureDialog();
-                            }
-
-                            // check for permanent denial of any permission
-                            if (report.isAnyPermissionPermanentlyDenied()) {
-                                showSettingsDialog();
-                            }
-                        }
-
-                        @Override
-                        public void onPermissionRationaleShouldBeShown(List<PermissionRequest> permissions, PermissionToken token) {
-                            token.continuePermissionRequest();
-                        }
-                    })
-                    .onSameThread()
-                    .check();
-
-        } else {
-            showPictureDialog();
-        }
-    }
-
-    /**
-     * Showing Alert Dialog with Settings option
-     * Navigates user to app settings
-     * NOTE: Keep proper title and message depending on your app
-     */
-    private void showSettingsDialog() {
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setTitle("許可取得必要");
-        builder.setMessage("このアプリには、この機能を使用するため許可が必要です。 アプリの設定で許可を付与できます。");
-        builder.setPositiveButton(" 設定移動", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                dialog.cancel();
-                openSettings();
-            }
-        });
-        builder.setNegativeButton("キャンセル", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                dialog.cancel();
-            }
-        });
-        builder.show();
-
-    }
-
-    // navigating user to app settings
-    private void openSettings() {
-        Intent intent = new Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS);
-        Uri uri = Uri.fromParts("package", getPackageName(), null);
-        intent.setData(uri);
-        startActivityForResult(intent, 101);
-    }
-
-    private void showPictureDialog() {
-        AlertDialog.Builder pictureDialog = new AlertDialog.Builder(this);
-        pictureDialog.setTitle("アクション選択");
-        String[] pictureDialogItems = {
-                "ギャラリーから写真を選択する",
-                "カメラから写真をキャプチャする"};
-        pictureDialog.setItems(pictureDialogItems,
-                new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        switch (which) {
-                            case 0:
-                                choosePhotoFromGallary();
-                                break;
-                            case 1:
-                                takePhotoFromCamera();
-                                break;
-                        }
-                    }
-                });
-        pictureDialog.show();
-    }
-
-    public void choosePhotoFromGallary() {
-        Intent galleryIntent = new Intent(Intent.ACTION_PICK,
-                android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
-
-        startActivityForResult(galleryIntent, GALLERY);
-    }
-
-    private void takePhotoFromCamera() {
-        Intent intent = new Intent(android.provider.MediaStore.ACTION_IMAGE_CAPTURE);
-        startActivityForResult(intent, CAMERA);
-    }
-
-    public String getPathFromURI(Uri contentUri) {
-        String res = null;
-        String[] proj = {MediaStore.Images.Media.DATA};
-        Cursor cursor = getContentResolver().query(contentUri, proj, null, null, null);
-        if (cursor.moveToFirst()) {
-            int column_index = cursor.getColumnIndexOrThrow(MediaStore.Images.Media.DATA);
-            res = cursor.getString(column_index);
-        }
-        cursor.close();
-        return res;
-    }
-
-    public void onActivityResult(int requestCode, int resultCode, Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-
     }
 }

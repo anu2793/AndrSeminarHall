@@ -25,6 +25,7 @@ import java.util.Locale;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import jp.co.hiropro.seminar_hall.R;
+import jp.co.hiropro.seminar_hall.db.AppDatabase;
 import jp.co.hiropro.seminar_hall.model.Friend;
 import jp.co.hiropro.seminar_hall.model.Message;
 import jp.co.hiropro.seminar_hall.util.AppConstants;
@@ -32,6 +33,7 @@ import jp.co.hiropro.seminar_hall.util.SocketService;
 import jp.co.hiropro.seminar_hall.view.adapter.MessageAdapter;
 
 public class MessageActivity extends BaseActivity {
+    private AppDatabase mDb;
     @BindView(R.id.list_message)
     RecyclerView recyclerView;
     @BindView(R.id.btn_send)
@@ -62,6 +64,7 @@ public class MessageActivity extends BaseActivity {
         btnShop.setVisibility(View.INVISIBLE);
         btnMenu.setVisibility(View.INVISIBLE);
 
+        mDb = AppDatabase.getInMemoryDatabase(getApplicationContext());
         Intent intent = this.getIntent();
         Bundle bundle = intent.getExtras();
         if (bundle != null) {
@@ -123,7 +126,7 @@ public class MessageActivity extends BaseActivity {
         messageList.add(new Message(1, "My Name Sang", currentTime));
         messageList.add(new Message(0, "Where are you from", currentTime));
 
-        loadFiles();
+        //loadFiles();
     }
 
     private void loadFiles() {

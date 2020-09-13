@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/libs/hss-android_lib/hss-android_lib.iml" filepath="$PROJECT_DIR$/libs/hss-android_lib/hss-android_lib.iml" />
-      <module fileurl="file://$PROJECT_DIR$/libs/liboverscroll/liboverscroll.iml" filepath="$PROJECT_DIR$/libs/liboverscroll/liboverscroll.iml" />
-      <module fileurl="file://$PROJECT_DIR$/libs/libs.iml" filepath="$PROJECT_DIR$/libs/libs.iml" />
-      <module fileurl="file://$PROJECT_DIR$/seminorhall.iml" filepath="$PROJECT_DIR$/seminorhall.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app.iml" group="seminorhall_Edrive/app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/libs/hss-android_lib/hss-android_lib.iml" filepath="$PROJECT_DIR$/.idea/modules/libs/hss-android_lib/hss-android_lib.iml" group="seminorhall_Edrive/libs/hss-android_lib" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/libs/liboverscroll/liboverscroll.iml" filepath="$PROJECT_DIR$/.idea/modules/libs/liboverscroll/liboverscroll.iml" group="seminorhall_Edrive/libs/liboverscroll" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/libs/libs.iml" filepath="$PROJECT_DIR$/.idea/modules/libs/libs.iml" group="seminorhall_Edrive/libs" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/seminorhall_Edrive.iml" filepath="$PROJECT_DIR$/.idea/seminorhall_Edrive.iml" group="seminorhall_Edrive" />
     </modules>
   </component>
 </project>

@@ -38,6 +38,7 @@ public class KeyParser {
         DESCRIPTION("description"),
         IS_FREE("is_free"),
         IS_LOCK("is_lock"),
+        ALBUM("album"),
         LOCK("lock"),
         BOUGHT("bought"),
         VIEWED("viewed"),

@@ -5,16 +5,20 @@ import android.content.Intent;
 import android.media.AudioManager;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
 import android.view.KeyEvent;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
+import android.widget.RelativeLayout;
 import android.widget.SeekBar;
 
+import com.android.volley.Request;
 import com.android.volley.Response;
 import com.android.volley.error.VolleyError;
 import com.android.volley.request.JsonObjectRequest;
@@ -32,6 +36,8 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 import java.util.Objects;
 import java.util.Timer;
 import java.util.TimerTask;
@@ -43,6 +49,7 @@ import jp.co.hiropro.dialog.HSSDialog;
 import jp.co.hiropro.seminar_hall.ForestApplication;
 import jp.co.hiropro.seminar_hall.R;
 import jp.co.hiropro.seminar_hall.model.SpeedObject;
+import jp.co.hiropro.seminar_hall.model.User;
 import jp.co.hiropro.seminar_hall.model.VideoDetail;
 import jp.co.hiropro.seminar_hall.util.AppConstants;
 import jp.co.hiropro.seminar_hall.util.ExoPlayerVideoHandler;
@@ -54,6 +61,8 @@ import jp.co.hiropro.seminar_hall.view.adapter.SpeedAdapter;
 import jp.co.hiropro.utils.NetworkUtils;
 
 public class PlayVideoActivity extends AppCompatActivity implements ExoPlayer.EventListener {
+    @BindView(R.id.imv_thumb_video)
+    ImageView ivThumb;
     @BindView(R.id.mediaplayer)
     SimpleExoPlayerView playerView;
     @BindView(R.id.progressbar)
@@ -72,6 +81,8 @@ public class PlayVideoActivity extends AppCompatActivity implements ExoPlayer.Ev
     RecyclerView mRecySpeed;
     @BindView(R.id.rl_speed)
     LinearLayout mRlSpeed;
+    @BindView(R.id.ll_video_menu)
+    LinearLayout Main_menu;
     @BindView(R.id.imv_volume)
     ImageView mImvVolume;
     @BindView(R.id.seek_volume)
@@ -80,24 +91,43 @@ public class PlayVideoActivity extends AppCompatActivity implements ExoPlayer.Ev
     VerticalSeekBarWrapper mViewVolume;
     @BindView(R.id.imv_control)
     ImageView mImvControls;
+    RelativeLayout layout_doublespeed;
     private SpeedAdapter mAdapter;
     private ArrayList<SpeedObject> mListSpeed = new ArrayList<>();
+    private ArrayList<String> mListMenu = new ArrayList<>();
+    public int currentPos = 0;
     private boolean isVideoDeleted;
     private boolean isPlayVideo = true;
+    private Boolean isMultypleType = false;
     private AudioManager mAudioManager;
     private Timer mTimer = new Timer();
+    private User mUser;
+    private double mSpeed = 1;
+    public int albumId = 0;
+    private int teachalbumId = 0;
+    private Boolean isUserTestFlagMode = false;
     private boolean statusVideo = false;
     private boolean mIsVideoRun = false;
     private boolean isMute = false;
+    VideoDetail item;
+    public int positionTemp = 0;
+    List<VideoDetail> videoDetailList = new ArrayList<>();
+    List<VideoDetail> videoDetailListReceive = new ArrayList<>();
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_full_screen);
+        // layout_doublespeed= (RelativeLayout) findViewById(R.id.layout_doublespeed);
         ButterKnife.bind(this);
-
-        VideoDetail item = getIntent().getParcelableExtra(KeyParser.KEY.DATA.toString());
+        albumId = getIntent().getIntExtra(AppConstants.KEY_SEND.KEY_ALBUM_ID, 0);
+        teachalbumId = getIntent().getIntExtra(AppConstants.KEY_SEND.KEY_TEACH_ALBUM_ID, 0);
+        item = getIntent().getParcelableExtra(KeyParser.KEY.DATA.toString());
         tvTitle.setText(item.getTitle());
+        isMultypleType = getIntent().getBooleanExtra(AppConstants.KEY_SEND.KEY_MULTYPLE_TYPE, false);
+        isUserTestFlagMode = getIntent().getBooleanExtra(AppConstants.KEY_SEND.KEY_USER_TEST, false);
+        videoDetailListReceive = getIntent().getParcelableArrayListExtra(KeyParser.KEY.ALBUM.toString());
 
         Uri mp4VideoUri = Uri.parse(item.getVideo());
         ExoPlayerVideoHandler.getInstance()
@@ -105,11 +135,13 @@ public class PlayVideoActivity extends AppCompatActivity implements ExoPlayer.Ev
                         mp4VideoUri, playerView);
         ExoPlayerVideoHandler.getInstance().getPlayer().setPlayWhenReady(true);
         ExoPlayerVideoHandler.getInstance().getPlayer().addListener(this);
-//        GlideApp.with(PlayVideoActivity.this).load(item.getImage()).into(ivThumb);
+
+        //GlideApp.with(PlayVideoActivity.this).load(item.getImage()).into(ivThumb);
         setViewVideo(item.getId());
         //Update list video on search result
         sendBroadcast(new Intent(AppConstants.BROAD_CAST.REFRESH));
         initListSpeed();
+     //   menuList();
 
         mAudioManager = (AudioManager) getSystemService(AUDIO_SERVICE);
         mSeekVolume.setMax(Objects.requireNonNull(mAudioManager).getStreamMaxVolume(AudioManager.STREAM_MUSIC));
@@ -140,6 +172,7 @@ public class PlayVideoActivity extends AppCompatActivity implements ExoPlayer.Ev
             playerView.hideController();
     }
 
+
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
         switch (keyCode) {
@@ -160,12 +193,6 @@ public class PlayVideoActivity extends AppCompatActivity implements ExoPlayer.Ev
         }
     }
 
-    private void updateSeekBar() {
-        int volume = Objects.requireNonNull(mAudioManager).getStreamVolume(AudioManager.STREAM_MUSIC);
-        mSeekVolume.setProgress(volume);
-        mImvVolume.setImageResource(volume == 0 ? R.drawable.sound_of : R.drawable.sound_on);
-    }
-
     private void initListSpeed() {
         mRecySpeed.setLayoutManager(new LinearLayoutManager(this));
         mRecySpeed.addOnItemTouchListener(
@@ -179,7 +206,9 @@ public class PlayVideoActivity extends AppCompatActivity implements ExoPlayer.Ev
                         ExoPlayerVideoHandler.getInstance().getPlayer().setPlaybackParameters(params);
                         ExoPlayerVideoHandler.getInstance().getPlayer().getPlaybackState();
                         mAdapter.setIndexChoice(position);
+                       /* if(position==5){*//*
                         mRlSpeed.setVisibility(View.GONE);
+                       // }*/
                     }
 
                     @Override
@@ -188,31 +217,68 @@ public class PlayVideoActivity extends AppCompatActivity implements ExoPlayer.Ev
                     }
                 })
         );
+
+        // 0.5
+        mListSpeed.add(new SpeedObject(7, "0.5 倍速", 0.5));
+        //0.75
+        mListSpeed.add(new SpeedObject(6, "0.75 倍速", 0.75));
         // 0
         mListSpeed.add(new SpeedObject(4, getString(R.string.spn_speed_normal), 1));
-        // 1.25
-        mListSpeed.add(new SpeedObject(5, "1.25 倍速", 1.25));
         // 1.5
-        mListSpeed.add(new SpeedObject(6, "1.5 倍速", 1.5));
+        mListSpeed.add(new SpeedObject(8, "1.5 倍速", 1.5));
         // 2
-        mListSpeed.add(new SpeedObject(7, "2 倍速", 2));
+        mListSpeed.add(new SpeedObject(9, "2 倍速", 2));
+
         mAdapter = new SpeedAdapter(PlayVideoActivity.this, mListSpeed);
         mRecySpeed.setAdapter(mAdapter);
     }
 
-    @OnClick({R.id.btn_back, R.id.imv_close, R.id.imv_menu, R.id.rl_speed, R.id.rl_top, R.id.iv_replay, R.id.imv_control, R.id.imv_volume, R.id.rl_control})
+    private void menuList(){
+        mRecySpeed.setLayoutManager(new LinearLayoutManager(this));
+        mRecySpeed.addOnItemTouchListener(
+                new RecyclerItemClickListener(PlayVideoActivity.this, mRecySpeed, new RecyclerItemClickListener.OnItemClickListener() {
+                    @Override
+                    public void onItemClick(View view, int position) {
+
+                    }
+
+                    @Override
+                    public void onLongItemClick(View view, int position) {
+                        // do whatever
+                    }
+                })
+        );
+        mListMenu.add(0,"Video Play");
+        mListMenu.add(1,"Close");
+    }
+
+
+    @OnClick({R.id.btn_back, R.id.speedlist_close, R.id.mainlist_close, R.id.imv_Mainmenu, R.id.imv_speedList,R.id.imv_skip_ahead, R.id.imv_skip_back, R.id.rl_speed, R.id.rl_top, R.id.iv_replay, R.id.imv_control, R.id.imv_volume, R.id.rl_control})
     void OnClick(View view) {
         switch (view.getId()) {
             case R.id.rl_top:
                 break;
             case R.id.rl_speed:
+               // mRlSpeed.setVisibility(View.GONE);
+                break;
+            case R.id.speedlist_close:
                 mRlSpeed.setVisibility(View.GONE);
                 break;
-            case R.id.imv_close:
-                mRlSpeed.setVisibility(View.GONE);
-                break;
-            case R.id.imv_menu:
+            case R.id.imv_speedList:
                 mRlSpeed.setVisibility(View.VISIBLE);
+                Main_menu.setVisibility(View.GONE);
+                break;
+            case R.id.mainlist_close:
+                Main_menu.setVisibility(View.GONE);
+                break;
+            case R.id.imv_Mainmenu:
+                Main_menu.setVisibility(View.VISIBLE);
+                break;
+            case R.id.imv_skip_ahead:
+                skipForSecondsAhead();
+                break;
+            case R.id.imv_skip_back:
+                skipForSecondsBack();
                 break;
             case R.id.btn_back:
                 onBackPressed();
@@ -252,6 +318,7 @@ public class PlayVideoActivity extends AppCompatActivity implements ExoPlayer.Ev
                     }
                 }
                 break;
+
         }
     }
 
@@ -265,6 +332,11 @@ public class PlayVideoActivity extends AppCompatActivity implements ExoPlayer.Ev
         ExoPlayerVideoHandler.getInstance().getPlayer().getPlaybackState();
     }
 
+    private void updateSeekBar() {
+        int volume = Objects.requireNonNull(mAudioManager).getStreamVolume(AudioManager.STREAM_MUSIC);
+        mSeekVolume.setProgress(volume);
+        mImvVolume.setImageResource(volume == 0 ? R.drawable.sound_of : R.drawable.sound_on);
+    }
     @Override
     protected void onDestroy() {
         ExoPlayerVideoHandler.getInstance().releaseVideoPlayer();
@@ -366,6 +438,61 @@ public class PlayVideoActivity extends AppCompatActivity implements ExoPlayer.Ev
 
     }
 
+    private void skipForSecondsAhead() {
+         long getCurrentPosition = ExoPlayerVideoHandler.getInstance().getPlayer().getCurrentPosition();
+         long getDuration = ExoPlayerVideoHandler.getInstance().getPlayer().getDuration();
+            if (getCurrentPosition + 15000 >= getDuration) {
+                ExoPlayerVideoHandler.getInstance().getPlayer().seekTo(getDuration);
+            } else {
+                ExoPlayerVideoHandler.getInstance().getPlayer().seekTo(getCurrentPosition + 15000);
+
+            }
+        }
+
+    private void skipForSecondsBack() {
+        long getCurrentPosition = ExoPlayerVideoHandler.getInstance().getPlayer().getCurrentPosition();
+        System.out.println("currentPosition"+getCurrentPosition);
+        long getDuration = ExoPlayerVideoHandler.getInstance().getPlayer().getDuration();
+        System.out.println("getDuration"+getDuration);
+        if (getCurrentPosition - 15000 >= getDuration) {
+            ExoPlayerVideoHandler.getInstance().getPlayer().seekTo(getDuration);
+        } else if (getCurrentPosition - 15000 > 0) {
+            ExoPlayerVideoHandler.getInstance().getPlayer().seekTo(getCurrentPosition - 15000);
+        }
+    }
+/*
+    public VideoDetail getPreItemVideo() {
+        int step = 1;
+        if (currentPos - step >= 0) {
+            currentPos = currentPos - step;
+            imvNext.setVisibility(View.VISIBLE);
+            if (currentPos == 0) {
+                imvPrev.setVisibility(View.GONE);
+            }
+            VideoDetail videoDetail = videoDetailList.get(currentPos);
+            return videoDetail;
+        } else {
+            currentPos = positionTemp;
+            return null;
+        }
+    }
+
+    private VideoDetail getNextItemVideo() {
+        int step = 1;
+        if (currentPos + step < videoDetailList.size()) {
+            currentPos += step;
+            imvPrev.setVisibility(View.VISIBLE);
+            if (currentPos == videoDetailList.size() - 1) {
+                imvNext.setVisibility(View.GONE);
+            }
+            VideoDetail videoDetail = videoDetailList.get(currentPos);
+            return videoDetail;
+        } else {
+            currentPos = positionTemp;
+            return null;
+        }
+    }*/
+
     private void setViewVideo(int id) {
         HashMap<String, Object> params = new HashMap<>();
         params.put("id", id);
@@ -388,6 +515,14 @@ public class PlayVideoActivity extends AppCompatActivity implements ExoPlayer.Ev
         ForestApplication.getInstance().addToRequestQueue(request);
     }
 
+
+    protected HashMap<String, String> getAuthHeader() {
+        HashMap<String, String> header = new HashMap<>();
+        String auth = HSSPreference.getInstance().getString(AppConstants.KEY_PREFERENCE.AUTH_TOKEN.toString(), "");
+        header.put("Authorization", auth);
+        return header;
+    }
+
     private void createTimerHiddenVolume() {
         if (mTimer != null) mTimer.cancel();
         mTimer = new Timer();
@@ -403,4 +538,36 @@ public class PlayVideoActivity extends AppCompatActivity implements ExoPlayer.Ev
             }
         }, 3000);
     }
+
+    protected void callApiVideoPlay(VideoDetail videoDetail) {
+        if (!isUserTestFlagMode) {
+            String memberPremium = "0";
+            if (mUser.isPremiumUser()) {
+                memberPremium = "1";
+            }
+            Map<String, String> params = new HashMap<>();
+            params.put(AppConstants.KEY_PARAMS.MEMBER_ID.toString(), String.valueOf(mUser.getUserId()));
+            params.put(AppConstants.KEY_PARAMS.VIDEO_ID.toString(), String.valueOf(videoDetail.getId()));
+            params.put(AppConstants.KEY_PARAMS.TEACHER_ID.toString(), teachalbumId + "");
+            params.put(AppConstants.KEY_PARAMS.MEMBERPREMIUMFLG.toString(), memberPremium);
+            params.put(AppConstants.KEY_PARAMS.ALBUM_ID.toString(), albumId + "");
+
+            JSONObject parameters = new JSONObject(params);
+            JsonObjectRequest request = new JsonObjectRequest(Request.Method.POST, AppConstants.SERVER_PATH.VIDEOSHOW_ALBUM.toString(), parameters,
+                    new Response.Listener<JSONObject>() {
+                        @Override
+                        public void onResponse(JSONObject response) {
+                            System.out.println(response);
+                        }
+                    }, new Response.ErrorListener() {
+                @Override
+                public void onErrorResponse(VolleyError error) {
+                    NetworkUtils.showDialogError(PlayVideoActivity.this, error);
+                }
+            });
+            request.setHeaders(getAuthHeader());
+            ForestApplication.getInstance().addToRequestQueue(request);
+        }
+    }
+
 }

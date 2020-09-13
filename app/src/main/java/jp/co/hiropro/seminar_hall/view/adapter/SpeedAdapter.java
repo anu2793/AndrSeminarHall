@@ -1,8 +1,8 @@
 package jp.co.hiropro.seminar_hall.view.adapter;
 
 import android.content.Context;
-import android.support.annotation.NonNull;
-import android.support.v7.widget.RecyclerView;
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -17,7 +17,7 @@ import jp.co.hiropro.seminar_hall.view.TextViewApp;
 
 public class SpeedAdapter extends RecyclerView.Adapter<SpeedAdapter.ViewHolder> {
     private Context mContext;
-    private int INDEX_SELECT = 0;
+    private int INDEX_SELECT = 2;
     private ArrayList<SpeedObject> mListSpeed;
 
     public SpeedAdapter(Context context, ArrayList<SpeedObject> mListSpeed) {
@@ -53,7 +53,7 @@ public class SpeedAdapter extends RecyclerView.Adapter<SpeedAdapter.ViewHolder> 
             super(itemView);
             mTvName = itemView.findViewById(R.id.tv_name);
             mImvCheck = itemView.findViewById(R.id.imv_check);
-            mLlMain = itemView.findViewById(R.id.ll_layout);
+            mLlMain = itemView.findViewById(R.id.linearspeed);
         }
 
         public void bindData(SpeedObject speed, int position) {

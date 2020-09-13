@@ -1,13 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/ll_layout"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@color/white"
-    android:gravity="left"
-    android:orientation="horizontal"
-    android:padding="@dimen/value_8dp">
+    android:background="@color/white">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearspeed"
+        android:gravity="left"
+        android:orientation="horizontal"
+        android:padding="@dimen/value_8dp">
 
     <ImageView
         android:id="@+id/imv_check"
@@ -28,4 +34,14 @@
         android:textColor="@color/color_4d4d4d"
         android:textSize="@dimen/text_size_18sp"
         app:fontFamilyApp="hiramaru" />
-</LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.75dp"
+        android:background="@color/gray"
+        android:layout_below="@+id/linearspeed" />
+
+
+</RelativeLayout>

@@ -6,7 +6,7 @@
     android:background="@color/color_bg_main"
     android:orientation="vertical">
 
-    <android.support.design.widget.TabLayout
+    <com.google.android.material.tabs.TabLayout
         android:id="@+id/tabs"
         android:layout_width="match_parent"
         android:layout_height="@dimen/value_height_action_bar"

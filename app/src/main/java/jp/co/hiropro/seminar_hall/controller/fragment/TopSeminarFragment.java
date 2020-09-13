@@ -1,16 +1,16 @@
 package jp.co.hiropro.seminar_hall.controller.fragment;
 
 import android.content.Intent;
-import android.support.design.widget.TabLayout;
-import android.support.v4.view.ViewPager;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
+import androidx.viewpager.widget.ViewPager;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.LinearLayout;
 
 import com.android.volley.Request;
+import com.google.android.material.tabs.TabLayout;
 import com.paginate.Paginate;
 
 import org.json.JSONArray;
@@ -139,7 +139,7 @@ public class TopSeminarFragment extends FragmentBase implements Paginate.Callbac
     }
 
     private void initListSeminar() {
-        mRcyCategory.setLayoutManager(new LinearLayoutManager(activity, LinearLayout.HORIZONTAL, false));
+        mRcyCategory.setLayoutManager(new LinearLayoutManager(activity, RecyclerView.HORIZONTAL, false));
         mRcyCategory.addOnItemTouchListener(new RecyclerItemClickListener(activity, mRcyCategory, new RecyclerItemClickListener.OnItemClickListener() {
             @Override
             public void onItemClick(View view, int position) {

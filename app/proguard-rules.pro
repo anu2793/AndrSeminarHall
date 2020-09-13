@@ -24,7 +24,7 @@
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
 -keep public class * implements com.bumptech.glide.module.GlideModule
--keep public class * extends com.bumptech.glide.AppGlideModule
+-keep public class * extends com.bumptech.glide.module.AppGlideModule
 -keep public enum com.bumptech.glide.load.resource.bitmap.ImageHeaderParser$** {
   **[] $VALUES;
   public *;
@@ -36,16 +36,9 @@
 -dontwarn org.codehaus.mojo.animal_sniffer.**
 -dontwarn com.squareup.okhttp.internal.huc.**
 -dontwarn com.android.volley.error.**
--keep class com.android.volley.error.** { *; }
--keep class com.squareup.okhttp.internal.huc.** { *; }
--keep class okio.** { *; }
--keep class android.support.design.widget.** { *; }
--keep interface android.support.design.widget.** { *; }
 -dontwarn android.support.design.**
--keep class com.android.vending.billing.**
 -dontwarn okhttp3.**
 -dontwarn okio.**
 -dontwarn javax.annotation.**
 -dontwarn org.conscrypt.**
 # A resource is loaded with a relative path so the package of this class must be preserved.
--keepnames class okhttp3.internal.publicsuffix.PublicSuffixDatabase

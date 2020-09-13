@@ -26,6 +26,7 @@ public class User implements Parcelable {
     int remainPremium;
     boolean isPremiumUser;
     String userId;
+    double speed = 1;
     int status = AppConstants.STATUS_USER.NORMAL;
     int isSocialType;
     int role_user;
@@ -139,6 +140,14 @@ public class User implements Parcelable {
 
     public void setUserId(String userId) {
         this.userId = userId;
+    }
+
+    public double getSpeed() {
+        return speed;
+    }
+
+    public void setSpeed(double speed) {
+        this.speed = speed;
     }
 
     public int getIsSocialType() {

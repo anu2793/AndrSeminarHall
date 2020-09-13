@@ -9,7 +9,7 @@ import android.view.View;
  * Created by dinhdv on 3/6/2018.
  */
 
-public class ExpandableTextView extends android.support.v7.widget.AppCompatTextView implements View.OnClickListener {
+public class ExpandableTextView extends androidx.appcompat.widget.AppCompatTextView implements View.OnClickListener {
     private static final int MAX_LINES = 5;
     private int currentMaxLines = Integer.MAX_VALUE;
     private onChangeStatus mAction;

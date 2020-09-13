@@ -2,7 +2,9 @@ package jp.co.hiropro.view;
 
 import android.view.View;
 
-public abstract class ViewHolder<T> extends android.support.v7.widget.RecyclerView.ViewHolder {
+import androidx.recyclerview.widget.RecyclerView;
+
+public abstract class ViewHolder<T> extends RecyclerView.ViewHolder {
 	protected View root;
 
 	public ViewHolder(View root) {

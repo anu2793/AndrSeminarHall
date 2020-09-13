@@ -11,7 +11,7 @@ import jp.co.hiropro.seminar_hall.util.FontUtils;
 /**
  * Clone Dinhdv from Tuấn Sơn on 29/4/2016.
  */
-public class ButtonApp extends android.support.v7.widget.AppCompatButton {
+public class ButtonApp extends androidx.appcompat.widget.AppCompatButton {
 
     private final int DEFAULT_FONT_STYLE = 0;
     private final int DEFAULT_TEXT_FONT = 0;

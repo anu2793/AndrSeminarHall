@@ -17,7 +17,7 @@ import jp.co.hiropro.seminar_hall.util.FontUtils;
  * @attr ref R.styleable.AutofitTextView_minTextSize
  * @attr ref R.styleable.AutofitTextView_precision
  */
-public class AutofitTextView extends android.support.v7.widget.AppCompatTextView implements AutofitHelper.OnTextSizeChangeListener {
+public class AutofitTextView extends androidx.appcompat.widget.AppCompatTextView implements AutofitHelper.OnTextSizeChangeListener {
 
     private AutofitHelper mHelper;
     private final int DEFAULT_FONT_STYLE = 0;

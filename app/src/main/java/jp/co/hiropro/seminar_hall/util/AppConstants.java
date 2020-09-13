@@ -84,6 +84,10 @@ public class AppConstants {
         public static String KEY_VIDEO = "KEY_VIDEO";
         public static String KEY_SHOW_ADVISE = "KEY_SHOW_ADVISE";
         public static String KEY_TEACH_NEWS = "KEY_TEACH_NEWS";
+        public static String KEY_ALBUM_ID = "KEY_ALBUM_ID";
+        public static String KEY_MULTYPLE_TYPE = "KEY_MULTYPLE_TYPE";
+        public static String KEY_USER_TEST = "KEY_USER_TEST";
+        public static String KEY_TEACH_ALBUM_ID = "KEY_TEACH_ALBUM_ID";
     }
 
     public static class TYPE_SEARCH {
@@ -220,6 +224,7 @@ public class AppConstants {
         LIST_TEACH_NEWS("teacher/getListNews"),
         NEW_DETAIL_TEACH("teacher/getNewsDetail"),
         UPDATE_NEWS("teacher/updateNews"),
+        VIDEOSHOW_ALBUM("video/videoShowAlbum"),
         BUY_MONTHLY_SUCCESS("purchase/setPaidPremium");
 
         String link;
@@ -271,6 +276,9 @@ public class AppConstants {
         LIST("list"),
         MEMBER_ID("memberid"),
         PACKAGE_ID("packageid"),
+        MEMBERPREMIUMFLG("memberpremiumflg"),
+        ALBUM_ID("albumid"),
+        VIDEO_ID("videoid"),
         COST_PRICE("cost_price"),
         COST_POINT("cost_point"),
         PREMIUM_TO_DATE("premium_to_date"),

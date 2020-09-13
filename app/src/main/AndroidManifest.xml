@@ -30,6 +30,11 @@
         android:usesCleartextTraffic="true">
         <activity android:name=".controller.activity.RecentlyMessageActivity"></activity>
         <activity android:name=".controller.activity.ListFriendActivity" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
         <activity android:name=".controller.activity.MessageActivity" />
         <activity android:name=".controller.activity.ListnewsTeachActivity" />
         <activity android:name=".controller.activity.SendNewsActivity" />

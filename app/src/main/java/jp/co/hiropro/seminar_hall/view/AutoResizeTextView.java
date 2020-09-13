@@ -16,7 +16,7 @@ import android.util.TypedValue;
  * Created by dinhdv on 8/1/2017.
  */
 
-public class AutoResizeTextView extends android.support.v7.widget.AppCompatTextView {
+public class AutoResizeTextView extends androidx.appcompat.widget.AppCompatTextView {
     private interface SizeTester {
         /**
          * @param suggestedSize  Size of text to be tested

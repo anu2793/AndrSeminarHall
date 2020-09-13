@@ -68,4 +68,5 @@
     <dimen name="value_7dp">7dp</dimen>
     <dimen name="text_size_9sp">9sp</dimen>
     <dimen name="value_68dp">68dp</dimen>
+    <dimen name="_16sdp">16.00dp</dimen>
 </resources>

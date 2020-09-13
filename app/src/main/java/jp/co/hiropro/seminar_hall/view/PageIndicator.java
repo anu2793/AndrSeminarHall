@@ -1,6 +1,6 @@
 package jp.co.hiropro.seminar_hall.view;
 
-import android.support.v4.view.ViewPager;
+import androidx.viewpager.widget.ViewPager;
 
 /**
  * Created by dinhdv on 11/6/2017.

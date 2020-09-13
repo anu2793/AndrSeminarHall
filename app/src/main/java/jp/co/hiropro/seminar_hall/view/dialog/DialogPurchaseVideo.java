@@ -1,7 +1,7 @@
 package jp.co.hiropro.seminar_hall.view.dialog;
 
 import android.content.Context;
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 import android.view.View;
 
 import jp.co.hiropro.seminar_hall.R;

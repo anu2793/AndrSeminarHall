@@ -15,6 +15,22 @@
       },
       "oauth_client": [
         {
+          "client_id": "395325471251-gv0afjv08fqqdg2gp34vfh5aqluqbc29.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "jp.co.hiropro.seminar_hall",
+            "certificate_hash": "d79414d0c6902df76ac2ef2e209b75c32e8190d4"
+          }
+        },
+        {
+          "client_id": "395325471251-bqpb4s56ll3d0sa5e2tn4fckf1gejtre.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "jp.co.hiropro.seminar_hall",
+            "certificate_hash": "a8337350dd7539accff2f29ddfa4650015a0e9bf"
+          }
+        },
+        {
           "client_id": "395325471251-ur2b10id9oda2g94nn1abba990ab5t4b.apps.googleusercontent.com",
           "client_type": 3
         }
@@ -28,14 +44,15 @@
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "395325471251-ur2b10id9oda2g94nn1abba990ab5t4b.apps.googleusercontent.com",
+              "client_id": "395325471251-29ggrfivum3k75bona2duumteu0jkdao.apps.googleusercontent.com",
               "client_type": 3
             },
             {
               "client_id": "395325471251-47n4f3qil946loqrkvr3pt3um3k4seoa.apps.googleusercontent.com",
               "client_type": 2,
               "ios_info": {
-                "bundle_id": "jp.co.hiropro.seminarhall"
+                "bundle_id": "jp.co.hiropro.seminarhall",
+                "app_store_id": "1445986472"
               }
             }
           ]

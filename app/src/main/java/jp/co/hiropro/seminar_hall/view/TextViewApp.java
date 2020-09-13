@@ -11,7 +11,7 @@ import jp.co.hiropro.seminar_hall.util.FontUtils;
 /**
  * Created by Tuấn Sơn on 29/4/2016.
  */
-public class TextViewApp extends android.support.v7.widget.AppCompatTextView {
+public class TextViewApp extends androidx.appcompat.widget.AppCompatTextView {
 
     private final int DEFAULT_FONT_STYLE = 0;
     private final int DEFAULT_TEXT_FONT = 0;

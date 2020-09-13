@@ -2,8 +2,8 @@ package jp.co.hiropro.seminar_hall.view.dialog;
 
 import android.app.Dialog;
 import android.content.Context;
-import android.support.annotation.IdRes;
-import android.support.annotation.LayoutRes;
+import androidx.annotation.IdRes;
+import androidx.annotation.LayoutRes;
 import android.view.Window;
 
 /**

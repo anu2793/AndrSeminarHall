@@ -5,14 +5,13 @@ import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.AppBarLayout;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.content.ContextCompat;
-import android.support.v4.widget.NestedScrollView;
-import android.support.v7.widget.DividerItemDecoration;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.SearchView;
+import androidx.fragment.app.FragmentManager;
+import androidx.core.content.ContextCompat;
+import androidx.core.widget.NestedScrollView;
+import androidx.recyclerview.widget.DividerItemDecoration;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.appcompat.widget.SearchView;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.MotionEvent;
@@ -30,6 +29,8 @@ import com.android.volley.error.VolleyError;
 import com.android.volley.request.JsonObjectRequest;
 import com.anjlab.android.iab.v3.BillingProcessor;
 import com.anjlab.android.iab.v3.TransactionDetails;
+import com.google.android.material.appbar.AppBarLayout;
+
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -203,8 +204,8 @@ public class TopActivity extends BaseActivity {
     }
 
     private void initListSeminar() {
-        mRcySeminarTop.setLayoutManager(new LinearLayoutManager(TopActivity.this, LinearLayout.HORIZONTAL, false));
-        mRcySeminarNew.setLayoutManager(new LinearLayoutManager(TopActivity.this, LinearLayout.HORIZONTAL, false));
+        mRcySeminarTop.setLayoutManager(new LinearLayoutManager(TopActivity.this, RecyclerView.HORIZONTAL, false));
+        mRcySeminarNew.setLayoutManager(new LinearLayoutManager(TopActivity.this, RecyclerView.HORIZONTAL, false));
         if (mTop == null) {
             mTop = new DividerItemDecoration(this, DividerItemDecoration.HORIZONTAL);
             mTop.setDrawable(Objects.requireNonNull(ContextCompat.getDrawable(getBaseContext(), R.drawable.line_divider_horizontal)));
@@ -279,7 +280,7 @@ public class TopActivity extends BaseActivity {
         if (fm.getBackStackEntryCount() > 0) {
             fm.popBackStack();
             layoutSearchBar.setVisibility(View.GONE);
-            ImageView closeIcon = (ImageView) searchView.findViewById(android.support.v7.appcompat.R.id.search_close_btn);
+            ImageView closeIcon = (ImageView) searchView.findViewById(androidx.appcompat.R.id.search_close_btn);
             closeIcon.performClick();
             searchResultFragment = null;
             tvCancel.setVisibility(View.GONE);
@@ -295,7 +296,7 @@ public class TopActivity extends BaseActivity {
         switch (view.getId()) {
             case R.id.tv_cancel:
                 layoutSearchBar.setVisibility(View.GONE);
-                ImageView closeIcon = (ImageView) searchView.findViewById(android.support.v7.appcompat.R.id.search_close_btn);
+                ImageView closeIcon = (ImageView) searchView.findViewById(androidx.appcompat.R.id.search_close_btn);
                 closeIcon.performClick();
                 searchResultFragment = null;
                 tvCancel.setVisibility(View.GONE);
@@ -461,12 +462,12 @@ public class TopActivity extends BaseActivity {
     }
 
     private void setupSearchView() {
-        closeIcon = (ImageView) searchView.findViewById(android.support.v7.appcompat.R.id.search_close_btn);
+        closeIcon = (ImageView) searchView.findViewById(androidx.appcompat.R.id.search_close_btn);
         closeIcon.setEnabled(false);
         searchView.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
-                ImageView searchIcon = (ImageView) searchView.findViewById(android.support.v7.appcompat.R.id.search_button);
+                ImageView searchIcon = (ImageView) searchView.findViewById(androidx.appcompat.R.id.search_button);
                 searchIcon.performClick();
                 return false;
             }
@@ -648,6 +649,11 @@ public class TopActivity extends BaseActivity {
                     tvRemian.setVisibility(View.VISIBLE);
                     tvRemian.setText("未読ニュースが" + numberRemain + "件あります！");
                 }
+                else if (numberRemain == 0){
+                    tvRemian.setVisibility(View.GONE);
+                   // tvRemian.setText("未読ニュースが" + 0 + "件あります！");
+                }
+
                 if (data.length() > 0) {
                     mUrlDiagnosis = data.optString("diagnosis_link");
                     if (mUrlDiagnosis.length() > 0)

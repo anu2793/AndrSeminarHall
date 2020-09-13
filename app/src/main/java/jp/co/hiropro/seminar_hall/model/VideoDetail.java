@@ -20,11 +20,12 @@ public class VideoDetail implements Parcelable {
     public static final int VIDEO_SPECIAL = 4;
     public static final int VIDEO_LIMITED_SPECIAL = 5;
 
-    private int id, type, idOwner;
+    private int id, type, idOwner,contentType;
     private int price, priceDiscount;
     private String image, video;
     private String title, description, date, code, duration;
     private int hasBoughtVideo;
+    private int special;
 
     public VideoDetail(int type, String image) {
         this.type = type;
@@ -116,6 +117,22 @@ public class VideoDetail implements Parcelable {
 
     public void setHasBoughtVideo(int hasBoughtVideo) {
         this.hasBoughtVideo = hasBoughtVideo;
+    }
+    public int getContentType() {
+        return contentType;
+    }
+
+    public void setContentType(int contentType) {
+        this.contentType = contentType;
+    }
+
+
+    public int getSpecial() {
+        return special;
+    }
+
+    public void setSpecial(int special) {
+        this.special = special;
     }
 
     public int getPrice() {

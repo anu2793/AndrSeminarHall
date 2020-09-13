@@ -7,17 +7,16 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
-import android.support.annotation.IdRes;
-import android.support.design.widget.AppBarLayout;
-import android.support.design.widget.CoordinatorLayout;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentTransaction;
-import android.support.v4.content.ContextCompat;
-import android.support.v4.widget.NestedScrollView;
-import android.support.v7.widget.DividerItemDecoration;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.SearchView;
+import androidx.annotation.IdRes;
+import androidx.coordinatorlayout.widget.CoordinatorLayout;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
+import androidx.core.content.ContextCompat;
+import androidx.core.widget.NestedScrollView;
+import androidx.recyclerview.widget.DividerItemDecoration;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.appcompat.widget.SearchView;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.MotionEvent;
@@ -33,6 +32,7 @@ import com.android.volley.Request;
 import com.android.volley.Response;
 import com.android.volley.error.VolleyError;
 import com.android.volley.request.JsonObjectRequest;
+import com.google.android.material.appbar.AppBarLayout;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -198,7 +198,7 @@ public class TopContentFragment extends FragmentBase {
                 break;
             case R.id.tv_cancel:
                 layoutSearchBar.setVisibility(View.GONE);
-                ImageView closeIcon = searchView.findViewById(android.support.v7.appcompat.R.id.search_close_btn);
+                ImageView closeIcon = searchView.findViewById(androidx.appcompat.R.id.search_close_btn);
                 closeIcon.performClick();
                 searchResultFragment = null;
                 tvCancel.setVisibility(View.GONE);
@@ -212,12 +212,12 @@ public class TopContentFragment extends FragmentBase {
     }
 
     private void setupSearchView() {
-        closeIcon = searchView.findViewById(android.support.v7.appcompat.R.id.search_close_btn);
+        closeIcon = searchView.findViewById(androidx.appcompat.R.id.search_close_btn);
         closeIcon.setEnabled(false);
         searchView.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
-                ImageView searchIcon = searchView.findViewById(android.support.v7.appcompat.R.id.search_button);
+                ImageView searchIcon = searchView.findViewById(androidx.appcompat.R.id.search_button);
                 searchIcon.performClick();
                 return false;
             }
@@ -388,9 +388,9 @@ public class TopContentFragment extends FragmentBase {
     }
 
     private void initListSeminar() {
-        mRcyPaid.setLayoutManager(new LinearLayoutManager(activity, LinearLayout.HORIZONTAL, false));
-        mRcyFree.setLayoutManager(new LinearLayoutManager(activity, LinearLayout.HORIZONTAL, false));
-        mRcyTeacher.setLayoutManager(new LinearLayoutManager(activity, LinearLayout.HORIZONTAL, false));
+        mRcyPaid.setLayoutManager(new LinearLayoutManager(activity, RecyclerView.HORIZONTAL, false));
+        mRcyFree.setLayoutManager(new LinearLayoutManager(activity, RecyclerView.HORIZONTAL, false));
+        mRcyTeacher.setLayoutManager(new LinearLayoutManager(activity, RecyclerView.HORIZONTAL, false));
         if (mTop == null) {
             mTop = new DividerItemDecoration(activity, DividerItemDecoration.HORIZONTAL);
             mTop.setDrawable(ContextCompat.getDrawable(activity, R.drawable.line_divider_horizontal));

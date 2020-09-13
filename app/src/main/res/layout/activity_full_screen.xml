@@ -21,14 +21,14 @@
             android:src="@drawable/ic_back_white" />
 
         <ImageView
-            android:id="@+id/imv_menu"
+            android:id="@+id/imv_Mainmenu"
             android:layout_width="@dimen/value_35dp"
             android:layout_height="@dimen/value_35dp"
             android:layout_alignParentEnd="true"
             android:layout_centerVertical="true"
             android:padding="@dimen/value_5dp"
-            android:src="@mipmap/ic_playback_speed"
-            android:visibility="gone" />
+            android:layout_marginRight="4dp"
+            android:src="@mipmap/iconios" />
 
         <jp.co.hiropro.seminar_hall.view.TextViewApp
             android:id="@+id/tv_title"
@@ -84,45 +84,93 @@
         android:visibility="gone"
         tools:visibility="invisible">
 
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcy_speed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="@dimen/value_8dp" />
+
+        <!--<View
+            android:layout_width="match_parent"
+            android:layout_height="0.75dp"
+            android:background="@color/gray" />-->
+
         <RelativeLayout
             android:id="@+id/rl_top"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/white">
+            android:padding="@dimen/value_5dp"
+            android:background="@drawable/bg_dialog_speed">
 
             <jp.co.hiropro.seminar_hall.view.TextViewApp
-                android:layout_width="wrap_content"
+                android:id="@+id/speedlist_close"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:text="再生速度"
-                android:textColor="@color/color_content"
+                android:layout_alignParentStart="true"
+                android:text="閉じる"
+                android:layout_marginStart="15dp"
+                android:drawablePadding="9.5dp"
+                android:drawableStart="@mipmap/ic_close_red"
+                android:textColor="@color/color_4d4d4d"
                 android:textSize="@dimen/text_size_18sp"
-                app:fontFamilyApp="hiramaruw6"
-                app:textStyle="bold" />
-
-            <ImageView
-                android:id="@+id/imv_close"
-                android:layout_width="@dimen/value_35dp"
-                android:layout_height="@dimen/value_35dp"
-                android:layout_alignParentEnd="true"
-                android:layout_margin="@dimen/value_8dp"
-                android:padding="@dimen/value_8dp"
-                android:src="@mipmap/ic_close_gray"
-                android:visibility="gone" />
+                app:fontFamilyApp="hiramaru" />
 
         </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll_video_menu"
+        android:visibility="gone"
+        android:padding="@dimen/value_5dp"
+        android:background="@drawable/bg_dialog_speed"
+        android:orientation="vertical">
+
+        <jp.co.hiropro.seminar_hall.view.TextViewApp
+            android:id="@+id/imv_speedList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:text="再生速度・標準"
+            android:layout_marginStart="15dp"
+            android:padding="@dimen/value_8dp"
+            android:drawablePadding="10dp"
+            android:drawableStart="@mipmap/ic_fastforw"
+            android:textColor="@color/color_4d4d4d"
+            android:textSize="@dimen/text_size_18sp"
+            app:fontFamilyApp="hiramaru" />
 
         <View
             android:layout_width="match_parent"
             android:layout_height="0.75dp"
             android:background="@color/gray" />
 
-        <android.support.v7.widget.RecyclerView
-            android:id="@+id/rcy_speed"
+        <jp.co.hiropro.seminar_hall.view.TextViewApp
+            android:id="@+id/mainlist_close"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/bg_dialog_speed"
-            android:padding="@dimen/value_15dp" />
+            android:layout_alignParentStart="true"
+            android:text="閉じる"
+            android:padding="@dimen/value_8dp"
+            android:layout_marginStart="15dp"
+            android:drawablePadding="10dp"
+            android:drawableStart="@mipmap/ic_close_red"
+            android:textColor="@color/color_4d4d4d"
+            android:textSize="@dimen/text_size_18sp"
+            app:fontFamilyApp="hiramaru" />
+
     </LinearLayout>
+
+    <ImageView
+        android:adjustViewBounds="true"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:id="@+id/imv_thumb_video"
+        android:layout_width="match_parent"
+        android:layout_height="300dp" />
 
 </RelativeLayout>
